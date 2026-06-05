@@ -1,0 +1,10 @@
+# 脚本运行产物（clone-kit / extract-* / gen-refs 的输出，不入库）
+_clone-*/
+_refs-*/
+_ds-*/
+
+# 真实 API key（.env.example 是空模板，保留；真实 .env 不传）
+.env
+
+# Node 依赖
+node_modules/
