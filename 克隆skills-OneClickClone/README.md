@@ -22,6 +22,10 @@
    `design-systems/<slug>/`（tokens.css + DESIGN.md + components.html + assets/）
 3. 校验：**`gen-components-manifest.cjs <dir>`** 查"无未声明 token 引用 + 零裸 hex"
 
+### 任务 E：不提取，直接用现成的设计系统（先查这里，别重复扒）
+- 要做**某品牌风格**、或找设计系统当输入 → **先查 [`../参考资料/设计系统库/`](../参考资料/设计系统库/)**：73 个大牌的现成 `DESIGN.md`（和本目录提取产出的格式同构），有就直接用，**别再跑一遍 extract-tokens 扒真站**（DRY）。
+- 这里**没有**的品牌、或要**最新真站状态** → 才走下面任务 B 的提取流水线。
+
 ### 任务 D：没有参考站，但想要参考图（生成精美网页设计图喂给实现 AI）
 - **`gen-refs.cjs "<设计意图>" --sections hero,features,…`** —— 让 GPT-image-2（默认）/ Nano Banana
   生成网页设计参考图。**默认每区块一张**（别憋单张长图，否则文字糊、AI 提取不出来）。
