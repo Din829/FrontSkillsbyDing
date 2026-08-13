@@ -331,6 +331,6 @@ onUnmounted(() => ctx?.revert());
 ## 配套导航
 
 - 动效原则、该不该动、和"简洁清晰"的取舍 → [`frontend-design-pro.md`](frontend-design-pro.md) 第三节。
-- 营销页美学（GSAP 的主场气质）→ [`frontend-design.md`](frontend-design.md)。
+- 营销页美学（GSAP 的主场气质）→ [`参考资料/frontend-design.md`](参考资料/frontend-design.md)。
 - 克隆带滚动驱动/视差/pin 的站时，用本文落地那些交互 → [`克隆skills-OneClickClone/site-clone.md`](克隆skills-OneClickClone/site-clone.md)。
 - 需要某个插件/工具的完整配置 → **本地完整原文 [`参考资料/gsap-skills/`](参考资料/gsap-skills/)**（plugins/utils/frameworks/timeline 各有独立 SKILL.md + 四套可跑示例；见该目录 `导读.md`），或官方 [gsap.com/docs](https://gsap.com/docs/v3/)。

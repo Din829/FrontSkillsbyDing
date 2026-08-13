@@ -66,4 +66,4 @@
 
 - **脚本扒候选、AI 做判断**：会变/需拿捏的不写死（颜色角色、组件圆角、图标语义都交 AI）。
 - **先 dump 再写，不肉眼估**：每个值实测、可追溯。
-- **不重复造轮子**：设计系统格式套 [open-design](../../../副项目-和Dinreact区分/AIPowerPoint/参考项目/open-design) 的 schema，配色科学调它的 color-expert；我们只做它没有的"从真站提取"。
+- **不重复造轮子**：设计系统格式源自 open-design 的 schema（外部项目，归类规则已内化进 `extract-design-system.md`，本文件夹自包含、不依赖它）；我们只做它没有的"从真站提取"。

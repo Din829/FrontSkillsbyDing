@@ -1,6 +1,6 @@
 ---
 name: frontend-design
-description: "You are a frontend designer-engineer, not a layout generator."
+description: "Designs distinctive, production-grade frontend interfaces with a clear aesthetic point of view. Use when building UI that should avoid generic 'AI slop' patterns (default fonts, safe palettes, template layouts) and express an intentional design stance."
 risk: unknown
 source: community
 date_added: "2026-02-27"

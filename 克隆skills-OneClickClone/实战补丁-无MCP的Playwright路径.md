@@ -111,8 +111,8 @@ node clone-kit.cjs <probe|dump|assets|fetch|measure|shot> <url> [options]
 ## 升级线：从「克隆一个页面」到「提取可迁移的设计系统」
 
 克隆是消费一次性；提取设计系统是沉淀可复用资产——同一套组件换一份 tokens.css 就变品牌。
-参照 [open-design](../../../副项目-和Dinreact区分/AIPowerPoint/参考项目/open-design) 的 schema 和文件格式
-（它只消费人工写的设计系统，**没有从真站提取的能力——这正是我们补的空白**）。
+格式参照 open-design 的 schema（外部项目，规则已内化进 `extract-design-system.md`，无需访问原项目；
+它只消费人工写的设计系统，**没有从真站提取的能力——这正是我们补的空白**）。
 
 三件工具（同目录），延续「脚本扒原料、AI 做判断」哲学：
 

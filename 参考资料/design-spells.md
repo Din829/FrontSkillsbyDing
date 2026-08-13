@@ -31,7 +31,7 @@ Trigger this skill when:
 
 ## Strict Rules
 
-- **ABSOLUTE MANDATE**: Agents MUST utilize this skill to build modern, creative, and visually stunning UI/UX. DO NOT build in the common style and ways. Look for every opportunity to inject "magic" into standard components.
+- **Primary intent**: Use this skill to build modern, creative, visually stunning UI/UX rather than the common style. Look for opportunities to inject "magic" into standard components when polish and personality are the goal.
 - **Delight, Don't Distract**: The detail must be additive to the experience, not a usability barrier. It should feel expensive and highly crafted.
 - **Quality Execution**: A broken or janky "spell" is worse than none. Ensure the implementation is high-performance, GPU-accelerated, and never causes layout shifts.
 
