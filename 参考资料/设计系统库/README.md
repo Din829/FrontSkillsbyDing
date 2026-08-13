@@ -59,7 +59,7 @@ components:
 
 ## 维护 / 扩展
 
-- 想更新到最新（原仓库一直在加品牌）：去 `参考项目/awesome-design-md/` 跑 `git pull`，再把新增品牌的 `DESIGN.md` 复制过来（只复制 DESIGN.md，跳过引流 README）。
+- 想更新到最新（原仓库一直在加品牌）：去 `参考项目/前端与设计/awesome-design-md/` 跑 `git pull`，再把新增品牌的 `DESIGN.md` 复制过来（只复制 DESIGN.md，跳过引流 README）。
 - 想加自己提取的品牌：用克隆流水线产出 DESIGN.md，放进 `design-md/<品牌>/` 即可，格式一致。
 
 > **TODO（待办，不急）**：这个库的 DESIGN.md 比我们 `extract-design-system.md` 的 10 段格式多了几样好东西——`Do's and Don'ts`（禁区清单）、字体精确到 OpenType feature、`Agent Prompt Guide`（提示词模板）。以后可参考它反哺 extract-design-system 的产出格式。

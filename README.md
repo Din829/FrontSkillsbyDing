@@ -25,6 +25,7 @@
     ├── 设计系统库/                 ← 73 个大牌现成 DESIGN.md
     ├── gsap-skills/                ← GSAP 官方完整原文（8 份 SKILL + 4 套示例）
     ├── react-bits/                 ← 134 个动效 React 组件源码 + 中文索引
+    ├── agent相关/                  ← agent 交互 UI：工具调用过程范式 + thinking-orbs 思考球
     ├── frontend-design.md          ← 存档：官方美学原文（pro 已消化）
     └── design-spells.md            ← 存档：微交互灵感索引（pro 已消化）
 ```
