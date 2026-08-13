@@ -14,7 +14,7 @@ AI 按需读取：顶层方法论会在该用的地方指向这里的具体子�
 | **`设计系统库/`** | 73 个大牌现成的 `DESIGN.md`（Apple/Linear/Stripe/Ferrari…） | 要做某品牌风格、或找设计参考定调时 | [`frontend-design-pro.md`](../frontend-design-pro.md) 第二节 + [`克隆skills-OneClickClone/`](../克隆skills-OneClickClone/) |
 | **`gsap-skills/`** | GSAP 官方动画 skills **完整原文**（8 份 SKILL.md + 四套可跑示例） | 简约版不够、要某插件/API 的完整配置时（MorphSVG 全选项、Nuxt 懒加载…） | [`frontend-motion-gsap.md`](../frontend-motion-gsap.md)（简约入口/速查） |
 | **`react-bits/`** | 134 个动效 React 组件**完整源码**（文字/背景/特效，各 4 种技术栈变体），入口是 [`组件索引-中文.md`](react-bits/组件索引-中文.md) | 想要现成动效组件、别手造时 | [`frontend-design-pro.md`](../frontend-design-pro.md) 第三节 + [`frontend-motion-gsap.md`](../frontend-motion-gsap.md) |
-| **`agent相关/`** | agent 交互 UI：agent-tool-progress（工具调用过程展示范式）+ thinking-orbs（9 态 AI 思考指示球，MIT 全源码）+ 灵感区（GPL 项目只留链接），入口是 [`README.md`](agent相关/README.md) | 界面要展示"agent 在思考/干活/调工具"的过程时；**组件选用权在用户，agent 只呈现选项** | [`frontend-design-pro.md`](../frontend-design-pro.md) 第〇节路由 |
+| **`agent相关/`** | agent 交互 UI：agent-tool-progress（工具调用过程展示范式）+ thinking-orbs（9 态 AI 思考指示球，MIT 全源码）+ aicss.dev（14 组件×3 框架本地素材+中文索引）+ 灵感区（GPL 项目只留链接），入口是 [`README.md`](agent相关/README.md) | 界面要展示"agent 在思考/干活/调工具"的过程时；**组件选用权在用户，agent 只呈现选项** | [`frontend-design-pro.md`](../frontend-design-pro.md) 第〇节路由 |
 
 ## 存档（顶层方法论已消化其精华，一般不用读）
 
