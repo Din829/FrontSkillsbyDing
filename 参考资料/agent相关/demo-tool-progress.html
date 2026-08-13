@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>agent-tool-progress · 范式 mock</title>
+<style>
+  /* ============ 基座（pro：克制灰阶，唯一彩色留给完成态） ============ */
+  :root {
+    --bg: #0d0f12;
+    --surface: #14171b;
+    --border: #23272e;
+    --text: #e8eaed;
+    --text-dim: #8b929c;
+    --text-faint: #565d68;
+    --accent-done: #4ade80;
+    --shimmer-base: #6b7280;
+    --shimmer-hi: #d1d5db;
+    --mono: ui-monospace, "Cascadia Code", Consolas, monospace;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font: 15px/1.6 -apple-system, "Segoe UI", "Hiragino Sans", "Microsoft YaHei", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 48px 20px;
+  }
+  .chat { width: 100%; max-width: 680px; }
+
+  /* ============ 用户气泡 ============ */
+  .user-msg {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px 14px 4px 14px;
+    padding: 10px 16px;
+    margin-left: auto;
+    max-width: 78%;
+    width: fit-content;
+    color: var(--text);
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity .35s ease, transform .35s ease;
+  }
+  .user-msg.show { opacity: 1; transform: none; }
+
+  /* ============ 工具组卡片 ============ */
+  .tool-group {
+    margin: 20px 0 0;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--surface);
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity .35s ease, transform .35s ease;
+  }
+  .tool-group.show { opacity: 1; transform: none; }
+
+  .tg-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    font-size: 13px;
+    color: var(--text-dim);
+    cursor: pointer;
+    user-select: none;
+  }
+  .tg-header .chevron {
+    transition: transform .25s ease;
+    flex-shrink: 0;
+  }
+  .tg-header .title { font-weight: 600; color: var(--text); }
+  .tg-header .meta { margin-left: auto; font-size: 12px; color: var(--text-faint); font-family: var(--mono); }
+  .tg-header .badge {
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    color: var(--text-faint);
+  }
+  .tg-header .badge.done { color: var(--accent-done); border-color: color-mix(in srgb, var(--accent-done) 35%, transparent); }
+
+  /* 收起/展开：一次性布局过渡（持续动画仍只用 transform/opacity） */
+  .tg-body-wrap {
+    display: grid;
+    grid-template-rows: 1fr;
+    transition: grid-template-rows .4s cubic-bezier(.4,0,.2,1);
+  }
+  .tool-group.collapsed .tg-body-wrap { grid-template-rows: 0fr; }
+  .tool-group.collapsed .chevron { transform: rotate(-90deg); }
+  .tg-body { overflow: hidden; }
+  .tg-list { padding: 2px 14px 12px; }
+
+  /* ============ 工具条目 + 连接线 ============ */
+  .tool-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+    padding: 7px 0;
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity .3s ease, transform .3s ease;
+  }
+  .tool-item.show { opacity: 1; transform: none; }
+  /* 连接线：图标列之间的细竖线 */
+  .tool-item::before {
+    content: "";
+    position: absolute;
+    left: 9px;
+    top: 28px;
+    bottom: -8px;
+    width: 1px;
+    background: var(--border);
+  }
+  .tool-item:last-child::before { display: none; }
+
+  .ti-icon {
+    width: 19px; height: 19px;
+    flex-shrink: 0;
+    margin-top: 2px;
+    position: relative;
+    color: var(--text-faint);
+  }
+  .ti-icon svg { width: 100%; height: 100%; display: block; }
+
+  /* running：图标位换成旋转圆弧 spinner */
+  .tool-item.running .ti-icon .glyph { display: none; }
+  .tool-item.running .ti-icon::after {
+    content: "";
+    position: absolute; inset: 1px;
+    border-radius: 50%;
+    border: 1.5px solid var(--border);
+    border-top-color: var(--text-dim);
+    animation: spin .8s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* done：绿勾淡入 */
+  .tool-item.done .ti-icon .glyph { display: none; }
+  .tool-item.done .ti-icon .check { display: block; color: var(--accent-done); animation: pop .25s ease; }
+  .ti-icon .check { display: none; }
+  @keyframes pop { from { transform: scale(.6); opacity: 0; } }
+
+  .ti-label { font-size: 13.5px; color: var(--text-dim); }
+  .ti-label .act { color: var(--text); }
+  .ti-label .arg { font-family: var(--mono); font-size: 12.5px; color: var(--text-faint); }
+
+  /* running 文字：shimmer 微光（aicss thinking-state 手法） */
+  .tool-item.running .ti-label .act {
+    background: linear-gradient(90deg, var(--shimmer-base) 30%, var(--shimmer-hi) 50%, var(--shimmer-base) 70%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shimmer 1.6s linear infinite;
+  }
+  @keyframes shimmer { from { background-position: 200% 0; } to { background-position: -200% 0; } }
+
+  /* done 文字：退灰 */
+  .tool-item.done .ti-label .act { color: var(--text-dim); }
+  .tool-item.done .ti-label .arg { color: var(--text-faint); }
+  .ti-result { margin-left: auto; font-size: 12px; color: var(--text-faint); font-family: var(--mono); padding-top: 2px; flex-shrink: 0; opacity: 0; transition: opacity .3s; }
+  .tool-item.done .ti-result { opacity: 1; }
+
+  /* ============ agent 正文（流式） ============ */
+  .agent-msg { margin-top: 20px; display: none; }
+  .agent-msg.show { display: block; }
+  .agent-msg .prose { color: var(--text); white-space: pre-wrap; }
+  .caret {
+    display: inline-block;
+    width: 7px; height: 16px;
+    background: var(--text-dim);
+    vertical-align: -2px;
+    margin-left: 1px;
+    animation: blink 1s step-end infinite;
+  }
+  @keyframes blink { 50% { opacity: 0; } }
+
+  /* ============ 重播 ============ */
+  .replay {
+    margin-top: 40px;
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--text-dim);
+    font: inherit; font-size: 13px;
+    padding: 6px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .replay:hover { color: var(--text); border-color: var(--text-faint); }
+
+  /* 范式底线：honor reduced-motion（活着信号退化为静态 + 文字说明） */
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; }
+    .tool-item.running .ti-label::after { content: "（进行中）"; color: var(--text-faint); font-size: 12px; }
+  }
+</style>
+</head>
+<body>
+<div class="chat">
+  <div class="user-msg" id="userMsg">帮我审计一下项目里的 JWT 鉴权安全</div>
+
+  <div class="tool-group" id="toolGroup">
+    <div class="tg-header" id="tgHeader">
+      <svg class="chevron" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="title">Tools</span>
+      <span class="badge" id="tgBadge">0/4</span>
+      <span class="meta" id="tgMeta"></span>
+    </div>
+    <div class="tg-body-wrap">
+      <div class="tg-body">
+        <div class="tg-list" id="tgList"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="agent-msg" id="agentMsg"><span class="prose" id="prose"></span><span class="caret" id="caret"></span></div>
+
+  <button class="replay" id="replayBtn">↻ 重播</button>
+</div>
+
+<script>
+/* ================= mock 数据 =================
+   并行发起、乱序完成（doneAt 故意打乱），对应范式铁律 1/2 */
+const TOOLS = [
+  { icon: "search", act: "Web Search",  arg: "“JWT 鉴权漏洞 最佳实践 2026”", result: "8 results", showAt: 300,  doneAt: 3600 },
+  { icon: "file",   act: "Read",        arg: "src/auth/middleware.ts",                 result: "142 lines", showAt: 750,  doneAt: 2300 },
+  { icon: "code",   act: "Grep",        arg: "jwt.verify( → 全仓库",              result: "6 matches", showAt: 1200, doneAt: 5100 },
+  { icon: "file",   act: "Read",        arg: "package.json（依赖版本）",               result: "jsonwebtoken@9.0", showAt: 1650, doneAt: 4200 },
+];
+const PROSE = "审计完成。总体上鉴权中间件写得规范，但有两处要改：\n\n1. middleware.ts:47 的 jwt.verify 没有显式指定 algorithms，存在算法混淆攻击面——建议锁定为 ['RS256']。\n2. jsonwebtoken@9.0 无已知 CVE，但 refresh token 未做轮换，建议引入单次使用策略。";
+const PROSE_START = 6300;   // 正文首字时刻 = 收起时刻（铁律 4）
+const CHAR_MS = 18;
+
+const ICONS = {
+  search: '<svg class="glyph" viewBox="0 0 20 20" fill="none"><circle cx="9" cy="9" r="5.5" stroke="currentColor" stroke-width="1.5"/><path d="m13.5 13.5 3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>',
+  file:   '<svg class="glyph" viewBox="0 0 20 20" fill="none"><path d="M5 3h6l4 4v10H5V3Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M11 3v4h4" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>',
+  code:   '<svg class="glyph" viewBox="0 0 20 20" fill="none"><path d="m7 6-4 4 4 4M13 6l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  check:  '<svg class="check" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8.5" stroke="currentColor" stroke-width="1.5"/><path d="m6.5 10.5 2.2 2.2 4.8-5.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+};
+
+const $ = id => document.getElementById(id);
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+let timers = [];
+const later = (fn, ms) => timers.push(setTimeout(fn, ms));
+
+function reset() {
+  timers.forEach(clearTimeout); timers = [];
+  $("userMsg").classList.remove("show");
+  const g = $("toolGroup");
+  g.classList.remove("show", "collapsed");
+  $("tgList").innerHTML = "";
+  $("tgBadge").textContent = "0/4"; $("tgBadge").classList.remove("done");
+  $("tgMeta").textContent = "";
+  $("agentMsg").classList.remove("show");
+  $("prose").textContent = ""; $("caret").style.display = "";
+}
+
+function run() {
+  reset();
+  const t0 = performance.now();
+  let doneCount = 0;
+
+  later(() => $("userMsg").classList.add("show"), 60);
+  later(() => $("toolGroup").classList.add("show"), TOOLS[0].showAt - 120);
+
+  TOOLS.forEach((t, i) => {
+    // 铁律1：staggered 逐条入场（即使底层并行发起）
+    later(() => {
+      const el = document.createElement("div");
+      el.className = "tool-item running";
+      el.id = "ti" + i;
+      el.innerHTML = `<span class="ti-icon">${ICONS[t.icon]}${ICONS.check}</span>
+        <span class="ti-label"><span class="act">${t.act}</span> <span class="arg">${t.arg}</span></span>
+        <span class="ti-result">${t.result}</span>`;
+      $("tgList").appendChild(el);
+      requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add("show")));
+    }, t.showAt);
+
+    // 铁律2：谁先完成谁先变脸
+    later(() => {
+      const el = $("ti" + i);
+      el.classList.remove("running");
+      el.classList.add("done");
+      doneCount++;
+      $("tgBadge").textContent = doneCount + "/4";
+      if (doneCount === TOOLS.length) {
+        $("tgBadge").textContent = "4/4";
+        // 全部完成：摊着等（铁律4——不许在这里收起！）
+      }
+    }, t.doneAt);
+  });
+
+  // 铁律4：正文首字 = 收起时刻
+  later(async () => {
+    const secs = ((performance.now() - t0) / 1000).toFixed(1);
+    $("tgMeta").textContent = secs + "s";
+    $("tgBadge").textContent = "Completed";
+    $("tgBadge").classList.add("done");
+    $("toolGroup").classList.add("collapsed");
+    $("agentMsg").classList.add("show");
+    for (const ch of PROSE) {
+      $("prose").textContent += ch;
+      await sleep(CHAR_MS);
+    }
+    $("caret").style.display = "none";
+  }, PROSE_START);
+}
+
+// 汇总条点击展开/收起回看
+$("tgHeader").addEventListener("click", () => $("toolGroup").classList.toggle("collapsed"));
+$("replayBtn").addEventListener("click", run);
+run();
+</script>
+</body>
+</html>

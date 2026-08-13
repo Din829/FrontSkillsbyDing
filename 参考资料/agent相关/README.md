@@ -10,7 +10,7 @@
 
 ## agent-tool-progress（交互范式：工具调用过程展示）
 
-要做 agent 界面里"工具/任务执行过程"的实时展示 → **读 [`agent-tool-progress.md`](agent-tool-progress.md)**。它定义交互骨架：组级/条目级状态机、五条行为铁律（挨个出现、并行独立变脸、running 必须有活着信号、**收起时机=agent 正文首个流式 token**、节点连线）、元信息分级、流式 SDK 事件映射。**骨架不能破，视觉皮随项目**。running 动效可配下面的 thinking-orbs。
+要做 agent 界面里"工具/任务执行过程"的实时展示 → **读 [`agent-tool-progress.md`](agent-tool-progress.md)**。它定义交互骨架：组级/条目级状态机、五条行为铁律（挨个出现、并行独立变脸、running 必须有活着信号、**收起时机=agent 正文首个流式 token**、节点连线）、元信息分级、流式 SDK 事件映射。**骨架不能破，视觉皮随项目**。running 动效可配下面的 thinking-orbs。可跑参考实现：[`demo-tool-progress.html`](demo-tool-progress.html)（零依赖，浏览器直接开）。
 
 ---
 
