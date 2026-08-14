@@ -16,6 +16,8 @@ AI 按需读取：顶层方法论会在该用的地方指向这里的具体子�
 | **`react-bits/`** | 134 个动效 React 组件**完整源码**（文字/背景/特效，各 4 种技术栈变体），入口是 [`组件索引-中文.md`](react-bits/组件索引-中文.md) | 想要现成动效组件、别手造时 | [`frontend-design-pro.md`](../frontend-design-pro.md) 第三节 + [`frontend-motion-gsap.md`](../frontend-motion-gsap.md) |
 | **`agent相关/`** | agent 交互 UI：agent-tool-progress（工具调用过程展示范式）+ thinking-orbs（9 态 AI 思考指示球，MIT 全源码）+ aicss.dev（14 组件×3 框架本地素材+中文索引）+ 灵感区（GPL 项目只留链接），入口是 [`README.md`](agent相关/README.md) | 界面要展示"agent 在思考/干活/调工具"的过程时；**组件选用权在用户，agent 只呈现选项** | [`frontend-design-pro.md`](../frontend-design-pro.md) 第〇节路由 |
 
+| **`lieflat-charts/`** | 单色数据可视化完整 skill（SKILL.md 格式原生兼容）：49 图型数据契约（`catalog.md`）+ 60+ HTML 模板（Lupi 编辑叙事/Glance 速读/Interactive/整页报告）+ 设计 token，入口是 [`SKILL.md`](lieflat-charts/SKILL.md) | 要做图表、数据可视化、数据报告页时 | 自带完整工作流，pro 只负责路由到它；⚠️ **PolyForm 非商用协议**，商用需作者授权 |
+
 ## 存档（顶层方法论已消化其精华，一般不用读）
 
 | 文件 | 是什么 |
@@ -32,5 +34,5 @@ AI 按需读取：顶层方法论会在该用的地方指向这里的具体子�
 
 ## 维护 / 扩展
 
-- 每个子库都来自独立外部 repo（设计系统库 ← VoltAgent/awesome-design-md；gsap-skills ← greensock/gsap-skills；react-bits ← DavidHDev/react-bits），原 repo 留在 `参考项目/`，要更新去那边 `git pull` 再同步过来。
+- 每个子库都来自独立外部 repo（设计系统库 ← VoltAgent/awesome-design-md；gsap-skills ← greensock/gsap-skills；react-bits ← DavidHDev/react-bits；lieflat-charts ← larashero3-dotcom/lieflat-charts），原 repo 留在 `参考项目/`（前端类在其 `前端与设计/` 分类下），要更新去那边 `git pull` 再同步过来。
 - **加新子库**：往本目录新建一个 `<主题>/` 放进去，在上面表格加一行，并**在 `frontend-design-pro.md` 第〇节路由表加一行**（关键——agent 只认 pro 的路由，不看本 README）。完全可插拔。

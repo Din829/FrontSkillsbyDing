@@ -28,6 +28,7 @@ description: 功能型前端界面（B端应用/本机工具/数据型界面）�
 | **复刻 / 克隆**一个现有网站 | `克隆skills-OneClickClone/README.md` | 那是专门流水线（脚本扒真值），别用本文硬做 |
 | 界面写完，要**审查 UI / 可访问性** | `web-design-guidelines.md` | 按 Vercel 最新守则逐条过，比自查全 |
 | 要 **GSAP 某插件/API** 的完整配置细节 | `参考资料/gsap-skills/` | 官方完整原文，简约版没展开的都在这 |
+| 做**数据可视化 / 图表 / 数据报告页** | `参考资料/lieflat-charts/SKILL.md` | 完整图表 skill（单色编辑级审美，49 图型数据契约见其 catalog.md，60+ 现成模板），照它自己的流程走；⚠️ **PolyForm 非商用协议**——商业项目要用，先提醒用户需向作者拿授权 |
 
 没撞上 → 直接往下读正文。存档备查（本文已消化其精华，一般不用读）：`参考资料/frontend-design.md`（官方美学原文，营销页倾向）、`参考资料/design-spells.md`（微交互灵感索引）。
 

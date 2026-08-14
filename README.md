@@ -26,6 +26,7 @@
     ├── gsap-skills/                ← GSAP 官方完整原文（8 份 SKILL + 4 套示例）
     ├── react-bits/                 ← 134 个动效 React 组件源码 + 中文索引
     ├── agent相关/                  ← agent 交互 UI：工具调用范式 + thinking-orbs + aicss 组件集
+    ├── lieflat-charts/             ← 数据可视化 skill：49 图型 + 60+ 模板（⚠️ 非商用协议）
     ├── frontend-design.md          ← 存档：官方美学原文（pro 已消化）
     └── design-spells.md            ← 存档：微交互灵感索引（pro 已消化）
 ```
