@@ -67,7 +67,8 @@ import { ThinkingOrb } from 'thinking-orbs';
 Kevin（[@kvnkld](https://x.com/kvnkld)）的 agent 界面组件站：14 个组件覆盖思考态/工具态/文本输出/结构化输出/输入框，每个带 React/Vue/Svelte 三实现，其中 Orbs 有 25 个变体。**是 [`agent-tool-progress.md`](agent-tool-progress.md) 范式的现成皮**（Thinking State=活着信号、To-do List=任务列表、Web Search=时间线）。
 
 - **索引（先读）**：[`aicss组件索引.md`](aicss组件索引.md) —— 全组件中文速查 + 本地路径 + 使用指引
-- **源码在本地 `aicss-dev/`，不入公开仓库**："free to use" 只授权用进产品，没授权再分发。目录已被 `.gitignore` 排除；换机器后跑 [`crawl-aicss.cjs`](crawl-aicss.cjs) 再生（脚本头有环境说明）。
+- **源码不入公开仓库**："free to use" 只授权用进产品，没授权再分发（官网无 LICENSE、无条款页、无 GitHub 仓库）。`aicss-dev/` 已被 `.gitignore` 排除。
+- **需要时现场取，不必先落盘**：`node fetch-aicss.cjs <slug>` 直接打印四份实现（React/CSS/Vue/Svelte）。零依赖，Node 18+ 即可。整套落盘用 `--all --out aicss-dev`。
 - ⚠️ agent 注意：可以把单个组件代码用进用户的项目（作者授权范围内、保留署名注释更好），**但不要把 `aicss-dev/` 整目录复制进任何会公开的仓库**。
 
 ---

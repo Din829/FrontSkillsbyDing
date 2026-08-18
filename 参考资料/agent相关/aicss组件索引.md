@@ -1,20 +1,22 @@
 # aicss.dev 组件中文索引
 
-> 来源：[aicss.dev](https://www.aicss.dev)（Kevin [@kvnkld](https://x.com/kvnkld)，Beta，2026-08 爬取）。
-> agent 对话界面组件全家桶：14 组件 × React/Vue/Svelte 三实现，Orbs 另有 25 变体。
+> 来源：[aicss.dev](https://www.aicss.dev)（Kevin [@kvnkld](https://x.com/kvnkld)，Beta V1.2）。
+> agent 对话界面组件全家桶：14 组件 × React/Vue/Svelte 三实现（React 是 `.tsx`＋`.module.css` 两件套）。
+> **本索引的组件清单与描述核对于 2026-08-18**，用 [`fetch-aicss.cjs`](fetch-aicss.cjs) 全量取回逐文件比对过。
 
 ## 授权与红线（agent 必读）
 
 - 作者授权 "free to use"：**可以把单个组件代码用进用户的产品**（建议保留来源注释）。
 - **没有再分发授权**：本地源码目录 `aicss-dev/` 已被 `.gitignore` 排除，**绝不把它复制进任何会公开的仓库**。
-- 本机没有 `aicss-dev/` 目录？跑同目录 [`crawl-aicss.cjs`](crawl-aicss.cjs) 再生（需 node + playwright，见脚本头注释）。
-- 站点在 beta 快速迭代，要最新版可重跑脚本；线上效果预览直接开组件页链接。
+- **不必先落盘**：需要哪个组件就现场取 `node fetch-aicss.cjs <slug>`，直接打印到终端（零依赖，Node 18+ 即可，不需要 playwright）。
+- 要整套落盘（换机器重建）：`node fetch-aicss.cjs --all --out aicss-dev`。
+- 站点在 beta 快速迭代，取到的永远是最新版；线上效果预览直接开组件页链接。
 - 子库协议同样适用：**用哪个组件，呈现选项给用户挑，别自己拍板。**
 
 ## 怎么用（三步）
 
 1. 按下表找到匹配场景的组件，把"效果"一句话+线上预览链接呈现给用户选；
-2. 用户选定后，按用户技术栈取本地文件：`aicss-dev/<slug>/<react|vue|svelte>/<文件>`（React 是 `.tsx` + `.module.css` 两件套，Vue/Svelte 是单文件组件）；
+2. 用户选定后取代码——**优先现场取**：`node fetch-aicss.cjs <slug>`（打印 React/CSS/Vue/Svelte 四份，按用户技术栈挑）；已落盘的话在 `aicss-dev/<slug>/<react|vue|svelte>/<文件>`；
 3. 融入项目：改成项目的 token/主题（对照 `参考资料/设计系统库/` 或项目自己的 tokens），别原样硬贴。
 
 ## 组件索引（14 个，按 5 类）
@@ -27,7 +29,8 @@
 | `thinking-reasoning` | 可折叠思考块：shimmer 标签展开露出推理过程，结束折成 "Thought for Ns" 汇总 | 范式"干活时透明、说完收起"的思考版 | [页面](https://www.aicss.dev/components/thinking-reasoning) |
 | `orbs` | 25 个紧凑活动指示球（纯 DOM+CSS，不阻塞线程），5 族×5：**S**=Lattice 点阵 / **B**=Lens 透镜 / **C**=Ring 环 / **G**=Helix 螺旋 / **M**=Morph 变形 | 活着信号图标位；与 thinking-orbs（canvas 版）二选一呈现给用户 | [页面](https://www.aicss.dev/components/orbs) |
 
-> orbs 本地路径特殊：`aicss-dev/orbs/<变体>/<框架>/`，每变体是裁剪好的独立组件（如 `orbs/M3/react/Orb.tsx`）。
+> orbs 是**一个完整组件**，25 个变体靠 `variant` prop 选（`OrbVariant` = S1-S5 ｜ B1-B5 ｜ C1-C5 ｜ G1-G5 ｜ M1-M5），不是 25 份独立代码。
+> 它还导出 `ORB_TASKS`（变体 → 语义标签的映射，如 `S1: "Thinking"`、`M5: "Dispersing"`），选变体时可以直接照着语义挑。
 
 ### 工具与操作状态
 
@@ -63,4 +66,4 @@
 ## 与本子库其他资产的关系
 
 - **[`agent-tool-progress.md`](agent-tool-progress.md)** 管骨架（状态机/时机/铁律），本库组件是现成的皮：`thinking-state`=活着信号、`task-list`=卡片组、`web-search`=时间线。皮怎么换，骨架规则都得守（尤其收起时机）。
-- **thinking-orbs**（canvas，9 态）和这里的 **orbs**（DOM+CSS，25 变体）是同一角色的两套备选——呈现给用户时说明差异：前者语义化状态（searching/composing…），后者视觉族谱更多但无语义绑定。
+- **thinking-orbs**（canvas，9 态，MIT，源码已入库）和这里的 **orbs**（DOM+CSS，25 变体）是同一角色的两套备选。呈现给用户时说明差异：前者是 canvas 绘制、9 个语义状态、**代码就在本仓库**；后者是纯 DOM+CSS、25 个视觉变体、也带语义映射（`ORB_TASKS`）但**代码要现场取**。

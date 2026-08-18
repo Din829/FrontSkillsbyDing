@@ -10,5 +10,6 @@ _ds-*/
 node_modules/
 
 # aicss.dev 爬取产物：作者仅授权"在产品里用"，无再分发授权，不入公开仓库。
-# 本地重建：cd 参考资料/agent相关 && node crawl-aicss.cjs（需 playwright，见脚本头注释）
+# 需要时现场取：cd 参考资料/agent相关 && node fetch-aicss.cjs <slug>（零依赖，Node 18+）
+# 整套落盘：node fetch-aicss.cjs --all --out aicss-dev
 参考资料/agent相关/aicss-dev/
