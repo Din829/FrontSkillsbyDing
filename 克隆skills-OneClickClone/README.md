@@ -67,3 +67,10 @@
 - **脚本扒候选、AI 做判断**：会变/需拿捏的不写死（颜色角色、组件圆角、图标语义都交 AI）。
 - **先 dump 再写，不肉眼估**：每个值实测、可追溯。
 - **不重复造轮子**：设计系统格式源自 open-design 的 schema（外部项目，归类规则已内化进 `extract-design-system.md`，本文件夹自包含、不依赖它）；我们只做它没有的"从真站提取"。
+
+## 同类工具（线上，只留链接；做的事本文件夹脚本已覆盖）
+
+| 工具 | 做什么 | 什么时候用它而不是本地脚本 |
+|---|---|---|
+| [design-md-chrome](https://github.com/bergside/design-md-chrome)（Chrome 扩展，MIT） | 在浏览器里一键从任意网站抽 DESIGN.md / SKILL.md（TypeUI 格式：字体 / 色 / 间距 / 圆角 / 阴影 / 动效） | 人手快速看一个站的设计 token，不想起 Playwright 时；**要可追溯的实测值仍走 `extract-tokens.cjs`** |
+| [Agentation](https://github.com/benjitaylor/agentation)（协议未声明） | 在你自己的页面上点元素加批注，生成带 selector / 位置的 markdown 喂给 coding agent | **反馈回路**：界面做出来后人眼挑毛病、精确告诉 agent 改哪——跟本文件夹（克隆）不是一件事，跟 pro 第四节审查互补 |

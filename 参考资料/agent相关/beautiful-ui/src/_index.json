@@ -1,0 +1,229 @@
+[
+  {
+    "id": "loading-state",
+    "title": "Loading State",
+    "caption": "Pixel-grid loader with shimmer and elapsed time.",
+    "file": "LoadingState.tsx",
+    "lines": 152,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "id": "thinking-state",
+    "title": "Thinking",
+    "caption": "Expandable traces — steps, reasoning, search, coding.",
+    "file": "ThinkingState.tsx",
+    "lines": 274,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "id": "streaming-text",
+    "title": "Streaming Text",
+    "caption": "Streamed answer with inline sources, actions, and follow-ups.",
+    "file": "StreamingText.tsx",
+    "lines": 224,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "id": "approval-card",
+    "title": "Approval Card",
+    "caption": "Human-in-the-loop questions the agent asks before acting.",
+    "file": "ApprovalCard.tsx",
+    "lines": 241,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "id": "tool-chips",
+    "title": "Tool Chips",
+    "caption": "Code edits and tool calls as compact chips.",
+    "file": "ToolChips.tsx",
+    "lines": 290,
+    "deps": [
+      "react",
+      "react-dom"
+    ]
+  },
+  {
+    "id": "task-rows",
+    "title": "Task Rows",
+    "caption": "Live agent task status — running, failed, completed.",
+    "file": "TaskRows.tsx",
+    "lines": 222,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "id": "chat-composer",
+    "title": "Chat",
+    "caption": "Tabbed chat panel with reasoning replies and a composer.",
+    "file": "ChatComposer.tsx",
+    "lines": 190,
+    "deps": [
+      "react",
+      "posthog-js"
+    ]
+  },
+  {
+    "id": "prompt-bar",
+    "title": "Prompt Bar",
+    "caption": "Composer with @ sources, / commands, model picker, and dictation.",
+    "file": "PromptBar.tsx",
+    "lines": 713,
+    "deps": [
+      "react",
+      "glimm"
+    ]
+  },
+  {
+    "id": "recommendation-card",
+    "title": "Recommendation Card",
+    "caption": "Agent suggestion with a confidence meter and actions.",
+    "file": "RecommendationCard.tsx",
+    "lines": 174,
+    "deps": [
+      "react",
+      "@/components/atoms/Button"
+    ]
+  },
+  {
+    "id": "context-cards",
+    "title": "Context Cards",
+    "caption": "Retrieved knowledge chunks with their sources.",
+    "file": "ContextCards.tsx",
+    "lines": 91,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "id": "diff-table",
+    "title": "Diff Table",
+    "caption": "AI-proposed edits sweeping through tabular data.",
+    "file": "DiffTable.tsx",
+    "lines": 238,
+    "deps": [
+      "react",
+      "@/components/atoms/Button"
+    ]
+  },
+  {
+    "id": "records-table",
+    "title": "Records Table",
+    "caption": "CRM-style grid with tags, sorting, and relationship status.",
+    "file": "RecordsTable.tsx",
+    "lines": 765,
+    "deps": [
+      "react",
+      "@/components/primitives/GlideMenu",
+      ", chip: "
+    ]
+  },
+  {
+    "id": "filter-table",
+    "title": "Filter Table",
+    "caption": "Status chips that reorganize live data.",
+    "file": "FilterTable.tsx",
+    "lines": 123,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "id": "sidebar-nav",
+    "title": "Sidebar Nav",
+    "caption": "Collapsible workspace and chat navigation with gliding hover states.",
+    "file": "SidebarNav.tsx",
+    "lines": 389,
+    "deps": [
+      "react",
+      "react-dom",
+      "@central-icons-react/round-outlined-radius-2-stroke-2/IconArrowBoxLeft",
+      "@central-icons-react/round-outlined-radius-2-stroke-2/IconCheckmark1Small",
+      "@central-icons-react/round-outlined-radius-2-stroke-2/IconChevronDownSmall",
+      "@central-icons-react/round-outlined-radius-2-stroke-2/IconEditBig",
+      "@central-icons-react/round-outlined-radius-2-stroke-2/IconHome",
+      "@central-icons-react/round-outlined-radius-2-stroke-2/IconLibrary",
+      "@central-icons-react/round-outlined-radius-2-stroke-2/IconMagnifyingGlass",
+      "@central-icons-react/round-outlined-radius-2-stroke-2/IconPlusMedium",
+      "@central-icons-react/round-outlined-radius-2-stroke-2/IconPopsicle2",
+      "@central-icons-react/round-outlined-radius-2-stroke-2/IconSettingsGear1",
+      "@central-icons-react/round-outlined-radius-2-stroke-2/IconSidebarLeftArrow",
+      "@central-icons-react/round-outlined-radius-2-stroke-2/IconUserAdd",
+      "@/components/primitives/GlideMenu"
+    ]
+  },
+  {
+    "id": "search",
+    "title": "Search",
+    "caption": "Command search with live filtering and an empty state.",
+    "file": "SearchList.tsx",
+    "lines": 94,
+    "deps": [
+      "react",
+      "@/components/primitives/GlideMenu"
+    ]
+  },
+  {
+    "id": "flowchart",
+    "title": "Flowchart",
+    "caption": "Workflow trigger and condition steps on a dotted canvas.",
+    "file": "Flowchart.tsx",
+    "lines": 539,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "id": "insight-cards",
+    "title": "Insight Cards",
+    "caption": "Paged agent insights with scrub-ready live charts.",
+    "file": "InsightCards.tsx",
+    "lines": 456,
+    "deps": [
+      "liveline",
+      "react"
+    ]
+  },
+  {
+    "id": "code-block",
+    "title": "Code Block",
+    "caption": "Agent-written code streaming in line by line.",
+    "file": "CodeBlock.tsx",
+    "lines": 109,
+    "deps": [
+      "react"
+    ]
+  },
+  {
+    "id": "fine-tune-card",
+    "title": "Fine-tune Card",
+    "caption": "The agent adjusts design properties in an inspector.",
+    "file": "FineTuneCard.tsx",
+    "lines": 250,
+    "deps": [
+      "react",
+      "@/components/primitives/GlideMenu"
+    ]
+  },
+  {
+    "id": "selection-actions",
+    "title": "Selection Actions",
+    "caption": "Highlight a passage and hand it to the agent to rewrite.",
+    "file": "SelectionActions.tsx",
+    "lines": 492,
+    "deps": [
+      "react",
+      "iconoir-react",
+      "@/components/atoms/Shimmer",
+      "@/components/atoms/StreamText"
+    ]
+  }
+]

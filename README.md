@@ -18,14 +18,19 @@
 ├── frontend-motion-gsap.md         ← 动效实操（GSAP 简约版）
 ├── vercel-react-best-practices.md  ← React/Next 性能 70 条
 ├── web-design-guidelines.md        ← UI/可访问性审查（运行时拉 Vercel 最新守则）
+├── 检查脚本-交付前门.cjs           ← Playwright 机械兜底 pro 第四节三条"要真渲染"的门（横向滚动 / 对比度 / reduced-motion）
 ├── 克隆skills-OneClickClone/       ← 复刻网站 + 设计系统提取流水线（自带 README）
 │
 │  ┌─ 料：外部素材（按需下钻，pro 路由指到才读）
 └── 参考资料/                       ← 自带 README，子库可插拔
+    ├── 组件总索引.md               ← 按场景查组件的总表（pro 路由"我要现成的东西"指这里）
     ├── 设计系统库/                 ← 73 个大牌现成 DESIGN.md
+    ├── ui-ux-pro-max/              ← 定调候选集：79 风格 / 192 配色 / 74 字体对 / 119 UX 规则，Python 可检索
     ├── gsap-skills/                ← GSAP 官方完整原文（8 份 SKILL + 4 套示例）
     ├── react-bits/                 ← 134 个动效 React 组件源码 + 中文索引
-    ├── agent相关/                  ← agent 交互 UI：工具调用范式 + thinking-orbs + aicss 组件集
+    ├── transitions-dev/            ← 12 个纯 CSS 状态切换过渡
+    ├── agent相关/                  ← agent 交互 UI：工具调用范式 + thinking-orbs + aicss + beautiful-ui（含审批卡）
+    ├── 反slop规范/                 ← Hallmark / Taste / ui-skills 原文（pro 第四节已消化负面规则）
     ├── lieflat-charts/             ← 数据可视化 skill：49 图型 + 60+ 模板（⚠️ 非商用协议）
     ├── frontend-design.md          ← 存档：官方美学原文（pro 已消化）
     └── design-spells.md            ← 存档：微交互灵感索引（pro 已消化）
@@ -39,7 +44,8 @@
 
 ## 维护 / 扩展
 
-- **加新料库**（如内部 UI 组件仓库）：① `参考资料/` 建目录放料 + 自带 README；② `参考资料/README.md` 表格加一行；③ **pro 第〇节路由表加一行**（这步最关键，没有它 agent 永远看不见）。
+- **加新料库**（如内部 UI 组件仓库）：① `参考资料/` 建目录放料 + 自带 README；② `参考资料/README.md` 表格加一行；③ **组件库进 `参考资料/组件总索引.md` 按场景加行**（pro 路由只指总索引，不逐库加行）；非组件类的料才需要 pro 第〇节路由表加一行（没有入口 agent 永远看不见）。
 - **改路由**：只动 pro 第〇节和正文三个检查点（第二节找参考、第三节动效、第七节落地）。
 - **自包含红线**：本文件夹会被整体带走，任何文件不得引用文件夹外的路径；外部素材只能复制进来。
-- 外部子库更新：原 repo 在 `参考项目/`（设计系统库 ← VoltAgent/awesome-design-md；gsap-skills ← greensock/gsap-skills；react-bits ← DavidHDev/react-bits），去那边 `git pull` 再同步过来。
+- 外部子库更新：原 repo 在 `参考项目/前端与设计/`（全部来源列在 `参考资料/README.md` 维护节），去那边 `git pull` 再同步过来。
+- **自包含红线的唯一例外**：`组件总索引.md` 里标"线上"的几行（OriginKit / 21st / Aceternity / Component Gallery / Design Skills Hub）只留链接不落本地——库太大或天天更新；每行写了离线退化到哪个本地库。

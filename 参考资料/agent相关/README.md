@@ -4,13 +4,13 @@
 
 ## 使用协议（agent 必读）
 
-**你的职责是"知道有货、呈现选项"，不是替用户拍板。** 界面里要用到 agent 状态指示/加载动效时：先翻本索引，把匹配的组件（含效果一句话描述）作为选项**呈现给用户，由用户决定用哪个**；用户明确选定后再落地。别自作主张直接选一个塞进界面。
+**你的职责是"知道有货、呈现选项"，不是替用户拍板。** 界面里要用到 agent 状态指示/加载动效时：先翻本索引，把匹配的组件（含效果一句话描述）作为选项**呈现给用户，由用户决定用哪个**；用户明确选定后再落地。别自作主张直接选一个塞进界面。**无人应答时**（脚本任务 / 批处理）：选首选，交付说明里写清候选与理由，别卡住也别静默吞掉候选。
 
 ---
 
 ## agent-tool-progress（交互范式：工具调用过程展示）
 
-要做 agent 界面里"工具/任务执行过程"的实时展示 → **读 [`agent-tool-progress.md`](agent-tool-progress.md)**。它定义交互骨架：组级/条目级状态机、五条行为铁律（挨个出现、并行独立变脸、running 必须有活着信号、**收起时机=agent 正文首个流式 token**、节点连线）、元信息分级、流式 SDK 事件映射。**骨架不能破，视觉皮随项目**。running 动效可配下面的 thinking-orbs。可跑参考实现：[`demo-tool-progress.html`](demo-tool-progress.html)（零依赖，浏览器直接开）。
+要做 agent 界面里"工具/任务执行过程"的实时展示 → **读 [`agent-tool-progress.md`](agent-tool-progress.md)**。它定义交互骨架：组级/条目级状态机、五条行为铁律（挨个出现、并行独立变脸、running 必须有活着信号、**收起时机=agent 正文首个流式 token**、节点连线）、元信息分级、流式 SDK 事件映射。**骨架不能破，视觉皮随项目**。running 动效可配下面的 thinking-orbs。可跑参考实现：[`demo-tool-progress.html`](demo-tool-progress.html)（零依赖，浏览器直接开；**它的完成态用了绿色，只是演示——落地时颜色按项目 token，遵守 pro 4.1"唯一的彩色留给唯一需要警觉的事"**）。
 
 ---
 
@@ -70,6 +70,16 @@ Kevin（[@kvnkld](https://x.com/kvnkld)）的 agent 界面组件站：14 个组�
 - **源码不入公开仓库**："free to use" 只授权用进产品，没授权再分发（官网无 LICENSE、无条款页、无 GitHub 仓库）。`aicss-dev/` 已被 `.gitignore` 排除。
 - **需要时现场取，不必先落盘**：`node fetch-aicss.cjs <slug>` 直接打印四份实现（React/CSS/Vue/Svelte）。零依赖，Node 18+ 即可。整套落盘用 `--all --out aicss-dev`。
 - ⚠️ agent 注意：可以把单个组件代码用进用户的项目（作者授权范围内、保留署名注释更好），**但不要把 `aicss-dev/` 整目录复制进任何会公开的仓库**。
+
+---
+
+## Beautiful UI（AI 原生界面 20 个模式，MIT，本地源码）
+
+Shane Levine / Turbo 工作室的 <https://www.beautifului.dev/>：思考态、流式正文、**工具调用芯片 / 任务行**、**审批卡（human-in-the-loop）**、diff 表、记录表、侧边栏、Prompt 输入条……20 个 React + Tailwind 单文件组件，**MIT**，2026-08-19 抓到本地 `beautiful-ui/src/`。
+
+- **索引（先读）**：[`beautiful-ui/README.md`](beautiful-ui/README.md) —— 按场景列 20 个、行数、外部依赖、跟 thinking-orbs / aicss 怎么分工
+- **审批卡只有它有**：Harness `事件流对接.md` 的 `tool_approval_requested` 要落到界面，直接用 Approval Card
+- 几个组件引用了站上没公开的内部件（GlideMenu / Button / Shimmer / StreamText），索引里写了怎么换
 
 ---
 
