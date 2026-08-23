@@ -1,0 +1,15 @@
+# 脚本运行产物（clone-kit / extract-* / gen-refs 的输出，不入库）
+_clone-*/
+_refs-*/
+_ds-*/
+
+# 真实 API key（.env.example 是空模板，保留；真实 .env 不传）
+.env
+
+# Node 依赖
+node_modules/
+
+# aicss.dev 爬取产物：作者仅授权"在产品里用"，无再分发授权，不入公开仓库。
+# 需要时现场取：cd 参考资料/agent相关 && node fetch-aicss.cjs <slug>（零依赖，Node 18+）
+# 整套落盘：node fetch-aicss.cjs --all --out aicss-dev
+参考资料/agent相关/aicss-dev/
