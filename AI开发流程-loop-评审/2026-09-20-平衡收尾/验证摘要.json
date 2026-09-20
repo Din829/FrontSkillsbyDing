@@ -1,0 +1,38 @@
+{
+  "scope": "isolated examples and document review, not a production success rate",
+  "reviewed_base_commit": "0bc98dba0bef2c7678e538316afd53e347f44494",
+  "reviewed_rule_sha256": {
+    "README.md": "dd5631007ad0dd9e5b3a24466116cd549cca3f1dc0c0485f5446a5f983fe53a9",
+    "入口.md": "102471643e992239a99ed123c3428c3d49f4ea0b419438bfb0fdc6b0f506e6c1",
+    "实现loop.md": "1f7854e444b9a110522d86b00af030c7d06583ceb7b863f91e1a429ca865921b",
+    "成果物与证据.md": "e833065cd5ca99697b8dc0c8d24c1300926aa4286ff8e028cd4c9208aea3381b",
+    "方案.md": "5863990fdfceaab995fc16ed402146fd34f7599c214baad76124e828280a26fb",
+    "方案设计loop.md": "ba2508e481c3a586f73c6cef50538551d1b627574d12b0c3309c59efb9923006",
+    "scripts\\README.md": "f5b19b2ab680e418a72a42951810d55a7a6f0a23a580e68eb46a4965e3e8797b"
+  },
+  "resume_external_cases": {
+    "before_matched": 8,
+    "after_matched": 14,
+    "total": 14
+  },
+  "new_module_external_cases": {
+    "matched": 27,
+    "total": 27
+  },
+  "batch": {
+    "status": {
+      "A": "blocked",
+      "B": "complete",
+      "C": "complete"
+    },
+    "values": {
+      "B": 1005,
+      "C": -29
+    },
+    "blocked_ledger_preserved": true
+  },
+  "independent_review": "独立评审.md",
+  "dedicated_reviewai_used": false,
+  "raw_evidence_archive": "复现包.zip",
+  "archive_sha256": "609419ccf43fff0adf9a38d3260da13c023f9d56f3c5022458835f804dce6ca4"
+}
