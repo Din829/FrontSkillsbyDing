@@ -1,0 +1,18 @@
+{
+  "run_id": "review-behavior",
+  "command": [
+    "python",
+    "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\audit\\review_behavior_review\\review_results.py"
+  ],
+  "started_at": "2026-09-25T13:36:12.829274+00:00",
+  "exit_code": 0,
+  "finished_at": "2026-09-25T13:36:12.936316+00:00",
+  "stdout": {
+    "path": "results/stdout.log",
+    "sha256": "93144a3eb1212fd00ac4c9ffcb67c6ecfe0c8f9c56d3e12da454cca130f05508"
+  },
+  "stderr": {
+    "path": "results/stderr.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

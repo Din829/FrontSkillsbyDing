@@ -1,0 +1,38 @@
+{
+  "method": "Independent combinatorial expectation for uniform random permutations; no pass threshold. Inspect q01 raw ranks directly.",
+  "uniform_random_exact_expectation": {
+    "hit1": 0.05059523809523809,
+    "hit3": 0.14799195369847545,
+    "mrr": 0.17339496961941273
+  },
+  "empirical_200_draw_mean": {
+    "hit1": 0.04607142857142857,
+    "hit3": 0.14875,
+    "mrr": 0.17282978321407294
+  },
+  "q01_relevant_paths": [
+    "advancedtoolsuse/claude-advanced-tool-use.md"
+  ],
+  "q01_inspection": {
+    "oracle": {
+      "first_document": "advancedtoolsuse/claude-advanced-tool-use.md",
+      "first_relevant_rank": 1,
+      "mrr": 1.0
+    },
+    "known_bad": {
+      "first_document": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+      "first_relevant_rank": 24,
+      "mrr": 0.041666666666666664
+    },
+    "body": {
+      "first_document": "ClaudeChorme/claude-in-chrome-article copy.md",
+      "first_relevant_rank": 2,
+      "mrr": 0.5
+    },
+    "body_metadata": {
+      "first_document": "advancedtoolsuse/claude-advanced-tool-use.md",
+      "first_relevant_rank": 1,
+      "mrr": 1.0
+    }
+  }
+}

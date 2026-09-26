@@ -1,0 +1,28 @@
+{
+  "run_id": "same-number-other-run",
+  "status": "blocked",
+  "issues": [
+    {
+      "id": "source_run_mismatch:4f2c1ecb05994215",
+      "code": "source_run_mismatch",
+      "category": "numeric_mismatch",
+      "severity": "fatal",
+      "location": {
+        "document": "article.md",
+        "claim_id": "count-result",
+        "ref": {
+          "path": "results/metrics.json",
+          "pointer": "/metrics/correct"
+        }
+      },
+      "detail": "Metric belongs to a different run"
+    }
+  ],
+  "ruler": {
+    "path": "results/ruler.json",
+    "recorded_status": "passed"
+  },
+  "checked_measurements": 0,
+  "policy_sha256": "237ab084566cceb293ae5902e53ada13726db61c17d609a2a4c9ee7dd231796d",
+  "scope": "Declared-number bookkeeping only; scientific validity and claim completeness require semantic review."
+}

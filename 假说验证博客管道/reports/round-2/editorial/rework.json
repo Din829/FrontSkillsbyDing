@@ -1,0 +1,23 @@
+{
+  "recorded_at": "2026-09-25T21:26:23.372050+00:00",
+  "scope": "Requested round-two editorial revision of the two existing studies; no new model experiment.",
+  "requested_editorial_round": 2,
+  "initial_generation": "Drafts, charts, snippets and binding generated as planned; initial real code/ranking checks passed.",
+  "self_review_repairs": [
+    {
+      "round": 1,
+      "issues": [
+        "retrieval-natural-japanese-wording",
+        "review-posthoc-claim-evidence-level"
+      ],
+      "changes": [
+        "Replace ???? with ?????.",
+        "Classify first-paragraph post-hoc reasonable-answer judgment as read."
+      ],
+      "verification": "Reran actual snippet/output and source-invariance checks, refreshed draft bindings. All passed."
+    }
+  ],
+  "gate_repairs": 0,
+  "gate_checks_by_author": 0,
+  "unresolved": "Final gate and publication decisions belong to parent orchestrator; no publication performed."
+}

@@ -1,0 +1,462 @@
+{
+  "run_id": "review-behavior",
+  "draft_sha256": "b710da80eed124976fe4eed0a39d1fe209170669c128cc1fce87c6050d06cba0",
+  "claims": [
+    {
+      "id": "c1",
+      "text": "# 给 AI 加审查规则，先查评分器有没有误伤\n\n结论：本批封闭材料没有观察到完整 skills 相对通用提示的额外优势。更明确的发现是评分器把合理附加标签判成错误。",
+      "level": "inferred",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/snapshots/semantic-review.md",
+          "sha256": "dff8eda8fb88b3d6f990f437e663ae66847ea8b21c109c3f9a18be1c4f3084e0"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "text": "课题：验证证据规则是否帮助 AI 发现实验问题，同时允许可靠负面结果和局部复现笔记通过。为什么这样做：把模型判断、自动计分和独立语义审查分开，防止把评分器缺陷误写成模型能力问题。",
+      "level": "read",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/snapshots/DESIGN.md",
+          "sha256": "0904531d26f5c230fceeda05b498870ab5053e1ef942cc20a461fe0e7c5fa104"
+        },
+        {
+          "path": "results/snapshots/semantic-review.md",
+          "sha256": "dff8eda8fb88b3d6f990f437e663ae66847ea8b21c109c3f9a18be1c4f3084e0"
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "text": "原研究是 12 类短情境、每条件 2 次，共 48 个真实独立会话。材料是人工编写的情境，不是让模型核验真实实验附件。",
+      "level": "measured",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/original-accounting.json",
+          "sha256": "cffc119d57c891ab475eea689c565ee42d57e42d3b190e7780e470706ad25f65"
+        },
+        {
+          "path": "results/snapshots/cases.json",
+          "sha256": "54b831539583a70d0f031593e2869c60063a36c2c95c4daff298efe3710c3935"
+        }
+      ]
+    },
+    {
+      "id": "c4",
+      "text": "| 原批次指标 | 通用提示 | 增加规则 |\n|---|---:|---:|\n| 原始自动主指标 | 22/24 | 22/24 |\n| 核心处置正确 | 24/24 | 24/24 |\n| 事后语义可接受 | 24/24 | 24/24 |",
+      "level": "read",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/snapshots/semantic-review.json",
+          "sha256": "a766b9e311cfc564f474b37829cc777112557a81a0fc8262c1c218de3dd0881a"
+        }
+      ]
+    },
+    {
+      "id": "c5",
+      "text": "原始得分不改。语义复核是独立 AI 的非盲事后判断，不是重新预注册的主指标。全部失分都已指出必需问题，只因增加了有理由支持的标签而失分。",
+      "level": "inferred",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/snapshots/semantic-review.json",
+          "sha256": "a766b9e311cfc564f474b37829cc777112557a81a0fc8262c1c218de3dd0881a"
+        }
+      ]
+    },
+    {
+      "id": "c6",
+      "text": "例如，材料中基线尝试 1 次，候选尝试 8 次并择优；回答指出不公平对照，还指出选择问题。白名单只接受不公平对照，反而把更完整的理由判错。另一个情境把供应商文档宣称支持跳到当前环境已经实测，范围越界标签也被误扣分。",
+      "level": "read",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/snapshots/cases.json",
+          "sha256": "54b831539583a70d0f031593e2869c60063a36c2c95c4daff298efe3710c3935"
+        },
+        {
+          "path": "results/snapshots/semantic-review.md",
+          "sha256": "dff8eda8fb88b3d6f990f437e663ae66847ea8b21c109c3f9a18be1c4f3084e0"
+        }
+      ]
+    },
+    {
+      "id": "c7",
+      "text": "协议修正补测明确请求 gpt-6-astra 并保存运行配置。同一题集新增 24 个会话，两组原始得分各 11/12；关键处置均正确，失分仍来自合理附加标签。此补测单列，不与原研究合并成新的独立题集。",
+      "level": "measured",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/supplement-review.json",
+          "sha256": "a6afe0e82079124a961c51d991273019e734e98b4e1b2355f837cf36777320ca"
+        }
+      ]
+    },
+    {
+      "id": "c8",
+      "text": "预期效果：团队评估 AI 时先读错判理由，再决定要改模型、规则还是评分器；这里尚未测到生产效率、整体可靠率或点赞改善。",
+      "level": "inferred",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        }
+      ]
+    },
+    {
+      "id": "c9",
+      "text": "局限：题目少而直白，COMMON 已给很多引导，参考答案与模型共享问题标签；每种情境的重复不足以估计稳定概率。原批次没有显式冻结模型名称，完整系统上下文两批都未冻结。没有检验实际附件真实性，也没有发布后读者数据。",
+      "level": "inferred",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/snapshots/semantic-review.md",
+          "sha256": "dff8eda8fb88b3d6f990f437e663ae66847ea8b21c109c3f9a18be1c4f3084e0"
+        },
+        {
+          "path": "results/supplement-review.json",
+          "sha256": "a6afe0e82079124a961c51d991273019e734e98b4e1b2355f837cf36777320ca"
+        }
+      ]
+    },
+    {
+      "id": "c10",
+      "text": "后续若研究 skills 的增益，应预先定义合理附加问题的审查方法，再用独立作者的新题检验，不能拿本题集反复调到满分。当前日语稿可作为评测踩坑经验草稿，发布授权与链接仍需另行处理。",
+      "level": "inferred",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        }
+      ]
+    }
+  ],
+  "numbers": [
+    {
+      "index": 0,
+      "token": "12",
+      "kind": "measurement",
+      "claim_id": "c3",
+      "unit": "cases",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_cases",
+        "unit": "cases"
+      }
+    },
+    {
+      "index": 1,
+      "token": "2",
+      "kind": "measurement",
+      "claim_id": "c3",
+      "unit": "repeats",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_repeats",
+        "unit": "repeats"
+      }
+    },
+    {
+      "index": 2,
+      "token": "48",
+      "kind": "measurement",
+      "claim_id": "c3",
+      "unit": "sessions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_sessions",
+        "unit": "sessions"
+      }
+    },
+    {
+      "index": 3,
+      "token": "22",
+      "kind": "measurement",
+      "claim_id": "c4",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_generic_primary",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 4,
+      "token": "24",
+      "kind": "measurement",
+      "claim_id": "c4",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_generic_n",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 5,
+      "token": "22",
+      "kind": "measurement",
+      "claim_id": "c4",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_skills_primary",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 6,
+      "token": "24",
+      "kind": "measurement",
+      "claim_id": "c4",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_skills_n",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 7,
+      "token": "24",
+      "kind": "measurement",
+      "claim_id": "c4",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_generic_decision",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 8,
+      "token": "24",
+      "kind": "measurement",
+      "claim_id": "c4",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_generic_n",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 9,
+      "token": "24",
+      "kind": "measurement",
+      "claim_id": "c4",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_skills_decision",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 10,
+      "token": "24",
+      "kind": "measurement",
+      "claim_id": "c4",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_skills_n",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 11,
+      "token": "24",
+      "kind": "measurement",
+      "claim_id": "c4",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_generic_semantic",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 12,
+      "token": "24",
+      "kind": "measurement",
+      "claim_id": "c4",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_generic_n",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 13,
+      "token": "24",
+      "kind": "measurement",
+      "claim_id": "c4",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_skills_semantic",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 14,
+      "token": "24",
+      "kind": "measurement",
+      "claim_id": "c4",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_skills_n",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 15,
+      "token": "1",
+      "kind": "measurement",
+      "claim_id": "c6",
+      "unit": "attempts",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/fixture_baseline_attempts",
+        "unit": "attempts"
+      }
+    },
+    {
+      "index": 16,
+      "token": "8",
+      "kind": "measurement",
+      "claim_id": "c6",
+      "unit": "attempts",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/fixture_candidate_attempts",
+        "unit": "attempts"
+      }
+    },
+    {
+      "index": 17,
+      "token": "-6",
+      "kind": "version",
+      "reason": "补测请求模型名称"
+    },
+    {
+      "index": 18,
+      "token": "24",
+      "kind": "measurement",
+      "claim_id": "c7",
+      "unit": "sessions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/supplement_sessions",
+        "unit": "sessions"
+      }
+    },
+    {
+      "index": 19,
+      "token": "11",
+      "kind": "measurement",
+      "claim_id": "c7",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/supplement_generic_primary",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 20,
+      "token": "12",
+      "kind": "measurement",
+      "claim_id": "c7",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/supplement_generic_n",
+        "unit": "answers"
+      }
+    }
+  ]
+}

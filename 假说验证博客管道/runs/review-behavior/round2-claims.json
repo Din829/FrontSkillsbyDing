@@ -1,0 +1,344 @@
+{
+  "run_id": "review-behavior",
+  "draft_sha256": "90cac9d8386d9d75583c76d161472339c98f2bac8ee19fc2d36976043e430bdd",
+  "claims": [
+    {
+      "id": "round2-0",
+      "text": "AI のレビューが不正解になったとき、直すべきなのはモデルとは限りません。今回の比較では、自動採点が落とした 4 件を読み直すと、どれも材料に沿った追加指摘を含んでいました。足りなかったのは、採点側の許容範囲でした。",
+      "level": "read",
+      "scope": "Frozen original experiment and its disclosed post-hoc interpretation; no new model run or causal engagement claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        }
+      ]
+    },
+    {
+      "id": "round2-1",
+      "text": "もともとの問いは、証拠確認のルールを追加すると AI が実験報告の問題を見つけやすくなるか、です。自動採点は通常の依頼もルール追加も 22/24。今回の題材では、ルールを追加した側の優位は確認できませんでした。",
+      "level": "measured",
+      "scope": "Frozen original experiment and its disclosed post-hoc interpretation; no new model run or causal engagement claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        }
+      ]
+    },
+    {
+      "id": "round2-2",
+      "text": "原実験は 12 種類の短いシナリオを各条件で 2 回ずつ、合計 48 会話でレビューさせたものです。通常の依頼にも、報告してよい結論かを判断する指示と、問題タグの出力形式を渡しています。追加ルール側は、その同じ材料に実験レビューと証拠確認の skill 本文を加えました。",
+      "level": "measured",
+      "scope": "Frozen original experiment and its disclosed post-hoc interpretation; no new model run or causal engagement claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        }
+      ]
+    },
+    {
+      "id": "round2-3",
+      "text": "図の左は元の自動採点です。中央は報告可否の判断、右は別の AI が理由と次の行動を読んだ事後の確認です。報告可否は両条件とも 24/24、事後確認でも両条件の 24/24 が妥当と判断されました。右の評価で左の点数を上書きしたわけではありません。",
+      "level": "read",
+      "scope": "Frozen original experiment and its disclosed post-hoc interpretation; no new model run or causal engagement claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        }
+      ]
+    },
+    {
+      "id": "round2-4",
+      "text": "あるシナリオでは、基準の方法は各問を 1 回だけ試し、候補の方法は 8 回試して最良の結果を採用していました。それなのに、著者は同じ予算で信頼性が上がったと主張しています。",
+      "level": "read",
+      "scope": "Frozen original experiment and its disclosed post-hoc interpretation; no new model run or causal engagement claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        }
+      ]
+    },
+    {
+      "id": "round2-5",
+      "text": "原実験はモデル名を明示せず、CLI の設定に依存していました。後から gpt-6-astra を明示した同題の追加確認も行い、24 会話で両条件の自動得点はそれぞれ 11/12 でした。これは設定記録を補った追加確認であり、原実験のモデルを事後に確定したものでも、新しい独立題集でもありません。両方とも完全なシステム側の文脈は固定していません。",
+      "level": "measured",
+      "scope": "Frozen original experiment and its disclosed post-hoc interpretation; no new model run or causal engagement claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        }
+      ]
+    }
+  ],
+  "numbers": [
+    {
+      "index": 0,
+      "token": "4",
+      "kind": "measurement",
+      "claim_id": "round2-0",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/false_red",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 1,
+      "token": "22",
+      "kind": "measurement",
+      "claim_id": "round2-1",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_generic_primary",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 2,
+      "token": "24",
+      "kind": "measurement",
+      "claim_id": "round2-1",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_generic_n",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 4,
+      "token": "12",
+      "kind": "measurement",
+      "claim_id": "round2-2",
+      "unit": "cases",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_cases",
+        "unit": "cases"
+      }
+    },
+    {
+      "index": 5,
+      "token": "2",
+      "kind": "measurement",
+      "claim_id": "round2-2",
+      "unit": "repeats",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_repeats",
+        "unit": "repeats"
+      }
+    },
+    {
+      "index": 6,
+      "token": "48",
+      "kind": "measurement",
+      "claim_id": "round2-2",
+      "unit": "sessions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_sessions",
+        "unit": "sessions"
+      }
+    },
+    {
+      "index": 7,
+      "token": "24",
+      "kind": "measurement",
+      "claim_id": "round2-3",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_generic_decision",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 8,
+      "token": "24",
+      "kind": "measurement",
+      "claim_id": "round2-3",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_generic_n",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 9,
+      "token": "24",
+      "kind": "measurement",
+      "claim_id": "round2-3",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_generic_semantic",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 10,
+      "token": "24",
+      "kind": "measurement",
+      "claim_id": "round2-3",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_generic_n",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 11,
+      "token": "1",
+      "kind": "measurement",
+      "claim_id": "round2-4",
+      "unit": "attempts",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/fixture_baseline_attempts",
+        "unit": "attempts"
+      }
+    },
+    {
+      "index": 12,
+      "token": "8",
+      "kind": "measurement",
+      "claim_id": "round2-4",
+      "unit": "attempts",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/fixture_candidate_attempts",
+        "unit": "attempts"
+      }
+    },
+    {
+      "index": 19,
+      "token": "24",
+      "kind": "measurement",
+      "claim_id": "round2-5",
+      "unit": "sessions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/supplement_sessions",
+        "unit": "sessions"
+      }
+    },
+    {
+      "index": 20,
+      "token": "11",
+      "kind": "measurement",
+      "claim_id": "round2-5",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/supplement_generic_primary",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 21,
+      "token": "12",
+      "kind": "measurement",
+      "claim_id": "round2-5",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/supplement_generic_n",
+        "unit": "answers"
+      }
+    }
+  ],
+  "compound_claim_checks": [
+    {
+      "statement": "Both conditions have the stated value",
+      "pointers": [
+        "/metrics/original_generic_primary",
+        "/metrics/original_skills_primary"
+      ],
+      "verified_equal": true
+    },
+    {
+      "statement": "Both conditions have the stated value",
+      "pointers": [
+        "/metrics/original_generic_n",
+        "/metrics/original_skills_n"
+      ],
+      "verified_equal": true
+    },
+    {
+      "statement": "Both conditions have the stated value",
+      "pointers": [
+        "/metrics/original_generic_decision",
+        "/metrics/original_skills_decision"
+      ],
+      "verified_equal": true
+    },
+    {
+      "statement": "Both conditions have the stated value",
+      "pointers": [
+        "/metrics/original_generic_semantic",
+        "/metrics/original_skills_semantic"
+      ],
+      "verified_equal": true
+    },
+    {
+      "statement": "Both conditions have the stated value",
+      "pointers": [
+        "/metrics/supplement_generic_primary",
+        "/metrics/supplement_skills_primary"
+      ],
+      "verified_equal": true
+    },
+    {
+      "statement": "Both conditions have the stated value",
+      "pointers": [
+        "/metrics/supplement_generic_n",
+        "/metrics/supplement_skills_n"
+      ],
+      "verified_equal": true
+    }
+  ],
+  "non_numeric_boundaries": [
+    "No additional experiment is claimed. Retrieval expanded calibration occurred after the original experiment. Semantic review was post-hoc and non-blind."
+  ],
+  "author_validation": "Scanned and semantically bound only; final gate is owned by the pipeline orchestrator."
+}

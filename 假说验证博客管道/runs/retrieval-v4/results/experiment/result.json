@@ -1,0 +1,6073 @@
+{
+  "documents": 24,
+  "questions": 28,
+  "metadata_weight": 2,
+  "summary": {
+    "body": {
+      "hit1": 0.6071428571428571,
+      "hit3": 0.8214285714285714,
+      "mrr": 0.716598313966735
+    },
+    "body_metadata": {
+      "hit1": 0.7857142857142857,
+      "hit3": 0.8214285714285714,
+      "mrr": 0.8290983139667351
+    }
+  },
+  "rows": [
+    {
+      "id": "q01",
+      "query": "Anthropic の advanced tool use にある三つの機能をまとめて知りたい。",
+      "kind": "topic_ja",
+      "relevant_paths": [
+        "advancedtoolsuse/claude-advanced-tool-use.md"
+      ],
+      "body": {
+        "hit1": 0,
+        "hit3": 1,
+        "mrr": 0.5,
+        "first_relevant_rank": 2,
+        "ranking": [
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 14.90666937620707
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 14.667195424405987
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 12.630641912305498
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 12.1200391947903
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 10.655389258779083
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 9.385498833513873
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 8.402519634762886
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 6.60771938022709
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 6.584663636588576
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 6.564733563369247
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 6.244604696355555
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 6.196404135182128
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 6.122037370227205
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 5.8990914838540816
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 5.796626974588976
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 5.450951620017889
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 5.2250989948458315
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 4.93353121454202
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 4.805132892265023
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 3.6692505796860653
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 2.595281588182879
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 2.0214483006319552
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 1.4459410984513927
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 0.0
+          }
+        ]
+      },
+      "body_metadata": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 45.0694663803221
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 29.693536027287692
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 27.065854284443297
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 17.767329866813306
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 15.670599186302704
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 14.002357782991742
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 13.662998986754822
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 12.371524640511991
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 12.062651792180041
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 11.889454028094558
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 9.937209116200568
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 9.744950830420644
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 9.603510363316685
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 9.365042236579415
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 8.49938816367931
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 8.280868945102155
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 7.692449666174265
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 6.8965491732662
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 6.640951432976722
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 5.339793463823
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 2.595281588182879
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 2.0214483006319552
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 1.4459410984513927
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "q02",
+      "query": "Which field supplies concrete tool-call examples beyond a JSON Schema?",
+      "kind": "detail_en",
+      "relevant_paths": [
+        "advancedtoolsuse/claude-advanced-tool-use.md"
+      ],
+      "body": {
+        "hit1": 0,
+        "hit3": 1,
+        "mrr": 0.5,
+        "first_relevant_rank": 2,
+        "ranking": [
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 11.372251548235168
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 10.133076807684573
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 7.324282450323302
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 5.974077031395526
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 4.784478318007221
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 3.7256076436859753
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 3.3096840555512594
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 3.296429693484202
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 2.6630967961348726
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 2.5880461121196743
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 2.08351477600676
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 1.5373103502060357
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 1.4620456177470984
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 1.4397992583604102
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 1.3026747098211382
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 0.7296160770265783
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 0.5787614555023347
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 0.4949180355502989
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 0.47907734242310757
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 0.3923194849996693
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 0.3838741346890031
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 0.3695401915622111
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 0.0
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 0.0
+          }
+        ]
+      },
+      "body_metadata": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 29.53047060707363
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 18.629770448150186
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 7.324282450323302
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 5.974077031395526
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 4.784478318007221
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 3.7256076436859753
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 3.3096840555512594
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 3.296429693484202
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 2.6630967961348726
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 2.5880461121196743
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 2.08351477600676
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 1.5373103502060357
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 1.4620456177470984
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 1.4397992583604102
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 1.3026747098211382
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 0.7296160770265783
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 0.5787614555023347
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 0.4949180355502989
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 0.47907734242310757
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 0.3923194849996693
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 0.3838741346890031
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 0.3695401915622111
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 0.0
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "q03",
+      "query": "Claude Code 为什么尝试 RAG 后改用 Agentic Search？",
+      "kind": "topic_zh",
+      "relevant_paths": [
+        "agentic-search/article.md"
+      ],
+      "body": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "agentic-search/article.md",
+            "score": 11.3448743316099
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 9.539937696354638
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 9.175275260686309
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 7.484985274116029
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 7.458172013442748
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 7.259319680621995
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 7.043940195530276
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 3.7370571789451197
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 3.049669662184259
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 2.9575286436801766
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 2.2519841875832585
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 1.9071879788870385
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 1.6615136507020596
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 1.6590666062985227
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 1.650994218337377
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 1.5689885664174001
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 1.381658995418828
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 1.3567583892654518
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 0.8872496641156058
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 0.8691948875498933
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 0.6934346575561816
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 0.6593875988940858
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 0.34744458339117934
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 0.0
+          }
+        ]
+      },
+      "body_metadata": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "agentic-search/article.md",
+            "score": 45.32010908776463
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 20.889924783142472
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 15.460890089575921
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 11.071910914424667
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 10.996987495900076
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 10.420495164218913
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 9.539937696354638
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 9.175275260686309
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 7.484985274116029
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 7.458172013442748
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 6.953056566509513
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 6.112417859459748
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 5.531824797499388
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 2.9575286436801766
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 1.9071879788870385
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 1.6615136507020596
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 1.5689885664174001
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 1.3567583892654518
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 0.8872496641156058
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 0.8691948875498933
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 0.6934346575561816
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 0.6593875988940858
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 0.34744458339117934
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "q04",
+      "query": "Boris 氏が以前の開発環境で関数定義を探していた検索文字列は何ですか。",
+      "kind": "detail_ja",
+      "relevant_paths": [
+        "agentic-search/article.md"
+      ],
+      "body": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "agentic-search/article.md",
+            "score": 33.743256390416306
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 20.325240485816106
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 18.208343941441395
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 16.856903025695182
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 13.935679516812057
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 12.577187401338719
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 11.491901473737782
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 10.20414699400295
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 10.052190857044355
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 9.61528014590993
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 9.477071964556277
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 9.008830583696941
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 8.290889272291727
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 8.176957321031987
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 6.923425627748675
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 5.919588579226451
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 5.739365082628426
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 3.5903118705579073
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 2.346951051489903
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 1.9641793365920746
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 0.0
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 0.0
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 0.0
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 0.0
+          }
+        ]
+      },
+      "body_metadata": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "agentic-search/article.md",
+            "score": 36.9839672790856
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 31.40408920981455
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 24.811090382409443
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 20.44283380204112
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 18.208343941441395
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 17.058692483621332
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 16.856903025695182
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 16.767226793743205
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 13.935679516812057
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 12.696594542911082
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 12.412854312777496
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 12.20559709037186
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 11.491901473737782
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 10.097083860027334
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 9.477071964556277
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 5.919588579226451
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 5.739365082628426
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 3.5903118705579073
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 2.346951051489903
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 1.9641793365920746
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 0.0
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 0.0
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 0.0
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "q05",
+      "query": "How does the Handle design pattern keep large tool results out of an agent's context?",
+      "kind": "topic_en",
+      "relevant_paths": [
+        "handletools/handle-system-design.md"
+      ],
+      "body": {
+        "hit1": 0,
+        "hit3": 1,
+        "mrr": 0.3333333333333333,
+        "first_relevant_rank": 3,
+        "ranking": [
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 14.850746470878303
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 13.982127628940267
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 13.336935012657095
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 9.643699474069688
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 9.32799630860255
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 7.470677551400592
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 7.389886419375486
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 7.049287213281228
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 5.483726627812816
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 5.381171860291996
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 4.887330497721465
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 4.613828282448408
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 4.573337100294646
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 4.449304306991396
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 2.73317884914772
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 2.361226036249438
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 1.9183477590967517
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 1.844807958508772
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 1.760479356196396
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 1.0779579674749862
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 0.9535996444958059
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 0.4794624660283092
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 0.0
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 0.0
+          }
+        ]
+      },
+      "body_metadata": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 30.857653609486384
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 30.817331272736368
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 19.145058946873682
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 14.850746470878303
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 14.248547496186358
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 12.204656197243374
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 11.527961970249942
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 10.397671093583899
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 10.286333679352973
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 9.736396911166329
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 8.134226372790827
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 5.381171860291996
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 4.887330497721465
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 4.613828282448408
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 4.573337100294646
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 4.449304306991396
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 2.73317884914772
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 1.9183477590967517
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 1.760479356196396
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 1.0779579674749862
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 0.9535996444958059
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 0.4794624660283092
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 0.0
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "q06",
+      "query": "DataHandle 的有效期 scope 有哪几种取值？",
+      "kind": "detail_zh",
+      "relevant_paths": [
+        "handletools/handle-system-design.md"
+      ],
+      "body": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 6.480436866737639
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 4.951173077568421
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 3.1403577531161435
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 2.481072867173854
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 2.2061691375909906
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 1.106221958258875
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 0.0
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 0.0
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 0.0
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 0.0
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 0.0
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 0.0
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 0.0
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 0.0
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 0.0
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 0.0
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 0.0
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 0.0
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 0.0
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 0.0
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 0.0
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 0.0
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 0.0
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 0.0
+          }
+        ]
+      },
+      "body_metadata": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 6.480436866737639
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 4.951173077568421
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 3.1403577531161435
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 2.481072867173854
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 2.2061691375909906
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 1.106221958258875
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 0.0
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 0.0
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 0.0
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 0.0
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 0.0
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 0.0
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 0.0
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 0.0
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 0.0
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 0.0
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 0.0
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 0.0
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 0.0
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 0.0
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 0.0
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 0.0
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 0.0
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "q07",
+      "query": "LSP を使うとコーディング Agent のコード理解とトークン消費はどう変わりますか。",
+      "kind": "topic_ja",
+      "relevant_paths": [
+        "LSP/lsp_ai_agent_blog.md"
+      ],
+      "body": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 43.79978506850143
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 23.91725049417369
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 23.07761722350584
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 19.00201854743251
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 17.944868009146614
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 17.368276816180046
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 15.960424149934376
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 14.920889880987769
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 14.696075968808003
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 14.14631313340632
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 13.933267042776631
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 13.45869222449297
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 13.203536393796004
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 12.844889925090456
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 10.644370973842738
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 9.812493999670078
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 9.375498327363502
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 9.289620851129987
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 7.958784005004466
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 1.5913518776445783
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 1.005744958614319
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 0.7097547944338
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 0.6071512966845195
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 0.0
+          }
+        ]
+      },
+      "body_metadata": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 59.282287821317816
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 48.433146081941516
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 31.862157203937365
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 26.924761318983116
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 26.467307476153053
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 26.35137248818333
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 23.91725049417369
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 23.07761722350584
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 22.904447237688323
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 20.264724076157535
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 19.00201854743251
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 17.944868009146614
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 17.122970932298426
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 15.960424149934376
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 14.920889880987769
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 13.933267042776631
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 13.203536393796004
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 9.375498327363502
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 7.958784005004466
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 4.921906328432179
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 3.7913175392919705
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 0.7097547944338
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 0.6071512966845195
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "q08",
+      "query": "语言服务器和编辑器之间使用什么消息协议？",
+      "kind": "detail_zh",
+      "relevant_paths": [
+        "LSP/lsp_ai_agent_blog.md"
+      ],
+      "body": {
+        "hit1": 0,
+        "hit3": 0,
+        "mrr": 0.05263157894736842,
+        "first_relevant_rank": 19,
+        "ranking": [
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 29.895399900845028
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 17.59854752705767
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 12.414073765210496
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 12.406963012804622
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 3.1560579632270387
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 1.383616619621689
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 1.2107219197420838
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 1.208528527685009
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 1.0963616496487418
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 1.0250454522852261
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 1.000533756336821
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 0.7046162252994369
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 0.5069925374817833
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 0.0
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 0.0
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 0.0
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 0.0
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 0.0
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 0.0
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 0.0
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 0.0
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 0.0
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 0.0
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 0.0
+          }
+        ]
+      },
+      "body_metadata": {
+        "hit1": 0,
+        "hit3": 0,
+        "mrr": 0.05263157894736842,
+        "first_relevant_rank": 19,
+        "ranking": [
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 34.48490820431288
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 33.131743469767166
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 17.59854752705767
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 12.414073765210496
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 5.500647035481597
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 5.158679295469239
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 3.3245587314856087
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 3.1560579632270387
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 1.208528527685009
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 1.0963616496487418
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 1.0250454522852261
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 0.7046162252994369
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 0.5069925374817833
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 0.0
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 0.0
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 0.0
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 0.0
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 0.0
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 0.0
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 0.0
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 0.0
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 0.0
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 0.0
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "q09",
+      "query": "如何把 Claude Skills 的设计理念接入已有 Agent 工具系统？",
+      "kind": "topic_zh",
+      "relevant_paths": [
+        "Skills/claude-skills-integration.md"
+      ],
+      "body": {
+        "hit1": 0,
+        "hit3": 0,
+        "mrr": 0.2,
+        "first_relevant_rank": 5,
+        "ranking": [
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 27.28010839336132
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 18.31864873736676
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 14.27489052665321
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 11.697820241964733
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 7.190480072192698
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 5.009285976322014
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 4.141595448587115
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 1.6564659949792857
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 1.4573559161179026
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 1.4390764962780918
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 1.264317946057644
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 1.2062309750932494
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 1.092398579632175
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 0.9535996444958059
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 0.904646758496342
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 0.8417111575596627
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 0.8269070494194886
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 0.7290130313346741
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 0.7051563963397088
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 0.6979882134833406
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 0.6593875988940858
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 0.6267118342603121
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 0.372798962264289
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 0.0
+          }
+        ]
+      },
+      "body_metadata": {
+        "hit1": 0,
+        "hit3": 0,
+        "mrr": 0.25,
+        "first_relevant_rank": 4,
+        "ranking": [
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 45.84421487432472
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 32.45814006355242
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 29.18755257736388
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 25.246351101424274
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 24.215397569687507
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 12.281677114222834
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 7.669926268037955
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 5.56754942403235
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 5.434429164248053
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 5.199008810043946
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 5.0252054926850285
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 3.698678524001382
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 3.629959036453738
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 2.6385183220300266
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 1.264317946057644
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 1.092398579632175
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 0.9535996444958059
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 0.904646758496342
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 0.8417111575596627
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 0.8269070494194886
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 0.7051563963397088
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 0.6593875988940858
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 0.6267118342603121
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "q10",
+      "query": "What is the difference between model-invoked Skills and user-invoked slash commands?",
+      "kind": "detail_en",
+      "relevant_paths": [
+        "Skills/claude-skills-integration.md"
+      ],
+      "body": {
+        "hit1": 0,
+        "hit3": 1,
+        "mrr": 0.5,
+        "first_relevant_rank": 2,
+        "ranking": [
+          {
+            "path": "agentic-search/article.md",
+            "score": 16.837530146319857
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 13.46619562129885
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 13.211857610456246
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 8.538400264407962
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 7.421809372974921
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 5.481425867197501
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 2.5586347257450788
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 2.556961503302448
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 2.435460147615608
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 2.3113839944298684
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 2.2617208263781623
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 1.659361313831339
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 1.3147513397860215
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 1.3079229580391216
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 1.2720429943198615
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 1.1476933182764717
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 1.0813194875724195
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 1.0430264347816753
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 0.6522521104563942
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 0.0
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 0.0
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 0.0
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 0.0
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 0.0
+          }
+        ]
+      },
+      "body_metadata": {
+        "hit1": 0,
+        "hit3": 1,
+        "mrr": 0.5,
+        "first_relevant_rank": 2,
+        "ranking": [
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 28.180655477530266
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 24.140808041511495
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 16.837530146319857
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 9.079722724732997
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 8.538400264407962
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 7.421809372974921
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 5.481425867197501
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 2.5586347257450788
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 2.556961503302448
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 2.435460147615608
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 2.2617208263781623
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 1.659361313831339
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 1.3147513397860215
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 1.3079229580391216
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 1.2720429943198615
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 1.1476933182764717
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 1.0813194875724195
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 1.0430264347816753
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 0.6522521104563942
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 0.0
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 0.0
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 0.0
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 0.0
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "q11",
+      "query": "Claude Code で用途別のカスタムサブエージェントを作って使う手順を探しています。",
+      "kind": "topic_ja",
+      "relevant_paths": [
+        "ClaudeCode-Subagent/article.md"
+      ],
+      "body": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 41.25460628866702
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 21.660104668542644
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 21.23486786173908
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 18.576574779879625
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 17.406675722581614
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 16.880246749817005
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 15.951097182471507
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 15.37948779000174
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 15.240016968798908
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 15.127060009691528
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 13.673028707764825
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 12.798066030933313
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 12.43700444603585
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 12.263823507875067
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 10.521783282923986
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 9.962845616797301
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 9.835600889777478
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 7.9458928697363085
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 7.647127999428505
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 2.5020064772924036
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 1.252776168055389
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 1.0032318273257042
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 0.6934346575561816
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 0.0
+          }
+        ]
+      },
+      "body_metadata": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 128.46293425322978
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 50.671582652807224
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 43.15089133145583
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 39.13494765005143
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 38.05140722342277
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 29.94194647724339
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 26.62248255103951
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 25.586919397759544
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 22.44252965364636
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 22.32128674922969
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 20.987515013151377
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 18.576574779879625
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 18.007089743894053
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 17.60138869856549
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 16.764221725237537
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 15.244418415180004
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 12.56676963134799
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 12.263823507875067
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 7.647127999428505
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 5.280746886949779
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 2.5020064772924036
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 1.0032318273257042
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 0.6934346575561816
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "q12",
+      "query": "Which command opens the interface for creating custom Claude Code subagents?",
+      "kind": "detail_en",
+      "relevant_paths": [
+        "ClaudeCode-Subagent/article.md"
+      ],
+      "body": {
+        "hit1": 0,
+        "hit3": 0,
+        "mrr": 0.06666666666666667,
+        "first_relevant_rank": 15,
+        "ranking": [
+          {
+            "path": "agentic-search/article.md",
+            "score": 8.201951365687401
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 8.099753202336831
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 6.146899508716752
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 4.865020084767432
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 4.39556744394914
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 4.213357831956604
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 3.972915357746838
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 3.7318239056430564
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 2.246773136058835
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 2.0060099974049375
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 1.9636908334135366
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 1.901391365707868
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 1.8230331709826966
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 1.7224317143571632
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 1.6590666062985227
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 1.650994218337377
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 1.5741896900335448
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 1.5689885664174001
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 1.2852092622113063
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 0.7590111104037123
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 0.7060973026743441
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 0.39618621633468143
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 0.0
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 0.0
+          }
+        ]
+      },
+      "body_metadata": {
+        "hit1": 0,
+        "hit3": 0,
+        "mrr": 0.16666666666666666,
+        "first_relevant_rank": 6,
+        "ranking": [
+          {
+            "path": "agentic-search/article.md",
+            "score": 17.49651123167989
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 10.420495164218913
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 10.174870227611141
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 9.669749548072978
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 8.099753202336831
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 6.953056566509513
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 6.937809196387738
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 6.553792035023616
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 6.290908112615224
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 4.865020084767432
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 4.39556744394914
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 4.213357831956604
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 3.972915357746838
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 3.7318239056430564
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 2.246773136058835
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 2.0060099974049375
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 1.5741896900335448
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 1.5689885664174001
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 1.2852092622113063
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 0.7590111104037123
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 0.7060973026743441
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 0.39618621633468143
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 0.0
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "q13",
+      "query": "传统固定 RAG 流程和 Agentic RAG 的根本差异是什么？",
+      "kind": "topic_zh",
+      "relevant_paths": [
+        "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+        "agentic-search/article.md",
+        "Agent精度/AI_Agent_正確率向上技術_2025.md",
+        "Agent精度/AI_Agent设计阶段提升准确率技术指南.md"
+      ],
+      "body": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 14.010409645035304
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 9.696187367486319
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 9.0925480312328
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 8.784986600595863
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 6.9960392740799175
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 6.493552971182192
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 5.281451650983147
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 4.08867048061057
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 3.0338558856449254
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 2.318277426076032
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 2.2519841875832585
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 1.2458109849003163
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 0.0
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 0.0
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 0.0
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 0.0
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 0.0
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 0.0
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 0.0
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 0.0
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 0.0
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 0.0
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 0.0
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 0.0
+          }
+        ]
+      },
+      "body_metadata": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 27.64101474755578
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 24.996873789744612
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 15.255216033848296
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 11.168850148461878
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 9.696187367486319
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 6.493552971182192
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 5.531824797499388
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 5.281451650983147
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 4.08867048061057
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 3.0338558856449254
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 2.318277426076032
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 1.2458109849003163
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 0.0
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 0.0
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 0.0
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 0.0
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 0.0
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 0.0
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 0.0
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 0.0
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 0.0
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 0.0
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 0.0
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "q14",
+      "query": "Agentic RAG の三層構造では、PlanningAgent と検索コンポーネントはどの層に置きますか。",
+      "kind": "detail_ja",
+      "relevant_paths": [
+        "Agentic RAG/なぜRAGはエージェント化するのか_2025.md"
+      ],
+      "body": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 37.29315033112465
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 24.67435049433776
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 22.479901268539336
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 17.592888510438204
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 15.465189616967763
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 13.976708003806193
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 12.880598513789764
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 12.814339954094219
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 10.653528277429093
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 9.57370614633101
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 9.217384765834
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 8.127919980586082
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 7.699168170393026
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 7.6300696065221345
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 6.655463138745783
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 6.261673471555687
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 4.648277074643984
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 4.108252682580372
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 3.7542070723269054
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 3.7418877284656844
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 0.0
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 0.0
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 0.0
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 0.0
+          }
+        ]
+      },
+      "body_metadata": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 65.6949148277065
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 40.88623768348651
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 24.890988689015618
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 19.935319220578535
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 18.16674739621068
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 17.592888510438204
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 17.495368310780677
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 14.981849985103999
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 14.336587154616872
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 13.495402348026136
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 12.880598513789764
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 12.48758799853006
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 11.291851109911882
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 10.313283102253344
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 8.127919980586082
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 7.699168170393026
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 6.261673471555687
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 4.648277074643984
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 4.108252682580372
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 3.7418877284656844
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 0.0
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 0.0
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 0.0
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "q15",
+      "query": "How do Anthropic and OpenAI differ in their harness designs for long-running agents?",
+      "kind": "topic_en",
+      "relevant_paths": [
+        "harness/harness-migration-ja.md"
+      ],
+      "body": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 26.51169203193595
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 9.21955907867986
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 8.910576364632288
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 7.609607876260816
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 7.018872963843485
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 6.597598692591641
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 5.9829781051850235
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 5.3935091277995255
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 3.3334284108311185
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 2.9185548193184774
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 2.657801928652259
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 2.10125178767748
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 2.05554753016602
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 1.8570902965671676
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 1.8464635040873254
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 1.629639430098202
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 1.543958220604443
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 1.3920983801688347
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 1.3431649090791435
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 1.199814771653491
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 1.0837874623754788
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 0.83347273147354
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 0.5309308409896651
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 0.0
+          }
+        ]
+      },
+      "body_metadata": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 47.93767698890425
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 16.92589445817607
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 14.503271897380497
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 9.652754557372852
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 9.21955907867986
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 8.910576364632288
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 7.609607876260816
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 6.736575948613757
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 6.597598692591641
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 5.9829781051850235
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 5.3935091277995255
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 2.9185548193184774
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 2.657801928652259
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 2.05554753016602
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 1.8570902965671676
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 1.629639430098202
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 1.543958220604443
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 1.3920983801688347
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 1.3431649090791435
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 1.199814771653491
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 1.0837874623754788
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 0.83347273147354
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 0.5309308409896651
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "q16",
+      "query": "长任务中的 compaction 和 context reset 对上下文连续性有什么区别？",
+      "kind": "detail_zh",
+      "relevant_paths": [
+        "harness/harness-migration-ja.md"
+      ],
+      "body": {
+        "hit1": 0,
+        "hit3": 0,
+        "mrr": 0.2,
+        "first_relevant_rank": 5,
+        "ranking": [
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 23.529178255634488
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 20.76408273599648
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 18.103646219908605
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 17.88602957746472
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 11.460543064873054
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 1.7746943188893838
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 1.3964016930931982
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 1.3912140033020506
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 1.3895419198895265
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 1.152492850736813
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 0.6389210600937716
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 0.0
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 0.0
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 0.0
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 0.0
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 0.0
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 0.0
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 0.0
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 0.0
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 0.0
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 0.0
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 0.0
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 0.0
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 0.0
+          }
+        ]
+      },
+      "body_metadata": {
+        "hit1": 0,
+        "hit3": 0,
+        "mrr": 0.2,
+        "first_relevant_rank": 5,
+        "ranking": [
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 36.56813643949061
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 29.691846258249985
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 23.29090344696384
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 20.76408273599648
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 11.460543064873054
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 5.514903548170923
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 4.895131859113244
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 1.3964016930931982
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 1.3912140033020506
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 1.152492850736813
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 0.6389210600937716
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 0.0
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 0.0
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 0.0
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 0.0
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 0.0
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 0.0
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 0.0
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 0.0
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 0.0
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 0.0
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 0.0
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 0.0
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "q17",
+      "query": "Claude Code Channels と OpenClaw はどんな用途の違いがありますか。",
+      "kind": "topic_ja",
+      "relevant_paths": [
+        "channel/claude-code-channels-vs-openclaw.md"
+      ],
+      "body": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 30.448321006511183
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 14.461773122775833
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 13.46529821824142
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 13.293682356924377
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 12.705228679256289
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 12.360726087299682
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 9.079758988515847
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 7.071400350666889
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 7.058665025567214
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 6.919724785283294
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 6.46282773897303
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 5.461246798049831
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 5.38110070527977
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 5.229872805389462
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 5.07810624842068
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 4.5908323258575985
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 3.495607472493432
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 2.6859726345305677
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 2.5020064772924036
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 1.6788334585483664
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 1.252776168055389
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 1.0032318273257042
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 0.6934346575561816
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 0.0
+          }
+        ]
+      },
+      "body_metadata": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 58.452476804184485
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 25.53777519856385
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 22.58824222291686
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 19.004722580240642
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 16.715480524431403
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 15.82816597144875
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 14.461773122775833
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 12.213714745494284
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 11.4992455696529
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 11.229530084085656
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 9.8088651124616
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 9.079758988515847
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 7.071400350666889
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 6.006050737750054
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 5.461246798049831
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 5.38110070527977
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 5.280746886949779
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 4.5908323258575985
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 3.495607472493432
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 2.6859726345305677
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 2.5020064772924036
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 1.0032318273257042
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 0.6934346575561816
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "q18",
+      "query": "What notification event delivers an incoming channel message into a Claude Code session?",
+      "kind": "detail_en",
+      "relevant_paths": [
+        "channel/claude-code-channels-vs-openclaw.md"
+      ],
+      "body": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 10.944949437658918
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 8.475745069087973
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 7.5886453467105826
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 7.069842351666981
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 5.358085493323626
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 5.2925163027771704
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 5.126665062959697
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 4.881575593807575
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 4.189819102442671
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 3.5210930331969745
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 2.210058873067278
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 2.0466048673032646
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 1.9520316609986432
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 1.7601981312822643
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 1.5689885664174001
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 1.2509850590514353
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 1.2381490543964206
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 1.171428707668857
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 1.1384096640658936
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 0.7397640683908486
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 0.47907734242310757
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 0.3695401915622111
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 0.0
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 0.0
+          }
+        ]
+      },
+      "body_metadata": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 24.302235362098564
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 14.176135459800062
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 12.802962348289661
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 10.8161058131848
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 10.088844357364547
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 9.32048702167156
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 7.5886453467105826
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 7.246021621209634
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 7.069842351666981
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 5.126665062959697
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 4.189819102442671
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 3.5210930331969745
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 2.210058873067278
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 1.7601981312822643
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 1.5689885664174001
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 1.2509850590514353
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 1.2381490543964206
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 1.171428707668857
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 1.1384096640658936
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 0.7397640683908486
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 0.47907734242310757
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 0.3695401915622111
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 0.0
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "q19",
+      "query": "Clawdbot 的浏览器操作为什么采用 ARIA role 和 name 来定位元素？",
+      "kind": "topic_zh",
+      "relevant_paths": [
+        "clawdbotbro/blog-clawdbot-browser.md"
+      ],
+      "body": {
+        "hit1": 0,
+        "hit3": 1,
+        "mrr": 0.3333333333333333,
+        "first_relevant_rank": 3,
+        "ranking": [
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 26.417599466581503
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 23.53731608960176
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 19.130130395069394
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 14.839279427389753
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 6.1492785142928374
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 4.491296826878832
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 3.3800718827935796
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 2.920197333200821
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 2.7582095301305594
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 2.0587698264998524
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 1.072769543200604
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 1.022884813910518
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 0.924509716749908
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 0.8994980898821751
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 0.8554103770535374
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 0.7352864394099242
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 0.506015698974245
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 0.0
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 0.0
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 0.0
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 0.0
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 0.0
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 0.0
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 0.0
+          }
+        ]
+      },
+      "body_metadata": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 34.80547080782917
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 31.007107770049352
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 23.53731608960176
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 14.839279427389753
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 6.1492785142928374
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 5.35619267441032
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 4.491296826878832
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 4.019935630106035
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 3.3800718827935796
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 2.920197333200821
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 2.7582095301305594
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 1.072769543200604
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 1.022884813910518
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 0.924509716749908
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 0.8554103770535374
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 0.7352864394099242
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 0.506015698974245
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 0.0
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 0.0
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 0.0
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 0.0
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 0.0
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 0.0
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "q20",
+      "query": "ブラウザ要素の Ref がスナップショットごとに変わらないよう、Clawdbot は何をキーにキャッシュしますか。",
+      "kind": "detail_ja",
+      "relevant_paths": [
+        "clawdbotbro/blog-clawdbot-browser.md"
+      ],
+      "body": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 80.64938549366026
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 28.17455531147692
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 22.595666665724217
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 22.548301803774667
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 20.714341386105165
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 20.541785191824285
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 18.80881780000238
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 15.20427350132819
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 14.727380015476951
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 14.501699530488041
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 13.832201055178455
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 12.35391963904901
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 12.284414517916337
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 10.293689552385391
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 10.058644745454162
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 10.037644954438361
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 7.700437397492916
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 7.434715720249807
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 5.540985215297324
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 0.0
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 0.0
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 0.0
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 0.0
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 0.0
+          }
+        ]
+      },
+      "body_metadata": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 117.77689002731782
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 35.62334580701335
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 34.251018846711425
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 28.17455531147692
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 25.83625621727608
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 24.3482421620016
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 22.595666665724217
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 22.548301803774667
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 19.26545012375809
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 17.721341455948256
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 17.43162836231809
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 15.20427350132819
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 14.727380015476951
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 13.832201055178455
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 13.628331024929196
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 10.058644745454162
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 10.037644954438361
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 7.700437397492916
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 5.540985215297324
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 0.0
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 0.0
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 0.0
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 0.0
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "q21",
+      "query": "FastMCP で日本の天気予報を返すローカル MCP サーバーを作りたい。",
+      "kind": "topic_ja",
+      "relevant_paths": [
+        "MCP/fastmcp_tutorial_jp_simplified.md"
+      ],
+      "body": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 58.49710637862117
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 17.527098159089274
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 15.679952271141895
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 14.208385886774963
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 14.20313516492825
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 13.444041783094171
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 10.110622483359728
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 9.815623749740825
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 9.306910489960197
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 8.521345612058973
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 8.224052909770434
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 7.835186057633446
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 7.4601980690694045
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 7.172444618623519
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 6.602064348914097
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 6.236897926931698
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 4.600151319850471
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 4.4765247212638375
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 2.768227760526739
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 2.1449401968151545
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 1.3480099735871873
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 1.3301814129118725
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 0.0
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 0.0
+          }
+        ]
+      },
+      "body_metadata": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 127.55364543199477
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 24.281221548134702
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 18.597302315052527
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 18.197135344371574
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 17.527098159089274
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 16.726159841024238
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 15.679952271141895
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 14.235984111641125
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 12.849667319733879
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 11.47596138586443
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 9.815623749740825
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 9.306910489960197
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 8.224052909770434
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 7.835186057633446
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 7.172444618623519
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 6.236897926931698
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 4.600151319850471
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 4.4765247212638375
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 2.768227760526739
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 2.1449401968151545
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 1.3480099735871873
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 1.3301814129118725
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 0.0
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "q22",
+      "query": "In the weather MCP tutorial, does the server communicate directly with the LLM?",
+      "kind": "detail_en",
+      "relevant_paths": [
+        "MCP/fastmcp_tutorial_jp_simplified.md"
+      ],
+      "body": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 11.844375643410054
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 7.97193008018386
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 7.064842467862257
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 5.87805877747157
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 5.843567677980127
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 5.685983431300825
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 5.101932265961618
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 4.532384513333064
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 4.359930032761849
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 3.9611213980179842
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 3.4149053780236773
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 3.1431204449915153
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 2.5925053760228822
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 2.510523818164775
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 2.3916697198058294
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 1.8467285323633071
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 1.8426482908733752
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 1.1795438139520953
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 1.153072618383918
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 1.0760964368824457
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 0.9759227020321652
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 0.7523270422827854
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 0.6422971652432534
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 0.0
+          }
+        ]
+      },
+      "body_metadata": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 18.261262510977573
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 17.473129772929045
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 11.190204096143653
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 10.966408147719049
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 7.97193008018386
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 7.158883761786542
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 5.843567677980127
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 5.685983431300825
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 5.68378694744156
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 5.101932265961618
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 4.532384513333064
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 4.359930032761849
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 4.195564627492379
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 3.9611213980179842
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 2.5925053760228822
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 2.510523818164775
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 2.3916697198058294
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 1.8467285323633071
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 1.1795438139520953
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 1.153072618383918
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 1.0760964368824457
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 0.7523270422827854
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 0.6422971652432534
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "q23",
+      "query": "AI Agent 评估中代码评分器、模型评分器各有什么优劣？",
+      "kind": "topic_zh",
+      "relevant_paths": [
+        "LLME/AI代理评估指南.md"
+      ],
+      "body": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 40.708154589827004
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 12.837726663069809
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 11.02167355760184
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 7.53198231741071
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 2.017671786456612
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 1.1284348973211895
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 1.1177780814900784
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 1.1011886817855936
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 1.0939089224181877
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 0.9754020232082122
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 0.9670523896242589
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 0.9426177786737197
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 0.879353127050208
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 0.861169493786531
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 0.617990698441867
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 0.6133502565393042
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 0.6107863553799816
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 0.13741458912090462
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 0.1299862318026129
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 0.12758727454726915
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 0.11540121374658321
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 0.115247622219013
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 0.11009306336633604
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 0.07370865406831743
+          }
+        ]
+      },
+      "body_metadata": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 52.39909717608141
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 20.83300912123632
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 15.0376923247172
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 7.551400948211349
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 7.53198231741071
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 6.406834035873192
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 3.990356182395675
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 3.5931175236517308
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 3.319317437496836
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 2.8984334315383684
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 2.845538392977298
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 2.436487716062266
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 2.047572889631409
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 1.8502311847002368
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 1.665761007070374
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 1.410795143099363
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 0.9754020232082122
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 0.879353127050208
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 0.861169493786531
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 0.13741458912090462
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 0.1299862318026129
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 0.115247622219013
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 0.11009306336633604
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 0.07370865406831743
+          }
+        ]
+      }
+    },
+    {
+      "id": "q24",
+      "query": "Agent が「航空券を予約した」と発言した記録と、実際の予約完了はどう区別して評価しますか。",
+      "kind": "detail_ja",
+      "relevant_paths": [
+        "LLME/AI代理评估指南.md"
+      ],
+      "body": {
+        "hit1": 0,
+        "hit3": 0,
+        "mrr": 0.045454545454545456,
+        "first_relevant_rank": 22,
+        "ranking": [
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 15.913193313893249
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 13.965370927527731
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 12.603458037685835
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 12.04081022761873
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 11.92693437668872
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 11.482695301932988
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 10.62096550447005
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 10.456915937744379
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 10.1439908422397
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 9.532610701376452
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 9.180633387165024
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 8.256158097108587
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 7.820144017744398
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 7.801231910417331
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 6.725914322510379
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 5.765417190527884
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 5.339370425029427
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 5.0696975124489585
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 3.384041229740893
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 1.005744958614319
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 0.7737135642492824
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 0.7097547944338
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 0.30357564834225975
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 0.0
+          }
+        ]
+      },
+      "body_metadata": {
+        "hit1": 0,
+        "hit3": 0,
+        "mrr": 0.045454545454545456,
+        "first_relevant_rank": 22,
+        "ranking": [
+          {
+            "path": "agentic-search/article.md",
+            "score": 25.099758618566977
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 20.75955282377975
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 20.56425429561626
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 17.9429618327481
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 17.263714050108895
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 17.088630363434877
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 16.128890522627433
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 16.08799721775781
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 15.913193313893249
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 15.838017805741785
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 14.843930781775958
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 13.9185368461621
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 13.481764383651324
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 13.292575927788457
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 13.001315221919514
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 10.410460962206328
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 10.1439908422397
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 5.0696975124489585
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 4.921906328432179
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 3.384041229740893
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 2.9736792258966744
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 0.7097547944338
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 0.30357564834225975
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "q25",
+      "query": "プロンプトインジェクションの代表的な攻撃手法と防御策を知りたい。",
+      "kind": "topic_ja",
+      "relevant_paths": [
+        "prompt注入，LLM安全/blog_article.md"
+      ],
+      "body": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 71.03419434104518
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 14.12628582531386
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 14.052813182692574
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 13.055531855442512
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 12.402971995856344
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 11.847547818239065
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 10.533801613027842
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 10.298743164063488
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 9.83648674408985
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 9.57504039363585
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 9.01804139107634
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 8.548546549760735
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 7.653827585047581
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 7.103975372557739
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 7.073146661516984
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 6.929862252997074
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 6.8344790821981185
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 6.182106614666634
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 5.927772775924806
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 2.0898343901830816
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 2.016731860953965
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 0.698319845259576
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 0.0
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 0.0
+          }
+        ]
+      },
+      "body_metadata": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 183.2943828767789
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 29.59268653037459
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 25.75416004884829
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 24.773127662912813
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 21.65213867721389
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 19.66571018731308
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 18.682455989935477
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 18.58010264391446
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 17.759375482602636
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 17.64515371895401
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 14.035494610814233
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 12.731914426265211
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 12.201937147597803
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 11.99413263304088
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 10.956444122683887
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 9.01804139107634
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 7.073146661516984
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 6.929862252997074
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 5.927772775924806
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 2.0898343901830816
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 2.016731860953965
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 0.698319845259576
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 0.0
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "q26",
+      "query": "What is Split Injection, where apparently harmless parts are combined later?",
+      "kind": "detail_en",
+      "relevant_paths": [
+        "prompt注入，LLM安全/blog_article.md"
+      ],
+      "body": {
+        "hit1": 0,
+        "hit3": 1,
+        "mrr": 0.3333333333333333,
+        "first_relevant_rank": 3,
+        "ranking": [
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 10.074075146154517
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 6.194863634787424
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 4.7932496081126175
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 4.139788644310203
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 3.163839249456499
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 3.0836557004487166
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 2.4342492044007296
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 2.137456765544728
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 2.122009844872373
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 2.021948268753057
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 0.0
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 0.0
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 0.0
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 0.0
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 0.0
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 0.0
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 0.0
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 0.0
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 0.0
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 0.0
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 0.0
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 0.0
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 0.0
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 0.0
+          }
+        ]
+      },
+      "body_metadata": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 14.179830537374391
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 10.074075146154517
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 6.194863634787424
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 4.139788644310203
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 3.163839249456499
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 3.0836557004487166
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 2.4342492044007296
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 2.137456765544728
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 2.122009844872373
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 2.021948268753057
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 0.0
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 0.0
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 0.0
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 0.0
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 0.0
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 0.0
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 0.0
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 0.0
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 0.0
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 0.0
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 0.0
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 0.0
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 0.0
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "q27",
+      "query": "Gemini CLI 如何通过 Turn 架构把模型回答和工具执行串起来？",
+      "kind": "topic_zh",
+      "relevant_paths": [
+        "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+        "GeminiCLI-逻辑/GeminiCLI.md",
+        "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md"
+      ],
+      "body": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 39.538782192703565
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 35.28620917170357
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 20.393387088953084
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 19.080132947573084
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 11.108412375763567
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 9.72946405929799
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 4.115965133007466
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 2.1065925843450626
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 1.9749414627289386
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 1.6819854390499025
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 1.68185780255157
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 1.4391017880076675
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 1.419625005162466
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 1.1526278939317165
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 1.1312367631671858
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 0.9895106631754929
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 0.0
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 0.0
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 0.0
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 0.0
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 0.0
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 0.0
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 0.0
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 0.0
+          }
+        ]
+      },
+      "body_metadata": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 68.45410773667297
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 65.73620680641244
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 26.12748944103791
+          },
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 23.80281792824524
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 20.393387088953084
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 13.25779487874883
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 4.115965133007466
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 2.1065925843450626
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 1.9749414627289386
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 1.6819854390499025
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 1.68185780255157
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 1.4391017880076675
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 1.419625005162466
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 1.1526278939317165
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 1.1312367631671858
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 0.9895106631754929
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 0.0
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 0.0
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 0.0
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 0.0
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 0.0
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 0.0
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 0.0
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "q28",
+      "query": "Gemini CLI の Turn クラスで、実行待ちのツール呼び出しを保持するプロパティ名は何ですか。",
+      "kind": "detail_ja",
+      "relevant_paths": [
+        "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+        "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md"
+      ],
+      "body": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 52.207557187828826
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 22.397209938677978
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 21.18080611106486
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 16.563491158785844
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 15.277498904406723
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 13.829646366397965
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 12.326464475427102
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 11.939254129838366
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 11.67979696211082
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 11.513091338763667
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 11.36466539656567
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 11.241331857465687
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 11.220305129821025
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 10.75912550820247
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 10.566858723232366
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 10.224345322154914
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 7.963797762018425
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 6.662346520952832
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 6.352920385262202
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 5.803198466743039
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 3.8152172103121886
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 3.056758057248335
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 1.9154933158734297
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 1.7868880951116197
+          }
+        ]
+      },
+      "body_metadata": {
+        "hit1": 1,
+        "hit3": 1,
+        "mrr": 1.0,
+        "first_relevant_rank": 1,
+        "ranking": [
+          {
+            "path": "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+            "score": 70.6007434846117
+          },
+          {
+            "path": "MCP/fastmcp_tutorial_jp_simplified.md",
+            "score": 35.681088149829705
+          },
+          {
+            "path": "LSP/lsp_ai_agent_blog.md",
+            "score": 26.72023047306408
+          },
+          {
+            "path": "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md",
+            "score": 23.4817277694216
+          },
+          {
+            "path": "handletools/handle-system-design.md",
+            "score": 22.397209938677978
+          },
+          {
+            "path": "ClaudeChorme/claude-in-chrome-article copy.md",
+            "score": 22.34201891658452
+          },
+          {
+            "path": "GeminiCLI-逻辑/GeminiCLI.md",
+            "score": 21.68104083242504
+          },
+          {
+            "path": "harness/harness-migration-ja.md",
+            "score": 19.694583155268383
+          },
+          {
+            "path": "ClaudeCode-Subagent/article.md",
+            "score": 18.271474977877276
+          },
+          {
+            "path": "Skills/claude-skills-integration.md",
+            "score": 17.51014893437141
+          },
+          {
+            "path": "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+            "score": 17.11585034726863
+          },
+          {
+            "path": "AnthropicNew/anthropic_tools_for_agents.md",
+            "score": 16.947852877316308
+          },
+          {
+            "path": "prompt注入，LLM安全/blog_article.md",
+            "score": 16.706596771420152
+          },
+          {
+            "path": "advancedtoolsuse/claude-advanced-tool-use.md",
+            "score": 16.563491158785844
+          },
+          {
+            "path": "Grok4/ブログ：Grok４.md",
+            "score": 15.523343183938781
+          },
+          {
+            "path": "clawdbotbro/blog-clawdbot-browser.md",
+            "score": 15.520117640654984
+          },
+          {
+            "path": "agentic-search/article.md",
+            "score": 14.883931679217294
+          },
+          {
+            "path": "channel/claude-code-channels-vs-openclaw.md",
+            "score": 14.359494233192876
+          },
+          {
+            "path": "Agent精度/AI_Agent_正確率向上技術_2025.md",
+            "score": 13.436919204430522
+          },
+          {
+            "path": "HacksonAICCA/aicca_zenn_article.md",
+            "score": 11.939254129838366
+          },
+          {
+            "path": "Claude4.1/article.md",
+            "score": 3.8152172103121886
+          },
+          {
+            "path": "LLME/AI代理评估指南.md",
+            "score": 3.056758057248335
+          },
+          {
+            "path": "Agent精度/AI_Agent设计阶段提升准确率技术指南.md",
+            "score": 1.9154933158734297
+          },
+          {
+            "path": "MCP/MCP基础制作指南.md",
+            "score": 1.7868880951116197
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "correct_answer_passed": true,
+  "wrong_answer_failed": true,
+  "always_accept_rejected": true,
+  "always_block_rejected": true,
+  "all_labels_rejected": true
+}

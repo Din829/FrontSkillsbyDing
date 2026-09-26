@@ -1,0 +1,29 @@
+{
+  "run_id": "zenn-research-20260925",
+  "hypothesis": {
+    "falsification": "If title/body patterns vanish or reverse under topic/time/author sensitivity, do not claim universal higher engagement; no causal claim can be established without exposure/control data."
+  },
+  "outcome": "inconclusive",
+  "ruler_id": "zenn-descriptive-features-v1",
+  "ruler": {
+    "path": "results/calibration.json",
+    "sha256": "3692ca7102c4e806964060339863199130b2e803cc1f25cb9c80559956901d50"
+  },
+  "execution": {
+    "path": "results/execution.json",
+    "sha256": "27e2638a76d52cc78095dcf269461a34dbdd704c382c3b4d9cf4bdd27f0ae16b"
+  },
+  "budget": {
+    "status": "within",
+    "note": "Declared research sample complete; model API cost zero; public endpoint load bounded by sampling plan."
+  },
+  "documents": [
+    {
+      "draft": {
+        "path": "FINDINGS.md",
+        "sha256": "fa8d58386dfec3e0938cc7ec90a44aba1783d8e3df2e228fbfe71e4e99dabfa4"
+      },
+      "claims": "claims.json"
+    }
+  ]
+}

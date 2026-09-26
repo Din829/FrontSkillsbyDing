@@ -1,0 +1,21 @@
+{
+  "run_id": "identifier-classification-bypass",
+  "execution_claim": "succeeded",
+  "execution": {
+    "path": "results/execution.json",
+    "sha256": "705b22e4f2cdeb04cd2706be48a2d22a7217fedd3f646a6d3551d9c17842fb94"
+  },
+  "ruler": {
+    "path": "results/ruler.json",
+    "sha256": "844a33e4b039f927e4b98343c15398dad3987850a88241d617e442806b7a2484"
+  },
+  "documents": [
+    {
+      "draft": {
+        "path": "article.md",
+        "sha256": "cb906854c2c3a9c50ebb8298ee367ee45834fd29372ea345fc9a0d8b94a6bc7c"
+      },
+      "claims": "claims.json"
+    }
+  ]
+}

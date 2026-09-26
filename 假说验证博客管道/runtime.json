@@ -1,0 +1,4 @@
+{
+  "model": "gpt-6-astra",
+  "cli_package": "@openai/codex@0.157.0"
+}

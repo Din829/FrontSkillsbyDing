@@ -1,0 +1,21 @@
+{
+  "run_id": "newline-only",
+  "execution_claim": "succeeded",
+  "execution": {
+    "path": "results/execution.json",
+    "sha256": "aaf70cb104dc391d31782caccbba452de1b6eea92b447dc251b53b8f05acbd36"
+  },
+  "ruler": {
+    "path": "results/ruler.json",
+    "sha256": "844a33e4b039f927e4b98343c15398dad3987850a88241d617e442806b7a2484"
+  },
+  "documents": [
+    {
+      "draft": {
+        "path": "article.md",
+        "sha256": "7c6f6edd281c1b1a6cb0735a75a8fbc675b060a4f838ef3ea7930323a9b9cbf5"
+      },
+      "claims": "claims.json"
+    }
+  ]
+}

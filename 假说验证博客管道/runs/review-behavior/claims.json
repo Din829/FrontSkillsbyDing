@@ -1,0 +1,724 @@
+{
+  "run_id": "review-behavior",
+  "draft_sha256": "3de4b4b2ce354ff29af66e19806d99cc49883f4791f2ec3c780daed6af562752",
+  "claims": [
+    {
+      "id": "c1",
+      "text": "---\ntitle: \"AIレビューの不正解を調べたら、採点ルールが狭すぎた\"\nemoji: \"🔍\"\ntype: \"tech\"\ntopics: [\"ai\", \"llm\", \"test\", \"evaluation\"]\npublished: false\n---",
+      "level": "inferred",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/snapshots/semantic-review.md",
+          "sha256": "dff8eda8fb88b3d6f990f437e663ae66847ea8b21c109c3f9a18be1c4f3084e0"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "text": "AI に実験結果をレビューさせるなら、証拠の扱い方を詳しく渡したほうが、間違いを見つけやすいのでしょうか。短いレビュー依頼と、証拠確認のルールを追加した依頼を比べました。",
+      "level": "read",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/snapshots/DESIGN.md",
+          "sha256": "0904531d26f5c230fceeda05b498870ab5053e1ef942cc20a461fe0e7c5fa104"
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "text": "今回の題材では、ルールを追加した側の優位は確認できませんでした。その一方で、自動採点が不正解にした 4 件は、理由を読むと妥当な指摘でした。モデルより先に、採点の許容範囲を見直す必要がありました。",
+      "level": "inferred",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/snapshots/semantic-review.md",
+          "sha256": "dff8eda8fb88b3d6f990f437e663ae66847ea8b21c109c3f9a18be1c4f3084e0"
+        }
+      ]
+    },
+    {
+      "id": "c4",
+      "text": "この記事は「ルールは不要」という話ではありません。レビュー結果を点数に変えるとき、正しい追加指摘まで減点してしまった例と、元の点数を残したまま見直した方法を紹介します。",
+      "level": "inferred",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/snapshots/semantic-review.md",
+          "sha256": "dff8eda8fb88b3d6f990f437e663ae66847ea8b21c109c3f9a18be1c4f3084e0"
+        }
+      ]
+    },
+    {
+      "id": "c5",
+      "text": "## 何を比べたか\n\n題材は、実験報告を模した 12 種類の短いシナリオです。各条件で 2 回ずつ、合計 48 回の独立した Codex CLI セッションを実行しました。実際に動かしたのはレビュー役の AI で、シナリオ内の実験は架空の材料です。",
+      "level": "measured",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/original-accounting.json",
+          "sha256": "cffc119d57c891ab475eea689c565ee42d57e42d3b190e7780e470706ad25f65"
+        },
+        {
+          "path": "results/snapshots/cases.json",
+          "sha256": "54b831539583a70d0f031593e2869c60063a36c2c95c4daff298efe3710c3935"
+        }
+      ]
+    },
+    {
+      "id": "c6",
+      "text": "通常のプロンプト側にも、結論をそのまま報告してよいか判断する指示と、問題の種類を選ぶ出力形式を渡しています。ルール側は同じ入力に、実験レビューと証拠確認の skill 本文を加えました。入力を保存し、追加したルール以外のユーザープロンプトが一致することも確認しています。",
+      "level": "measured",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/snapshots/semantic-review.json",
+          "sha256": "a766b9e311cfc564f474b37829cc777112557a81a0fc8262c1c218de3dd0881a"
+        },
+        {
+          "path": "results/study/rule_snapshot.md",
+          "sha256": "2f684fac8d944c1d44bdd641515cb080525ee34f711581caa1f80c447a5e2eb7"
+        }
+      ]
+    },
+    {
+      "id": "c7",
+      "text": "シナリオには、壊れた採点器、不公平な比較、実行失敗を成功として扱う報告、分母の違う割合、別の実験から借りた数字などを入れました。反対に、適用範囲を限定した成功結果、改善しなかった結果、特定入力の再現メモは通してよい設定にしました。",
+      "level": "read",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/snapshots/cases.json",
+          "sha256": "54b831539583a70d0f031593e2869c60063a36c2c95c4daff298efe3710c3935"
+        }
+      ]
+    },
+    {
+      "id": "c8",
+      "text": "与えた校正や再現の説明は、シナリオの中では確認済みの事実として扱うよう指定しました。ファイルやネットワークにはアクセスさせていません。そのため、ここで測ったのは材料同士の矛盾を見抜く判断です。実際の添付ファイルが本物か調べる能力は測っていません。",
+      "level": "read",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/snapshots/DESIGN.md",
+          "sha256": "0904531d26f5c230fceeda05b498870ab5053e1ef942cc20a461fe0e7c5fa104"
+        }
+      ]
+    },
+    {
+      "id": "c9",
+      "text": "## 点数だけなら同じ結果だった\n\n自動採点では、報告可否の判断が正しいこと、必要な問題を指摘すること、許可していない問題タグを出さないことを条件にしました。",
+      "level": "read",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/snapshots/reference_answers.json",
+          "sha256": "139596de93fcd6c27286f9bb66439521677ba78247b9995ceb4a17fd4622df67"
+        }
+      ]
+    },
+    {
+      "id": "c10",
+      "text": "| 元の実験 | 通常のプロンプト | ルール追加 |\n|---|---:|---:|\n| 自動採点の合格 | 22/24 | 22/24 |\n| 報告可否の判断が一致 | 24/24 | 24/24 |\n| 回答内容を読んだ事後評価 | 24/24 | 24/24 |",
+      "level": "read",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/snapshots/semantic-review.json",
+          "sha256": "a766b9e311cfc564f474b37829cc777112557a81a0fc8262c1c218de3dd0881a"
+        }
+      ]
+    },
+    {
+      "id": "c11",
+      "text": "最後の行は、別の AI レビュー担当が全回答の理由と次の行動を読んだ、事後の判断です。争点を知らない盲検評価ではなく、元の点数を書き換えたものでもありません。全部妥当だったという確認を、そのまま現場での正答率にはできません。",
+      "level": "read",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/snapshots/semantic-review.md",
+          "sha256": "dff8eda8fb88b3d6f990f437e663ae66847ea8b21c109c3f9a18be1c4f3084e0"
+        }
+      ]
+    },
+    {
+      "id": "c12",
+      "text": "自動採点で落ちた回答も、必要な問題と結論の扱いは合っていました。減点の原因は、正解リストにないタグが付いていたことです。",
+      "level": "measured",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/snapshots/semantic-review.json",
+          "sha256": "a766b9e311cfc564f474b37829cc777112557a81a0fc8262c1c218de3dd0881a"
+        }
+      ]
+    },
+    {
+      "id": "c13",
+      "text": "## 正しい追加指摘を落としてしまった\n\nあるシナリオでは、基準の方法は各問を 1 回だけ試し、候補の方法は 8 回試して最良の結果を採用していました。それなのに、著者は同じ予算で信頼性が上がったと主張しています。",
+      "level": "read",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/snapshots/cases.json",
+          "sha256": "54b831539583a70d0f031593e2869c60063a36c2c95c4daff298efe3710c3935"
+        }
+      ]
+    },
+    {
+      "id": "c14",
+      "text": "期待したタグは `unfair_baseline`、つまり比較条件が公平でないという指摘です。回答はそれを挙げたうえで、`noise_or_selection` も付けました。理由には、試行回数と最良結果の選び方が揃っていない、と書かれていました。選択の問題は実際に材料に含まれています。",
+      "level": "read",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/study/sessions/c02_generic_0/answer.txt",
+          "sha256": "0a91a195f443c598c2d666f58e57c5bbc96f008db412729585b0d4445f8a6381"
+        },
+        {
+          "path": "results/snapshots/cases.json",
+          "sha256": "54b831539583a70d0f031593e2869c60063a36c2c95c4daff298efe3710c3935"
+        }
+      ]
+    },
+    {
+      "id": "c15",
+      "text": "採点は次のような考え方でした。これは実装の要点を示したコードです。\n\n```python\nextra_issues = set(answer[\"issues\"]) - allowed_issues\npassed = decision_ok and required_issue_found and not extra_issues\n```",
+      "level": "read",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/snapshots/reference_answers.json",
+          "sha256": "139596de93fcd6c27286f9bb66439521677ba78247b9995ceb4a17fd4622df67"
+        }
+      ]
+    },
+    {
+      "id": "c16",
+      "text": "余計なタグを全部並べれば合格する採点も困ります。ただ、この仕組みでは許可リストから漏れた妥当な説明まで落ちます。今回の追加指摘は、理由のない過剰検出とは区別する必要がありました。",
+      "level": "inferred",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/snapshots/semantic-review.md",
+          "sha256": "dff8eda8fb88b3d6f990f437e663ae66847ea8b21c109c3f9a18be1c4f3084e0"
+        }
+      ]
+    },
+    {
+      "id": "c17",
+      "text": "もう一つは、ベンダーの文書に機能が使えると書いてあるだけで、現在の環境でも実測確認した、と主張するシナリオです。`read_as_measured` に加え、`scope_overreach` と指摘した回答がありました。一般的な対応表明を、確認していない自分の環境に当てはめているので、これも理由のある追加指摘です。",
+      "level": "read",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/snapshots/semantic-review.md",
+          "sha256": "dff8eda8fb88b3d6f990f437e663ae66847ea8b21c109c3f9a18be1c4f3084e0"
+        },
+        {
+          "path": "results/snapshots/cases.json",
+          "sha256": "54b831539583a70d0f031593e2869c60063a36c2c95c4daff298efe3710c3935"
+        }
+      ]
+    },
+    {
+      "id": "c18",
+      "text": "## 元の点数を残す\n\n採点器は実行前に、明らかな正解と不正解、何でも止める回答、全タグを出す回答で確認していました。それでも、もっともらしい追加指摘の扱いは校正できていませんでした。正反例を用意したことと、測りたい性質を十分に測れていることは別でした。",
+      "level": "inferred",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/study/ruler_unit_calibration.json",
+          "sha256": "c4961fcbcbb35c17d4ac5612be3c659768b85eab903581d2763e31eeb33ff32b"
+        },
+        {
+          "path": "results/snapshots/semantic-review.md",
+          "sha256": "dff8eda8fb88b3d6f990f437e663ae66847ea8b21c109c3f9a18be1c4f3084e0"
+        }
+      ]
+    },
+    {
+      "id": "c19",
+      "text": "そこで元の回答、参考ラベル、自動得点を保存し、意味の確認を別記録にしました。指摘した問題、説明の根拠、提案した次の行動を分けて読み、元の採点とどこで違ったかを残しています。",
+      "level": "measured",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/snapshots/semantic-review.json",
+          "sha256": "a766b9e311cfc564f474b37829cc777112557a81a0fc8262c1c218de3dd0881a"
+        }
+      ]
+    },
+    {
+      "id": "c20",
+      "text": "ファイルの欠落や別実験の数字の混入はスクリプトで確かめやすい部分です。一方、同じ材料から複数の妥当な説明ができる場合は、タグの完全一致だけでは判定が狭くなります。機械的に確認する部分と、理由を読んで判断する部分を分けると、直す場所が見えやすくなります。",
+      "level": "inferred",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        }
+      ]
+    },
+    {
+      "id": "c21",
+      "text": "## モデル指定も補った\n\n最初の実行では CLI のバージョンは固定していましたが、モデル名は環境設定に依存していました。記録から特定のモデル版まで断定できないため、追加検証では gpt-6-astra を明示し、設定を各会話に保存しました。",
+      "level": "read",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/snapshots/semantic-review.md",
+          "sha256": "dff8eda8fb88b3d6f990f437e663ae66847ea8b21c109c3f9a18be1c4f3084e0"
+        },
+        {
+          "path": "results/supplement-review.json",
+          "sha256": "a6afe0e82079124a961c51d991273019e734e98b4e1b2355f837cf36777320ca"
+        }
+      ]
+    },
+    {
+      "id": "c22",
+      "text": "同じシナリオを使った追加検証は 24 会話で、元の採点は両条件とも 11/12 でした。理由を読み直すと、失点は同じ種類の追加タグによるものでした。これは記録方法を修正した同題の追加検証であり、未知の題材でも同じ性能を出した証拠ではありません。",
+      "level": "read",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/supplement-review.json",
+          "sha256": "a6afe0e82079124a961c51d991273019e734e98b4e1b2355f837cf36777320ca"
+        }
+      ]
+    },
+    {
+      "id": "c23",
+      "text": "## この結果で言えること\n\n今回の短い材料では、通常のプロンプトでも問題を見抜けていました。共通の指示がすでに詳しかったこと、シナリオの矛盾が明確だったことは、ルールの追加効果が出なかった別の説明になります。どれが主な理由かは、この実験では区別できません。",
+      "level": "inferred",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        }
+      ]
+    },
+    {
+      "id": "c24",
+      "text": "また、全セッションのシステム側の文脈は凍結していません。少数の同じシナリオを繰り返した結果なので、複雑な実務の判断、添付証拠の検証、長期運用の信頼性まで広げることはできません。",
+      "level": "inferred",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/snapshots/semantic-review.md",
+          "sha256": "dff8eda8fb88b3d6f990f437e663ae66847ea8b21c109c3f9a18be1c4f3084e0"
+        },
+        {
+          "path": "results/supplement-review.json",
+          "sha256": "a6afe0e82079124a961c51d991273019e734e98b4e1b2355f837cf36777320ca"
+        }
+      ]
+    },
+    {
+      "id": "c25",
+      "text": "AI のレビューを評価するときは、不合格の理由も読みたいです。モデルの誤りなのか、正解リストの不足なのかで、直す対象は変わります。ルールを増やす前に、そのルールの効果を測る採点器が妥当な回答を落としていないか、という確認が今回の持ち帰りです。",
+      "level": "inferred",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        }
+      ]
+    }
+  ],
+  "numbers": [
+    {
+      "index": 0,
+      "token": "4",
+      "kind": "measurement",
+      "claim_id": "c3",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/false_red",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 1,
+      "token": "12",
+      "kind": "measurement",
+      "claim_id": "c5",
+      "unit": "cases",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_cases",
+        "unit": "cases"
+      }
+    },
+    {
+      "index": 2,
+      "token": "2",
+      "kind": "measurement",
+      "claim_id": "c5",
+      "unit": "repeats",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_repeats",
+        "unit": "repeats"
+      }
+    },
+    {
+      "index": 3,
+      "token": "48",
+      "kind": "measurement",
+      "claim_id": "c5",
+      "unit": "sessions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_sessions",
+        "unit": "sessions"
+      }
+    },
+    {
+      "index": 4,
+      "token": "22",
+      "kind": "measurement",
+      "claim_id": "c10",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_generic_primary",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 5,
+      "token": "24",
+      "kind": "measurement",
+      "claim_id": "c10",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_generic_n",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 6,
+      "token": "22",
+      "kind": "measurement",
+      "claim_id": "c10",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_skills_primary",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 7,
+      "token": "24",
+      "kind": "measurement",
+      "claim_id": "c10",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_skills_n",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 8,
+      "token": "24",
+      "kind": "measurement",
+      "claim_id": "c10",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_generic_decision",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 9,
+      "token": "24",
+      "kind": "measurement",
+      "claim_id": "c10",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_generic_n",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 10,
+      "token": "24",
+      "kind": "measurement",
+      "claim_id": "c10",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_skills_decision",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 11,
+      "token": "24",
+      "kind": "measurement",
+      "claim_id": "c10",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_skills_n",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 12,
+      "token": "24",
+      "kind": "measurement",
+      "claim_id": "c10",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_generic_semantic",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 13,
+      "token": "24",
+      "kind": "measurement",
+      "claim_id": "c10",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_generic_n",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 14,
+      "token": "24",
+      "kind": "measurement",
+      "claim_id": "c10",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_skills_semantic",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 15,
+      "token": "24",
+      "kind": "measurement",
+      "claim_id": "c10",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_skills_n",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 16,
+      "token": "1",
+      "kind": "measurement",
+      "claim_id": "c13",
+      "unit": "attempts",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/fixture_baseline_attempts",
+        "unit": "attempts"
+      }
+    },
+    {
+      "index": 17,
+      "token": "8",
+      "kind": "measurement",
+      "claim_id": "c13",
+      "unit": "attempts",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/fixture_candidate_attempts",
+        "unit": "attempts"
+      }
+    },
+    {
+      "index": 18,
+      "token": "-6",
+      "kind": "version",
+      "reason": "追加検証で要求したモデル名の代号"
+    },
+    {
+      "index": 19,
+      "token": "24",
+      "kind": "measurement",
+      "claim_id": "c22",
+      "unit": "sessions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/supplement_sessions",
+        "unit": "sessions"
+      }
+    },
+    {
+      "index": 20,
+      "token": "11",
+      "kind": "measurement",
+      "claim_id": "c22",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/supplement_generic_primary",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 21,
+      "token": "12",
+      "kind": "measurement",
+      "claim_id": "c22",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/supplement_generic_n",
+        "unit": "answers"
+      }
+    }
+  ]
+}

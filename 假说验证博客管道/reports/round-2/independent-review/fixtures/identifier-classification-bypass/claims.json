@@ -1,0 +1,28 @@
+{
+  "run_id": "identifier-classification-bypass",
+  "draft_sha256": "cb906854c2c3a9c50ebb8298ee367ee45834fd29372ea345fc9a0d8b94a6bc7c",
+  "claims": [
+    {
+      "id": "count-result",
+      "text": "BM25 measured 99 cases.",
+      "level": "measured",
+      "scope": "synthetic local fixture"
+    }
+  ],
+  "numbers": [
+    {
+      "index": 1,
+      "token": "99",
+      "kind": "identifier",
+      "claim_id": "count-result",
+      "unit": "cases",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "c7ec742084276e356a12409242d1ef869256b3475db4f6efa279ed106b9bcdbd",
+        "run_id": "identifier-classification-bypass",
+        "pointer": "/metrics/correct",
+        "unit": "cases"
+      }
+    }
+  ]
+}

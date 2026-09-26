@@ -1,0 +1,23 @@
+{
+  "observed_at": "2026-09-25T13:16:48.776947+00:00",
+  "incremental": true,
+  "coverage": [
+    {
+      "query": {
+        "topicname": "ai",
+        "order": "latest",
+        "count": 100,
+        "sample_target": 600
+      },
+      "unique_seen_this_run": 100,
+      "stored_articles": 600,
+      "pages": 1,
+      "sources": [
+        "raw\\5672ff917e76790c595cd723.json"
+      ],
+      "terminal": "known_page_overlap_incremental_new_content_only",
+      "next_page": 2,
+      "index": "indexes\\bda0cf26205d0ccd.json"
+    }
+  ]
+}

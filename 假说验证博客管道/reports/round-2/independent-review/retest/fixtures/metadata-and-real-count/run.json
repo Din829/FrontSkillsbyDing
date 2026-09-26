@@ -1,0 +1,21 @@
+{
+  "run_id": "metadata-and-real-count",
+  "execution_claim": "succeeded",
+  "execution": {
+    "path": "results/execution.json",
+    "sha256": "cf2f3c515c52a813c68e7c7cf27a3b473454a22a1a6b8bade7d191803cca2271"
+  },
+  "ruler": {
+    "path": "results/ruler.json",
+    "sha256": "844a33e4b039f927e4b98343c15398dad3987850a88241d617e442806b7a2484"
+  },
+  "documents": [
+    {
+      "draft": {
+        "path": "article.md",
+        "sha256": "d31d06a7742119b65dd174e66f84bcc8e98ea989f7c0dd4a34dc1b483d5d3457"
+      },
+      "claims": "claims.json"
+    }
+  ]
+}

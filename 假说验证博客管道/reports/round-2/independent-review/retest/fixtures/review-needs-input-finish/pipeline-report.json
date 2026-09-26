@@ -1,0 +1,12 @@
+{
+  "status": "review_pending",
+  "gate_status": "traceable",
+  "issues": [],
+  "rework": {
+    "repair_rounds": 0,
+    "issue_attempts": {},
+    "reasons": []
+  },
+  "author_thread": "synthetic-component-fixture-not-a-real-model-thread",
+  "note": "Warnings remain visible; no publication is performed"
+}

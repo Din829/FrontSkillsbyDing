@@ -1,0 +1,43 @@
+{
+  "blog_files_checked": 246,
+  "changed_original_blog_files": [],
+  "changed_historical_result_files": [],
+  "skills": [
+    {
+      "name": "content-research",
+      "exit_code": 0,
+      "lines": 22
+    },
+    {
+      "name": "content-write",
+      "exit_code": 0,
+      "lines": 22
+    },
+    {
+      "name": "evidence-check",
+      "exit_code": 0,
+      "lines": 29
+    },
+    {
+      "name": "experiment-design",
+      "exit_code": 0,
+      "lines": 22
+    },
+    {
+      "name": "experiment-review",
+      "exit_code": 0,
+      "lines": 22
+    },
+    {
+      "name": "experiment-run",
+      "exit_code": 0,
+      "lines": 22
+    },
+    {
+      "name": "topic-hypothesis",
+      "exit_code": 0,
+      "lines": 24
+    }
+  ],
+  "skill_lines": 163
+}

@@ -1,0 +1,114 @@
+{
+  "run_id": "retrieval-v4",
+  "draft_sha256": "e96644d2efc7f42c8e9687e55193aa6d065776d649e810f53e71095dda793e17",
+  "claims": [
+    {
+      "id": "c1",
+      "text": "# 假说卡",
+      "level": "read",
+      "scope": "本次冻结语料、人工题集及保存的研究记录",
+      "evidence": [
+        {
+          "path": "results/design.md",
+          "sha256": "93718c81331ed07a9f5a9a72f2636a145d8d1a6bec20553163b4150cde01be39"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "text": "原问题：过去的技术博客能否更容易被检索找回？具体主张是在固定题集上，正文 BM25 加路径与 H1/H2 章节标题分数，比正文基线有更多前三命中。",
+      "level": "read",
+      "scope": "本次冻结语料、人工题集及保存的研究记录",
+      "evidence": [
+        {
+          "path": "results/design.md",
+          "sha256": "93718c81331ed07a9f5a9a72f2636a145d8d1a6bec20553163b4150cde01be39"
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "text": "目标读者是维护内部技术知识库的工程师；价值在于区分排序改善和新增找回，避免把不同收益混为一谈。题目来自本地真实文章，并非为热门标题预设成功。",
+      "level": "inferred",
+      "scope": "本次冻结语料、人工题集及保存的研究记录",
+      "evidence": [
+        {
+          "path": "results/design.md",
+          "sha256": "93718c81331ed07a9f5a9a72f2636a145d8d1a6bec20553163b4150cde01be39"
+        },
+        {
+          "path": "results/experiment/result.json",
+          "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b"
+        }
+      ]
+    },
+    {
+      "id": "c4",
+      "text": "证伪条件：候选前三命中不高于基线，就不支持这批数据上的提升假说。支持要求该数增加；持平或下降记录不支持；校准失效、执行失败或输入不完整则证据不足。",
+      "level": "read",
+      "scope": "本次冻结语料、人工题集及保存的研究记录",
+      "evidence": [
+        {
+          "path": "results/design.md",
+          "sha256": "93718c81331ed07a9f5a9a72f2636a145d8d1a6bec20553163b4150cde01be39"
+        }
+      ]
+    },
+    {
+      "id": "c5",
+      "text": "资源：真实检索计算仅用本地 CPU；本轮用户允许充分资源，但计划为有限实验和独立复现，不无限调参直到变好。没有访问额外付费检索服务。编题、审查和写作使用 AI，完整会话账单未在本 run 单独获得，不报告为零成本。",
+      "level": "read",
+      "scope": "本次冻结语料、人工题集及保存的研究记录",
+      "evidence": [
+        {
+          "path": "results/design.md",
+          "sha256": "93718c81331ed07a9f5a9a72f2636a145d8d1a6bec20553163b4150cde01be39"
+        },
+        {
+          "path": "results/run_experiment.py",
+          "sha256": "d9c9a4102e9d1a5ddbcd071bce0757dd7eb821577545c8401deb7a01d8619126"
+        },
+        {
+          "path": "results/execution.json",
+          "sha256": "4a618a975a0cb387c71ecb936dd9479a1940924bf67b522a2553d39f973e076c"
+        }
+      ]
+    },
+    {
+      "id": "c6",
+      "text": "最终判断：主假说不支持；首位排名改善是次指标发现，可用于提出后续读者筛选成本假说。",
+      "level": "inferred",
+      "scope": "本次冻结语料、人工题集及保存的研究记录",
+      "evidence": [
+        {
+          "path": "results/experiment/result.json",
+          "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b"
+        },
+        {
+          "path": "results/design.md",
+          "sha256": "93718c81331ed07a9f5a9a72f2636a145d8d1a6bec20553163b4150cde01be39"
+        }
+      ]
+    }
+  ],
+  "numbers": [
+    {
+      "index": 0,
+      "token": "25",
+      "kind": "identifier",
+      "reason": "固定名称或文档版本中的数字：BM25"
+    },
+    {
+      "index": 1,
+      "token": "1",
+      "kind": "identifier",
+      "reason": "固定名称或文档版本中的数字：H1"
+    },
+    {
+      "index": 2,
+      "token": "2",
+      "kind": "identifier",
+      "reason": "固定名称或文档版本中的数字：H2"
+    }
+  ]
+}

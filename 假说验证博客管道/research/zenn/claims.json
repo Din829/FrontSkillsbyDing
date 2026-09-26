@@ -1,0 +1,2088 @@
+{
+  "run_id": "zenn-research-20260925",
+  "draft_sha256": "fa8d58386dfec3e0938cc7ec90a44aba1783d8e3df2e228fbfe71e4e99dabfa4",
+  "claims": [
+    {
+      "id": "line-3",
+      "text": "**课题**：公司博客除了可信，还要有人关注、愿意点赞。本轮研究用真实 Zenn 数据给选题、标题与正文设计提供依据，不能用研究质量代替传播 KPI。",
+      "level": "inferred",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-5",
+      "text": "**为什么这样判断**：标题问句、正文图片出现了值得继续验证的信号；“有数字”“写了検証”“代码多”“表格多”没有表现出通用优势。低赞样本也有扎实 PoC，说明技术内容好并不自动获得曝光。",
+      "level": "inferred",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-7",
+      "text": "**预期效果**：选题先找到具体读者与争议点，标题准确承诺一个值得知道的发现，正文提供可复用证据。是否提高点赞需要发布后的读者数据，本轮没有发布，不能宣称已经改善 KPI。",
+      "level": "inferred",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-11",
+      "text": "观测日期：2026-09-25。现场读取了 [robots](https://zenn.dev/robots.txt)、[条款](https://zenn.dev/terms)、[AI 主题页](https://zenn.dev/topics/ai)，保存快照；公开免费接口低速访问，没有搜索页、登录绕过或付费内容。",
+      "level": "read",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        },
+        {
+          "path": "results/raw\\08e134315da3c33db8512858.json",
+          "sha256": "a644e2dbe309341a2999e423f8bad21dd70e8bcc09510cf682c1fc281bbe296c"
+        },
+        {
+          "path": "results/raw\\c833337144a95d88d09e9921.json",
+          "sha256": "35cb2f7b0a173d042ed4d5bf55d43c6b7b4d8c1b80ba8678639912f37035116b"
+        },
+        {
+          "path": "results/raw\\562a37c163c38101f77b7ebc.json",
+          "sha256": "4a43f07bbaee329bab09131a49b6f6f7ddf73843882fe2a227dda3cfc7109581"
+        },
+        {
+          "path": "results/raw\\b0df7821e0075d2356b7f11e.json",
+          "sha256": "0bcdd86ec7ca7f5a7d2b1bf5d192e9884b20d524a26b5c696aec56fc167b5869"
+        },
+        {
+          "path": "results/raw\\a49d746315a4081f38d2105f.json",
+          "sha256": "c9739395bab69fa2ca145d3c47be89c415e2b4a1fd12f48a056057d8ca1a1860"
+        },
+        {
+          "path": "results/raw\\005cc4a45ed82a6b637bf2e8.json",
+          "sha256": "43200df3a3912a9c05483d0081669b40cb25abe950884e0b11e6ecb0a47a6f5c"
+        },
+        {
+          "path": "results/probe.json",
+          "sha256": "1b526c1b6dc09a62f7ef504e67c2adcf364a1424847fff1c1fe5faf3db769fbe"
+        },
+        {
+          "path": "results/probe-extra.json",
+          "sha256": "b082b4e1893aa6edeb4a859a91f2a50688417792640a7f1bb1a7dc1f2cbe308f"
+        }
+      ]
+    },
+    {
+      "id": "line-13",
+      "text": "- 六个主题各取 latest 600 条与 alltime 100 条，另取全站 alltime 200 条，共 4,400 个列表成员，去重 **3,633 篇**。按完整页采样，所有查询仍有 next_page，本轮不是全量。",
+      "level": "measured",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-14",
+      "text": "- 标题/字数比较使用 latest 中发表满 7 天的 **2,151 篇去重文章**。标题标签由公开规则产生，只表示词形，不是语义真值。",
+      "level": "measured",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-15",
+      "text": "- 详情抓取 **160 篇**：65 对同主题同月且发表相差不超过 14 天的较高/较低点赞文章，加 30 篇历史案例。高低组是主动选的对照，不用于估计全站热门率。",
+      "level": "measured",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-16",
+      "text": "- 六份文章 sitemap 合计 **283,553 个 URL 条目**。这是站点地图列出的地址数，不是已经证明的全部公开文章数。",
+      "level": "measured",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-18",
+      "text": "证据：[`coverage.json`](coverage.json)、[`statistics.json`](statistics.json)、[`selection.json`](selection.json)、[`pairs.json`](pairs.json)、[`sitemap-coverage.json`](sitemap-coverage.json)。原始响应路径和观测时间可逐项追溯。",
+      "level": "inferred",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-20",
+      "text": "全量可行性：若列表始终能按每页 100 条持续遍历，约需 2,836 次列表请求；仅 1.1 秒请求间隔的理论下界约 52 分钟。逐篇拉取站点地图规模的正文，仅间隔约需 87 小时，尚不含请求耗时、更新和失败。前者值得未来专门核实分页深度与完整性；后者不适合本轮。并非简单宣布“全量不可能”，本轮按预先声明的研究样本完成。",
+      "level": "inferred",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-24",
+      "text": "`order=liked_count` **没有产生点赞降序**。全站返回的前两篇快照为 103、143 赞；传入 `nonsense` 与 `trending` 的前 10 个 ID 完全一致，提示未知值会回到默认排序。因此绝不能把这个参数称为“全站点赞排序”。`alltime` 是主题页真实提供的链接选项，返回历史高互动内容，但它同样不是严格的 liked_count 降序；本报告仅称“alltime 样本”。",
+      "level": "read",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        },
+        {
+          "path": "results/raw\\08e134315da3c33db8512858.json",
+          "sha256": "a644e2dbe309341a2999e423f8bad21dd70e8bcc09510cf682c1fc281bbe296c"
+        },
+        {
+          "path": "results/raw\\c833337144a95d88d09e9921.json",
+          "sha256": "35cb2f7b0a173d042ed4d5bf55d43c6b7b4d8c1b80ba8678639912f37035116b"
+        },
+        {
+          "path": "results/raw\\562a37c163c38101f77b7ebc.json",
+          "sha256": "4a43f07bbaee329bab09131a49b6f6f7ddf73843882fe2a227dda3cfc7109581"
+        },
+        {
+          "path": "results/raw\\b0df7821e0075d2356b7f11e.json",
+          "sha256": "0bcdd86ec7ca7f5a7d2b1bf5d192e9884b20d524a26b5c696aec56fc167b5869"
+        },
+        {
+          "path": "results/raw\\a49d746315a4081f38d2105f.json",
+          "sha256": "c9739395bab69fa2ca145d3c47be89c415e2b4a1fd12f48a056057d8ca1a1860"
+        },
+        {
+          "path": "results/raw\\005cc4a45ed82a6b637bf2e8.json",
+          "sha256": "43200df3a3912a9c05483d0081669b40cb25abe950884e0b11e6ecb0a47a6f5c"
+        },
+        {
+          "path": "results/probe.json",
+          "sha256": "1b526c1b6dc09a62f7ef504e67c2adcf364a1424847fff1c1fe5faf3db769fbe"
+        },
+        {
+          "path": "results/probe-extra.json",
+          "sha256": "b082b4e1893aa6edeb4a859a91f2a50688417792640a7f1bb1a7dc1f2cbe308f"
+        }
+      ]
+    },
+    {
+      "id": "line-26",
+      "text": "`topicname=ai`、`rag` 返回不同集合，不存在的主题返回空。count=100 回 100 条，count=200 仍只回 100 条。page=2 能取得不同文章；未验证所有深页。total_count 返回 null，空值不能解释为总量为零。",
+      "level": "measured",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-28",
+      "text": "证据：[`probe.json`](probe.json)、[`probe-extra.json`](probe-extra.json)。采集保留 next_page 与终止原因，避免把服务端截断当全量。",
+      "level": "inferred",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-32",
+      "text": "以下是成熟 latest 样本的探索性观察。类别可重叠，均值易被爆款拉高，故以中位数为主。",
+      "level": "inferred",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-34",
+      "text": "| 标题特征 | 有该特征篇数 | 有/无该特征的点赞中位数 | 判断 |",
+      "level": "inferred",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-36",
+      "text": "| 问号、なぜ、どうして | 136 | 2 / 1 | 值得测试“具体问题”式标题，但不是加问号就有效 |",
+      "level": "measured",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-37",
+      "text": "| 数字 | 756 | 1 / 1 | 没有支持“数字标题总更好”；版本号、日期也被计入 |",
+      "level": "measured",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-38",
+      "text": "| 検証、比較、試した等 | 183 | 1 / 1 | “实验型”标签本身不是流量保证 |",
+      "level": "measured",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-39",
+      "text": "| 失败、限制、陷阱等 | 126 | 1 / 1 | 不能据此推荐统一负面标题 |",
+      "level": "measured",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-40",
+      "text": "| 入门、指南、解说等 | 203 | 1 / 1 | 是否解决具体需求比套标签更值得研究 |",
+      "level": "measured",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-41",
+      "text": "| 作った、運用等 | 221 | 1 / 1 | 自己做过值得写，但标题还须让读者知道收益 |",
+      "level": "measured",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-43",
+      "text": "问句特征在可比较的 12 个主题×月份分组中，有 10 组的平均 log(1+点赞) 差为正；给每个作者相同权重后只剩 7 组为正。这说明作者构成会改变信号。这里没有随机分配标题，也未控制曝光与粉丝，不能说问句导致高赞。各组原值与计算代码位于 statistics.json/title_features 和 scripts/analyze.py。",
+      "level": "measured",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-45",
+      "text": "建议：用“技术对象 + 读者确实在意的问题/结果”，不要先选问句模板再硬凑内容。数字只有在定义清楚、真的测得且对读者有意义时才放标题。",
+      "level": "inferred",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-49",
+      "text": "| HTML 可直接观察的特征 | 较高点赞组（65 篇） | 较低点赞组（65 篇） |",
+      "level": "measured",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-51",
+      "text": "| 有图片 | 40 | 16 |",
+      "level": "measured",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-52",
+      "text": "| 有代码块 | 43 | 49 |",
+      "level": "measured",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-53",
+      "text": "| 有表格 | 32 | 46 |",
+      "level": "measured",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-55",
+      "text": "图片与高互动在此配对样本里同向出现，但图片可能只是教程、作者投入或传播能力的替身。下一步应测试“展示真实产物/关键结果的图”，不是给每篇配装饰图。代码和表格在低赞组反而更常见，不能把它们当硬性篇章配额。",
+      "level": "inferred",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-59",
+      "text": "图表可通过 scripts/plot.py 重建，另有 SVG 可导出。高低组没有同作者配对，因此作者和曝光差异仍是主要限制。",
+      "level": "measured",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-61",
+      "text": "“出现实验相关词”的比例为高组 48/65、低组 44/65；这不能证明是否真的做了实验。“検証はしていません”同样会命中，校准测试专门保留了这个反例。开头结果词也是启发式，本轮不据此宣布某种开头更有效。",
+      "level": "measured",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-63",
+      "text": "字数段中位数大多都是 1 赞；20,000 字以上组为 2 赞。不同字数段的主题/作者不同，不能推出越长越好，也不能从本样本证明某个固定最佳字数。篇幅取决于把问题讲清楚所需材料。",
+      "level": "measured",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-65",
+      "text": "证据：[`body-features.json`](body-features.json)、statistics.json/body_features 与 length_groups。自写 HTMLParser 的图片、代码块、表格计数已与 BeautifulSoup 对全部 160 篇独立对照一致；这只验证结构计数，不验证文章真实性。",
+      "level": "measured",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-69",
+      "text": "下面是对子样本开头、结构、结果/限制段的人工式阅读归纳（由本次 AI 读取原文产物后判断），不是复现了作者实验。内容事实按作者表述，不替他们背书。",
+      "level": "inferred",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-71",
+      "text": "| 案例 | 读到的具体组织方式 | 对我们有用的判断 |",
+      "level": "inferred",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-73",
+      "text": "| [云端 Agent 开发经历](https://zenn.dev/sc30gsw/articles/953334f11df507) | 从下班关电脑、次日看 PR 的场景开头，再说明专用环境、实际使用方式及本地保留工作 | 先让读者看见工作怎么变，再讲工具机制；具体场景比泛讲 Agent 趋势容易理解 |",
+      "level": "read",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        },
+        {
+          "path": "results/raw\\08e134315da3c33db8512858.json",
+          "sha256": "a644e2dbe309341a2999e423f8bad21dd70e8bcc09510cf682c1fc281bbe296c"
+        },
+        {
+          "path": "results/raw\\c833337144a95d88d09e9921.json",
+          "sha256": "35cb2f7b0a173d042ed4d5bf55d43c6b7b4d8c1b80ba8678639912f37035116b"
+        },
+        {
+          "path": "results/raw\\562a37c163c38101f77b7ebc.json",
+          "sha256": "4a43f07bbaee329bab09131a49b6f6f7ddf73843882fe2a227dda3cfc7109581"
+        },
+        {
+          "path": "results/raw\\b0df7821e0075d2356b7f11e.json",
+          "sha256": "0bcdd86ec7ca7f5a7d2b1bf5d192e9884b20d524a26b5c696aec56fc167b5869"
+        },
+        {
+          "path": "results/raw\\a49d746315a4081f38d2105f.json",
+          "sha256": "c9739395bab69fa2ca145d3c47be89c415e2b4a1fd12f48a056057d8ca1a1860"
+        },
+        {
+          "path": "results/raw\\005cc4a45ed82a6b637bf2e8.json",
+          "sha256": "43200df3a3912a9c05483d0081669b40cb25abe950884e0b11e6ecb0a47a6f5c"
+        },
+        {
+          "path": "results/probe.json",
+          "sha256": "1b526c1b6dc09a62f7ef504e67c2adcf364a1424847fff1c1fe5faf3db769fbe"
+        },
+        {
+          "path": "results/probe-extra.json",
+          "sha256": "b082b4e1893aa6edeb4a859a91f2a50688417792640a7f1bb1a7dc1f2cbe308f"
+        }
+      ]
+    },
+    {
+      "id": "line-74",
+      "text": "| [重新看 Jev 与 LLM 的比较](https://zenn.dev/nwn/articles/824026c76116e0) | 提出已有 LLM 是否也能做到的问题，重构比较方式，列出游戏测试表，并承认模型选择与环境限制 | 热点可以变成公平对照问题，形成独有内容；强标题后仍能保留“不足以下普遍结论” |",
+      "level": "read",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        },
+        {
+          "path": "results/raw\\08e134315da3c33db8512858.json",
+          "sha256": "a644e2dbe309341a2999e423f8bad21dd70e8bcc09510cf682c1fc281bbe296c"
+        },
+        {
+          "path": "results/raw\\c833337144a95d88d09e9921.json",
+          "sha256": "35cb2f7b0a173d042ed4d5bf55d43c6b7b4d8c1b80ba8678639912f37035116b"
+        },
+        {
+          "path": "results/raw\\562a37c163c38101f77b7ebc.json",
+          "sha256": "4a43f07bbaee329bab09131a49b6f6f7ddf73843882fe2a227dda3cfc7109581"
+        },
+        {
+          "path": "results/raw\\b0df7821e0075d2356b7f11e.json",
+          "sha256": "0bcdd86ec7ca7f5a7d2b1bf5d192e9884b20d524a26b5c696aec56fc167b5869"
+        },
+        {
+          "path": "results/raw\\a49d746315a4081f38d2105f.json",
+          "sha256": "c9739395bab69fa2ca145d3c47be89c415e2b4a1fd12f48a056057d8ca1a1860"
+        },
+        {
+          "path": "results/raw\\005cc4a45ed82a6b637bf2e8.json",
+          "sha256": "43200df3a3912a9c05483d0081669b40cb25abe950884e0b11e6ecb0a47a6f5c"
+        },
+        {
+          "path": "results/probe.json",
+          "sha256": "1b526c1b6dc09a62f7ef504e67c2adcf364a1424847fff1c1fe5faf3db769fbe"
+        },
+        {
+          "path": "results/probe-extra.json",
+          "sha256": "b082b4e1893aa6edeb4a859a91f2a50688417792640a7f1bb1a7dc1f2cbe308f"
+        }
+      ]
+    },
+    {
+      "id": "line-75",
+      "text": "| [Claude Docs 实际试用](https://zenn.dev/canly/articles/7ac8cea14c20e8) | 开头交代实际试用时间，区分不同付费方案的亲测与未测，指出文档与屏幕行为差异 | 新功能文章的增量在版本/方案差异和踩坑证据，而非复述发布新闻 |",
+      "level": "read",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        },
+        {
+          "path": "results/raw\\08e134315da3c33db8512858.json",
+          "sha256": "a644e2dbe309341a2999e423f8bad21dd70e8bcc09510cf682c1fc281bbe296c"
+        },
+        {
+          "path": "results/raw\\c833337144a95d88d09e9921.json",
+          "sha256": "35cb2f7b0a173d042ed4d5bf55d43c6b7b4d8c1b80ba8678639912f37035116b"
+        },
+        {
+          "path": "results/raw\\562a37c163c38101f77b7ebc.json",
+          "sha256": "4a43f07bbaee329bab09131a49b6f6f7ddf73843882fe2a227dda3cfc7109581"
+        },
+        {
+          "path": "results/raw\\b0df7821e0075d2356b7f11e.json",
+          "sha256": "0bcdd86ec7ca7f5a7d2b1bf5d192e9884b20d524a26b5c696aec56fc167b5869"
+        },
+        {
+          "path": "results/raw\\a49d746315a4081f38d2105f.json",
+          "sha256": "c9739395bab69fa2ca145d3c47be89c415e2b4a1fd12f48a056057d8ca1a1860"
+        },
+        {
+          "path": "results/raw\\005cc4a45ed82a6b637bf2e8.json",
+          "sha256": "43200df3a3912a9c05483d0081669b40cb25abe950884e0b11e6ecb0a47a6f5c"
+        },
+        {
+          "path": "results/probe.json",
+          "sha256": "1b526c1b6dc09a62f7ef504e67c2adcf364a1424847fff1c1fe5faf3db769fbe"
+        },
+        {
+          "path": "results/probe-extra.json",
+          "sha256": "b082b4e1893aa6edeb4a859a91f2a50688417792640a7f1bb1a7dc1f2cbe308f"
+        }
+      ]
+    },
+    {
+      "id": "line-76",
+      "text": "| [Claude Code Desktop 使用体验](https://zenn.dev/goat_eat_any/articles/claude-code-desktop-app) | 从旧印象与现在体验的差异进入，每项功能配界面与操作描述 | 不必每篇都做复杂 benchmark；真正新增的实际体验也能成为研究素材 |",
+      "level": "read",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        },
+        {
+          "path": "results/raw\\08e134315da3c33db8512858.json",
+          "sha256": "a644e2dbe309341a2999e423f8bad21dd70e8bcc09510cf682c1fc281bbe296c"
+        },
+        {
+          "path": "results/raw\\c833337144a95d88d09e9921.json",
+          "sha256": "35cb2f7b0a173d042ed4d5bf55d43c6b7b4d8c1b80ba8678639912f37035116b"
+        },
+        {
+          "path": "results/raw\\562a37c163c38101f77b7ebc.json",
+          "sha256": "4a43f07bbaee329bab09131a49b6f6f7ddf73843882fe2a227dda3cfc7109581"
+        },
+        {
+          "path": "results/raw\\b0df7821e0075d2356b7f11e.json",
+          "sha256": "0bcdd86ec7ca7f5a7d2b1bf5d192e9884b20d524a26b5c696aec56fc167b5869"
+        },
+        {
+          "path": "results/raw\\a49d746315a4081f38d2105f.json",
+          "sha256": "c9739395bab69fa2ca145d3c47be89c415e2b4a1fd12f48a056057d8ca1a1860"
+        },
+        {
+          "path": "results/raw\\005cc4a45ed82a6b637bf2e8.json",
+          "sha256": "43200df3a3912a9c05483d0081669b40cb25abe950884e0b11e6ecb0a47a6f5c"
+        },
+        {
+          "path": "results/probe.json",
+          "sha256": "1b526c1b6dc09a62f7ef504e67c2adcf364a1424847fff1c1fe5faf3db769fbe"
+        },
+        {
+          "path": "results/probe-extra.json",
+          "sha256": "b082b4e1893aa6edeb4a859a91f2a50688417792640a7f1bb1a7dc1f2cbe308f"
+        }
+      ]
+    },
+    {
+      "id": "line-77",
+      "text": "| [LLM 同步文档的经历](https://zenn.dev/vaonvn/articles/c67ef2c9dd067e) | 讲清文档漂移问题、可自动化与需人工的边界，主动说明未准确测量节省天数；快照为零赞 | 有问题、有经验、有边界仍可能低赞。不能以低赞判内容无价值，也不能承诺遵循结构就获赞 |",
+      "level": "read",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        },
+        {
+          "path": "results/raw\\08e134315da3c33db8512858.json",
+          "sha256": "a644e2dbe309341a2999e423f8bad21dd70e8bcc09510cf682c1fc281bbe296c"
+        },
+        {
+          "path": "results/raw\\c833337144a95d88d09e9921.json",
+          "sha256": "35cb2f7b0a173d042ed4d5bf55d43c6b7b4d8c1b80ba8678639912f37035116b"
+        },
+        {
+          "path": "results/raw\\562a37c163c38101f77b7ebc.json",
+          "sha256": "4a43f07bbaee329bab09131a49b6f6f7ddf73843882fe2a227dda3cfc7109581"
+        },
+        {
+          "path": "results/raw\\b0df7821e0075d2356b7f11e.json",
+          "sha256": "0bcdd86ec7ca7f5a7d2b1bf5d192e9884b20d524a26b5c696aec56fc167b5869"
+        },
+        {
+          "path": "results/raw\\a49d746315a4081f38d2105f.json",
+          "sha256": "c9739395bab69fa2ca145d3c47be89c415e2b4a1fd12f48a056057d8ca1a1860"
+        },
+        {
+          "path": "results/raw\\005cc4a45ed82a6b637bf2e8.json",
+          "sha256": "43200df3a3912a9c05483d0081669b40cb25abe950884e0b11e6ecb0a47a6f5c"
+        },
+        {
+          "path": "results/probe.json",
+          "sha256": "1b526c1b6dc09a62f7ef504e67c2adcf364a1424847fff1c1fe5faf3db769fbe"
+        },
+        {
+          "path": "results/probe-extra.json",
+          "sha256": "b082b4e1893aa6edeb4a859a91f2a50688417792640a7f1bb1a7dc1f2cbe308f"
+        }
+      ]
+    },
+    {
+      "id": "line-78",
+      "text": "| [TiDB 反向匹配 PoC](https://zenn.dev/fumi3333/articles/1a3e5b726498d8) | 有具体用户提问、SQL/代码、实现结果，并区分技术可行与匹配体验尚未验证；快照为零赞 | “假说验证型”不是自动流量机。需同时关注读者规模、标题收益、作者与分发渠道 |",
+      "level": "read",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        },
+        {
+          "path": "results/raw\\08e134315da3c33db8512858.json",
+          "sha256": "a644e2dbe309341a2999e423f8bad21dd70e8bcc09510cf682c1fc281bbe296c"
+        },
+        {
+          "path": "results/raw\\c833337144a95d88d09e9921.json",
+          "sha256": "35cb2f7b0a173d042ed4d5bf55d43c6b7b4d8c1b80ba8678639912f37035116b"
+        },
+        {
+          "path": "results/raw\\562a37c163c38101f77b7ebc.json",
+          "sha256": "4a43f07bbaee329bab09131a49b6f6f7ddf73843882fe2a227dda3cfc7109581"
+        },
+        {
+          "path": "results/raw\\b0df7821e0075d2356b7f11e.json",
+          "sha256": "0bcdd86ec7ca7f5a7d2b1bf5d192e9884b20d524a26b5c696aec56fc167b5869"
+        },
+        {
+          "path": "results/raw\\a49d746315a4081f38d2105f.json",
+          "sha256": "c9739395bab69fa2ca145d3c47be89c415e2b4a1fd12f48a056057d8ca1a1860"
+        },
+        {
+          "path": "results/raw\\005cc4a45ed82a6b637bf2e8.json",
+          "sha256": "43200df3a3912a9c05483d0081669b40cb25abe950884e0b11e6ecb0a47a6f5c"
+        },
+        {
+          "path": "results/probe.json",
+          "sha256": "1b526c1b6dc09a62f7ef504e67c2adcf364a1424847fff1c1fe5faf3db769fbe"
+        },
+        {
+          "path": "results/probe-extra.json",
+          "sha256": "b082b4e1893aa6edeb4a859a91f2a50688417792640a7f1bb1a7dc1f2cbe308f"
+        }
+      ]
+    },
+    {
+      "id": "line-80",
+      "text": "这些案例的原始详情通过 detail-index.json 按 slug 查找。低赞配对只是观察，不代表同一读者或同等曝光，也不是对作者质量的排名。",
+      "level": "inferred",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-84",
+      "text": "优先研究“热门主张在实际条件下是否成立”与“团队正在遇到的具体问题”。选择题目时同时填两句话：读者为什么关心、我们能新增什么证据。二者缺一，先补选题，不急着写文章。",
+      "level": "inferred",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-86",
+      "text": "| 可研究的问题 | 条件成立后可用的日语标题方向 | 正文必须兑现 |",
+      "level": "inferred",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-88",
+      "text": "| RAG 检索是否会因表格转换丢失对应关系 | `RAGの検索ミスは分割のせい？表の変換から確かめた` | 原文/转换后对照、已知答案、检索失败样例、适用边界 |",
+      "level": "inferred",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-89",
+      "text": "| AI 审查是否相信“测试通过”的摘要而忽略原始失败 | `AIレビューは「テスト済み」を信じる？実行ログで確かめた` | 独立会话、成功与失败材料、盲测设计、错判实例 |",
+      "level": "inferred",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-90",
+      "text": "| 新闻中的性能主张在公平基线下是否仍成立 | `その高速化、公平に比べても残る？○○を同じ条件で試した` | 一致环境与任务、成本/质量同时报告、不能比较的条件 |",
+      "level": "inferred",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-92",
+      "text": "这些是待验证题目和标题草案，不是已经得到的实验结论。不把样本数字或他人结果写成我们的成绩。",
+      "level": "inferred",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-94",
+      "text": "正文建议是：开头交代读者问题和已经确认的结果；随后给一张最能说明差异的真实产物/结果图，解释如何测试、哪些地方失败，以及读者怎样复用。证据不足时照实写不确定性，不为了有戏剧性强行制造反转。最终标题依据实际发现改写。",
+      "level": "inferred",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-96",
+      "text": "发布后应按预先设定的相同观察时点记录赞、收藏和可取得的阅读量，并保存当时标题、正文版本和分发渠道。曝光数据缺失时，结论只能是互动量变化。未来通过同作者同主题系列积累经验，避免把任意两篇文章的差异归因于标题。",
+      "level": "inferred",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-100",
+      "text": "已实际完成：参数探测、声明采样、原始响应留存、去重统计、同主题同月正文配对、真实缓存零请求、真实增量遇已知页停止、结构正反例和独立解析器对照。结果见 [`ruler_check.json`](ruler_check.json)。",
+      "level": "inferred",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    },
+    {
+      "id": "line-102",
+      "text": "未完成：全站完整抓取、所有正文人工语义标注、作者粉丝与曝光控制、标题因果实验、发布后 KPI 改善验证。缓存刷新采用新内容重叠停止时，不会自动更新旧文章的赞数；正式复盘应刷新指定文章详情快照。",
+      "level": "inferred",
+      "scope": "2026-09-25 declared Zenn sample; descriptive observation, read article content, or explicitly limited recommendation; no causal or publication effect claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413"
+        },
+        {
+          "path": "results/statistics.json",
+          "sha256": "4733252de8ae8a21168773251effe28f7d452d2a5ee1dd508ba7f5cfe94a67fd"
+        }
+      ]
+    }
+  ],
+  "numbers": [
+    {
+      "index": 0,
+      "token": "2026",
+      "kind": "date",
+      "reason": "Snapshot observation date, not a performance metric."
+    },
+    {
+      "index": 1,
+      "token": "-09",
+      "kind": "date",
+      "reason": "Snapshot observation date, not a performance metric."
+    },
+    {
+      "index": 2,
+      "token": "-25",
+      "kind": "date",
+      "reason": "Snapshot observation date, not a performance metric."
+    },
+    {
+      "index": 3,
+      "token": "600",
+      "kind": "measurement",
+      "claim_id": "line-13",
+      "unit": "articles",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/latest_per_topic",
+        "unit": "articles"
+      }
+    },
+    {
+      "index": 4,
+      "token": "100",
+      "kind": "measurement",
+      "claim_id": "line-13",
+      "unit": "articles",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/alltime_per_topic",
+        "unit": "articles"
+      }
+    },
+    {
+      "index": 5,
+      "token": "200",
+      "kind": "measurement",
+      "claim_id": "line-13",
+      "unit": "articles",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/global_alltime",
+        "unit": "articles"
+      }
+    },
+    {
+      "index": 6,
+      "token": "4,400",
+      "kind": "measurement",
+      "claim_id": "line-13",
+      "unit": "memberships",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/membership_count",
+        "unit": "memberships"
+      }
+    },
+    {
+      "index": 7,
+      "token": "3,633",
+      "kind": "measurement",
+      "claim_id": "line-13",
+      "unit": "articles",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/unique_articles",
+        "unit": "articles"
+      }
+    },
+    {
+      "index": 8,
+      "token": "7",
+      "kind": "measurement",
+      "claim_id": "line-14",
+      "unit": "days",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/maturity_days",
+        "unit": "days"
+      }
+    },
+    {
+      "index": 9,
+      "token": "2,151",
+      "kind": "measurement",
+      "claim_id": "line-14",
+      "unit": "articles",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/mature_articles",
+        "unit": "articles"
+      }
+    },
+    {
+      "index": 10,
+      "token": "160",
+      "kind": "measurement",
+      "claim_id": "line-15",
+      "unit": "articles",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/detail_articles",
+        "unit": "articles"
+      }
+    },
+    {
+      "index": 11,
+      "token": "65",
+      "kind": "measurement",
+      "claim_id": "line-15",
+      "unit": "pairs",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/pair_count",
+        "unit": "pairs"
+      }
+    },
+    {
+      "index": 12,
+      "token": "14",
+      "kind": "measurement",
+      "claim_id": "line-15",
+      "unit": "days",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/match_window_days",
+        "unit": "days"
+      }
+    },
+    {
+      "index": 13,
+      "token": "30",
+      "kind": "measurement",
+      "claim_id": "line-15",
+      "unit": "articles",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/historical_articles",
+        "unit": "articles"
+      }
+    },
+    {
+      "index": 14,
+      "token": "283,553",
+      "kind": "measurement",
+      "claim_id": "line-16",
+      "unit": "urls",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/sitemap_urls",
+        "unit": "urls"
+      }
+    },
+    {
+      "index": 15,
+      "token": "100",
+      "kind": "measurement",
+      "claim_id": "line-20",
+      "unit": "articles_per_request",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/assumed_page_size",
+        "unit": "articles_per_request"
+      }
+    },
+    {
+      "index": 16,
+      "token": "2,836",
+      "kind": "measurement",
+      "claim_id": "line-20",
+      "unit": "requests",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/estimated_list_requests",
+        "unit": "requests"
+      }
+    },
+    {
+      "index": 17,
+      "token": "1.1",
+      "kind": "measurement",
+      "claim_id": "line-20",
+      "unit": "seconds",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/request_interval",
+        "unit": "seconds"
+      }
+    },
+    {
+      "index": 18,
+      "token": "52",
+      "kind": "measurement",
+      "claim_id": "line-20",
+      "unit": "minutes",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/estimated_list_minutes",
+        "unit": "minutes"
+      },
+      "decimals": 0
+    },
+    {
+      "index": 19,
+      "token": "87",
+      "kind": "measurement",
+      "claim_id": "line-20",
+      "unit": "hours",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/estimated_detail_hours",
+        "unit": "hours"
+      },
+      "decimals": 0
+    },
+    {
+      "index": 20,
+      "token": "103",
+      "kind": "measurement",
+      "claim_id": "line-24",
+      "unit": "likes",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/sort_like_0",
+        "unit": "likes"
+      }
+    },
+    {
+      "index": 21,
+      "token": "143",
+      "kind": "measurement",
+      "claim_id": "line-24",
+      "unit": "likes",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/sort_like_1",
+        "unit": "likes"
+      }
+    },
+    {
+      "index": 22,
+      "token": "10",
+      "kind": "measurement",
+      "claim_id": "line-24",
+      "unit": "articles",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/unknown_sort_ids",
+        "unit": "articles"
+      }
+    },
+    {
+      "index": 23,
+      "token": "100",
+      "kind": "measurement",
+      "claim_id": "line-26",
+      "unit": "requested_articles",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/request_count_100",
+        "unit": "requested_articles"
+      }
+    },
+    {
+      "index": 24,
+      "token": "100",
+      "kind": "measurement",
+      "claim_id": "line-26",
+      "unit": "articles",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/response_count_100",
+        "unit": "articles"
+      }
+    },
+    {
+      "index": 25,
+      "token": "200",
+      "kind": "measurement",
+      "claim_id": "line-26",
+      "unit": "requested_articles",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/request_count_200",
+        "unit": "requested_articles"
+      }
+    },
+    {
+      "index": 26,
+      "token": "100",
+      "kind": "measurement",
+      "claim_id": "line-26",
+      "unit": "articles",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/response_count_200",
+        "unit": "articles"
+      }
+    },
+    {
+      "index": 27,
+      "token": "2",
+      "kind": "measurement",
+      "claim_id": "line-26",
+      "unit": "page",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/tested_page",
+        "unit": "page"
+      }
+    },
+    {
+      "index": 28,
+      "token": "136",
+      "kind": "measurement",
+      "claim_id": "line-36",
+      "unit": "articles",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/question_yes_n",
+        "unit": "articles"
+      }
+    },
+    {
+      "index": 29,
+      "token": "2",
+      "kind": "measurement",
+      "claim_id": "line-36",
+      "unit": "likes",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/question_yes_median_likes",
+        "unit": "likes"
+      }
+    },
+    {
+      "index": 30,
+      "token": "1",
+      "kind": "measurement",
+      "claim_id": "line-36",
+      "unit": "likes",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/question_no_median_likes",
+        "unit": "likes"
+      }
+    },
+    {
+      "index": 31,
+      "token": "756",
+      "kind": "measurement",
+      "claim_id": "line-37",
+      "unit": "articles",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/number_yes_n",
+        "unit": "articles"
+      }
+    },
+    {
+      "index": 32,
+      "token": "1",
+      "kind": "measurement",
+      "claim_id": "line-37",
+      "unit": "likes",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/number_yes_median_likes",
+        "unit": "likes"
+      }
+    },
+    {
+      "index": 33,
+      "token": "1",
+      "kind": "measurement",
+      "claim_id": "line-37",
+      "unit": "likes",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/number_no_median_likes",
+        "unit": "likes"
+      }
+    },
+    {
+      "index": 34,
+      "token": "183",
+      "kind": "measurement",
+      "claim_id": "line-38",
+      "unit": "articles",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/trial_or_comparison_yes_n",
+        "unit": "articles"
+      }
+    },
+    {
+      "index": 35,
+      "token": "1",
+      "kind": "measurement",
+      "claim_id": "line-38",
+      "unit": "likes",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/trial_or_comparison_yes_median_likes",
+        "unit": "likes"
+      }
+    },
+    {
+      "index": 36,
+      "token": "1",
+      "kind": "measurement",
+      "claim_id": "line-38",
+      "unit": "likes",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/trial_or_comparison_no_median_likes",
+        "unit": "likes"
+      }
+    },
+    {
+      "index": 37,
+      "token": "126",
+      "kind": "measurement",
+      "claim_id": "line-39",
+      "unit": "articles",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/failure_or_limit_yes_n",
+        "unit": "articles"
+      }
+    },
+    {
+      "index": 38,
+      "token": "1",
+      "kind": "measurement",
+      "claim_id": "line-39",
+      "unit": "likes",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/failure_or_limit_yes_median_likes",
+        "unit": "likes"
+      }
+    },
+    {
+      "index": 39,
+      "token": "1",
+      "kind": "measurement",
+      "claim_id": "line-39",
+      "unit": "likes",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/failure_or_limit_no_median_likes",
+        "unit": "likes"
+      }
+    },
+    {
+      "index": 40,
+      "token": "203",
+      "kind": "measurement",
+      "claim_id": "line-40",
+      "unit": "articles",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/guide_or_summary_yes_n",
+        "unit": "articles"
+      }
+    },
+    {
+      "index": 41,
+      "token": "1",
+      "kind": "measurement",
+      "claim_id": "line-40",
+      "unit": "likes",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/guide_or_summary_yes_median_likes",
+        "unit": "likes"
+      }
+    },
+    {
+      "index": 42,
+      "token": "1",
+      "kind": "measurement",
+      "claim_id": "line-40",
+      "unit": "likes",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/guide_or_summary_no_median_likes",
+        "unit": "likes"
+      }
+    },
+    {
+      "index": 43,
+      "token": "221",
+      "kind": "measurement",
+      "claim_id": "line-41",
+      "unit": "articles",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/firsthand_build_yes_n",
+        "unit": "articles"
+      }
+    },
+    {
+      "index": 44,
+      "token": "1",
+      "kind": "measurement",
+      "claim_id": "line-41",
+      "unit": "likes",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/firsthand_build_yes_median_likes",
+        "unit": "likes"
+      }
+    },
+    {
+      "index": 45,
+      "token": "1",
+      "kind": "measurement",
+      "claim_id": "line-41",
+      "unit": "likes",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/firsthand_build_no_median_likes",
+        "unit": "likes"
+      }
+    },
+    {
+      "index": 46,
+      "token": "12",
+      "kind": "measurement",
+      "claim_id": "line-43",
+      "unit": "cells",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/question_cells",
+        "unit": "cells"
+      }
+    },
+    {
+      "index": 47,
+      "token": "10",
+      "kind": "measurement",
+      "claim_id": "line-43",
+      "unit": "cells",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/question_positive_cells",
+        "unit": "cells"
+      }
+    },
+    {
+      "index": 48,
+      "token": "1",
+      "kind": "code",
+      "reason": "Mathematical constant in log(1+likes), not an observed count."
+    },
+    {
+      "index": 49,
+      "token": "7",
+      "kind": "measurement",
+      "claim_id": "line-43",
+      "unit": "cells",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/question_author_positive_cells",
+        "unit": "cells"
+      }
+    },
+    {
+      "index": 50,
+      "token": "65",
+      "kind": "measurement",
+      "claim_id": "line-49",
+      "unit": "articles",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/images_higher_n",
+        "unit": "articles"
+      }
+    },
+    {
+      "index": 51,
+      "token": "65",
+      "kind": "measurement",
+      "claim_id": "line-49",
+      "unit": "articles",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/images_lower_n",
+        "unit": "articles"
+      }
+    },
+    {
+      "index": 52,
+      "token": "40",
+      "kind": "measurement",
+      "claim_id": "line-51",
+      "unit": "articles",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/images_higher_positive",
+        "unit": "articles"
+      }
+    },
+    {
+      "index": 53,
+      "token": "16",
+      "kind": "measurement",
+      "claim_id": "line-51",
+      "unit": "articles",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/images_lower_positive",
+        "unit": "articles"
+      }
+    },
+    {
+      "index": 54,
+      "token": "43",
+      "kind": "measurement",
+      "claim_id": "line-52",
+      "unit": "articles",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/code_blocks_higher_positive",
+        "unit": "articles"
+      }
+    },
+    {
+      "index": 55,
+      "token": "49",
+      "kind": "measurement",
+      "claim_id": "line-52",
+      "unit": "articles",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/code_blocks_lower_positive",
+        "unit": "articles"
+      }
+    },
+    {
+      "index": 56,
+      "token": "32",
+      "kind": "measurement",
+      "claim_id": "line-53",
+      "unit": "articles",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/tables_higher_positive",
+        "unit": "articles"
+      }
+    },
+    {
+      "index": 57,
+      "token": "46",
+      "kind": "measurement",
+      "claim_id": "line-53",
+      "unit": "articles",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/tables_lower_positive",
+        "unit": "articles"
+      }
+    },
+    {
+      "index": 58,
+      "token": "48",
+      "kind": "measurement",
+      "claim_id": "line-61",
+      "unit": "articles",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/measurement_words_higher_positive",
+        "unit": "articles"
+      }
+    },
+    {
+      "index": 59,
+      "token": "65",
+      "kind": "measurement",
+      "claim_id": "line-61",
+      "unit": "articles",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/measurement_words_higher_n",
+        "unit": "articles"
+      }
+    },
+    {
+      "index": 60,
+      "token": "44",
+      "kind": "measurement",
+      "claim_id": "line-61",
+      "unit": "articles",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/measurement_words_lower_positive",
+        "unit": "articles"
+      }
+    },
+    {
+      "index": 61,
+      "token": "65",
+      "kind": "measurement",
+      "claim_id": "line-61",
+      "unit": "articles",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/measurement_words_lower_n",
+        "unit": "articles"
+      }
+    },
+    {
+      "index": 62,
+      "token": "1",
+      "kind": "measurement",
+      "claim_id": "line-63",
+      "unit": "likes",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/most_length_median",
+        "unit": "likes"
+      }
+    },
+    {
+      "index": 63,
+      "token": "20,000",
+      "kind": "measurement",
+      "claim_id": "line-63",
+      "unit": "api_body_letters",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/long_length_threshold",
+        "unit": "api_body_letters"
+      }
+    },
+    {
+      "index": 64,
+      "token": "2",
+      "kind": "measurement",
+      "claim_id": "line-63",
+      "unit": "likes",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/long_length_median",
+        "unit": "likes"
+      }
+    },
+    {
+      "index": 65,
+      "token": "160",
+      "kind": "measurement",
+      "claim_id": "line-65",
+      "unit": "articles",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "15bd1b9823743c0e32a49e3e144268f87bcc21a9dfdd99334460edb8b5600413",
+        "run_id": "zenn-research-20260925",
+        "pointer": "/metrics/parser_comparisons",
+        "unit": "articles"
+      }
+    },
+    {
+      "index": 66,
+      "token": "30",
+      "kind": "identifier",
+      "reason": "Digits inside cited source URL/slug; not a quantitative claim."
+    },
+    {
+      "index": 67,
+      "token": "953334",
+      "kind": "identifier",
+      "reason": "Digits inside cited source URL/slug; not a quantitative claim."
+    },
+    {
+      "index": 68,
+      "token": "11",
+      "kind": "identifier",
+      "reason": "Digits inside cited source URL/slug; not a quantitative claim."
+    },
+    {
+      "index": 69,
+      "token": "507",
+      "kind": "identifier",
+      "reason": "Digits inside cited source URL/slug; not a quantitative claim."
+    },
+    {
+      "index": 70,
+      "token": "824026",
+      "kind": "identifier",
+      "reason": "Digits inside cited source URL/slug; not a quantitative claim."
+    },
+    {
+      "index": 71,
+      "token": "76116e0",
+      "kind": "identifier",
+      "reason": "Digits inside cited source URL/slug; not a quantitative claim."
+    },
+    {
+      "index": 72,
+      "token": "7",
+      "kind": "identifier",
+      "reason": "Digits inside cited source URL/slug; not a quantitative claim."
+    },
+    {
+      "index": 73,
+      "token": "8",
+      "kind": "identifier",
+      "reason": "Digits inside cited source URL/slug; not a quantitative claim."
+    },
+    {
+      "index": 74,
+      "token": "14",
+      "kind": "identifier",
+      "reason": "Digits inside cited source URL/slug; not a quantitative claim."
+    },
+    {
+      "index": 75,
+      "token": "20e8",
+      "kind": "identifier",
+      "reason": "Digits inside cited source URL/slug; not a quantitative claim."
+    },
+    {
+      "index": 76,
+      "token": "67",
+      "kind": "identifier",
+      "reason": "Digits inside cited source URL/slug; not a quantitative claim."
+    },
+    {
+      "index": 77,
+      "token": "2",
+      "kind": "identifier",
+      "reason": "Digits inside cited source URL/slug; not a quantitative claim."
+    },
+    {
+      "index": 78,
+      "token": "9",
+      "kind": "identifier",
+      "reason": "Digits inside cited source URL/slug; not a quantitative claim."
+    },
+    {
+      "index": 79,
+      "token": "067",
+      "kind": "identifier",
+      "reason": "Digits inside cited source URL/slug; not a quantitative claim."
+    },
+    {
+      "index": 80,
+      "token": "3333",
+      "kind": "identifier",
+      "reason": "Digits inside cited source URL/slug; not a quantitative claim."
+    },
+    {
+      "index": 81,
+      "token": "1",
+      "kind": "identifier",
+      "reason": "Digits inside cited source URL/slug; not a quantitative claim."
+    },
+    {
+      "index": 82,
+      "token": "3e5",
+      "kind": "identifier",
+      "reason": "Digits inside cited source URL/slug; not a quantitative claim."
+    },
+    {
+      "index": 83,
+      "token": "726498",
+      "kind": "identifier",
+      "reason": "Digits inside cited source URL/slug; not a quantitative claim."
+    },
+    {
+      "index": 84,
+      "token": "8",
+      "kind": "identifier",
+      "reason": "Digits inside cited source URL/slug; not a quantitative claim."
+    }
+  ]
+}

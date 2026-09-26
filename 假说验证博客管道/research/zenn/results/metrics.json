@@ -1,0 +1,509 @@
+{
+  "run_id": "zenn-research-20260925",
+  "metrics": {
+    "latest_per_topic": {
+      "value": 600,
+      "unit": "articles",
+      "source": "results/coverage.json#/coverage",
+      "method": "All six latest queries observed 600 unique IDs each; assert below."
+    },
+    "alltime_per_topic": {
+      "value": 100,
+      "unit": "articles",
+      "source": "results/coverage.json#/coverage",
+      "method": "Six topic alltime query counts."
+    },
+    "global_alltime": {
+      "value": 200,
+      "unit": "articles",
+      "source": "results/coverage.json#/coverage",
+      "method": "Global alltime query unique count."
+    },
+    "membership_count": {
+      "value": 4400,
+      "unit": "memberships",
+      "source": "results/coverage.json#/coverage",
+      "method": "Sum unique_seen_this_run across declared queries, before cross-query deduplication."
+    },
+    "unique_articles": {
+      "value": 3633,
+      "unit": "articles",
+      "source": "results/statistics.json#/unique_articles",
+      "method": "Deduplicate list article IDs across query indexes."
+    },
+    "maturity_days": {
+      "value": 7,
+      "unit": "days",
+      "source": "results/analysis-scripts/analyze.py",
+      "method": "Predefined age inclusion threshold, not measured improvement."
+    },
+    "mature_articles": {
+      "value": 2151,
+      "unit": "articles",
+      "source": "results/statistics.json#/recent_mature_unique",
+      "method": "Unique latest IDs with age_days >= 7 at snapshot time."
+    },
+    "detail_articles": {
+      "value": 160,
+      "unit": "articles",
+      "source": "results/selection.json",
+      "method": "Length of declared selected detail IDs."
+    },
+    "pair_count": {
+      "value": 65,
+      "unit": "pairs",
+      "source": "results/pairs.json",
+      "method": "Number of topic/month matched high-low pairs."
+    },
+    "match_window_days": {
+      "value": 14,
+      "unit": "days",
+      "source": "results/analysis-scripts/analyze.py",
+      "method": "Predeclared maximum absolute date difference; all actual gaps within bound."
+    },
+    "historical_articles": {
+      "value": 30,
+      "unit": "articles",
+      "source": "results/selection.json",
+      "method": "Count group == historical_example."
+    },
+    "sitemap_urls": {
+      "value": 283553,
+      "unit": "urls",
+      "source": "results/sitemap-coverage.json#/sitemaps",
+      "method": "Sum XML root child URL entry counts over the six fetched article sitemaps."
+    },
+    "assumed_page_size": {
+      "value": 100,
+      "unit": "articles_per_request",
+      "source": "results/probe.json",
+      "method": "Assumption for extrapolated lower-bound cost, observed working count, not proof of deep pagination."
+    },
+    "estimated_list_requests": {
+      "value": 2836,
+      "unit": "requests",
+      "source": "results/sitemap-coverage.json",
+      "method": "ceil(sitemap_urls / observed_page_size). Model estimate, not executed full crawl."
+    },
+    "request_interval": {
+      "value": 1.1,
+      "unit": "seconds",
+      "source": "results/sampling-plan.json#/minimum_interval_seconds",
+      "method": "Declared request interval."
+    },
+    "estimated_list_minutes": {
+      "value": 51.99333333333334,
+      "unit": "minutes",
+      "source": "results/sitemap-coverage.json",
+      "method": "ceil(sitemap_urls/100)*request_interval/60; ignores response cost."
+    },
+    "estimated_detail_hours": {
+      "value": 86.64119444444445,
+      "unit": "hours",
+      "source": "results/sitemap-coverage.json",
+      "method": "sitemap_urls*request_interval/3600; ignores response cost."
+    },
+    "sort_like_0": {
+      "value": 103,
+      "unit": "likes",
+      "source": "results\\raw\\d78e4596f68cc467327c0d60.json",
+      "method": "/response/articles/0/liked_count; observed field, not own engagement result."
+    },
+    "sort_like_1": {
+      "value": 143,
+      "unit": "likes",
+      "source": "results\\raw\\d78e4596f68cc467327c0d60.json",
+      "method": "/response/articles/1/liked_count; observed field, not own engagement result."
+    },
+    "unknown_sort_ids": {
+      "value": 10,
+      "unit": "articles",
+      "source": "results/probe-extra.json#/0/ids",
+      "method": "Compare exact IDs to trending response; assert equality below."
+    },
+    "request_count_100": {
+      "value": 100,
+      "unit": "requested_articles",
+      "source": "results/probe.json#/3/params/count",
+      "method": "Requested query parameter."
+    },
+    "response_count_100": {
+      "value": 100,
+      "unit": "articles",
+      "source": "results/probe.json#/3/count_returned",
+      "method": "Observed list length."
+    },
+    "request_count_200": {
+      "value": 200,
+      "unit": "requested_articles",
+      "source": "results/probe-extra.json#/3/params/count",
+      "method": "Requested query parameter."
+    },
+    "response_count_200": {
+      "value": 100,
+      "unit": "articles",
+      "source": "results/probe-extra.json#/3/count",
+      "method": "Observed list length."
+    },
+    "tested_page": {
+      "value": 2,
+      "unit": "page",
+      "source": "results/probe.json#/4/params/page",
+      "method": "Observed distinct second-page IDs."
+    },
+    "question_yes_n": {
+      "value": 136,
+      "unit": "articles",
+      "source": "results/statistics.json#/title_features",
+      "method": "feature=question, group=yes, field=n"
+    },
+    "question_no_n": {
+      "value": 2015,
+      "unit": "articles",
+      "source": "results/statistics.json#/title_features",
+      "method": "feature=question, group=no, field=n"
+    },
+    "question_yes_median_likes": {
+      "value": 2.0,
+      "unit": "likes",
+      "source": "results/statistics.json#/title_features",
+      "method": "feature=question, group=yes, field=median_likes"
+    },
+    "question_no_median_likes": {
+      "value": 1,
+      "unit": "likes",
+      "source": "results/statistics.json#/title_features",
+      "method": "feature=question, group=no, field=median_likes"
+    },
+    "number_yes_n": {
+      "value": 756,
+      "unit": "articles",
+      "source": "results/statistics.json#/title_features",
+      "method": "feature=number, group=yes, field=n"
+    },
+    "number_no_n": {
+      "value": 1395,
+      "unit": "articles",
+      "source": "results/statistics.json#/title_features",
+      "method": "feature=number, group=no, field=n"
+    },
+    "number_yes_median_likes": {
+      "value": 1.0,
+      "unit": "likes",
+      "source": "results/statistics.json#/title_features",
+      "method": "feature=number, group=yes, field=median_likes"
+    },
+    "number_no_median_likes": {
+      "value": 1,
+      "unit": "likes",
+      "source": "results/statistics.json#/title_features",
+      "method": "feature=number, group=no, field=median_likes"
+    },
+    "trial_or_comparison_yes_n": {
+      "value": 183,
+      "unit": "articles",
+      "source": "results/statistics.json#/title_features",
+      "method": "feature=trial_or_comparison, group=yes, field=n"
+    },
+    "trial_or_comparison_no_n": {
+      "value": 1968,
+      "unit": "articles",
+      "source": "results/statistics.json#/title_features",
+      "method": "feature=trial_or_comparison, group=no, field=n"
+    },
+    "trial_or_comparison_yes_median_likes": {
+      "value": 1,
+      "unit": "likes",
+      "source": "results/statistics.json#/title_features",
+      "method": "feature=trial_or_comparison, group=yes, field=median_likes"
+    },
+    "trial_or_comparison_no_median_likes": {
+      "value": 1.0,
+      "unit": "likes",
+      "source": "results/statistics.json#/title_features",
+      "method": "feature=trial_or_comparison, group=no, field=median_likes"
+    },
+    "failure_or_limit_yes_n": {
+      "value": 126,
+      "unit": "articles",
+      "source": "results/statistics.json#/title_features",
+      "method": "feature=failure_or_limit, group=yes, field=n"
+    },
+    "failure_or_limit_no_n": {
+      "value": 2025,
+      "unit": "articles",
+      "source": "results/statistics.json#/title_features",
+      "method": "feature=failure_or_limit, group=no, field=n"
+    },
+    "failure_or_limit_yes_median_likes": {
+      "value": 1.0,
+      "unit": "likes",
+      "source": "results/statistics.json#/title_features",
+      "method": "feature=failure_or_limit, group=yes, field=median_likes"
+    },
+    "failure_or_limit_no_median_likes": {
+      "value": 1,
+      "unit": "likes",
+      "source": "results/statistics.json#/title_features",
+      "method": "feature=failure_or_limit, group=no, field=median_likes"
+    },
+    "guide_or_summary_yes_n": {
+      "value": 203,
+      "unit": "articles",
+      "source": "results/statistics.json#/title_features",
+      "method": "feature=guide_or_summary, group=yes, field=n"
+    },
+    "guide_or_summary_no_n": {
+      "value": 1948,
+      "unit": "articles",
+      "source": "results/statistics.json#/title_features",
+      "method": "feature=guide_or_summary, group=no, field=n"
+    },
+    "guide_or_summary_yes_median_likes": {
+      "value": 1,
+      "unit": "likes",
+      "source": "results/statistics.json#/title_features",
+      "method": "feature=guide_or_summary, group=yes, field=median_likes"
+    },
+    "guide_or_summary_no_median_likes": {
+      "value": 1.0,
+      "unit": "likes",
+      "source": "results/statistics.json#/title_features",
+      "method": "feature=guide_or_summary, group=no, field=median_likes"
+    },
+    "firsthand_build_yes_n": {
+      "value": 221,
+      "unit": "articles",
+      "source": "results/statistics.json#/title_features",
+      "method": "feature=firsthand_build, group=yes, field=n"
+    },
+    "firsthand_build_no_n": {
+      "value": 1930,
+      "unit": "articles",
+      "source": "results/statistics.json#/title_features",
+      "method": "feature=firsthand_build, group=no, field=n"
+    },
+    "firsthand_build_yes_median_likes": {
+      "value": 1,
+      "unit": "likes",
+      "source": "results/statistics.json#/title_features",
+      "method": "feature=firsthand_build, group=yes, field=median_likes"
+    },
+    "firsthand_build_no_median_likes": {
+      "value": 1.0,
+      "unit": "likes",
+      "source": "results/statistics.json#/title_features",
+      "method": "feature=firsthand_build, group=no, field=median_likes"
+    },
+    "question_cells": {
+      "value": 12,
+      "unit": "cells",
+      "source": "results/statistics.json#/title_features/0/topic_month_cells",
+      "method": "Cells with >=5 items in each feature group."
+    },
+    "question_positive_cells": {
+      "value": 10,
+      "unit": "cells",
+      "source": "results/statistics.json#/title_features/0/topic_month_cells",
+      "method": "Count log1p_difference > 0."
+    },
+    "question_author_positive_cells": {
+      "value": 7,
+      "unit": "cells",
+      "source": "results/statistics.json#/title_features/0/topic_month_cells",
+      "method": "Count equal_author_log1p_difference > 0; not matched author or causal control."
+    },
+    "code_blocks_higher_n": {
+      "value": 65,
+      "unit": "articles",
+      "source": "results/statistics.json#/body_features",
+      "method": "feature=code_blocks, group=higher, field=n"
+    },
+    "code_blocks_higher_positive": {
+      "value": 43,
+      "unit": "articles",
+      "source": "results/statistics.json#/body_features",
+      "method": "feature=code_blocks, group=higher, field=positive"
+    },
+    "code_blocks_lower_n": {
+      "value": 65,
+      "unit": "articles",
+      "source": "results/statistics.json#/body_features",
+      "method": "feature=code_blocks, group=lower, field=n"
+    },
+    "code_blocks_lower_positive": {
+      "value": 49,
+      "unit": "articles",
+      "source": "results/statistics.json#/body_features",
+      "method": "feature=code_blocks, group=lower, field=positive"
+    },
+    "images_higher_n": {
+      "value": 65,
+      "unit": "articles",
+      "source": "results/statistics.json#/body_features",
+      "method": "feature=images, group=higher, field=n"
+    },
+    "images_higher_positive": {
+      "value": 40,
+      "unit": "articles",
+      "source": "results/statistics.json#/body_features",
+      "method": "feature=images, group=higher, field=positive"
+    },
+    "images_lower_n": {
+      "value": 65,
+      "unit": "articles",
+      "source": "results/statistics.json#/body_features",
+      "method": "feature=images, group=lower, field=n"
+    },
+    "images_lower_positive": {
+      "value": 16,
+      "unit": "articles",
+      "source": "results/statistics.json#/body_features",
+      "method": "feature=images, group=lower, field=positive"
+    },
+    "tables_higher_n": {
+      "value": 65,
+      "unit": "articles",
+      "source": "results/statistics.json#/body_features",
+      "method": "feature=tables, group=higher, field=n"
+    },
+    "tables_higher_positive": {
+      "value": 32,
+      "unit": "articles",
+      "source": "results/statistics.json#/body_features",
+      "method": "feature=tables, group=higher, field=positive"
+    },
+    "tables_lower_n": {
+      "value": 65,
+      "unit": "articles",
+      "source": "results/statistics.json#/body_features",
+      "method": "feature=tables, group=lower, field=n"
+    },
+    "tables_lower_positive": {
+      "value": 46,
+      "unit": "articles",
+      "source": "results/statistics.json#/body_features",
+      "method": "feature=tables, group=lower, field=positive"
+    },
+    "measurement_words_higher_n": {
+      "value": 65,
+      "unit": "articles",
+      "source": "results/statistics.json#/body_features",
+      "method": "feature=measurement_words, group=higher, field=n"
+    },
+    "measurement_words_higher_positive": {
+      "value": 48,
+      "unit": "articles",
+      "source": "results/statistics.json#/body_features",
+      "method": "feature=measurement_words, group=higher, field=positive"
+    },
+    "measurement_words_lower_n": {
+      "value": 65,
+      "unit": "articles",
+      "source": "results/statistics.json#/body_features",
+      "method": "feature=measurement_words, group=lower, field=n"
+    },
+    "measurement_words_lower_positive": {
+      "value": 44,
+      "unit": "articles",
+      "source": "results/statistics.json#/body_features",
+      "method": "feature=measurement_words, group=lower, field=positive"
+    },
+    "limitations_words_higher_n": {
+      "value": 65,
+      "unit": "articles",
+      "source": "results/statistics.json#/body_features",
+      "method": "feature=limitations_words, group=higher, field=n"
+    },
+    "limitations_words_higher_positive": {
+      "value": 61,
+      "unit": "articles",
+      "source": "results/statistics.json#/body_features",
+      "method": "feature=limitations_words, group=higher, field=positive"
+    },
+    "limitations_words_lower_n": {
+      "value": 65,
+      "unit": "articles",
+      "source": "results/statistics.json#/body_features",
+      "method": "feature=limitations_words, group=lower, field=n"
+    },
+    "limitations_words_lower_positive": {
+      "value": 54,
+      "unit": "articles",
+      "source": "results/statistics.json#/body_features",
+      "method": "feature=limitations_words, group=lower, field=positive"
+    },
+    "opening_problem_words_higher_n": {
+      "value": 65,
+      "unit": "articles",
+      "source": "results/statistics.json#/body_features",
+      "method": "feature=opening_problem_words, group=higher, field=n"
+    },
+    "opening_problem_words_higher_positive": {
+      "value": 35,
+      "unit": "articles",
+      "source": "results/statistics.json#/body_features",
+      "method": "feature=opening_problem_words, group=higher, field=positive"
+    },
+    "opening_problem_words_lower_n": {
+      "value": 65,
+      "unit": "articles",
+      "source": "results/statistics.json#/body_features",
+      "method": "feature=opening_problem_words, group=lower, field=n"
+    },
+    "opening_problem_words_lower_positive": {
+      "value": 32,
+      "unit": "articles",
+      "source": "results/statistics.json#/body_features",
+      "method": "feature=opening_problem_words, group=lower, field=positive"
+    },
+    "opening_result_words_higher_n": {
+      "value": 65,
+      "unit": "articles",
+      "source": "results/statistics.json#/body_features",
+      "method": "feature=opening_result_words, group=higher, field=n"
+    },
+    "opening_result_words_higher_positive": {
+      "value": 18,
+      "unit": "articles",
+      "source": "results/statistics.json#/body_features",
+      "method": "feature=opening_result_words, group=higher, field=positive"
+    },
+    "opening_result_words_lower_n": {
+      "value": 65,
+      "unit": "articles",
+      "source": "results/statistics.json#/body_features",
+      "method": "feature=opening_result_words, group=lower, field=n"
+    },
+    "opening_result_words_lower_positive": {
+      "value": 27,
+      "unit": "articles",
+      "source": "results/statistics.json#/body_features",
+      "method": "feature=opening_result_words, group=lower, field=positive"
+    },
+    "most_length_median": {
+      "value": 1,
+      "unit": "likes",
+      "source": "results/statistics.json#/length_groups",
+      "method": "First four groups all have median 1; assert below."
+    },
+    "long_length_threshold": {
+      "value": 20000,
+      "unit": "api_body_letters",
+      "source": "results/statistics.json#/length_groups/4/range",
+      "method": "Lower bound of final declared body_letters_count bin."
+    },
+    "long_length_median": {
+      "value": 2,
+      "unit": "likes",
+      "source": "results/statistics.json#/length_groups/4/median_likes",
+      "method": "Median observed likes among mature latest sample final length bin."
+    },
+    "parser_comparisons": {
+      "value": 160,
+      "unit": "articles",
+      "source": "results/ruler_check.json#/checks",
+      "method": "Actual detail articles compared by two HTML parsers."
+    }
+  }
+}

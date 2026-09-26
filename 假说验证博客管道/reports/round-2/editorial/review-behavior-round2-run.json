@@ -1,0 +1,31 @@
+{
+  "run_id": "review-behavior",
+  "hypothesis": {
+    "falsification": "On this fixed scenario set, no higher correct-handling count in skills than generic means this run does not support an incremental benefit; original semantic score flaws prevent a general effectiveness inference."
+  },
+  "outcome": "inconclusive",
+  "ruler_id": "audit-accounting-v1",
+  "ruler": {
+    "path": "results/ruler_check.json",
+    "sha256": "8168a88480994956c209d52443c6e9654a7580d49c7906a62ee332db47750e0a"
+  },
+  "execution": {
+    "path": "results/execution.json",
+    "sha256": "5211b747147967f92c97910b2b9d1ebeed4a6a57efe95386a2cb8e24f2cb8e1b"
+  },
+  "execution_scope": "Real independent accounting script execution during packaging, not retroactive metadata for the original model study",
+  "budget": {
+    "status": "within",
+    "authorization": "User explicitly authorized extensive GPT/Gemini use; this packaging script makes no model calls",
+    "monetary_cost": null
+  },
+  "documents": [
+    {
+      "draft": {
+        "path": "article-round2.md",
+        "sha256": "90cac9d8386d9d75583c76d161472339c98f2bac8ee19fc2d36976043e430bdd"
+      },
+      "claims": "round2-claims.json"
+    }
+  ]
+}

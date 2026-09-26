@@ -1,0 +1,28 @@
+{
+  "run_id": "true-process-failure",
+  "draft_sha256": "60de3311d3cf1831c03684ad483848fa175af4e2f54fa5c75c817ce5aa04fa4b",
+  "claims": [
+    {
+      "id": "count-result",
+      "text": "The failed process produced 6 partial fixture cases; no success conclusion.",
+      "level": "measured",
+      "scope": "synthetic local fixture"
+    }
+  ],
+  "numbers": [
+    {
+      "index": 0,
+      "token": "6",
+      "kind": "measurement",
+      "claim_id": "count-result",
+      "unit": "cases",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "9b5aa69eaddf35443339c42be81bfae1474d26c8c23e354c0d3f6969302b1327",
+        "run_id": "true-process-failure",
+        "pointer": "/metrics/correct",
+        "unit": "cases"
+      }
+    }
+  ]
+}

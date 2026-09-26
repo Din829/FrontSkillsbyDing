@@ -1,0 +1,1 @@
+The failed process produced 6 partial fixture cases; no success conclusion.

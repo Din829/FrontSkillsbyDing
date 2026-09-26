@@ -1,0 +1,18 @@
+{
+  "command": [
+    "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\calibration\\check_retrieval_ruler.py",
+    "--random-draws",
+    "200",
+    "--seed",
+    "20260926"
+  ],
+  "started_at": "2026-09-25T21:07:10.237658+00:00",
+  "finished_at": "2026-09-25T21:07:10.341480+00:00",
+  "exit_code": 1,
+  "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+  "script_sha256": "39061d1cf6523b0b1bef94cbdfb85dc02a79323ceda3d241c8641a51e7c0d5be",
+  "stdout": "stdout.txt",
+  "stderr": "stderr.txt"
+}

@@ -1,0 +1,63 @@
+{
+  "kind": "tool_fixture_not_real_work",
+  "final": {
+    "status": "draft_complete",
+    "gate_status": "warnings",
+    "issues": [
+      {
+        "id": "ruler_record_note:c6ea2fb56febb7ed",
+        "code": "ruler_record_note",
+        "category": "record_note",
+        "severity": "warning",
+        "location": {
+          "ref": {
+            "path": "results/ruler_check.json"
+          }
+        },
+        "detail": "Ruler record status: not_applicable; no scientific validity decision made"
+      },
+      {
+        "id": "scientific_validity_not_applicable:80fcfe78b71b3bed",
+        "category": "record_note",
+        "detail": "固定工具夹具不支持科研优劣判断；无需扩大实验。"
+      },
+      {
+        "id": "workflow_acceptance_unverified:0166a1841b5329ec",
+        "category": "record_note",
+        "detail": "会话持续性和警告处理仍由编排器验收；作者未夸大结论。"
+      }
+    ],
+    "rework": {
+      "repair_rounds": 0,
+      "issue_attempts": {},
+      "reasons": []
+    },
+    "author_thread": "01a0da77-9506-75c2-872b-d1a1902441a5",
+    "note": "Warnings remain visible; no publication is performed"
+  },
+  "sessions": [
+    {
+      "role": "topic",
+      "thread_id": "01a0da77-9506-75c2-872b-d1a1902441a5",
+      "resume_from": null,
+      "exit_code": 0,
+      "seconds": 38.70864039985463
+    },
+    {
+      "role": "author",
+      "thread_id": "01a0da77-9506-75c2-872b-d1a1902441a5",
+      "resume_from": "01a0da77-9506-75c2-872b-d1a1902441a5",
+      "exit_code": 0,
+      "seconds": 264.8458364000544
+    },
+    {
+      "role": "review",
+      "thread_id": "01a0da7c-36af-7bb1-a2ee-aad99b92e8f5",
+      "resume_from": null,
+      "exit_code": 0,
+      "seconds": 149.57709049992263
+    }
+  ],
+  "same_author_confirmed": true,
+  "independent_reviewer_confirmed": true
+}

@@ -1,0 +1,289 @@
+{
+  "run_id": "review-behavior",
+  "metrics": {
+    "original_sessions": {
+      "value": 48,
+      "unit": "sessions",
+      "source": {
+        "path": "results/original-accounting.json",
+        "sha256": "cffc119d57c891ab475eea689c565ee42d57e42d3b190e7780e470706ad25f65"
+      },
+      "derivation": "count rows; independently verify process exit, completion event, answer and unique thread"
+    },
+    "original_cases": {
+      "value": 12,
+      "unit": "cases",
+      "source": {
+        "path": "results/snapshots/cases.json",
+        "sha256": "54b831539583a70d0f031593e2869c60063a36c2c95c4daff298efe3710c3935"
+      },
+      "derivation": "length of case list"
+    },
+    "original_repeats": {
+      "value": 2,
+      "unit": "repeats",
+      "source": {
+        "path": "results/study/design_snapshot.json",
+        "sha256": "0f4297e96555409bff03a6a057e398365ca473ac44504a4d31ac9ae0c647a957"
+      },
+      "derivation": "pre-registered repeats"
+    },
+    "false_red": {
+      "value": 4,
+      "unit": "answers",
+      "source": {
+        "path": "results/original-accounting.json",
+        "sha256": "cffc119d57c891ab475eea689c565ee42d57e42d3b190e7780e470706ad25f65"
+      },
+      "derivation": "count original failed primary rows; all adjudicated reasonable by independent semantic review"
+    },
+    "selection_false_red": {
+      "value": 1,
+      "unit": "answers",
+      "source": {
+        "path": "results/original-accounting.json",
+        "sha256": "cffc119d57c891ab475eea689c565ee42d57e42d3b190e7780e470706ad25f65"
+      },
+      "derivation": "failed primary rows for selection case"
+    },
+    "scope_false_red": {
+      "value": 3,
+      "unit": "answers",
+      "source": {
+        "path": "results/original-accounting.json",
+        "sha256": "cffc119d57c891ab475eea689c565ee42d57e42d3b190e7780e470706ad25f65"
+      },
+      "derivation": "failed primary rows for environment scope case"
+    },
+    "tool_count": {
+      "value": 0,
+      "unit": "tool_items",
+      "source": {
+        "path": "results/original-accounting.json",
+        "sha256": "cffc119d57c891ab475eea689c565ee42d57e42d3b190e7780e470706ad25f65"
+      },
+      "derivation": "verified absence of tool items in every raw event stream"
+    },
+    "supplement_sessions": {
+      "value": 24,
+      "unit": "sessions",
+      "source": {
+        "path": "results/supplement-review.json",
+        "sha256": "a6afe0e82079124a961c51d991273019e734e98b4e1b2355f837cf36777320ca"
+      },
+      "derivation": "count separate supplementary process records"
+    },
+    "supplement_false_red": {
+      "value": 2,
+      "unit": "answers",
+      "source": {
+        "path": "results/supplement-review.json",
+        "sha256": "a6afe0e82079124a961c51d991273019e734e98b4e1b2355f837cf36777320ca"
+      },
+      "derivation": "count supplementary label-whitelist rejections; all reasons read independently"
+    },
+    "original_generic_n": {
+      "value": 24,
+      "unit": "answers",
+      "source": {
+        "path": "results/original-accounting.json",
+        "sha256": "cffc119d57c891ab475eea689c565ee42d57e42d3b190e7780e470706ad25f65"
+      },
+      "derivation": "groups/generic/n; independently recomputed from raw answers"
+    },
+    "original_generic_primary": {
+      "value": 22,
+      "unit": "answers",
+      "source": {
+        "path": "results/original-accounting.json",
+        "sha256": "cffc119d57c891ab475eea689c565ee42d57e42d3b190e7780e470706ad25f65"
+      },
+      "derivation": "groups/generic/primary; independently recomputed from raw answers"
+    },
+    "original_generic_decision": {
+      "value": 24,
+      "unit": "answers",
+      "source": {
+        "path": "results/original-accounting.json",
+        "sha256": "cffc119d57c891ab475eea689c565ee42d57e42d3b190e7780e470706ad25f65"
+      },
+      "derivation": "groups/generic/decision; independently recomputed from raw answers"
+    },
+    "original_generic_verdict": {
+      "value": 24,
+      "unit": "answers",
+      "source": {
+        "path": "results/original-accounting.json",
+        "sha256": "cffc119d57c891ab475eea689c565ee42d57e42d3b190e7780e470706ad25f65"
+      },
+      "derivation": "groups/generic/verdict; independently recomputed from raw answers"
+    },
+    "original_generic_semantic": {
+      "value": 24,
+      "unit": "answers",
+      "source": {
+        "path": "results/snapshots/semantic-review.json",
+        "sha256": "a766b9e311cfc564f474b37829cc777112557a81a0fc8262c1c218de3dd0881a"
+      },
+      "derivation": "count accepted by disclosed non-blind post-hoc semantic review; not preregistered score"
+    },
+    "original_skills_n": {
+      "value": 24,
+      "unit": "answers",
+      "source": {
+        "path": "results/original-accounting.json",
+        "sha256": "cffc119d57c891ab475eea689c565ee42d57e42d3b190e7780e470706ad25f65"
+      },
+      "derivation": "groups/skills/n; independently recomputed from raw answers"
+    },
+    "original_skills_primary": {
+      "value": 22,
+      "unit": "answers",
+      "source": {
+        "path": "results/original-accounting.json",
+        "sha256": "cffc119d57c891ab475eea689c565ee42d57e42d3b190e7780e470706ad25f65"
+      },
+      "derivation": "groups/skills/primary; independently recomputed from raw answers"
+    },
+    "original_skills_decision": {
+      "value": 24,
+      "unit": "answers",
+      "source": {
+        "path": "results/original-accounting.json",
+        "sha256": "cffc119d57c891ab475eea689c565ee42d57e42d3b190e7780e470706ad25f65"
+      },
+      "derivation": "groups/skills/decision; independently recomputed from raw answers"
+    },
+    "original_skills_verdict": {
+      "value": 24,
+      "unit": "answers",
+      "source": {
+        "path": "results/original-accounting.json",
+        "sha256": "cffc119d57c891ab475eea689c565ee42d57e42d3b190e7780e470706ad25f65"
+      },
+      "derivation": "groups/skills/verdict; independently recomputed from raw answers"
+    },
+    "original_skills_semantic": {
+      "value": 24,
+      "unit": "answers",
+      "source": {
+        "path": "results/snapshots/semantic-review.json",
+        "sha256": "a766b9e311cfc564f474b37829cc777112557a81a0fc8262c1c218de3dd0881a"
+      },
+      "derivation": "count accepted by disclosed non-blind post-hoc semantic review; not preregistered score"
+    },
+    "supplement_generic_n": {
+      "value": 12,
+      "unit": "answers",
+      "source": {
+        "path": "results/supplement-review.json",
+        "sha256": "a6afe0e82079124a961c51d991273019e734e98b4e1b2355f837cf36777320ca"
+      },
+      "derivation": "groups/generic/n; independently recomputed from raw answers"
+    },
+    "supplement_generic_primary": {
+      "value": 11,
+      "unit": "answers",
+      "source": {
+        "path": "results/supplement-review.json",
+        "sha256": "a6afe0e82079124a961c51d991273019e734e98b4e1b2355f837cf36777320ca"
+      },
+      "derivation": "groups/generic/primary; independently recomputed from raw answers"
+    },
+    "supplement_generic_decision": {
+      "value": 12,
+      "unit": "answers",
+      "source": {
+        "path": "results/supplement-review.json",
+        "sha256": "a6afe0e82079124a961c51d991273019e734e98b4e1b2355f837cf36777320ca"
+      },
+      "derivation": "groups/generic/decision; independently recomputed from raw answers"
+    },
+    "supplement_generic_verdict": {
+      "value": 12,
+      "unit": "answers",
+      "source": {
+        "path": "results/supplement-review.json",
+        "sha256": "a6afe0e82079124a961c51d991273019e734e98b4e1b2355f837cf36777320ca"
+      },
+      "derivation": "groups/generic/verdict; independently recomputed from raw answers"
+    },
+    "supplement_generic_semantic": {
+      "value": 12,
+      "unit": "answers",
+      "source": {
+        "path": "results/supplement-review.json",
+        "sha256": "a6afe0e82079124a961c51d991273019e734e98b4e1b2355f837cf36777320ca"
+      },
+      "derivation": "count accepted by disclosed non-blind post-hoc semantic review; not preregistered score"
+    },
+    "supplement_skills_n": {
+      "value": 12,
+      "unit": "answers",
+      "source": {
+        "path": "results/supplement-review.json",
+        "sha256": "a6afe0e82079124a961c51d991273019e734e98b4e1b2355f837cf36777320ca"
+      },
+      "derivation": "groups/skills/n; independently recomputed from raw answers"
+    },
+    "supplement_skills_primary": {
+      "value": 11,
+      "unit": "answers",
+      "source": {
+        "path": "results/supplement-review.json",
+        "sha256": "a6afe0e82079124a961c51d991273019e734e98b4e1b2355f837cf36777320ca"
+      },
+      "derivation": "groups/skills/primary; independently recomputed from raw answers"
+    },
+    "supplement_skills_decision": {
+      "value": 12,
+      "unit": "answers",
+      "source": {
+        "path": "results/supplement-review.json",
+        "sha256": "a6afe0e82079124a961c51d991273019e734e98b4e1b2355f837cf36777320ca"
+      },
+      "derivation": "groups/skills/decision; independently recomputed from raw answers"
+    },
+    "supplement_skills_verdict": {
+      "value": 12,
+      "unit": "answers",
+      "source": {
+        "path": "results/supplement-review.json",
+        "sha256": "a6afe0e82079124a961c51d991273019e734e98b4e1b2355f837cf36777320ca"
+      },
+      "derivation": "groups/skills/verdict; independently recomputed from raw answers"
+    },
+    "supplement_skills_semantic": {
+      "value": 12,
+      "unit": "answers",
+      "source": {
+        "path": "results/supplement-review.json",
+        "sha256": "a6afe0e82079124a961c51d991273019e734e98b4e1b2355f837cf36777320ca"
+      },
+      "derivation": "count accepted by disclosed non-blind post-hoc semantic review; not preregistered score"
+    },
+    "fixture_baseline_attempts": {
+      "value": 1,
+      "unit": "attempts",
+      "source": {
+        "path": "results/snapshots/cases.json",
+        "sha256": "54b831539583a70d0f031593e2869c60063a36c2c95c4daff298efe3710c3935"
+      },
+      "derivation": "authored scenario c02 baseline attempts; not a newly measured task"
+    },
+    "fixture_candidate_attempts": {
+      "value": 8,
+      "unit": "attempts",
+      "source": {
+        "path": "results/snapshots/cases.json",
+        "sha256": "54b831539583a70d0f031593e2869c60063a36c2c95c4daff298efe3710c3935"
+      },
+      "derivation": "authored scenario c02 candidate attempts; not a newly measured task"
+    }
+  },
+  "source_index": {
+    "path": "results/source-index.json",
+    "sha256": "802423820d1e285e9ce65278c2171027ef908a24e3bb74087a6e064e2d42d0f5"
+  },
+  "warning": "Original scoring whitelist has semantic false negatives; these metrics count recorded outcomes and separately documented judgments, not production accuracy"
+}

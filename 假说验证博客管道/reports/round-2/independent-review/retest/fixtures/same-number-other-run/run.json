@@ -1,0 +1,21 @@
+{
+  "run_id": "same-number-other-run",
+  "execution_claim": "succeeded",
+  "execution": {
+    "path": "results/execution.json",
+    "sha256": "49d3a1df4569d34d044eeaa7586238c7715e6d41f3f96416b447a01b9d714293"
+  },
+  "ruler": {
+    "path": "results/ruler.json",
+    "sha256": "844a33e4b039f927e4b98343c15398dad3987850a88241d617e442806b7a2484"
+  },
+  "documents": [
+    {
+      "draft": {
+        "path": "article.md",
+        "sha256": "3079d057dc9b9627c5ddb19994492d0f463836feaedd0d29870d992cfb237214"
+      },
+      "claims": "claims.json"
+    }
+  ]
+}

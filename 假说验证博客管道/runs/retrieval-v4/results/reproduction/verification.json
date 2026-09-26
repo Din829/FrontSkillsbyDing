@@ -1,0 +1,154 @@
+{
+  "independent_summary": {
+    "all": {
+      "n": 28,
+      "body": {
+        "hit1_count": 17,
+        "hit3_count": 23,
+        "mrr": 0.716598313966735
+      },
+      "body_metadata": {
+        "hit1_count": 22,
+        "hit3_count": 23,
+        "mrr": 0.8290983139667351
+      }
+    },
+    "topic": {
+      "n": 14,
+      "body": {
+        "hit1_count": 10,
+        "hit3_count": 13,
+        "mrr": 0.8119047619047619
+      },
+      "body_metadata": {
+        "hit1_count": 13,
+        "hit3_count": 13,
+        "mrr": 0.9464285714285714
+      }
+    },
+    "detail": {
+      "n": 14,
+      "body": {
+        "hit1_count": 7,
+        "hit3_count": 10,
+        "mrr": 0.6212918660287082
+      },
+      "body_metadata": {
+        "hit1_count": 9,
+        "hit3_count": 10,
+        "mrr": 0.7117680565048986
+      }
+    },
+    "ja": {
+      "n": 11,
+      "body": {
+        "hit1_count": 9,
+        "hit3_count": 10,
+        "mrr": 0.8677685950413223
+      },
+      "body_metadata": {
+        "hit1_count": 10,
+        "hit3_count": 10,
+        "mrr": 0.9132231404958677
+      }
+    },
+    "en": {
+      "n": 8,
+      "body": {
+        "hit1_count": 3,
+        "hit3_count": 7,
+        "mrr": 0.5916666666666667
+      },
+      "body_metadata": {
+        "hit1_count": 6,
+        "hit3_count": 7,
+        "mrr": 0.8333333333333334
+      }
+    },
+    "zh": {
+      "n": 9,
+      "body": {
+        "hit1_count": 5,
+        "hit3_count": 6,
+        "mrr": 0.6428849902534113
+      },
+      "body_metadata": {
+        "hit1_count": 6,
+        "hit3_count": 6,
+        "mrr": 0.7225146198830409
+      }
+    }
+  },
+  "rank_changes": [
+    {
+      "id": "q01",
+      "kind": "topic_ja",
+      "body_rank": 2,
+      "candidate_rank": 1
+    },
+    {
+      "id": "q02",
+      "kind": "detail_en",
+      "body_rank": 2,
+      "candidate_rank": 1
+    },
+    {
+      "id": "q05",
+      "kind": "topic_en",
+      "body_rank": 3,
+      "candidate_rank": 1
+    },
+    {
+      "id": "q09",
+      "kind": "topic_zh",
+      "body_rank": 5,
+      "candidate_rank": 4
+    },
+    {
+      "id": "q12",
+      "kind": "detail_en",
+      "body_rank": 15,
+      "candidate_rank": 6
+    },
+    {
+      "id": "q19",
+      "kind": "topic_zh",
+      "body_rank": 3,
+      "candidate_rank": 1
+    },
+    {
+      "id": "q26",
+      "kind": "detail_en",
+      "body_rank": 3,
+      "candidate_rank": 1
+    }
+  ],
+  "artifact_comparison": {
+    "result.json": {
+      "byte_equal": true,
+      "parsed_equal": true,
+      "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b"
+    },
+    "corpus.json": {
+      "byte_equal": true,
+      "parsed_equal": true,
+      "sha256": "067c1af01c981020286e7baef1078f7fc6e56b1043d36349a10dd1b342631430"
+    },
+    "queries.json": {
+      "byte_equal": true,
+      "parsed_equal": true,
+      "sha256": "8e456c062b487b0e3a06dba11ab4c9f5350811beb7a6a173e1341c81a45485f0"
+    },
+    "calibration.json": {
+      "byte_equal": true,
+      "parsed_equal": true,
+      "sha256": "42db930a0be308afddc3616177fc26657ce46255841dc90e0b4eb951ced9c569"
+    }
+  },
+  "checks": {
+    "documents": 24,
+    "exclusions_absent": true,
+    "nonempty": true,
+    "original_queries_unchanged_sha256": "f5034bb5c1a72f59a9397be94ce3240041df2b4ca05554b546b454824b04d16f"
+  }
+}

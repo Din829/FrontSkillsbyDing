@@ -1,0 +1,79 @@
+[
+  {
+    "text": "正确文档排前的前三命中为 100%",
+    "level": "read",
+    "displayed": "100",
+    "source": "reports/round-2/calibration/retrieval-ruler.json",
+    "sha256": "b23aed5d7555e7c44cd74846dd432546494a0a68dcdfd0184af62fd74ed74b62",
+    "pointer": "/summary/oracle/hit3",
+    "scale": 100,
+    "decimals": 0,
+    "verified": true
+  },
+  {
+    "text": "排末尾为 0%",
+    "level": "read",
+    "displayed": "0",
+    "source": "reports/round-2/calibration/retrieval-ruler.json",
+    "sha256": "b23aed5d7555e7c44cd74846dd432546494a0a68dcdfd0184af62fd74ed74b62",
+    "pointer": "/summary/known_bad/hit3",
+    "scale": 100,
+    "decimals": 0,
+    "verified": true
+  },
+  {
+    "text": "随机排序均值为 14.88%",
+    "level": "read",
+    "displayed": "14.88",
+    "source": "reports/round-2/calibration/retrieval-ruler.json",
+    "sha256": "b23aed5d7555e7c44cd74846dd432546494a0a68dcdfd0184af62fd74ed74b62",
+    "pointer": "/random_distribution/hit3/mean",
+    "scale": 100,
+    "decimals": 2,
+    "verified": true
+  },
+  {
+    "text": "原正文基线为 82.14%",
+    "level": "read",
+    "displayed": "82.14",
+    "source": "reports/round-2/calibration/retrieval-ruler.json",
+    "sha256": "b23aed5d7555e7c44cd74846dd432546494a0a68dcdfd0184af62fd74ed74b62",
+    "pointer": "/summary/body/hit3",
+    "scale": 100,
+    "decimals": 2,
+    "verified": true
+  },
+  {
+    "text": "固定 CSV 计数得到 3/4、75%",
+    "level": "read",
+    "displayed": "3",
+    "source": "archive/round-2/compact-smoke/results/metrics.json",
+    "sha256": "c85af00cb0783c4dccb28962e08428da12a27151f6eee31d2d5760860f7f5cf0",
+    "pointer": "/metrics/ok/value",
+    "scale": 1,
+    "decimals": 0,
+    "verified": true
+  },
+  {
+    "text": "固定 CSV 计数得到 3/4、75%",
+    "level": "read",
+    "displayed": "4",
+    "source": "archive/round-2/compact-smoke/results/metrics.json",
+    "sha256": "c85af00cb0783c4dccb28962e08428da12a27151f6eee31d2d5760860f7f5cf0",
+    "pointer": "/metrics/total/value",
+    "scale": 1,
+    "decimals": 0,
+    "verified": true
+  },
+  {
+    "text": "固定 CSV 计数得到 3/4、75%",
+    "level": "read",
+    "displayed": "75",
+    "source": "archive/round-2/compact-smoke/results/metrics.json",
+    "sha256": "c85af00cb0783c4dccb28962e08428da12a27151f6eee31d2d5760860f7f5cf0",
+    "pointer": "/metrics/ok_percent/value",
+    "scale": 1,
+    "decimals": 0,
+    "verified": true
+  }
+]

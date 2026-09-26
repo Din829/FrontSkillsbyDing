@@ -1,0 +1,66 @@
+{
+  "network_requests": 12,
+  "cache_hits": 0,
+  "events": [
+    {
+      "url": "https://zenn.dev/api/articles?count=10&order=latest&page=1&topicname=ai",
+      "cache": false,
+      "path": "raw\\72f4474a522e1e63e1c04358.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=10&order=latest&page=1&topicname=rag",
+      "cache": false,
+      "path": "raw\\16e8a97cfb9f9d03c2a3604c.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=10&order=latest&page=1&topicname=nonexistent-topic-20260925-zq",
+      "cache": false,
+      "path": "raw\\306635b03835aab89d47720a.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=latest&page=1&topicname=ai",
+      "cache": false,
+      "path": "raw\\5672ff917e76790c595cd723.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=latest&page=2&topicname=ai",
+      "cache": false,
+      "path": "raw\\198e2f750a427368458458a6.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=liked_count&page=1&topicname=ai",
+      "cache": false,
+      "path": "raw\\3adcab263e31c8a3d6669079.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=liked_count&page=1",
+      "cache": false,
+      "path": "raw\\d78e4596f68cc467327c0d60.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=alltime&page=1&topicname=ai",
+      "cache": false,
+      "path": "raw\\d345692b5b435b347a90df43.json"
+    },
+    {
+      "url": "https://zenn.dev/robots.txt",
+      "cache": false,
+      "path": "raw\\499f849cf92bba90cc91879a.json"
+    },
+    {
+      "url": "https://zenn.dev/sitemaps/_index.xml",
+      "cache": false,
+      "path": "raw\\97fd08546a5547a25fed5040.json"
+    },
+    {
+      "url": "https://zenn.dev/terms",
+      "cache": false,
+      "path": "raw\\c661992d93fc5a5b3f335ca6.json"
+    },
+    {
+      "url": "https://zenn.dev/guideline",
+      "cache": false,
+      "path": "raw\\c0206ced9225fa1fb4e82d57.json"
+    }
+  ]
+}

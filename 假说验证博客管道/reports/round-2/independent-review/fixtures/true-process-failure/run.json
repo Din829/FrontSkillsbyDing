@@ -1,0 +1,21 @@
+{
+  "run_id": "true-process-failure",
+  "execution_claim": "succeeded",
+  "execution": {
+    "path": "results/execution.json",
+    "sha256": "d77e4399d2a36af08b1a8895494739213b2ba1104782489961599dd8cb5a0a78"
+  },
+  "ruler": {
+    "path": "results/ruler.json",
+    "sha256": "844a33e4b039f927e4b98343c15398dad3987850a88241d617e442806b7a2484"
+  },
+  "documents": [
+    {
+      "draft": {
+        "path": "article.md",
+        "sha256": "60de3311d3cf1831c03684ad483848fa175af4e2f54fa5c75c817ce5aa04fa4b"
+      },
+      "claims": "claims.json"
+    }
+  ]
+}

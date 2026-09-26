@@ -1,0 +1,25 @@
+[
+  {
+    "run": "retrieval-v4",
+    "exit_code": 0,
+    "status": "warnings",
+    "issues": [
+      {
+        "id": "unclassified_numbers:e3b86e786a097cd2",
+        "code": "unclassified_numbers",
+        "category": "record_note",
+        "severity": "warning",
+        "location": {
+          "document": "article-round2.md"
+        },
+        "detail": "Semantic review candidates: 4:3, 15:3"
+      }
+    ]
+  },
+  {
+    "run": "review-behavior",
+    "exit_code": 0,
+    "status": "traceable",
+    "issues": []
+  }
+]

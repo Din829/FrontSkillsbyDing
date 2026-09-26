@@ -1,0 +1,79 @@
+{
+  "run_id": "review-behavior",
+  "draft_sha256": "eeaeb3c68ece243bedfdc2893e9339263be7ba8c6a358ead223c1db4beab166a",
+  "claims": [
+    {
+      "id": "c1",
+      "text": "# 假说卡\n\n研究问题：给同样的技术实验材料，增加管道证据规则，是否比已有通用审查提示更能正确处置结论？",
+      "level": "read",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/snapshots/DESIGN.md",
+          "sha256": "0904531d26f5c230fceeda05b498870ab5053e1ef942cc20a461fe0e7c5fa104"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "text": "面向准备自动化实验审查的工程团队。读者可复用的是怎样检查评分器、保留争议和做公平对照；传播价值是编辑判断，尚未验证点赞收益。",
+      "level": "inferred",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "text": "假说：规则组在本组封闭情境的正确处置更多。证伪条件：同一题集下规则组不高于通用组，则本轮不支持增益；不能推出所有真实任务都没有增益。",
+      "level": "read",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/snapshots/DESIGN.md",
+          "sha256": "0904531d26f5c230fceeda05b498870ab5053e1ef942cc20a461fe0e7c5fa104"
+        }
+      ]
+    },
+    {
+      "id": "c4",
+      "text": "支持需看到规则组改善且不是误拦正例、标注歧义或环境差异导致；本轮原评分器出现语义假红，比较只作为探索证据。机器结果采用 inconclusive：一般增益主张证据不足，具体观察结果仍可报告。",
+      "level": "inferred",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        }
+      ]
+    },
+    {
+      "id": "c5",
+      "text": "资源由用户授权充分使用，只使用现有 GPT/Codex 认证。交付打包步骤没有新增模型调用，没有发布、提交或推送。原始会话费用未知；独立审查和补测分别保留。",
+      "level": "read",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/source-index.json",
+          "sha256": "802423820d1e285e9ce65278c2171027ef908a24e3bb74087a6e064e2d42d0f5"
+        }
+      ]
+    }
+  ],
+  "numbers": []
+}

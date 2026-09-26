@@ -1,0 +1,3 @@
+{"at": "2026-09-25T21:16:53.902347+00:00", "event": "repair_started", "issue_ids": ["value_mismatch:fd7000362fccbf3e"], "reasons": ["Source value 6 differs from stated value 8"]}
+{"at": "2026-09-25T21:16:53.910464+00:00", "event": "disagreement_retained", "issue_ids": ["value_mismatch:fd7000362fccbf3e"], "reasons": ["Source value 6 differs from stated value 8"]}
+{"at": "2026-09-25T21:16:53.996484+00:00", "event": "disagreement_retained", "issue_ids": ["value_mismatch:fd7000362fccbf3e"], "reasons": ["Source value 6 differs from stated value 8"]}

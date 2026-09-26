@@ -1,0 +1,2152 @@
+{
+  "observed_at": "2026-09-25T13:13:45.916521+00:00",
+  "unique_articles": 3633,
+  "recent_mature_unique": 2151,
+  "topic_stats": [
+    {
+      "topic": "agent",
+      "order": "alltime",
+      "n": 100,
+      "median_likes": 101.5,
+      "mean_likes": 136.5,
+      "median_bookmarks": 43.0,
+      "median_comments": 0.0,
+      "zero_share": 0.0,
+      "earliest": "2024-04-15T08:31:00.868+09:00",
+      "latest": "2026-08-26T20:58:18.521+09:00"
+    },
+    {
+      "topic": "agent",
+      "order": "latest",
+      "n": 600,
+      "median_likes": 1.0,
+      "mean_likes": 5.108333333333333,
+      "median_bookmarks": 0.0,
+      "median_comments": 0.0,
+      "zero_share": 0.34,
+      "earliest": "2026-06-21T09:54:41.508+09:00",
+      "latest": "2026-09-25T20:49:38.332+09:00"
+    },
+    {
+      "topic": "ai",
+      "order": "alltime",
+      "n": 100,
+      "median_likes": 487.0,
+      "mean_likes": 562.88,
+      "median_bookmarks": 216.5,
+      "median_comments": 1.0,
+      "zero_share": 0.0,
+      "earliest": "2022-08-23T08:52:38.606+09:00",
+      "latest": "2026-09-18T16:27:47.995+09:00"
+    },
+    {
+      "topic": "ai",
+      "order": "latest",
+      "n": 600,
+      "median_likes": 1.0,
+      "mean_likes": 2.5,
+      "median_bookmarks": 0.0,
+      "median_comments": 0.0,
+      "zero_share": 0.3416666666666667,
+      "earliest": "2026-09-18T18:47:59.872+09:00",
+      "latest": "2026-09-25T22:04:19.592+09:00"
+    },
+    {
+      "topic": "claudecode",
+      "order": "alltime",
+      "n": 100,
+      "median_likes": 383.0,
+      "mean_likes": 463.38,
+      "median_bookmarks": 203.0,
+      "median_comments": 1.0,
+      "zero_share": 0.0,
+      "earliest": "2025-03-08T19:14:12.648+09:00",
+      "latest": "2026-08-31T11:30:18.807+09:00"
+    },
+    {
+      "topic": "claudecode",
+      "order": "latest",
+      "n": 600,
+      "median_likes": 1.0,
+      "mean_likes": 2.35,
+      "median_bookmarks": 0.0,
+      "median_comments": 0.0,
+      "zero_share": 0.31833333333333336,
+      "earliest": "2026-09-08T21:15:02.421+09:00",
+      "latest": "2026-09-25T20:36:26.567+09:00"
+    },
+    {
+      "topic": "global",
+      "order": "alltime",
+      "n": 200,
+      "median_likes": 672.0,
+      "mean_likes": 788.75,
+      "median_bookmarks": 35.0,
+      "median_comments": 2.0,
+      "zero_share": 0.0,
+      "earliest": "2020-09-08T18:32:00.000+09:00",
+      "latest": "2026-08-28T14:55:30.825+09:00"
+    },
+    {
+      "topic": "llm",
+      "order": "alltime",
+      "n": 100,
+      "median_likes": 296.0,
+      "mean_likes": 354.65,
+      "median_bookmarks": 119.0,
+      "median_comments": 0.0,
+      "zero_share": 0.0,
+      "earliest": "2023-03-08T21:45:30.951+09:00",
+      "latest": "2026-08-12T17:52:20.555+09:00"
+    },
+    {
+      "topic": "llm",
+      "order": "latest",
+      "n": 600,
+      "median_likes": 1.0,
+      "mean_likes": 2.905,
+      "median_bookmarks": 0.0,
+      "median_comments": 0.0,
+      "zero_share": 0.44,
+      "earliest": "2026-09-08T11:00:00.000+09:00",
+      "latest": "2026-09-25T22:09:09.657+09:00"
+    },
+    {
+      "topic": "mcp",
+      "order": "alltime",
+      "n": 100,
+      "median_likes": 191.5,
+      "mean_likes": 242.49,
+      "median_bookmarks": 93.0,
+      "median_comments": 0.0,
+      "zero_share": 0.0,
+      "earliest": "2024-12-01T22:16:14.668+09:00",
+      "latest": "2026-09-01T07:00:08.041+09:00"
+    },
+    {
+      "topic": "mcp",
+      "order": "latest",
+      "n": 600,
+      "median_likes": 1.0,
+      "mean_likes": 3.091666666666667,
+      "median_bookmarks": 0.0,
+      "median_comments": 0.0,
+      "zero_share": 0.35333333333333333,
+      "earliest": "2026-07-13T16:26:13.209+09:00",
+      "latest": "2026-09-25T20:13:07.015+09:00"
+    },
+    {
+      "topic": "rag",
+      "order": "alltime",
+      "n": 100,
+      "median_likes": 120.0,
+      "mean_likes": 147.47,
+      "median_bookmarks": 49.0,
+      "median_comments": 0.0,
+      "zero_share": 0.0,
+      "earliest": "2023-08-05T11:15:00.618+09:00",
+      "latest": "2026-09-01T17:46:36.859+09:00"
+    },
+    {
+      "topic": "rag",
+      "order": "latest",
+      "n": 600,
+      "median_likes": 1.0,
+      "mean_likes": 4.44,
+      "median_bookmarks": 0.0,
+      "median_comments": 0.0,
+      "zero_share": 0.31833333333333336,
+      "earliest": "2026-04-28T23:28:12.571+09:00",
+      "latest": "2026-09-25T18:09:49.835+09:00"
+    }
+  ],
+  "title_features": [
+    {
+      "feature": "question",
+      "yes": {
+        "n": 136,
+        "median_likes": 2.0,
+        "mean_likes": 8.220588235294118,
+        "median_bookmarks": 0.0,
+        "median_comments": 0.0,
+        "zero_share": 0.19852941176470587
+      },
+      "no": {
+        "n": 2015,
+        "median_likes": 1,
+        "mean_likes": 3.798511166253102,
+        "median_bookmarks": 0,
+        "median_comments": 0,
+        "zero_share": 0.3369727047146402
+      },
+      "topic_month_cells": [
+        {
+          "topic": "mcp",
+          "month": "2026-09",
+          "yes": {
+            "n": 7,
+            "median_likes": 0,
+            "mean_likes": 1,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.5714285714285714
+          },
+          "no": {
+            "n": 142,
+            "median_likes": 1.0,
+            "mean_likes": 3.7816901408450705,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.29577464788732394
+          },
+          "log1p_difference": -0.3520961732462839,
+          "equal_author_log1p_difference": -0.4067278288321446
+        },
+        {
+          "topic": "mcp",
+          "month": "2026-08",
+          "yes": {
+            "n": 10,
+            "median_likes": 1.0,
+            "mean_likes": 1.9,
+            "median_bookmarks": 1.0,
+            "median_comments": 0.0,
+            "zero_share": 0.1
+          },
+          "no": {
+            "n": 236,
+            "median_likes": 1.0,
+            "mean_likes": 3.042372881355932,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.4364406779661017
+          },
+          "log1p_difference": 0.23182978609956684,
+          "equal_author_log1p_difference": 0.14393403633788204
+        },
+        {
+          "topic": "mcp",
+          "month": "2026-07",
+          "yes": {
+            "n": 6,
+            "median_likes": 1.0,
+            "mean_likes": 2.8333333333333335,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.16666666666666666
+          },
+          "no": {
+            "n": 154,
+            "median_likes": 1.0,
+            "mean_likes": 3.188311688311688,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.2727272727272727
+          },
+          "log1p_difference": 0.06997874379077895,
+          "equal_author_log1p_difference": -0.008082853042183147
+        },
+        {
+          "topic": "agent",
+          "month": "2026-08",
+          "yes": {
+            "n": 12,
+            "median_likes": 2.5,
+            "mean_likes": 39.166666666666664,
+            "median_bookmarks": 0.5,
+            "median_comments": 0.0,
+            "zero_share": 0.25
+          },
+          "no": {
+            "n": 180,
+            "median_likes": 1.0,
+            "mean_likes": 3.6166666666666667,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.4888888888888889
+          },
+          "log1p_difference": 0.9886693272081455,
+          "equal_author_log1p_difference": 1.1087686161094346
+        },
+        {
+          "topic": "agent",
+          "month": "2026-07",
+          "yes": {
+            "n": 13,
+            "median_likes": 2,
+            "mean_likes": 4.615384615384615,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.15384615384615385
+          },
+          "no": {
+            "n": 188,
+            "median_likes": 2.0,
+            "mean_likes": 6.441489361702128,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.20212765957446807
+          },
+          "log1p_difference": 0.016287181355302716,
+          "equal_author_log1p_difference": -0.0840486858298024
+        },
+        {
+          "topic": "agent",
+          "month": "2026-06",
+          "yes": {
+            "n": 7,
+            "median_likes": 2,
+            "mean_likes": 2.2857142857142856,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.2857142857142857
+          },
+          "no": {
+            "n": 69,
+            "median_likes": 1,
+            "mean_likes": 2.6231884057971016,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.3333333333333333
+          },
+          "log1p_difference": 0.08070501927001905,
+          "equal_author_log1p_difference": -0.030688911776776573
+        },
+        {
+          "topic": "claudecode",
+          "month": "2026-09",
+          "yes": {
+            "n": 9,
+            "median_likes": 2,
+            "mean_likes": 7.444444444444445,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.1111111111111111
+          },
+          "no": {
+            "n": 312,
+            "median_likes": 1.0,
+            "mean_likes": 2.628205128205128,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.28205128205128205
+          },
+          "log1p_difference": 0.5697662006094578,
+          "equal_author_log1p_difference": 0.3607293785810217
+        },
+        {
+          "topic": "llm",
+          "month": "2026-09",
+          "yes": {
+            "n": 22,
+            "median_likes": 2.0,
+            "mean_likes": 12.5,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.2727272727272727
+          },
+          "no": {
+            "n": 276,
+            "median_likes": 1.0,
+            "mean_likes": 2.739130434782609,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.38405797101449274
+          },
+          "log1p_difference": 0.489265769670153,
+          "equal_author_log1p_difference": 0.3898755892608361
+        },
+        {
+          "topic": "rag",
+          "month": "2026-08",
+          "yes": {
+            "n": 6,
+            "median_likes": 2.0,
+            "mean_likes": 2.8333333333333335,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.0
+          },
+          "no": {
+            "n": 97,
+            "median_likes": 1,
+            "mean_likes": 5.278350515463917,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.4845360824742268
+          },
+          "log1p_difference": 0.559531841030436,
+          "equal_author_log1p_difference": 0.5020518059885245
+        },
+        {
+          "topic": "rag",
+          "month": "2026-07",
+          "yes": {
+            "n": 14,
+            "median_likes": 1.0,
+            "mean_likes": 4.285714285714286,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.2857142857142857
+          },
+          "no": {
+            "n": 109,
+            "median_likes": 1,
+            "mean_likes": 2.330275229357798,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.3211009174311927
+          },
+          "log1p_difference": 0.19454383809925424,
+          "equal_author_log1p_difference": 0.1783077525011767
+        },
+        {
+          "topic": "rag",
+          "month": "2026-06",
+          "yes": {
+            "n": 17,
+            "median_likes": 1,
+            "mean_likes": 3.235294117647059,
+            "median_bookmarks": 1,
+            "median_comments": 0,
+            "zero_share": 0.11764705882352941
+          },
+          "no": {
+            "n": 152,
+            "median_likes": 1.0,
+            "mean_likes": 5.697368421052632,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.3157894736842105
+          },
+          "log1p_difference": 0.09848254087987962,
+          "equal_author_log1p_difference": 0.09760669397400967
+        },
+        {
+          "topic": "rag",
+          "month": "2026-05",
+          "yes": {
+            "n": 11,
+            "median_likes": 1,
+            "mean_likes": 2.6363636363636362,
+            "median_bookmarks": 1,
+            "median_comments": 0,
+            "zero_share": 0.09090909090909091
+          },
+          "no": {
+            "n": 105,
+            "median_likes": 2,
+            "mean_likes": 5.0095238095238095,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.13333333333333333
+          },
+          "log1p_difference": -0.23917220138027595,
+          "equal_author_log1p_difference": -0.36775507285992726
+        }
+      ]
+    },
+    {
+      "feature": "number",
+      "yes": {
+        "n": 756,
+        "median_likes": 1.0,
+        "mean_likes": 3.562169312169312,
+        "median_bookmarks": 0.0,
+        "median_comments": 0.0,
+        "zero_share": 0.3505291005291005
+      },
+      "no": {
+        "n": 1395,
+        "median_likes": 1,
+        "mean_likes": 4.3577060931899645,
+        "median_bookmarks": 0,
+        "median_comments": 0,
+        "zero_share": 0.3161290322580645
+      },
+      "topic_month_cells": [
+        {
+          "topic": "mcp",
+          "month": "2026-09",
+          "yes": {
+            "n": 54,
+            "median_likes": 1.0,
+            "mean_likes": 5.055555555555555,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.2777777777777778
+          },
+          "no": {
+            "n": 95,
+            "median_likes": 1,
+            "mean_likes": 2.8526315789473684,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.3263157894736842
+          },
+          "log1p_difference": 0.08505203208250323,
+          "equal_author_log1p_difference": 0.12720451393296328
+        },
+        {
+          "topic": "mcp",
+          "month": "2026-08",
+          "yes": {
+            "n": 77,
+            "median_likes": 1,
+            "mean_likes": 2.7662337662337664,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.38961038961038963
+          },
+          "no": {
+            "n": 169,
+            "median_likes": 1,
+            "mean_likes": 3.100591715976331,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.4378698224852071
+          },
+          "log1p_difference": -0.060950394584497025,
+          "equal_author_log1p_difference": 0.012960122605598423
+        },
+        {
+          "topic": "mcp",
+          "month": "2026-07",
+          "yes": {
+            "n": 52,
+            "median_likes": 1.0,
+            "mean_likes": 3.5961538461538463,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.38461538461538464
+          },
+          "no": {
+            "n": 108,
+            "median_likes": 1.0,
+            "mean_likes": 2.9722222222222223,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.21296296296296297
+          },
+          "log1p_difference": -0.2447641794359502,
+          "equal_author_log1p_difference": -0.1693466765254531
+        },
+        {
+          "topic": "agent",
+          "month": "2026-09",
+          "yes": {
+            "n": 36,
+            "median_likes": 0.5,
+            "mean_likes": 1.7777777777777777,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.5
+          },
+          "no": {
+            "n": 55,
+            "median_likes": 1,
+            "mean_likes": 6.1454545454545455,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.2545454545454545
+          },
+          "log1p_difference": -0.5846108856246999,
+          "equal_author_log1p_difference": -0.4916647243813227
+        },
+        {
+          "topic": "agent",
+          "month": "2026-08",
+          "yes": {
+            "n": 58,
+            "median_likes": 1.0,
+            "mean_likes": 11,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.4827586206896552
+          },
+          "no": {
+            "n": 134,
+            "median_likes": 1.0,
+            "mean_likes": 3.6044776119402986,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.4701492537313433
+          },
+          "log1p_difference": 0.09749867542550295,
+          "equal_author_log1p_difference": 0.12114964529783545
+        },
+        {
+          "topic": "agent",
+          "month": "2026-07",
+          "yes": {
+            "n": 79,
+            "median_likes": 2,
+            "mean_likes": 6.405063291139241,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.12658227848101267
+          },
+          "no": {
+            "n": 122,
+            "median_likes": 1.0,
+            "mean_likes": 6.270491803278689,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.2459016393442623
+          },
+          "log1p_difference": 0.10053939729764427,
+          "equal_author_log1p_difference": 0.16088345348459643
+        },
+        {
+          "topic": "agent",
+          "month": "2026-06",
+          "yes": {
+            "n": 24,
+            "median_likes": 1.0,
+            "mean_likes": 2.4583333333333335,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.3333333333333333
+          },
+          "no": {
+            "n": 52,
+            "median_likes": 1.0,
+            "mean_likes": 2.6538461538461537,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.3269230769230769
+          },
+          "log1p_difference": -0.08858647012442566,
+          "equal_author_log1p_difference": -0.007737236723742158
+        },
+        {
+          "topic": "claudecode",
+          "month": "2026-09",
+          "yes": {
+            "n": 155,
+            "median_likes": 1,
+            "mean_likes": 2.032258064516129,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.33548387096774196
+          },
+          "no": {
+            "n": 166,
+            "median_likes": 1.5,
+            "mean_likes": 3.4457831325301207,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.22289156626506024
+          },
+          "log1p_difference": -0.31159923488591923,
+          "equal_author_log1p_difference": -0.2611090148622238
+        },
+        {
+          "topic": "llm",
+          "month": "2026-09",
+          "yes": {
+            "n": 114,
+            "median_likes": 1.0,
+            "mean_likes": 1.605263157894737,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.39473684210526316
+          },
+          "no": {
+            "n": 184,
+            "median_likes": 1.0,
+            "mean_likes": 4.608695652173913,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.3641304347826087
+          },
+          "log1p_difference": -0.1911402235489177,
+          "equal_author_log1p_difference": -0.23361088618418135
+        },
+        {
+          "topic": "ai",
+          "month": "2026-09",
+          "yes": {
+            "n": 5,
+            "median_likes": 1,
+            "mean_likes": 6.2,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.2
+          },
+          "no": {
+            "n": 9,
+            "median_likes": 1,
+            "mean_likes": 2,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.3333333333333333
+          },
+          "log1p_difference": 0.23938162725420498,
+          "equal_author_log1p_difference": 0.23938162725420498
+        },
+        {
+          "topic": "rag",
+          "month": "2026-09",
+          "yes": {
+            "n": 17,
+            "median_likes": 0,
+            "mean_likes": 1.6470588235294117,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.7058823529411765
+          },
+          "no": {
+            "n": 46,
+            "median_likes": 1.0,
+            "mean_likes": 5.434782608695652,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.3695652173913043
+          },
+          "log1p_difference": -0.38974967303942076,
+          "equal_author_log1p_difference": -0.3047821317890255
+        },
+        {
+          "topic": "rag",
+          "month": "2026-08",
+          "yes": {
+            "n": 35,
+            "median_likes": 1,
+            "mean_likes": 2.914285714285714,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.4857142857142857
+          },
+          "no": {
+            "n": 68,
+            "median_likes": 1.0,
+            "mean_likes": 6.279411764705882,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.4411764705882353
+          },
+          "log1p_difference": -0.17690208861945278,
+          "equal_author_log1p_difference": -0.20638752006301297
+        },
+        {
+          "topic": "rag",
+          "month": "2026-07",
+          "yes": {
+            "n": 29,
+            "median_likes": 1,
+            "mean_likes": 1.8275862068965518,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.27586206896551724
+          },
+          "no": {
+            "n": 94,
+            "median_likes": 1.0,
+            "mean_likes": 2.776595744680851,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.32978723404255317
+          },
+          "log1p_difference": -0.01701294712407364,
+          "equal_author_log1p_difference": 0.007847404238320532
+        },
+        {
+          "topic": "rag",
+          "month": "2026-06",
+          "yes": {
+            "n": 51,
+            "median_likes": 1,
+            "mean_likes": 1.411764705882353,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.39215686274509803
+          },
+          "no": {
+            "n": 118,
+            "median_likes": 1.0,
+            "mean_likes": 7.194915254237288,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.2542372881355932
+          },
+          "log1p_difference": -0.42285232722934407,
+          "equal_author_log1p_difference": -0.31666559072867795
+        },
+        {
+          "topic": "rag",
+          "month": "2026-05",
+          "yes": {
+            "n": 42,
+            "median_likes": 2.0,
+            "mean_likes": 3.5476190476190474,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.11904761904761904
+          },
+          "no": {
+            "n": 74,
+            "median_likes": 2.0,
+            "mean_likes": 5.486486486486487,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.13513513513513514
+          },
+          "log1p_difference": -0.19818902834607366,
+          "equal_author_log1p_difference": -0.22317247995538647
+        }
+      ]
+    },
+    {
+      "feature": "trial_or_comparison",
+      "yes": {
+        "n": 183,
+        "median_likes": 1,
+        "mean_likes": 3.639344262295082,
+        "median_bookmarks": 0,
+        "median_comments": 0,
+        "zero_share": 0.26229508196721313
+      },
+      "no": {
+        "n": 1968,
+        "median_likes": 1.0,
+        "mean_likes": 4.1189024390243905,
+        "median_bookmarks": 0.0,
+        "median_comments": 0.0,
+        "zero_share": 0.33434959349593496
+      },
+      "topic_month_cells": [
+        {
+          "topic": "mcp",
+          "month": "2026-09",
+          "yes": {
+            "n": 14,
+            "median_likes": 1.0,
+            "mean_likes": 1.5,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.14285714285714285
+          },
+          "no": {
+            "n": 135,
+            "median_likes": 1,
+            "mean_likes": 3.8740740740740742,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.32592592592592595
+          },
+          "log1p_difference": 0.04412678202038478,
+          "equal_author_log1p_difference": -0.01763275705252232
+        },
+        {
+          "topic": "mcp",
+          "month": "2026-08",
+          "yes": {
+            "n": 20,
+            "median_likes": 1.5,
+            "mean_likes": 7.2,
+            "median_bookmarks": 1.0,
+            "median_comments": 0.0,
+            "zero_share": 0.35
+          },
+          "no": {
+            "n": 226,
+            "median_likes": 1.0,
+            "mean_likes": 2.6238938053097347,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.42920353982300885
+          },
+          "log1p_difference": 0.38757390317834095,
+          "equal_author_log1p_difference": 0.28951647075194564
+        },
+        {
+          "topic": "mcp",
+          "month": "2026-07",
+          "yes": {
+            "n": 16,
+            "median_likes": 2.0,
+            "mean_likes": 8.5,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.0625
+          },
+          "no": {
+            "n": 144,
+            "median_likes": 1.0,
+            "mean_likes": 2.5833333333333335,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.2916666666666667
+          },
+          "log1p_difference": 0.5102615078982287,
+          "equal_author_log1p_difference": 0.3887612468157935
+        },
+        {
+          "topic": "agent",
+          "month": "2026-09",
+          "yes": {
+            "n": 6,
+            "median_likes": 1.0,
+            "mean_likes": 3.8333333333333335,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.0
+          },
+          "no": {
+            "n": 85,
+            "median_likes": 1,
+            "mean_likes": 4.458823529411765,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.3764705882352941
+          },
+          "log1p_difference": 0.1873505102540317,
+          "equal_author_log1p_difference": -0.0012126676452428597
+        },
+        {
+          "topic": "agent",
+          "month": "2026-08",
+          "yes": {
+            "n": 19,
+            "median_likes": 1,
+            "mean_likes": 5.631578947368421,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.42105263157894735
+          },
+          "no": {
+            "n": 173,
+            "median_likes": 1,
+            "mean_likes": 5.861271676300578,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.4797687861271676
+          },
+          "log1p_difference": 0.15814202174673497,
+          "equal_author_log1p_difference": 0.026067854565679616
+        },
+        {
+          "topic": "agent",
+          "month": "2026-07",
+          "yes": {
+            "n": 15,
+            "median_likes": 2,
+            "mean_likes": 6.866666666666666,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.13333333333333333
+          },
+          "no": {
+            "n": 186,
+            "median_likes": 1.0,
+            "mean_likes": 6.279569892473118,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.20430107526881722
+          },
+          "log1p_difference": 0.13502490173256043,
+          "equal_author_log1p_difference": 0.14027250734833796
+        },
+        {
+          "topic": "claudecode",
+          "month": "2026-09",
+          "yes": {
+            "n": 26,
+            "median_likes": 1.0,
+            "mean_likes": 1.3076923076923077,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.2692307692307692
+          },
+          "no": {
+            "n": 295,
+            "median_likes": 1,
+            "mean_likes": 2.8915254237288135,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.27796610169491526
+          },
+          "log1p_difference": -0.15681659253020996,
+          "equal_author_log1p_difference": -0.32867704425124367
+        },
+        {
+          "topic": "llm",
+          "month": "2026-09",
+          "yes": {
+            "n": 29,
+            "median_likes": 1,
+            "mean_likes": 2.896551724137931,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.27586206896551724
+          },
+          "no": {
+            "n": 269,
+            "median_likes": 1,
+            "mean_likes": 3.520446096654275,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.38661710037174724
+          },
+          "log1p_difference": 0.13981883709319665,
+          "equal_author_log1p_difference": 0.055312974452494945
+        },
+        {
+          "topic": "rag",
+          "month": "2026-08",
+          "yes": {
+            "n": 5,
+            "median_likes": 1,
+            "mean_likes": 2,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.4
+          },
+          "no": {
+            "n": 98,
+            "median_likes": 1.0,
+            "mean_likes": 5.295918367346939,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.45918367346938777
+          },
+          "log1p_difference": 0.04890633695221436,
+          "equal_author_log1p_difference": 0.020752961506081302
+        },
+        {
+          "topic": "rag",
+          "month": "2026-07",
+          "yes": {
+            "n": 12,
+            "median_likes": 1.0,
+            "mean_likes": 1.5,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.4166666666666667
+          },
+          "no": {
+            "n": 111,
+            "median_likes": 1,
+            "mean_likes": 2.6666666666666665,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.3063063063063063
+          },
+          "log1p_difference": -0.196099146710061,
+          "equal_author_log1p_difference": -0.2525051538903994
+        },
+        {
+          "topic": "rag",
+          "month": "2026-06",
+          "yes": {
+            "n": 17,
+            "median_likes": 1,
+            "mean_likes": 2.4705882352941178,
+            "median_bookmarks": 2,
+            "median_comments": 0,
+            "zero_share": 0.23529411764705882
+          },
+          "no": {
+            "n": 152,
+            "median_likes": 1.0,
+            "mean_likes": 5.782894736842105,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.3026315789473684
+          },
+          "log1p_difference": -0.017116499784764927,
+          "equal_author_log1p_difference": -0.047612989472586076
+        },
+        {
+          "topic": "rag",
+          "month": "2026-05",
+          "yes": {
+            "n": 11,
+            "median_likes": 1,
+            "mean_likes": 2.6363636363636362,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.18181818181818182
+          },
+          "no": {
+            "n": 105,
+            "median_likes": 2,
+            "mean_likes": 5.0095238095238095,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.12380952380952381
+          },
+          "log1p_difference": -0.33000936831564354,
+          "equal_author_log1p_difference": -0.41830139802735533
+        }
+      ]
+    },
+    {
+      "feature": "failure_or_limit",
+      "yes": {
+        "n": 126,
+        "median_likes": 1.0,
+        "mean_likes": 4.984126984126984,
+        "median_bookmarks": 0.0,
+        "median_comments": 0.0,
+        "zero_share": 0.31746031746031744
+      },
+      "no": {
+        "n": 2025,
+        "median_likes": 1,
+        "mean_likes": 4.021728395061729,
+        "median_bookmarks": 0,
+        "median_comments": 0,
+        "zero_share": 0.3288888888888889
+      },
+      "topic_month_cells": [
+        {
+          "topic": "mcp",
+          "month": "2026-09",
+          "yes": {
+            "n": 8,
+            "median_likes": 0.0,
+            "mean_likes": 0.75,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.625
+          },
+          "no": {
+            "n": 141,
+            "median_likes": 1,
+            "mean_likes": 3.8156028368794326,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.2907801418439716
+          },
+          "log1p_difference": -0.39900596304289326,
+          "equal_author_log1p_difference": -0.452467149778232
+        },
+        {
+          "topic": "mcp",
+          "month": "2026-08",
+          "yes": {
+            "n": 14,
+            "median_likes": 1.0,
+            "mean_likes": 2.5,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.35714285714285715
+          },
+          "no": {
+            "n": 232,
+            "median_likes": 1.0,
+            "mean_likes": 3.0258620689655173,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.4267241379310345
+          },
+          "log1p_difference": -0.022611895253109138,
+          "equal_author_log1p_difference": -0.06181445654352735
+        },
+        {
+          "topic": "mcp",
+          "month": "2026-07",
+          "yes": {
+            "n": 9,
+            "median_likes": 1,
+            "mean_likes": 0.6666666666666666,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.4444444444444444
+          },
+          "no": {
+            "n": 151,
+            "median_likes": 1,
+            "mean_likes": 3.3245033112582782,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.2582781456953642
+          },
+          "log1p_difference": -0.5237465135995382,
+          "equal_author_log1p_difference": -0.6073036137884644
+        },
+        {
+          "topic": "agent",
+          "month": "2026-09",
+          "yes": {
+            "n": 6,
+            "median_likes": 0.5,
+            "mean_likes": 0.5,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.5
+          },
+          "no": {
+            "n": 85,
+            "median_likes": 1,
+            "mean_likes": 4.694117647058824,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.3411764705882353
+          },
+          "log1p_difference": -0.6892212438674992,
+          "equal_author_log1p_difference": -0.8636906861923899
+        },
+        {
+          "topic": "agent",
+          "month": "2026-08",
+          "yes": {
+            "n": 10,
+            "median_likes": 1.0,
+            "mean_likes": 38.5,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.4
+          },
+          "no": {
+            "n": 182,
+            "median_likes": 1.0,
+            "mean_likes": 4.043956043956044,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.47802197802197804
+          },
+          "log1p_difference": 0.44255761812261474,
+          "equal_author_log1p_difference": 0.2850258331416097
+        },
+        {
+          "topic": "agent",
+          "month": "2026-07",
+          "yes": {
+            "n": 10,
+            "median_likes": 2.0,
+            "mean_likes": 2.9,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.0
+          },
+          "no": {
+            "n": 191,
+            "median_likes": 2,
+            "mean_likes": 6.50261780104712,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.2094240837696335
+          },
+          "log1p_difference": 0.0025210192061415615,
+          "equal_author_log1p_difference": -0.09373914215282952
+        },
+        {
+          "topic": "claudecode",
+          "month": "2026-09",
+          "yes": {
+            "n": 27,
+            "median_likes": 1,
+            "mean_likes": 1.8518518518518519,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.2222222222222222
+          },
+          "no": {
+            "n": 294,
+            "median_likes": 1.0,
+            "mean_likes": 2.8469387755102042,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.282312925170068
+          },
+          "log1p_difference": -0.08039714636956552,
+          "equal_author_log1p_difference": -0.24472821229698605
+        },
+        {
+          "topic": "llm",
+          "month": "2026-09",
+          "yes": {
+            "n": 20,
+            "median_likes": 1.0,
+            "mean_likes": 1.2,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.35
+          },
+          "no": {
+            "n": 278,
+            "median_likes": 1.0,
+            "mean_likes": 3.6223021582733814,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.3776978417266187
+          },
+          "log1p_difference": -0.2357275601634201,
+          "equal_author_log1p_difference": -0.3469909186789949
+        },
+        {
+          "topic": "rag",
+          "month": "2026-07",
+          "yes": {
+            "n": 6,
+            "median_likes": 1.0,
+            "mean_likes": 1.1666666666666667,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.16666666666666666
+          },
+          "no": {
+            "n": 117,
+            "median_likes": 1,
+            "mean_likes": 2.623931623931624,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.3247863247863248
+          },
+          "log1p_difference": -0.12531834772715666,
+          "equal_author_log1p_difference": -0.13907373370034715
+        },
+        {
+          "topic": "rag",
+          "month": "2026-06",
+          "yes": {
+            "n": 11,
+            "median_likes": 2,
+            "mean_likes": 1.7272727272727273,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.09090909090909091
+          },
+          "no": {
+            "n": 158,
+            "median_likes": 1.0,
+            "mean_likes": 5.708860759493671,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.310126582278481
+          },
+          "log1p_difference": -0.022240655288351174,
+          "equal_author_log1p_difference": -0.13473900537533445
+        },
+        {
+          "topic": "rag",
+          "month": "2026-05",
+          "yes": {
+            "n": 6,
+            "median_likes": 3.5,
+            "mean_likes": 11.5,
+            "median_bookmarks": 1.5,
+            "median_comments": 0.0,
+            "zero_share": 0.0
+          },
+          "no": {
+            "n": 110,
+            "median_likes": 2.0,
+            "mean_likes": 4.418181818181818,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.13636363636363635
+          },
+          "log1p_difference": 0.6574648511105645,
+          "equal_author_log1p_difference": 0.5803601448553428
+        }
+      ]
+    },
+    {
+      "feature": "guide_or_summary",
+      "yes": {
+        "n": 203,
+        "median_likes": 1,
+        "mean_likes": 4.955665024630542,
+        "median_bookmarks": 0,
+        "median_comments": 0,
+        "zero_share": 0.28078817733990147
+      },
+      "no": {
+        "n": 1948,
+        "median_likes": 1.0,
+        "mean_likes": 3.986652977412731,
+        "median_bookmarks": 0.0,
+        "median_comments": 0.0,
+        "zero_share": 0.33316221765913756
+      },
+      "topic_month_cells": [
+        {
+          "topic": "mcp",
+          "month": "2026-09",
+          "yes": {
+            "n": 12,
+            "median_likes": 1.0,
+            "mean_likes": 0.9166666666666666,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.25
+          },
+          "no": {
+            "n": 137,
+            "median_likes": 1,
+            "mean_likes": 3.8905109489051095,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.31386861313868614
+          },
+          "log1p_difference": -0.21982886719794592,
+          "equal_author_log1p_difference": -0.30592229955395833
+        },
+        {
+          "topic": "mcp",
+          "month": "2026-08",
+          "yes": {
+            "n": 23,
+            "median_likes": 1,
+            "mean_likes": 2.5217391304347827,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.30434782608695654
+          },
+          "no": {
+            "n": 223,
+            "median_likes": 1,
+            "mean_likes": 3.0448430493273544,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.4349775784753363
+          },
+          "log1p_difference": 0.16239746388644116,
+          "equal_author_log1p_difference": 0.20897828188704992
+        },
+        {
+          "topic": "mcp",
+          "month": "2026-07",
+          "yes": {
+            "n": 22,
+            "median_likes": 1.0,
+            "mean_likes": 2.409090909090909,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.4090909090909091
+          },
+          "no": {
+            "n": 138,
+            "median_likes": 1.0,
+            "mean_likes": 3.2971014492753623,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.2463768115942029
+          },
+          "log1p_difference": -0.13673620818275112,
+          "equal_author_log1p_difference": -0.2282546153451417
+        },
+        {
+          "topic": "agent",
+          "month": "2026-08",
+          "yes": {
+            "n": 19,
+            "median_likes": 1,
+            "mean_likes": 3,
+            "median_bookmarks": 1,
+            "median_comments": 0,
+            "zero_share": 0.3157894736842105
+          },
+          "no": {
+            "n": 173,
+            "median_likes": 1,
+            "mean_likes": 6.1502890173410405,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.4913294797687861
+          },
+          "log1p_difference": 0.1323716619608004,
+          "equal_author_log1p_difference": 0.011263377114220097
+        },
+        {
+          "topic": "agent",
+          "month": "2026-07",
+          "yes": {
+            "n": 18,
+            "median_likes": 2.0,
+            "mean_likes": 9.166666666666666,
+            "median_bookmarks": 1.0,
+            "median_comments": 0.0,
+            "zero_share": 0.2222222222222222
+          },
+          "no": {
+            "n": 183,
+            "median_likes": 2,
+            "mean_likes": 6.043715846994536,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.19672131147540983
+          },
+          "log1p_difference": -0.06661508582388986,
+          "equal_author_log1p_difference": -0.08429282865003218
+        },
+        {
+          "topic": "agent",
+          "month": "2026-06",
+          "yes": {
+            "n": 15,
+            "median_likes": 2,
+            "mean_likes": 2.466666666666667,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.2
+          },
+          "no": {
+            "n": 61,
+            "median_likes": 1,
+            "mean_likes": 2.622950819672131,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.36065573770491804
+          },
+          "log1p_difference": 0.21983664773403555,
+          "equal_author_log1p_difference": 0.17295800216888502
+        },
+        {
+          "topic": "claudecode",
+          "month": "2026-09",
+          "yes": {
+            "n": 14,
+            "median_likes": 1.0,
+            "mean_likes": 1.2857142857142858,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.2857142857142857
+          },
+          "no": {
+            "n": 307,
+            "median_likes": 1,
+            "mean_likes": 2.8306188925081432,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.2768729641693811
+          },
+          "log1p_difference": -0.18022688442137602,
+          "equal_author_log1p_difference": -0.35147070571243955
+        },
+        {
+          "topic": "llm",
+          "month": "2026-09",
+          "yes": {
+            "n": 27,
+            "median_likes": 1,
+            "mean_likes": 6.7407407407407405,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.4074074074074074
+          },
+          "no": {
+            "n": 271,
+            "median_likes": 1,
+            "mean_likes": 3.132841328413284,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.3726937269372694
+          },
+          "log1p_difference": 0.17593500781364269,
+          "equal_author_log1p_difference": 0.24158116886285208
+        },
+        {
+          "topic": "rag",
+          "month": "2026-09",
+          "yes": {
+            "n": 5,
+            "median_likes": 1,
+            "mean_likes": 1.4,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.4
+          },
+          "no": {
+            "n": 58,
+            "median_likes": 1.0,
+            "mean_likes": 4.672413793103448,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.46551724137931033
+          },
+          "log1p_difference": -0.051906890493964464,
+          "equal_author_log1p_difference": -0.13256376063618103
+        },
+        {
+          "topic": "rag",
+          "month": "2026-08",
+          "yes": {
+            "n": 9,
+            "median_likes": 0,
+            "mean_likes": 2.6666666666666665,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.5555555555555556
+          },
+          "no": {
+            "n": 94,
+            "median_likes": 1.0,
+            "mean_likes": 5.372340425531915,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.44680851063829785
+          },
+          "log1p_difference": -0.21678042689739319,
+          "equal_author_log1p_difference": -0.22956602061088272
+        },
+        {
+          "topic": "rag",
+          "month": "2026-07",
+          "yes": {
+            "n": 12,
+            "median_likes": 1.5,
+            "mean_likes": 3,
+            "median_bookmarks": 0.5,
+            "median_comments": 0.0,
+            "zero_share": 0.16666666666666666
+          },
+          "no": {
+            "n": 111,
+            "median_likes": 1,
+            "mean_likes": 2.5045045045045047,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.3333333333333333
+          },
+          "log1p_difference": 0.24448051153758854,
+          "equal_author_log1p_difference": 0.2145252811452486
+        },
+        {
+          "topic": "rag",
+          "month": "2026-06",
+          "yes": {
+            "n": 23,
+            "median_likes": 1,
+            "mean_likes": 14.043478260869565,
+            "median_bookmarks": 1,
+            "median_comments": 0,
+            "zero_share": 0.17391304347826086
+          },
+          "no": {
+            "n": 146,
+            "median_likes": 1.0,
+            "mean_likes": 4.095890410958904,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.3150684931506849
+          },
+          "log1p_difference": 0.3234259698918699,
+          "equal_author_log1p_difference": 0.15457130276424924
+        },
+        {
+          "topic": "rag",
+          "month": "2026-05",
+          "yes": {
+            "n": 16,
+            "median_likes": 2.0,
+            "mean_likes": 4.75,
+            "median_bookmarks": 1.0,
+            "median_comments": 0.0,
+            "zero_share": 0.0625
+          },
+          "no": {
+            "n": 100,
+            "median_likes": 2.0,
+            "mean_likes": 4.79,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.14
+          },
+          "log1p_difference": 0.052751732148224706,
+          "equal_author_log1p_difference": 0.032507472981406105
+        }
+      ]
+    },
+    {
+      "feature": "firsthand_build",
+      "yes": {
+        "n": 221,
+        "median_likes": 1,
+        "mean_likes": 2.8778280542986425,
+        "median_bookmarks": 0,
+        "median_comments": 0,
+        "zero_share": 0.3031674208144796
+      },
+      "no": {
+        "n": 1930,
+        "median_likes": 1.0,
+        "mean_likes": 4.215544041450777,
+        "median_bookmarks": 0.0,
+        "median_comments": 0.0,
+        "zero_share": 0.3310880829015544
+      },
+      "topic_month_cells": [
+        {
+          "topic": "mcp",
+          "month": "2026-09",
+          "yes": {
+            "n": 19,
+            "median_likes": 1,
+            "mean_likes": 4.7368421052631575,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.3157894736842105
+          },
+          "no": {
+            "n": 130,
+            "median_likes": 1.0,
+            "mean_likes": 3.4923076923076923,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.3076923076923077
+          },
+          "log1p_difference": 0.02829984068731739,
+          "equal_author_log1p_difference": 0.1739445993424017
+        },
+        {
+          "topic": "mcp",
+          "month": "2026-08",
+          "yes": {
+            "n": 32,
+            "median_likes": 1.0,
+            "mean_likes": 2.5,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.40625
+          },
+          "no": {
+            "n": 214,
+            "median_likes": 1.0,
+            "mean_likes": 3.0700934579439254,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.4252336448598131
+          },
+          "log1p_difference": 0.02166964599182175,
+          "equal_author_log1p_difference": -0.03505019213867133
+        },
+        {
+          "topic": "mcp",
+          "month": "2026-07",
+          "yes": {
+            "n": 14,
+            "median_likes": 1.0,
+            "mean_likes": 1.5,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.2857142857142857
+          },
+          "no": {
+            "n": 146,
+            "median_likes": 1.0,
+            "mean_likes": 3.335616438356164,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.2671232876712329
+          },
+          "log1p_difference": -0.19120365268387673,
+          "equal_author_log1p_difference": -0.2682864940392444
+        },
+        {
+          "topic": "agent",
+          "month": "2026-08",
+          "yes": {
+            "n": 10,
+            "median_likes": 2.0,
+            "mean_likes": 2.8,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.2
+          },
+          "no": {
+            "n": 182,
+            "median_likes": 1.0,
+            "mean_likes": 6.0054945054945055,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.489010989010989
+          },
+          "log1p_difference": 0.34999717242121897,
+          "equal_author_log1p_difference": 0.17378542126622543
+        },
+        {
+          "topic": "agent",
+          "month": "2026-07",
+          "yes": {
+            "n": 21,
+            "median_likes": 1,
+            "mean_likes": 4.809523809523809,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.14285714285714285
+          },
+          "no": {
+            "n": 180,
+            "median_likes": 2.0,
+            "mean_likes": 6.5,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.20555555555555555
+          },
+          "log1p_difference": 0.06089943883559279,
+          "equal_author_log1p_difference": 0.04986601431187765
+        },
+        {
+          "topic": "agent",
+          "month": "2026-06",
+          "yes": {
+            "n": 5,
+            "median_likes": 0,
+            "mean_likes": 1.6,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.6
+          },
+          "no": {
+            "n": 71,
+            "median_likes": 1,
+            "mean_likes": 2.6619718309859155,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.30985915492957744
+          },
+          "log1p_difference": -0.3179712848471651,
+          "equal_author_log1p_difference": -0.43413097076528695
+        },
+        {
+          "topic": "claudecode",
+          "month": "2026-09",
+          "yes": {
+            "n": 45,
+            "median_likes": 1,
+            "mean_likes": 1.711111111111111,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.26666666666666666
+          },
+          "no": {
+            "n": 276,
+            "median_likes": 1.0,
+            "mean_likes": 2.9347826086956523,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.27898550724637683
+          },
+          "log1p_difference": -0.04016516939484449,
+          "equal_author_log1p_difference": -0.1407585989101574
+        },
+        {
+          "topic": "llm",
+          "month": "2026-09",
+          "yes": {
+            "n": 27,
+            "median_likes": 1,
+            "mean_likes": 1.1481481481481481,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.37037037037037035
+          },
+          "no": {
+            "n": 271,
+            "median_likes": 1,
+            "mean_likes": 3.690036900369004,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.3763837638376384
+          },
+          "log1p_difference": -0.24640449894856742,
+          "equal_author_log1p_difference": -0.3527404538624881
+        },
+        {
+          "topic": "rag",
+          "month": "2026-09",
+          "yes": {
+            "n": 8,
+            "median_likes": 0.0,
+            "mean_likes": 0.25,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.875
+          },
+          "no": {
+            "n": 55,
+            "median_likes": 1,
+            "mean_likes": 5.0181818181818185,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.4
+          },
+          "log1p_difference": -0.625500111595867,
+          "equal_author_log1p_difference": -0.7580801245932507
+        },
+        {
+          "topic": "rag",
+          "month": "2026-08",
+          "yes": {
+            "n": 9,
+            "median_likes": 1,
+            "mean_likes": 2.5555555555555554,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.4444444444444444
+          },
+          "no": {
+            "n": 94,
+            "median_likes": 1.0,
+            "mean_likes": 5.382978723404255,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.4574468085106383
+          },
+          "log1p_difference": 0.04698393554108782,
+          "equal_author_log1p_difference": -0.005352172223066276
+        },
+        {
+          "topic": "rag",
+          "month": "2026-07",
+          "yes": {
+            "n": 9,
+            "median_likes": 1,
+            "mean_likes": 1.6666666666666667,
+            "median_bookmarks": 0,
+            "median_comments": 0,
+            "zero_share": 0.1111111111111111
+          },
+          "no": {
+            "n": 114,
+            "median_likes": 1.0,
+            "mean_likes": 2.6228070175438596,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.3333333333333333
+          },
+          "log1p_difference": -0.05257970140418167,
+          "equal_author_log1p_difference": -0.06296662507986128
+        },
+        {
+          "topic": "rag",
+          "month": "2026-06",
+          "yes": {
+            "n": 17,
+            "median_likes": 1,
+            "mean_likes": 2.4705882352941178,
+            "median_bookmarks": 1,
+            "median_comments": 0,
+            "zero_share": 0.4117647058823529
+          },
+          "no": {
+            "n": 152,
+            "median_likes": 1.0,
+            "mean_likes": 5.782894736842105,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.28289473684210525
+          },
+          "log1p_difference": -0.3108678930090286,
+          "equal_author_log1p_difference": -0.37991393875378265
+        },
+        {
+          "topic": "rag",
+          "month": "2026-05",
+          "yes": {
+            "n": 16,
+            "median_likes": 3.0,
+            "mean_likes": 4.5625,
+            "median_bookmarks": 1.0,
+            "median_comments": 0.0,
+            "zero_share": 0.125
+          },
+          "no": {
+            "n": 100,
+            "median_likes": 2.0,
+            "mean_likes": 4.82,
+            "median_bookmarks": 0.0,
+            "median_comments": 0.0,
+            "zero_share": 0.13
+          },
+          "log1p_difference": 0.19394938988676325,
+          "equal_author_log1p_difference": 0.11162142518770768
+        }
+      ]
+    }
+  ],
+  "length_groups": [
+    {
+      "range": "0-2000",
+      "n": 93,
+      "median_likes": 1,
+      "mean_likes": 1.064516129032258,
+      "median_bookmarks": 0,
+      "median_comments": 0,
+      "zero_share": 0.45161290322580644
+    },
+    {
+      "range": "2000-5000",
+      "n": 714,
+      "median_likes": 1.0,
+      "mean_likes": 3.044817927170868,
+      "median_bookmarks": 0.0,
+      "median_comments": 0.0,
+      "zero_share": 0.36554621848739494
+    },
+    {
+      "range": "5000-10000",
+      "n": 785,
+      "median_likes": 1,
+      "mean_likes": 4.273885350318471,
+      "median_bookmarks": 0,
+      "median_comments": 0,
+      "zero_share": 0.3159235668789809
+    },
+    {
+      "range": "10000-20000",
+      "n": 434,
+      "median_likes": 1.0,
+      "mean_likes": 5.861751152073733,
+      "median_bookmarks": 0.0,
+      "median_comments": 0.0,
+      "zero_share": 0.2995391705069124
+    },
+    {
+      "range": "20000-inf",
+      "n": 125,
+      "median_likes": 2,
+      "mean_likes": 4.8,
+      "median_bookmarks": 0,
+      "median_comments": 0,
+      "zero_share": 0.2
+    }
+  ],
+  "body_features": [
+    {
+      "feature": "code_blocks",
+      "groups": {
+        "higher": {
+          "n": 65,
+          "positive": 43,
+          "share": 0.6615384615384615
+        },
+        "lower": {
+          "n": 65,
+          "positive": 49,
+          "share": 0.7538461538461538
+        },
+        "historical_example": {
+          "n": 30,
+          "positive": 24,
+          "share": 0.8
+        }
+      }
+    },
+    {
+      "feature": "images",
+      "groups": {
+        "higher": {
+          "n": 65,
+          "positive": 40,
+          "share": 0.6153846153846154
+        },
+        "lower": {
+          "n": 65,
+          "positive": 16,
+          "share": 0.24615384615384617
+        },
+        "historical_example": {
+          "n": 30,
+          "positive": 17,
+          "share": 0.5666666666666667
+        }
+      }
+    },
+    {
+      "feature": "tables",
+      "groups": {
+        "higher": {
+          "n": 65,
+          "positive": 32,
+          "share": 0.49230769230769234
+        },
+        "lower": {
+          "n": 65,
+          "positive": 46,
+          "share": 0.7076923076923077
+        },
+        "historical_example": {
+          "n": 30,
+          "positive": 8,
+          "share": 0.26666666666666666
+        }
+      }
+    },
+    {
+      "feature": "measurement_words",
+      "groups": {
+        "higher": {
+          "n": 65,
+          "positive": 48,
+          "share": 0.7384615384615385
+        },
+        "lower": {
+          "n": 65,
+          "positive": 44,
+          "share": 0.676923076923077
+        },
+        "historical_example": {
+          "n": 30,
+          "positive": 13,
+          "share": 0.43333333333333335
+        }
+      }
+    },
+    {
+      "feature": "limitations_words",
+      "groups": {
+        "higher": {
+          "n": 65,
+          "positive": 61,
+          "share": 0.9384615384615385
+        },
+        "lower": {
+          "n": 65,
+          "positive": 54,
+          "share": 0.8307692307692308
+        },
+        "historical_example": {
+          "n": 30,
+          "positive": 22,
+          "share": 0.7333333333333333
+        }
+      }
+    },
+    {
+      "feature": "opening_problem_words",
+      "groups": {
+        "higher": {
+          "n": 65,
+          "positive": 35,
+          "share": 0.5384615384615384
+        },
+        "lower": {
+          "n": 65,
+          "positive": 32,
+          "share": 0.49230769230769234
+        },
+        "historical_example": {
+          "n": 30,
+          "positive": 11,
+          "share": 0.36666666666666664
+        }
+      }
+    },
+    {
+      "feature": "opening_result_words",
+      "groups": {
+        "higher": {
+          "n": 65,
+          "positive": 18,
+          "share": 0.27692307692307694
+        },
+        "lower": {
+          "n": 65,
+          "positive": 27,
+          "share": 0.4153846153846154
+        },
+        "historical_example": {
+          "n": 30,
+          "positive": 3,
+          "share": 0.1
+        }
+      }
+    }
+  ]
+}

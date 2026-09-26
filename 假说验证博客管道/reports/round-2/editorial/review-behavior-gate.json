@@ -1,0 +1,12 @@
+{
+  "run_id": "review-behavior",
+  "status": "traceable",
+  "issues": [],
+  "ruler": {
+    "path": "results/ruler_check.json",
+    "recorded_status": "passed"
+  },
+  "checked_measurements": 73,
+  "policy_sha256": "237ab084566cceb293ae5902e53ada13726db61c17d609a2a4c9ee7dd231796d",
+  "scope": "Declared-number bookkeeping only; scientific validity and claim completeness require semantic review."
+}

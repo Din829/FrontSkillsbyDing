@@ -1,0 +1,216 @@
+{
+  "run_id": "review-behavior",
+  "draft_sha256": "eb662057d9c9fc67fb0dabb1cec6d7d7124bf7f2e36f6d17a364fd38d71dfd4b",
+  "claims": [
+    {
+      "id": "c1",
+      "text": "# 独立审查摘要\n\n完整审查见 results/snapshots/semantic-review.md，逐会话记录见 semantic-review.json。审查者阅读了全部原始回答、理由和下一步建议；这是一位独立 AI 审查者的事后非盲判断，事前收到过标签争议提示。",
+      "level": "read",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/snapshots/semantic-review.md",
+          "sha256": "dff8eda8fb88b3d6f990f437e663ae66847ea8b21c109c3f9a18be1c4f3084e0"
+        },
+        {
+          "path": "results/snapshots/semantic-review.json",
+          "sha256": "a766b9e311cfc564f474b37829cc777112557a81a0fc8262c1c218de3dd0881a"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "text": "原评分有 4 份假红：其中 1 份合理指出择优选择问题，另 3 份合理指出供应商支持不等于当前环境实测。所有回答的核心处置、必需问题和假说判断均符合材料。",
+      "level": "inferred",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/snapshots/semantic-review.json",
+          "sha256": "a766b9e311cfc564f474b37829cc777112557a81a0fc8262c1c218de3dd0881a"
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "text": "原始两组各 22/24 保留，事后语义可接受分别为 24/24。前者是冻结规则得分，后者是复核者判断，不能相互替换。",
+      "level": "inferred",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/snapshots/semantic-review.json",
+          "sha256": "a766b9e311cfc564f474b37829cc777112557a81a0fc8262c1c218de3dd0881a"
+        }
+      ]
+    },
+    {
+      "id": "c4",
+      "text": "补测也逐份阅读理由：两组各 11/12 原始通过，2 份失分仍是同样的合理附加标签；关键处置均正确。它复现了评分规则问题，但没有提供新题上的泛化证据。",
+      "level": "inferred",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/supplement-review.json",
+          "sha256": "a6afe0e82079124a961c51d991273019e734e98b4e1b2355f837cf36777320ca"
+        }
+      ]
+    }
+  ],
+  "numbers": [
+    {
+      "index": 0,
+      "token": "4",
+      "kind": "measurement",
+      "claim_id": "c2",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/false_red",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 1,
+      "token": "1",
+      "kind": "measurement",
+      "claim_id": "c2",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/selection_false_red",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 2,
+      "token": "3",
+      "kind": "measurement",
+      "claim_id": "c2",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/scope_false_red",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 3,
+      "token": "22",
+      "kind": "measurement",
+      "claim_id": "c3",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_generic_primary",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 4,
+      "token": "24",
+      "kind": "measurement",
+      "claim_id": "c3",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_generic_n",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 5,
+      "token": "24",
+      "kind": "measurement",
+      "claim_id": "c3",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_generic_semantic",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 6,
+      "token": "24",
+      "kind": "measurement",
+      "claim_id": "c3",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_generic_n",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 7,
+      "token": "11",
+      "kind": "measurement",
+      "claim_id": "c4",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/supplement_generic_primary",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 8,
+      "token": "12",
+      "kind": "measurement",
+      "claim_id": "c4",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/supplement_generic_n",
+        "unit": "answers"
+      }
+    },
+    {
+      "index": 9,
+      "token": "2",
+      "kind": "measurement",
+      "claim_id": "c4",
+      "unit": "answers",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/supplement_false_red",
+        "unit": "answers"
+      }
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "run_id": "retrieval-v4",
+  "draft_sha256": "56f1c79a309fc9cfb4435c841628125e130ffc24b9733af2eef53ab755e25fce",
+  "claims": [
+    {
+      "id": "c1",
+      "text": "# 独立审查交接",
+      "level": "read",
+      "scope": "本次冻结语料、人工题集及保存的研究记录",
+      "evidence": [
+        {
+          "path": "results/reproduction/REVIEW.md",
+          "sha256": "27935e879cc9e0c7141c5d030d43be8704da619118149601de60fc01fa968b0a"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "text": "审查者先在新目录实跑，独立从完整排名重算结果并保存初步判断，再对作者结果；最终 4 个产物字节一致。原始复现日志、检查记录与审查报告复制在 results/reproduction。",
+      "level": "read",
+      "scope": "本次冻结语料、人工题集及保存的研究记录",
+      "evidence": [
+        {
+          "path": "results/reproduction/verification.json",
+          "sha256": "94e6ee4470c57b35ed6b412b43fcc71b9ef3448c33d3f16f548be9696dacdbd5"
+        },
+        {
+          "path": "results/reproduction/process.json",
+          "sha256": "cb1188b8d8cadeb676a6ccf72d726aee9376603835b4a03131b7daf6f9a2560d"
+        },
+        {
+          "path": "results/reproduction/REVIEW.md",
+          "sha256": "27935e879cc9e0c7141c5d030d43be8704da619118149601de60fc01fa968b0a"
+        },
+        {
+          "path": "results/metrics.json",
+          "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3"
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "text": "审查发现并促成修正：初版包含提纲与空文件，正文范围还需排除测试回答笔记和价格资料表；浮点累加顺序不固定导致末位不同。最终版已按输入定义和确定排序修正，题目保持不变。",
+      "level": "read",
+      "scope": "本次冻结语料、人工题集及保存的研究记录",
+      "evidence": [
+        {
+          "path": "results/design.md",
+          "sha256": "93718c81331ed07a9f5a9a72f2636a145d8d1a6bec20553163b4150cde01be39"
+        },
+        {
+          "path": "results/history/initial_review.md",
+          "sha256": "a74c31f1778b7055abb027ab3ba1acb321a8d9fb890b82069bf2adb9ad227b93"
+        },
+        {
+          "path": "results/reproduction/REVIEW.md",
+          "sha256": "27935e879cc9e0c7141c5d030d43be8704da619118149601de60fc01fa968b0a"
+        }
+      ]
+    },
+    {
+      "id": "c4",
+      "text": "最终主指标均为 23 / 28；不支持前三命中改善。首位 17 → 22 / 28 可以报告为本题集次指标发现。未发现故意削弱基线或必须修订的真值，但相关集合不保证穷尽。",
+      "level": "read",
+      "scope": "本次冻结语料、人工题集及保存的研究记录",
+      "evidence": [
+        {
+          "path": "results/experiment/result.json",
+          "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b"
+        },
+        {
+          "path": "results/reproduction/REVIEW.md",
+          "sha256": "27935e879cc9e0c7141c5d030d43be8704da619118149601de60fc01fa968b0a"
+        },
+        {
+          "path": "results/metrics.json",
+          "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3"
+        }
+      ]
+    },
+    {
+      "id": "c5",
+      "text": "允许形成日语草稿，必须写清简单词面检索、人工便利样本、真实阅读耗时未测及跨语言漏检。机械 gate 只负责可追溯；发布授权、公开范围和作者身份仍需对应判断。",
+      "level": "inferred",
+      "scope": "本次冻结语料、人工题集及保存的研究记录",
+      "evidence": [
+        {
+          "path": "results/reproduction/REVIEW.md",
+          "sha256": "27935e879cc9e0c7141c5d030d43be8704da619118149601de60fc01fa968b0a"
+        },
+        {
+          "path": "results/design.md",
+          "sha256": "93718c81331ed07a9f5a9a72f2636a145d8d1a6bec20553163b4150cde01be39"
+        }
+      ]
+    }
+  ],
+  "numbers": [
+    {
+      "index": 0,
+      "token": "4",
+      "kind": "measurement",
+      "claim_id": "c2",
+      "unit": "files",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/equal_artifacts",
+        "unit": "files"
+      }
+    },
+    {
+      "index": 1,
+      "token": "23",
+      "kind": "measurement",
+      "claim_id": "c4",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/body_hit3",
+        "unit": "questions"
+      }
+    },
+    {
+      "index": 2,
+      "token": "28",
+      "kind": "measurement",
+      "claim_id": "c4",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/questions",
+        "unit": "questions"
+      }
+    },
+    {
+      "index": 3,
+      "token": "17",
+      "kind": "measurement",
+      "claim_id": "c4",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/body_hit1",
+        "unit": "questions"
+      }
+    },
+    {
+      "index": 4,
+      "token": "22",
+      "kind": "measurement",
+      "claim_id": "c4",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/body_metadata_hit1",
+        "unit": "questions"
+      }
+    },
+    {
+      "index": 5,
+      "token": "28",
+      "kind": "measurement",
+      "claim_id": "c4",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/questions",
+        "unit": "questions"
+      }
+    }
+  ]
+}

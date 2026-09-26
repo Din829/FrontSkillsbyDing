@@ -1,0 +1,27 @@
+{
+  "run_id": "review-behavior",
+  "ruler_id": "audit-accounting-v1",
+  "status": "passed",
+  "alignment": "This ruler validates provenance and counting of recorded outcomes only. Original label whitelist has known false negatives and is not validated as a measure of substantive model errors.",
+  "cases": [
+    {
+      "label": "good",
+      "expected": true,
+      "observed": true,
+      "evidence": {
+        "path": "results/accounting-calibration.json",
+        "sha256": "3ab7f37ed91445b7b8256ace85db00782aa993d33a37914d6324232e82dd1f75"
+      }
+    },
+    {
+      "label": "bad",
+      "expected": false,
+      "observed": false,
+      "evidence": {
+        "path": "results/accounting-calibration.json",
+        "sha256": "3ab7f37ed91445b7b8256ace85db00782aa993d33a37914d6324232e82dd1f75"
+      }
+    }
+  ],
+  "scientific_ruler_status": "original semantic whitelist failed post-hoc calibration; preserve original and separate adjudication"
+}

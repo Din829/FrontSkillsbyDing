@@ -1,0 +1,122 @@
+{
+  "run_id": "review-behavior",
+  "draft_sha256": "dcd73e12229201c227b0ef45e9df05228407f903c69bc3509aecddd774009871",
+  "claims": [
+    {
+      "id": "c1",
+      "text": "# 执行证据\n\n原模型调用逐份保存在 results/study/sessions，补测副本保存在 results/pinned-study-snapshot/sessions。source-index.json 逐项记录答案、提示、进程和事件文件散列。",
+      "level": "measured",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/source-index.json",
+          "sha256": "802423820d1e285e9ce65278c2171027ef908a24e3bb74087a6e064e2d42d0f5"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "text": "原研究有 48 个不同 thread，全部成功完成；原始事件中工具项目为 0。补测另有 24 个不同 thread，与原批次不重叠。",
+      "level": "measured",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/original-accounting.json",
+          "sha256": "cffc119d57c891ab475eea689c565ee42d57e42d3b190e7780e470706ad25f65"
+        },
+        {
+          "path": "results/supplement-review.json",
+          "sha256": "a6afe0e82079124a961c51d991273019e734e98b4e1b2355f837cf36777320ca"
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "text": "results/execution.json 记录的是交付阶段真实运行 review_results.py 的核对过程，不是原模型调用的统一执行记录。其开始结束时间只属于本次核对；没有回填或伪造原调用时间。",
+      "level": "measured",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/execution.json",
+          "sha256": "5211b747147967f92c97910b2b9d1ebeed4a6a57efe95386a2cb8e24f2cb8e1b"
+        },
+        {
+          "path": "results/snapshots/review_results.py",
+          "sha256": "2a390b398b1a2f488b2ba77d3b9515ab1e32bf5ebdb1dac2c70db05ba9fbb1ba"
+        }
+      ]
+    },
+    {
+      "id": "c4",
+      "text": "ruler_check.json 校准的是来源与计数检查；原标签评分器的语义缺陷仍记录为未通过，不能用本包 gate 通过覆盖该缺陷。",
+      "level": "read",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/ruler_check.json",
+          "sha256": "8168a88480994956c209d52443c6e9654a7580d49c7906a62ee332db47750e0a"
+        }
+      ]
+    }
+  ],
+  "numbers": [
+    {
+      "index": 0,
+      "token": "48",
+      "kind": "measurement",
+      "claim_id": "c2",
+      "unit": "sessions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_sessions",
+        "unit": "sessions"
+      }
+    },
+    {
+      "index": 1,
+      "token": "0",
+      "kind": "measurement",
+      "claim_id": "c2",
+      "unit": "tool_items",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/tool_count",
+        "unit": "tool_items"
+      }
+    },
+    {
+      "index": 2,
+      "token": "24",
+      "kind": "measurement",
+      "claim_id": "c2",
+      "unit": "sessions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/supplement_sessions",
+        "unit": "sessions"
+      }
+    }
+  ]
+}

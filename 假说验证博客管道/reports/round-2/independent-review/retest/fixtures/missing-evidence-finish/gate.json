@@ -1,0 +1,21 @@
+{
+  "run_id": "missing-evidence-finish",
+  "status": "incomplete",
+  "issues": [
+    {
+      "id": "documents_missing:d407f99077eb5864",
+      "code": "documents_missing",
+      "category": "evidence_gap",
+      "severity": "warning",
+      "location": {},
+      "detail": "No documents supplied for checking"
+    }
+  ],
+  "ruler": {
+    "path": "results/ruler.json",
+    "recorded_status": "passed"
+  },
+  "checked_measurements": 0,
+  "policy_sha256": "237ab084566cceb293ae5902e53ada13726db61c17d609a2a4c9ee7dd231796d",
+  "scope": "Declared-number bookkeeping only; scientific validity and claim completeness require semantic review."
+}

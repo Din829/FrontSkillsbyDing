@@ -1,0 +1,412 @@
+{
+  "run_id": "retrieval-v4",
+  "draft_sha256": "b1284f93010b6633092ac8b83e715646a2699d286753fb975f6b6cfa44cb76c6",
+  "claims": [
+    {
+      "id": "round2-0",
+      "text": "手元の技術記事 24 本と質問 28 問で比較したところ、先頭で関連記事が見つかる質問は 17 問から 22 問へ増加。一方、主指標にしていた「上位 3 件に入るか」は、どちらも 23 問でした。見出し加重で主指標が改善する、という当初の仮説は支持されませんでした。",
+      "level": "measured",
+      "scope": "Frozen original experiment and its disclosed post-hoc interpretation; no new model run or causal engagement claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3"
+        }
+      ]
+    },
+    {
+      "id": "round2-1",
+      "text": "図は同じ質問を両方式で評価した実測値です。本文だけで点数を付ける方式と、本文の点数にパス・H1/H2 見出しの点数を 2 倍して加える方式を比べました。本文側にも見出しは残しています。比較相手からタイトルを消して、わざと弱くしたわけではありません。",
+      "level": "measured",
+      "scope": "Frozen original experiment and its disclosed post-hoc interpretation; no new model run or causal engagement claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3"
+        }
+      ]
+    },
+    {
+      "id": "round2-2",
+      "text": "違いが分かりやすかったのは、無害に見える断片を後から結合する「Split Injection」を英語で尋ねた質問でした。答えのある日本語記事は、本文だけでは 3 位、加重すると 1 位になりました。上から読む人には便利そうです。ただ、もともと閲覧範囲に入っていたので、新しく答えを拾えた質問には数えません。",
+      "level": "measured",
+      "scope": "Frozen original experiment and its disclosed post-hoc interpretation; no new model run or causal engagement claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3"
+        }
+      ]
+    },
+    {
+      "id": "round2-3",
+      "text": "逆の例もあります。Claude Code のカスタムサブエージェントを作るコマンドを英語で尋ねると、対応記事は 15 位から 6 位まで上がりました。順位は大きく動いても、上位 3 件には届きません。順位の変化だけでは、探し物が解決したかは分からないのです。",
+      "level": "measured",
+      "scope": "Frozen original experiment and its disclosed post-hoc interpretation; no new model run or causal engagement claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3"
+        }
+      ]
+    },
+    {
+      "id": "round2-4",
+      "text": "body: first=17/28, top3=23/28",
+      "level": "measured",
+      "scope": "Frozen original experiment and its disclosed post-hoc interpretation; no new model run or causal engagement claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3"
+        }
+      ]
+    },
+    {
+      "id": "round2-5",
+      "text": "body_metadata: first=22/28, top3=23/28",
+      "level": "measured",
+      "scope": "Frozen original experiment and its disclosed post-hoc interpretation; no new model run or causal engagement claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3"
+        }
+      ]
+    },
+    {
+      "id": "round2-6",
+      "text": "整理前の主指標は、本文だけが 22 問、加重ありが 23 問。整理後は本文だけでも 23 問になり、差が消えました。質問や重みを結果に合わせて変えたのではなく、検索対象を意図した範囲へ修正し、初回の結果も残しています。",
+      "level": "measured",
+      "scope": "Frozen original experiment and its disclosed post-hoc interpretation; no new model run or causal engagement claim.",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3"
+        }
+      ]
+    }
+  ],
+  "numbers": [
+    {
+      "index": 0,
+      "token": "24",
+      "kind": "measurement",
+      "claim_id": "round2-0",
+      "unit": "documents",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/documents",
+        "unit": "documents"
+      }
+    },
+    {
+      "index": 1,
+      "token": "28",
+      "kind": "measurement",
+      "claim_id": "round2-0",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/questions",
+        "unit": "questions"
+      }
+    },
+    {
+      "index": 2,
+      "token": "17",
+      "kind": "measurement",
+      "claim_id": "round2-0",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/body_hit1",
+        "unit": "questions"
+      }
+    },
+    {
+      "index": 3,
+      "token": "22",
+      "kind": "measurement",
+      "claim_id": "round2-0",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/body_metadata_hit1",
+        "unit": "questions"
+      }
+    },
+    {
+      "index": 4,
+      "token": "3",
+      "kind": "code",
+      "reason": "Fixed top-three cutoff in the declared evaluation protocol; not an observed gain."
+    },
+    {
+      "index": 5,
+      "token": "23",
+      "kind": "measurement",
+      "claim_id": "round2-0",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/body_hit3",
+        "unit": "questions"
+      }
+    },
+    {
+      "index": 9,
+      "token": "2",
+      "kind": "measurement",
+      "claim_id": "round2-1",
+      "unit": "weight",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/weight",
+        "unit": "weight"
+      }
+    },
+    {
+      "index": 11,
+      "token": "3",
+      "kind": "measurement",
+      "claim_id": "round2-2",
+      "unit": "rank",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/q26_body_rank",
+        "unit": "rank"
+      }
+    },
+    {
+      "index": 12,
+      "token": "1",
+      "kind": "measurement",
+      "claim_id": "round2-2",
+      "unit": "rank",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/q26_body_metadata_rank",
+        "unit": "rank"
+      }
+    },
+    {
+      "index": 13,
+      "token": "15",
+      "kind": "measurement",
+      "claim_id": "round2-3",
+      "unit": "rank",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/q12_body_rank",
+        "unit": "rank"
+      }
+    },
+    {
+      "index": 14,
+      "token": "6",
+      "kind": "measurement",
+      "claim_id": "round2-3",
+      "unit": "rank",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/q12_body_metadata_rank",
+        "unit": "rank"
+      }
+    },
+    {
+      "index": 15,
+      "token": "3",
+      "kind": "code",
+      "reason": "Fixed top-three cutoff in the declared evaluation protocol; not an observed gain."
+    },
+    {
+      "index": 20,
+      "token": "17",
+      "kind": "measurement",
+      "claim_id": "round2-4",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/body_hit1",
+        "unit": "questions"
+      }
+    },
+    {
+      "index": 21,
+      "token": "28",
+      "kind": "measurement",
+      "claim_id": "round2-4",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/questions",
+        "unit": "questions"
+      }
+    },
+    {
+      "index": 23,
+      "token": "23",
+      "kind": "measurement",
+      "claim_id": "round2-4",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/body_hit3",
+        "unit": "questions"
+      }
+    },
+    {
+      "index": 24,
+      "token": "28",
+      "kind": "measurement",
+      "claim_id": "round2-4",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/questions",
+        "unit": "questions"
+      }
+    },
+    {
+      "index": 25,
+      "token": "22",
+      "kind": "measurement",
+      "claim_id": "round2-5",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/body_metadata_hit1",
+        "unit": "questions"
+      }
+    },
+    {
+      "index": 26,
+      "token": "28",
+      "kind": "measurement",
+      "claim_id": "round2-5",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/questions",
+        "unit": "questions"
+      }
+    },
+    {
+      "index": 28,
+      "token": "23",
+      "kind": "measurement",
+      "claim_id": "round2-5",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/body_metadata_hit3",
+        "unit": "questions"
+      }
+    },
+    {
+      "index": 29,
+      "token": "28",
+      "kind": "measurement",
+      "claim_id": "round2-5",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/questions",
+        "unit": "questions"
+      }
+    },
+    {
+      "index": 30,
+      "token": "22",
+      "kind": "measurement",
+      "claim_id": "round2-6",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/initial_body_hit3",
+        "unit": "questions"
+      }
+    },
+    {
+      "index": 31,
+      "token": "23",
+      "kind": "measurement",
+      "claim_id": "round2-6",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/initial_body_metadata_hit3",
+        "unit": "questions"
+      }
+    },
+    {
+      "index": 32,
+      "token": "23",
+      "kind": "measurement",
+      "claim_id": "round2-6",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/body_hit3",
+        "unit": "questions"
+      }
+    }
+  ],
+  "compound_claim_checks": [
+    {
+      "statement": "Both conditions have equal top-three hits",
+      "pointers": [
+        "/metrics/body_hit3",
+        "/metrics/body_metadata_hit3"
+      ],
+      "verified_equal": true
+    }
+  ],
+  "non_numeric_boundaries": [
+    "No additional experiment is claimed. Retrieval expanded calibration occurred after the original experiment. Semantic review was post-hoc and non-blind."
+  ],
+  "author_validation": "Scanned and semantically bound only; final gate is owned by the pipeline orchestrator."
+}

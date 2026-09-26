@@ -1,0 +1,86 @@
+{
+  "purpose": "Declared exploratory sample, not all Zenn. Six topics recent 600 + history popular 100 each; global history 200. Details selected after metadata via fixed stratification.",
+  "created_at": "2026-09-25T13:15:00Z",
+  "network_budget_requests": 300,
+  "minimum_interval_seconds": 1.1,
+  "body_target": 160,
+  "queries": [
+    {
+      "topicname": "ai",
+      "order": "latest",
+      "count": 100,
+      "sample_target": 600
+    },
+    {
+      "topicname": "ai",
+      "order": "alltime",
+      "count": 100,
+      "sample_target": 100
+    },
+    {
+      "topicname": "llm",
+      "order": "latest",
+      "count": 100,
+      "sample_target": 600
+    },
+    {
+      "topicname": "llm",
+      "order": "alltime",
+      "count": 100,
+      "sample_target": 100
+    },
+    {
+      "topicname": "claudecode",
+      "order": "latest",
+      "count": 100,
+      "sample_target": 600
+    },
+    {
+      "topicname": "claudecode",
+      "order": "alltime",
+      "count": 100,
+      "sample_target": 100
+    },
+    {
+      "topicname": "agent",
+      "order": "latest",
+      "count": 100,
+      "sample_target": 600
+    },
+    {
+      "topicname": "agent",
+      "order": "alltime",
+      "count": 100,
+      "sample_target": 100
+    },
+    {
+      "topicname": "rag",
+      "order": "latest",
+      "count": 100,
+      "sample_target": 600
+    },
+    {
+      "topicname": "rag",
+      "order": "alltime",
+      "count": 100,
+      "sample_target": 100
+    },
+    {
+      "topicname": "mcp",
+      "order": "latest",
+      "count": 100,
+      "sample_target": 600
+    },
+    {
+      "topicname": "mcp",
+      "order": "alltime",
+      "count": 100,
+      "sample_target": 100
+    },
+    {
+      "order": "alltime",
+      "count": 100,
+      "sample_target": 200
+    }
+  ]
+}

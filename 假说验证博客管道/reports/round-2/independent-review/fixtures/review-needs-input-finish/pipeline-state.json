@@ -1,0 +1,11 @@
+{
+  "reviews": {
+    "review": {
+      "status": "needs_input",
+      "issues": [],
+      "summary": "Cannot complete semantic review without the missing source context"
+    }
+  },
+  "author_thread": "synthetic-component-fixture-not-a-real-model-thread",
+  "status": "review_pending"
+}

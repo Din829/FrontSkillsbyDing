@@ -1,0 +1,13 @@
+{
+  "run_id": "missing-evidence-finish",
+  "execution_claim": "succeeded",
+  "execution": {
+    "path": "results/execution.json",
+    "sha256": "f57b1d72ea4a515a92fc3fd394404271e1ccca250f61199d356ed3ed9b861385"
+  },
+  "ruler": {
+    "path": "results/ruler.json",
+    "sha256": "844a33e4b039f927e4b98343c15398dad3987850a88241d617e442806b7a2484"
+  },
+  "documents": []
+}

@@ -1,0 +1,38 @@
+{
+  "run_id": "review-behavior",
+  "predicate": "exit_code == 0 and nonempty thread_id",
+  "good_input": {
+    "session": "c01_generic_0",
+    "case": "c01",
+    "condition": "generic",
+    "repeat": 0,
+    "thread_id": "01a0d8bd-5f6b-7402-a0bc-7fb76d3d4d57",
+    "exit_code": 0,
+    "decision_ok": true,
+    "required_issue_found": true,
+    "verdict_ok": true,
+    "primary_pass": true,
+    "extra_issues": [],
+    "reason": "已知错误答案应得0分却得了1分，说明评分器不符合命中正确文档才得分的标准。1.0与0.8虽相差20个百分点，但不能据此认定准确率提升；退出码0只说明执行正常。",
+    "next_action": "修正评分器，确认已知正确和错误样例均按预期计分，再对同一批题重评新旧检索器，根据有效结果修改报告主张。"
+  },
+  "good_observed": true,
+  "bad_input": {
+    "session": "c01_generic_0",
+    "case": "c01",
+    "condition": "generic",
+    "repeat": 0,
+    "thread_id": "01a0d8bd-5f6b-7402-a0bc-7fb76d3d4d57",
+    "exit_code": 7,
+    "decision_ok": true,
+    "required_issue_found": true,
+    "verdict_ok": true,
+    "primary_pass": true,
+    "extra_issues": [],
+    "reason": "已知错误答案应得0分却得了1分，说明评分器不符合命中正确文档才得分的标准。1.0与0.8虽相差20个百分点，但不能据此认定准确率提升；退出码0只说明执行正常。",
+    "next_action": "修正评分器，确认已知正确和错误样例均按预期计分，再对同一批题重评新旧检索器，根据有效结果修改报告主张。"
+  },
+  "bad_observed": false,
+  "bad_input_is_deliberate_mutation": true,
+  "limits": "Only calibrates bookkeeping acceptance; full source/answer equality is independently asserted by the review script. Does not calibrate semantic review correctness."
+}

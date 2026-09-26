@@ -1,0 +1,73 @@
+{
+  "run_id": "review-behavior",
+  "hypothesis": {
+    "falsification": "On this fixed scenario set, no higher correct-handling count in skills than generic means this run does not support an incremental benefit; original semantic score flaws prevent a general effectiveness inference."
+  },
+  "outcome": "inconclusive",
+  "ruler_id": "audit-accounting-v1",
+  "ruler": {
+    "path": "results/ruler_check.json",
+    "sha256": "8168a88480994956c209d52443c6e9654a7580d49c7906a62ee332db47750e0a"
+  },
+  "execution": {
+    "path": "results/execution.json",
+    "sha256": "5211b747147967f92c97910b2b9d1ebeed4a6a57efe95386a2cb8e24f2cb8e1b"
+  },
+  "execution_scope": "Real independent accounting script execution during packaging, not retroactive metadata for the original model study",
+  "budget": {
+    "status": "within",
+    "authorization": "User explicitly authorized extensive GPT/Gemini use; this packaging script makes no model calls",
+    "monetary_cost": null
+  },
+  "documents": [
+    {
+      "draft": {
+        "path": "hypothesis.md",
+        "sha256": "eeaeb3c68ece243bedfdc2893e9339263be7ba8c6a358ead223c1db4beab166a"
+      },
+      "claims": "hypothesis.claims.json"
+    },
+    {
+      "draft": {
+        "path": "experiment-plan.md",
+        "sha256": "643dc851197874fb0a028123431d406660a6864cfbbb773c261e78c0dc489222"
+      },
+      "claims": "experiment-plan.claims.json"
+    },
+    {
+      "draft": {
+        "path": "execution.md",
+        "sha256": "dcd73e12229201c227b0ef45e9df05228407f903c69bc3509aecddd774009871"
+      },
+      "claims": "execution.claims.json"
+    },
+    {
+      "draft": {
+        "path": "review.md",
+        "sha256": "eb662057d9c9fc67fb0dabb1cec6d7d7124bf7f2e36f6d17a364fd38d71dfd4b"
+      },
+      "claims": "review.claims.json"
+    },
+    {
+      "draft": {
+        "path": "REPORT.md",
+        "sha256": "b710da80eed124976fe4eed0a39d1fe209170669c128cc1fce87c6050d06cba0"
+      },
+      "claims": "REPORT.claims.json"
+    },
+    {
+      "draft": {
+        "path": "article.md",
+        "sha256": "3de4b4b2ce354ff29af66e19806d99cc49883f4791f2ec3c780daed6af562752"
+      },
+      "claims": "claims.json"
+    },
+    {
+      "draft": {
+        "path": "editorial.md",
+        "sha256": "b4b9e7f59a75f05c5faaae234c169f882f0df4a7d6b4ff9165d64ca9ddea2051"
+      },
+      "claims": "editorial.claims.json"
+    }
+  ]
+}

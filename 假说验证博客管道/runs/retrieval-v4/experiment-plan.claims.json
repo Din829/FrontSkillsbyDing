@@ -1,0 +1,196 @@
+{
+  "run_id": "retrieval-v4",
+  "draft_sha256": "e2f07780e7237aa0e1c3b8071d9168c096626abe4793b61e8bb075932b0e8121",
+  "claims": [
+    {
+      "id": "c1",
+      "text": "# 实验方案与冻结记录",
+      "level": "read",
+      "scope": "本次冻结语料、人工题集及保存的研究记录",
+      "evidence": [
+        {
+          "path": "results/design.md",
+          "sha256": "93718c81331ed07a9f5a9a72f2636a145d8d1a6bec20553163b4150cde01be39"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "text": "本文件由保存的设计整理，不冒充实验前新写的预注册。原始设计及修订记录在 results/design.md；最终输入和输出在 results/experiment。",
+      "level": "read",
+      "scope": "本次冻结语料、人工题集及保存的研究记录",
+      "evidence": [
+        {
+          "path": "results/design.md",
+          "sha256": "93718c81331ed07a9f5a9a72f2636a145d8d1a6bec20553163b4150cde01be39"
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "text": "实验单位为问题；共 28 题，主题和细节各 14 题。同一问题在相同 24 篇正文中分别检索。正确文档可多选，任一命中计成功。",
+      "level": "read",
+      "scope": "本次冻结语料、人工题集及保存的研究记录",
+      "evidence": [
+        {
+          "path": "results/experiment/result.json",
+          "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b"
+        },
+        {
+          "path": "results/experiment/queries.json",
+          "sha256": "8e456c062b487b0e3a06dba11ab4c9f5350811beb7a6a173e1341c81a45485f0"
+        },
+        {
+          "path": "results/metrics.json",
+          "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3"
+        }
+      ]
+    },
+    {
+      "id": "c4",
+      "text": "干预为正文分数加 2 倍路径及 H1/H2 标题分数。两组保留同一完整正文和参数；不根据题目调权重。主要指标是前三命中，首位命中与 MRR 是辅助观察。",
+      "level": "read",
+      "scope": "本次冻结语料、人工题集及保存的研究记录",
+      "evidence": [
+        {
+          "path": "results/design.md",
+          "sha256": "93718c81331ed07a9f5a9a72f2636a145d8d1a6bec20553163b4150cde01be39"
+        },
+        {
+          "path": "results/run_experiment.py",
+          "sha256": "d9c9a4102e9d1a5ddbcd071bce0757dd7eb821577545c8401deb7a01d8619126"
+        },
+        {
+          "path": "results/experiment/result.json",
+          "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b"
+        },
+        {
+          "path": "results/metrics.json",
+          "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3"
+        }
+      ]
+    },
+    {
+      "id": "c5",
+      "text": "尺子先以已知首位、第三位、缺失排序核对命中和倒数排名，再检查明确命中词的小语料对照。原校准结果在 results/experiment/calibration.json，派生索引在 results/ruler_check.json。",
+      "level": "read",
+      "scope": "本次冻结语料、人工题集及保存的研究记录",
+      "evidence": [
+        {
+          "path": "results/experiment/calibration.json",
+          "sha256": "42db930a0be308afddc3616177fc26657ce46255841dc90e0b4eb951ced9c569"
+        },
+        {
+          "path": "results/run_experiment.py",
+          "sha256": "d9c9a4102e9d1a5ddbcd071bce0757dd7eb821577545c8401deb7a01d8619126"
+        }
+      ]
+    },
+    {
+      "id": "c6",
+      "text": "算法固定且确定，不把机械重复当作更多独立样本。独立复现使用同一输入快照，在新目录重跑；逐字段及字节比较结果。人为编题与词面跨语言能力是主要边界。",
+      "level": "read",
+      "scope": "本次冻结语料、人工题集及保存的研究记录",
+      "evidence": [
+        {
+          "path": "results/design.md",
+          "sha256": "93718c81331ed07a9f5a9a72f2636a145d8d1a6bec20553163b4150cde01be39"
+        },
+        {
+          "path": "results/reproduction/verification.json",
+          "sha256": "94e6ee4470c57b35ed6b412b43fcc71b9ef3448c33d3f16f548be9696dacdbd5"
+        },
+        {
+          "path": "results/query_notes.md",
+          "sha256": "239b4c0158eacff70ad3aa9942f8a947fd6de46fbdeca919c46c9979f31d6ce9"
+        }
+      ]
+    },
+    {
+      "id": "c7",
+      "text": "输入审查发现提纲和空文件时，按原范围纠正并保留旧版本；不改题集。达到明确的运行完成与复现检查条件后停止，本轮不追加权重搜索或生产查询测试。",
+      "level": "read",
+      "scope": "本次冻结语料、人工题集及保存的研究记录",
+      "evidence": [
+        {
+          "path": "results/design.md",
+          "sha256": "93718c81331ed07a9f5a9a72f2636a145d8d1a6bec20553163b4150cde01be39"
+        },
+        {
+          "path": "results/reproduction/REVIEW.md",
+          "sha256": "27935e879cc9e0c7141c5d030d43be8704da619118149601de60fc01fa968b0a"
+        }
+      ]
+    }
+  ],
+  "numbers": [
+    {
+      "index": 0,
+      "token": "28",
+      "kind": "measurement",
+      "claim_id": "c3",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/questions",
+        "unit": "questions"
+      }
+    },
+    {
+      "index": 1,
+      "token": "14",
+      "kind": "measurement",
+      "claim_id": "c3",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/topic_questions",
+        "unit": "questions"
+      }
+    },
+    {
+      "index": 2,
+      "token": "24",
+      "kind": "measurement",
+      "claim_id": "c3",
+      "unit": "documents",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/documents",
+        "unit": "documents"
+      }
+    },
+    {
+      "index": 3,
+      "token": "2",
+      "kind": "measurement",
+      "claim_id": "c4",
+      "unit": "weight",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/weight",
+        "unit": "weight"
+      }
+    },
+    {
+      "index": 4,
+      "token": "1",
+      "kind": "identifier",
+      "reason": "固定名称或文档版本中的数字：H1"
+    },
+    {
+      "index": 5,
+      "token": "2",
+      "kind": "identifier",
+      "reason": "固定名称或文档版本中的数字：H2"
+    }
+  ]
+}

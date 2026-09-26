@@ -1,0 +1,74 @@
+[
+  {
+    "name": "metadata_valid_count",
+    "matches_original_expectation": true
+  },
+  {
+    "name": "metadata_beside_wrong_count",
+    "matches_original_expectation": true
+  },
+  {
+    "name": "changed_wrong_value_same_issue",
+    "matches_original_expectation": true
+  },
+  {
+    "name": "newline_hash_drift",
+    "matches_original_expectation": true
+  },
+  {
+    "name": "same_number_other_run",
+    "matches_original_expectation": true
+  },
+  {
+    "name": "ruler_warning_continues",
+    "matches_original_expectation": true
+  },
+  {
+    "name": "honest_failed_process_report",
+    "matches_original_expectation": true
+  },
+  {
+    "name": "false_success_from_failed_process",
+    "matches_original_expectation": true
+  },
+  {
+    "name": "measurement_hidden_by_legacy_identifier",
+    "matches_original_expectation": true
+  },
+  {
+    "name": "missing_document_registration",
+    "matches_original_expectation": true
+  },
+  {
+    "name": "finish_with_incomplete_gate",
+    "matches_original_expectation": true
+  },
+  {
+    "name": "valid_gate_before_incomplete_review",
+    "matches_original_expectation": true
+  },
+  {
+    "name": "finish_with_review_needs_input",
+    "matches_original_expectation": true
+  },
+  {
+    "name": "capture_missing_manifest_fields",
+    "matches_original_expectation": true
+  },
+  {
+    "name": "same_issue_id_when_number_changes",
+    "matches_original_expectation": true
+  },
+  {
+    "name": "repair_limit_same_process",
+    "matches_original_expectation": true
+  },
+  {
+    "name": "repair_limit_new_process",
+    "matches_original_expectation": true
+  },
+  {
+    "name": "no_capture_side_effect_on_incomplete_input",
+    "matches_original_expectation": true
+  }
+]

@@ -1,0 +1,508 @@
+{
+  "run_id": "retrieval-v4",
+  "draft_sha256": "2ebeaba52bde124bdb8e875525c354c6993b3f13b331b3c8d6f8c1456dace72b",
+  "claims": [
+    {
+      "id": "c1",
+      "text": "# 检索研究交付报告",
+      "level": "read",
+      "scope": "本次冻结语料、人工题集及保存的研究记录",
+      "evidence": [
+        {
+          "path": "results/experiment/result.json",
+          "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "text": "课题：博客积累后，选题和写作需要找回以往资料。检验给正文 BM25 额外加上路径及 H1/H2 章节标题分数，能否增加前三位找到正确文档的问题数量。",
+      "level": "read",
+      "scope": "本次冻结语料、人工题集及保存的研究记录",
+      "evidence": [
+        {
+          "path": "results/design.md",
+          "sha256": "93718c81331ed07a9f5a9a72f2636a145d8d1a6bec20553163b4150cde01be39"
+        },
+        {
+          "path": "results/run_experiment.py",
+          "sha256": "d9c9a4102e9d1a5ddbcd071bce0757dd7eb821577545c8401deb7a01d8619126"
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "text": "结论：最终 24 篇正文、28 题中，前三命中都是 23 题。预先提出的提升假说不获支持；首位命中 17 → 22 题是次指标上的改善，不能替换原主指标。",
+      "level": "measured",
+      "scope": "本次冻结语料、人工题集及保存的研究记录",
+      "evidence": [
+        {
+          "path": "results/experiment/result.json",
+          "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b"
+        },
+        {
+          "path": "results/reproduction/verification.json",
+          "sha256": "94e6ee4470c57b35ed6b412b43fcc71b9ef3448c33d3f16f548be9696dacdbd5"
+        },
+        {
+          "path": "results/design.md",
+          "sha256": "93718c81331ed07a9f5a9a72f2636a145d8d1a6bec20553163b4150cde01be39"
+        },
+        {
+          "path": "results/metrics.json",
+          "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3"
+        }
+      ]
+    },
+    {
+      "id": "c4",
+      "text": "为什么这么做：两组用同一正文、分词、参数、题集和排序规则，候选只增加字段加权；正文基线原本就含标题。题目由独立代理读文章后编制，未看算法或排名。这样减少按结果挑题和故意削弱对照的风险，但便利样本仍不代表真实流量。",
+      "level": "read",
+      "scope": "本次冻结语料、人工题集及保存的研究记录",
+      "evidence": [
+        {
+          "path": "results/design.md",
+          "sha256": "93718c81331ed07a9f5a9a72f2636a145d8d1a6bec20553163b4150cde01be39"
+        },
+        {
+          "path": "results/query_notes.md",
+          "sha256": "239b4c0158eacff70ad3aa9942f8a947fd6de46fbdeca919c46c9979f31d6ce9"
+        },
+        {
+          "path": "results/reproduction/REVIEW.md",
+          "sha256": "27935e879cc9e0c7141c5d030d43be8704da619118149601de60fc01fa968b0a"
+        }
+      ]
+    },
+    {
+      "id": "c5",
+      "text": "| 读者关心的问题 | 本次观察 |\n|---|---|\n| 找到更多原来找不到的资料了吗 | 前三命中 23 / 28 → 23 / 28，没有增加 |\n| 相关资料是否排到首位 | 首位命中 17 / 28 → 22 / 28，有改善 |\n| 主题和细节是否相同 | 主题首位 10 → 13；细节首位 7 → 9 |",
+      "level": "measured",
+      "scope": "本次冻结语料、人工题集及保存的研究记录",
+      "evidence": [
+        {
+          "path": "results/experiment/result.json",
+          "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b"
+        },
+        {
+          "path": "results/reproduction/verification.json",
+          "sha256": "94e6ee4470c57b35ed6b412b43fcc71b9ef3448c33d3f16f548be9696dacdbd5"
+        },
+        {
+          "path": "results/metrics.json",
+          "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3"
+        }
+      ]
+    },
+    {
+      "id": "c6",
+      "text": "独立复现：4 个产物与作者记录字节完全一致。原始执行退出码 0，有真实标准输出和错误输出；校准覆盖已知首位、第三位和缺失排序。机械溯源与可重复计算不等于方法能推广到其他数据。",
+      "level": "measured",
+      "scope": "本次冻结语料、人工题集及保存的研究记录",
+      "evidence": [
+        {
+          "path": "results/reproduction/verification.json",
+          "sha256": "94e6ee4470c57b35ed6b412b43fcc71b9ef3448c33d3f16f548be9696dacdbd5"
+        },
+        {
+          "path": "results/execution.json",
+          "sha256": "4a618a975a0cb387c71ecb936dd9479a1940924bf67b522a2553d39f973e076c"
+        },
+        {
+          "path": "results/experiment/calibration.json",
+          "sha256": "42db930a0be308afddc3616177fc26657ce46255841dc90e0b4eb951ced9c569"
+        },
+        {
+          "path": "results/metrics.json",
+          "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3"
+        }
+      ]
+    },
+    {
+      "id": "c7",
+      "text": "重要修正：初版混入提纲和空文件，另有实验回答笔记与价格资料表不符合正文定义。纠正输入后，正文基线的前三命中从 22 变为 23，原先的主指标差异消失。原版本保留，未改冻结问题或按得分调重。",
+      "level": "read",
+      "scope": "本次冻结语料、人工题集及保存的研究记录",
+      "evidence": [
+        {
+          "path": "results/design.md",
+          "sha256": "93718c81331ed07a9f5a9a72f2636a145d8d1a6bec20553163b4150cde01be39"
+        },
+        {
+          "path": "results/history/initial_result.json",
+          "sha256": "824c1d8b26904e7d4aec6e4e026ad904940b1db5f23657d61b5a78a07de4d48b"
+        },
+        {
+          "path": "results/experiment/result.json",
+          "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b"
+        },
+        {
+          "path": "results/history/initial_review.md",
+          "sha256": "a74c31f1778b7055abb027ab3ba1acb321a8d9fb890b82069bf2adb9ad227b93"
+        },
+        {
+          "path": "results/metrics.json",
+          "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3"
+        }
+      ]
+    },
+    {
+      "id": "c8",
+      "text": "预期效果：可把该策略作为本地资料检索的候选排序改动；不能承诺节省多少时间、改善所有跨语言查询或增加发布点赞。若进入生产，应另用实际查询和读者筛选时间验证。",
+      "level": "inferred",
+      "scope": "本次冻结语料、人工题集及保存的研究记录",
+      "evidence": [
+        {
+          "path": "results/experiment/result.json",
+          "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b"
+        },
+        {
+          "path": "results/reproduction/REVIEW.md",
+          "sha256": "27935e879cc9e0c7141c5d030d43be8704da619118149601de60fc01fa968b0a"
+        }
+      ]
+    },
+    {
+      "id": "c9",
+      "text": "参考了哪里：内容表达参考本轮 Zenn 样本研究，采用具体问题、真实对照和读者收益，不套数字标题公式。研究与编辑判断都保留在 results/content_research 与 editorial.md；本轮没有发布后的互动数据。",
+      "level": "read",
+      "scope": "本次冻结语料、人工题集及保存的研究记录",
+      "evidence": [
+        {
+          "path": "results/content_research/FINDINGS.md",
+          "sha256": "fa8d58386dfec3e0938cc7ec90a44aba1783d8e3df2e228fbfe71e4e99dabfa4"
+        }
+      ]
+    },
+    {
+      "id": "c10",
+      "text": "没破坏的逻辑：现有博客、检索算法和原始实验记录未由本交付脚本改写；只派生指标、证据台账及草稿。仍需人工决定发布身份、公司公开范围和最终渠道。技术结论的独立审查已完成。",
+      "level": "read",
+      "scope": "本次冻结语料、人工题集及保存的研究记录",
+      "evidence": [
+        {
+          "path": "results/package_result.py",
+          "sha256": "8ec94070af9f247642db9c0dec9db53518cdeb2f24ba24acbc77042c751cd263"
+        },
+        {
+          "path": "results/reproduction/REVIEW.md",
+          "sha256": "27935e879cc9e0c7141c5d030d43be8704da619118149601de60fc01fa968b0a"
+        }
+      ]
+    }
+  ],
+  "numbers": [
+    {
+      "index": 0,
+      "token": "25",
+      "kind": "identifier",
+      "reason": "固定名称或文档版本中的数字：BM25"
+    },
+    {
+      "index": 1,
+      "token": "1",
+      "kind": "identifier",
+      "reason": "固定名称或文档版本中的数字：H1"
+    },
+    {
+      "index": 2,
+      "token": "2",
+      "kind": "identifier",
+      "reason": "固定名称或文档版本中的数字：H2"
+    },
+    {
+      "index": 3,
+      "token": "24",
+      "kind": "measurement",
+      "claim_id": "c3",
+      "unit": "documents",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/documents",
+        "unit": "documents"
+      }
+    },
+    {
+      "index": 4,
+      "token": "28",
+      "kind": "measurement",
+      "claim_id": "c3",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/questions",
+        "unit": "questions"
+      }
+    },
+    {
+      "index": 5,
+      "token": "23",
+      "kind": "measurement",
+      "claim_id": "c3",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/body_hit3",
+        "unit": "questions"
+      }
+    },
+    {
+      "index": 6,
+      "token": "17",
+      "kind": "measurement",
+      "claim_id": "c3",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/body_hit1",
+        "unit": "questions"
+      }
+    },
+    {
+      "index": 7,
+      "token": "22",
+      "kind": "measurement",
+      "claim_id": "c3",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/body_metadata_hit1",
+        "unit": "questions"
+      }
+    },
+    {
+      "index": 8,
+      "token": "23",
+      "kind": "measurement",
+      "claim_id": "c5",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/body_hit3",
+        "unit": "questions"
+      }
+    },
+    {
+      "index": 9,
+      "token": "28",
+      "kind": "measurement",
+      "claim_id": "c5",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/questions",
+        "unit": "questions"
+      }
+    },
+    {
+      "index": 10,
+      "token": "23",
+      "kind": "measurement",
+      "claim_id": "c5",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/body_metadata_hit3",
+        "unit": "questions"
+      }
+    },
+    {
+      "index": 11,
+      "token": "28",
+      "kind": "measurement",
+      "claim_id": "c5",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/questions",
+        "unit": "questions"
+      }
+    },
+    {
+      "index": 12,
+      "token": "17",
+      "kind": "measurement",
+      "claim_id": "c5",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/body_hit1",
+        "unit": "questions"
+      }
+    },
+    {
+      "index": 13,
+      "token": "28",
+      "kind": "measurement",
+      "claim_id": "c5",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/questions",
+        "unit": "questions"
+      }
+    },
+    {
+      "index": 14,
+      "token": "22",
+      "kind": "measurement",
+      "claim_id": "c5",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/body_metadata_hit1",
+        "unit": "questions"
+      }
+    },
+    {
+      "index": 15,
+      "token": "28",
+      "kind": "measurement",
+      "claim_id": "c5",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/questions",
+        "unit": "questions"
+      }
+    },
+    {
+      "index": 16,
+      "token": "10",
+      "kind": "measurement",
+      "claim_id": "c5",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/body_topic_hit1",
+        "unit": "questions"
+      }
+    },
+    {
+      "index": 17,
+      "token": "13",
+      "kind": "measurement",
+      "claim_id": "c5",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/body_metadata_topic_hit1",
+        "unit": "questions"
+      }
+    },
+    {
+      "index": 18,
+      "token": "7",
+      "kind": "measurement",
+      "claim_id": "c5",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/body_detail_hit1",
+        "unit": "questions"
+      }
+    },
+    {
+      "index": 19,
+      "token": "9",
+      "kind": "measurement",
+      "claim_id": "c5",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/body_metadata_detail_hit1",
+        "unit": "questions"
+      }
+    },
+    {
+      "index": 20,
+      "token": "4",
+      "kind": "measurement",
+      "claim_id": "c6",
+      "unit": "files",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/equal_artifacts",
+        "unit": "files"
+      }
+    },
+    {
+      "index": 21,
+      "token": "0",
+      "kind": "measurement",
+      "claim_id": "c6",
+      "unit": "exit_code",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/exit_code",
+        "unit": "exit_code"
+      }
+    },
+    {
+      "index": 22,
+      "token": "22",
+      "kind": "measurement",
+      "claim_id": "c7",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/initial_body_hit3",
+        "unit": "questions"
+      }
+    },
+    {
+      "index": 23,
+      "token": "23",
+      "kind": "measurement",
+      "claim_id": "c7",
+      "unit": "questions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3",
+        "run_id": "retrieval-v4",
+        "pointer": "/metrics/body_hit3",
+        "unit": "questions"
+      }
+    }
+  ]
+}

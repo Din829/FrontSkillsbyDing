@@ -1,0 +1,102 @@
+[
+  {
+    "run_id": "retrieval-v4",
+    "images": [
+      {
+        "path": "runs/retrieval-v4/figures-round2/retrieval-results.png",
+        "sha256": "4d1fc06413581f67167e3ce6cf724de8b3c5e6afc82b5871999dbd92befc617d"
+      },
+      {
+        "path": "runs/retrieval-v4/figures-round2/retrieval-results.svg",
+        "sha256": "c5fd9778c18d8b7840037f3d9b17155276ed8ed57c9585ca6a5203764c039197"
+      }
+    ],
+    "source": {
+      "path": "runs/retrieval-v4/results/metrics.json",
+      "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3"
+    },
+    "series": {
+      "????": [
+        {
+          "pointer": "/metrics/body_hit1",
+          "value": 17,
+          "unit": "questions"
+        },
+        {
+          "pointer": "/metrics/body_hit3",
+          "value": 23,
+          "unit": "questions"
+        }
+      ],
+      "?????????": [
+        {
+          "pointer": "/metrics/body_metadata_hit1",
+          "value": 22,
+          "unit": "questions"
+        },
+        {
+          "pointer": "/metrics/body_metadata_hit3",
+          "value": 23,
+          "unit": "questions"
+        }
+      ]
+    },
+    "visual_inspection": "Viewed both PNG files with view_image after generation; Japanese glyphs, legend, labels, footnotes and bars are readable.",
+    "render_code": "reports/round-2/editorial/render_and_verify.py"
+  },
+  {
+    "run_id": "review-behavior",
+    "images": [
+      {
+        "path": "runs/review-behavior/figures-round2/review-results.png",
+        "sha256": "d8ea1ec6bf49de6b92ce09bda8a780e30a067d66610f4d06645e07a4d17eae78"
+      },
+      {
+        "path": "runs/review-behavior/figures-round2/review-results.svg",
+        "sha256": "3b0e9184643ee61d352c2815cc98dc90aadec25325b2de0ae058696cf4c92c6d"
+      }
+    ],
+    "source": {
+      "path": "runs/review-behavior/results/metrics.json",
+      "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+    },
+    "series": {
+      "?????": [
+        {
+          "pointer": "/metrics/original_generic_primary",
+          "value": 22,
+          "unit": "answers"
+        },
+        {
+          "pointer": "/metrics/original_generic_decision",
+          "value": 24,
+          "unit": "answers"
+        },
+        {
+          "pointer": "/metrics/original_generic_semantic",
+          "value": 24,
+          "unit": "answers"
+        }
+      ],
+      "????????": [
+        {
+          "pointer": "/metrics/original_skills_primary",
+          "value": 22,
+          "unit": "answers"
+        },
+        {
+          "pointer": "/metrics/original_skills_decision",
+          "value": 24,
+          "unit": "answers"
+        },
+        {
+          "pointer": "/metrics/original_skills_semantic",
+          "value": 24,
+          "unit": "answers"
+        }
+      ]
+    },
+    "visual_inspection": "Viewed both PNG files with view_image after generation; Japanese glyphs, legend, labels, footnotes and bars are readable.",
+    "render_code": "reports/round-2/editorial/render_and_verify.py"
+  }
+]

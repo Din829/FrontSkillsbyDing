@@ -1,0 +1,257 @@
+{
+  "observed_at": "2026-09-25T13:13:45.916521+00:00",
+  "incremental": false,
+  "coverage": [
+    {
+      "query": {
+        "topicname": "ai",
+        "order": "latest",
+        "count": 100,
+        "sample_target": 600
+      },
+      "unique_seen_this_run": 600,
+      "stored_articles": 600,
+      "pages": 6,
+      "sources": [
+        "raw\\5672ff917e76790c595cd723.json",
+        "raw\\198e2f750a427368458458a6.json",
+        "raw\\7e7288e3f8ccb70ec830ee51.json",
+        "raw\\4ab995eaf91a1136d330d258.json",
+        "raw\\3db2d4d80249381ef1c7e093.json",
+        "raw\\6438b8dc810576639acca1aa.json"
+      ],
+      "terminal": "declared_sample_target_reached",
+      "next_page": 7,
+      "index": "indexes\\bda0cf26205d0ccd.json"
+    },
+    {
+      "query": {
+        "topicname": "ai",
+        "order": "alltime",
+        "count": 100,
+        "sample_target": 100
+      },
+      "unique_seen_this_run": 100,
+      "stored_articles": 100,
+      "pages": 1,
+      "sources": [
+        "raw\\d345692b5b435b347a90df43.json"
+      ],
+      "terminal": "declared_sample_target_reached",
+      "next_page": 2,
+      "index": "indexes\\7524732b4f53d955.json"
+    },
+    {
+      "query": {
+        "topicname": "llm",
+        "order": "latest",
+        "count": 100,
+        "sample_target": 600
+      },
+      "unique_seen_this_run": 600,
+      "stored_articles": 600,
+      "pages": 6,
+      "sources": [
+        "raw\\dc90d8abb624089fd00dbc1a.json",
+        "raw\\21935f6d1c90ecead5424795.json",
+        "raw\\7287a3f09f2f2aae34788444.json",
+        "raw\\9a1ff2390017860a154c2d44.json",
+        "raw\\1d03825d61a17367062dc9d7.json",
+        "raw\\618b757cff25f172a7ba6606.json"
+      ],
+      "terminal": "declared_sample_target_reached",
+      "next_page": 7,
+      "index": "indexes\\b3fe3c16ffc15375.json"
+    },
+    {
+      "query": {
+        "topicname": "llm",
+        "order": "alltime",
+        "count": 100,
+        "sample_target": 100
+      },
+      "unique_seen_this_run": 100,
+      "stored_articles": 100,
+      "pages": 1,
+      "sources": [
+        "raw\\e902954695355fc618085b21.json"
+      ],
+      "terminal": "declared_sample_target_reached",
+      "next_page": 2,
+      "index": "indexes\\2ccf1460a7185e7a.json"
+    },
+    {
+      "query": {
+        "topicname": "claudecode",
+        "order": "latest",
+        "count": 100,
+        "sample_target": 600
+      },
+      "unique_seen_this_run": 600,
+      "stored_articles": 600,
+      "pages": 6,
+      "sources": [
+        "raw\\3241fce98431f17c0d1f15f5.json",
+        "raw\\bdc7337c7ad92919f2622188.json",
+        "raw\\5fe6f7691be28b4293973b53.json",
+        "raw\\c6267b7031d51e0bbfab007e.json",
+        "raw\\e69ec4438f8688650e6ef14c.json",
+        "raw\\b12482140e3dc1d4343ddf9e.json"
+      ],
+      "terminal": "declared_sample_target_reached",
+      "next_page": 7,
+      "index": "indexes\\b0997ee3d7486645.json"
+    },
+    {
+      "query": {
+        "topicname": "claudecode",
+        "order": "alltime",
+        "count": 100,
+        "sample_target": 100
+      },
+      "unique_seen_this_run": 100,
+      "stored_articles": 100,
+      "pages": 1,
+      "sources": [
+        "raw\\437ad3fc016bcc91dada72da.json"
+      ],
+      "terminal": "declared_sample_target_reached",
+      "next_page": 2,
+      "index": "indexes\\ea3d9aa6e3c6a955.json"
+    },
+    {
+      "query": {
+        "topicname": "agent",
+        "order": "latest",
+        "count": 100,
+        "sample_target": 600
+      },
+      "unique_seen_this_run": 600,
+      "stored_articles": 600,
+      "pages": 6,
+      "sources": [
+        "raw\\7bd93a0ac15983fc373289f1.json",
+        "raw\\c8aac0a31bd769c30c6f329d.json",
+        "raw\\b98f96ba3f64114bc768adf6.json",
+        "raw\\fbe795e59d3f8bc655af32d0.json",
+        "raw\\45fd79edff76cc72cc184ec1.json",
+        "raw\\fe8d628b024bf97e6057339a.json"
+      ],
+      "terminal": "declared_sample_target_reached",
+      "next_page": 7,
+      "index": "indexes\\728eff36aa455891.json"
+    },
+    {
+      "query": {
+        "topicname": "agent",
+        "order": "alltime",
+        "count": 100,
+        "sample_target": 100
+      },
+      "unique_seen_this_run": 100,
+      "stored_articles": 100,
+      "pages": 1,
+      "sources": [
+        "raw\\5a0b876abfcfa2362ca2c96a.json"
+      ],
+      "terminal": "declared_sample_target_reached",
+      "next_page": 2,
+      "index": "indexes\\bf38492a857b8c0d.json"
+    },
+    {
+      "query": {
+        "topicname": "rag",
+        "order": "latest",
+        "count": 100,
+        "sample_target": 600
+      },
+      "unique_seen_this_run": 600,
+      "stored_articles": 600,
+      "pages": 6,
+      "sources": [
+        "raw\\e1d4aaf8bd7bafd2eba68be6.json",
+        "raw\\7545d1f28a372dcd833487c8.json",
+        "raw\\45d8ebe52f2fc1237a71de91.json",
+        "raw\\fc5a69da7ad47297126b7f56.json",
+        "raw\\2dfef82378a2d30d11dbf827.json",
+        "raw\\57aa941bdc77c625b41fdfa3.json"
+      ],
+      "terminal": "declared_sample_target_reached",
+      "next_page": 7,
+      "index": "indexes\\ebfca7b89db6c7b8.json"
+    },
+    {
+      "query": {
+        "topicname": "rag",
+        "order": "alltime",
+        "count": 100,
+        "sample_target": 100
+      },
+      "unique_seen_this_run": 100,
+      "stored_articles": 100,
+      "pages": 1,
+      "sources": [
+        "raw\\140b8bb04adbc9feb13b052d.json"
+      ],
+      "terminal": "declared_sample_target_reached",
+      "next_page": 2,
+      "index": "indexes\\3be5ff5bf3b04a09.json"
+    },
+    {
+      "query": {
+        "topicname": "mcp",
+        "order": "latest",
+        "count": 100,
+        "sample_target": 600
+      },
+      "unique_seen_this_run": 600,
+      "stored_articles": 600,
+      "pages": 6,
+      "sources": [
+        "raw\\21b2b0e1fc06e662b93f5e43.json",
+        "raw\\634f1a4195c82993eb6d2637.json",
+        "raw\\19f6a1e8400df03546b76d7e.json",
+        "raw\\93ecde6b4758d1cab776fbe9.json",
+        "raw\\f55e1d5c7d29fa92c3ce461e.json",
+        "raw\\e11d2e0edfa93cae0826015a.json"
+      ],
+      "terminal": "declared_sample_target_reached",
+      "next_page": 7,
+      "index": "indexes\\4c57113674ab4e8a.json"
+    },
+    {
+      "query": {
+        "topicname": "mcp",
+        "order": "alltime",
+        "count": 100,
+        "sample_target": 100
+      },
+      "unique_seen_this_run": 100,
+      "stored_articles": 100,
+      "pages": 1,
+      "sources": [
+        "raw\\e493cdd7afbdfe453363ea9e.json"
+      ],
+      "terminal": "declared_sample_target_reached",
+      "next_page": 2,
+      "index": "indexes\\994159dddb0b2247.json"
+    },
+    {
+      "query": {
+        "order": "alltime",
+        "count": 100,
+        "sample_target": 200
+      },
+      "unique_seen_this_run": 200,
+      "stored_articles": 200,
+      "pages": 2,
+      "sources": [
+        "raw\\1c9bb3b52c2bb4321d9b4ac8.json",
+        "raw\\c1d8da01f5013a20e77b4f4f.json"
+      ],
+      "terminal": "declared_sample_target_reached",
+      "next_page": 3,
+      "index": "indexes\\9b32b812b4edc890.json"
+    }
+  ]
+}

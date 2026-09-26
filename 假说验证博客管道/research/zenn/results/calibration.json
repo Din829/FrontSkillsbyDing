@@ -1,0 +1,26 @@
+{
+  "run_id": "zenn-research-20260925",
+  "ruler_id": "zenn-descriptive-features-v1",
+  "status": "passed",
+  "alignment": "HTML counts and declared query counts measure observable sampled features; not true experiments, content quality, exposure or causal effects.",
+  "cases": [
+    {
+      "label": "good",
+      "expected": 1,
+      "observed": 1,
+      "evidence": {
+        "path": "results/ruler_check.json",
+        "sha256": "5a5dca7b1b12cfb099dffe169a81a6a8907984f335918ab369e76ea2bb06b84b"
+      }
+    },
+    {
+      "label": "bad",
+      "expected": 0,
+      "observed": 0,
+      "evidence": {
+        "path": "results/ruler_check.json",
+        "sha256": "5a5dca7b1b12cfb099dffe169a81a6a8907984f335918ab369e76ea2bb06b84b"
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "zenn-research-20260925",
+  "command": [
+    "python",
+    "scripts/register_evidence.py",
+    "compute"
+  ],
+  "started_at": "2026-09-25T13:27:17.065489+00:00",
+  "exit_code": 0,
+  "finished_at": "2026-09-25T13:27:21.674362+00:00",
+  "stdout": {
+    "path": "results/stdout.log",
+    "sha256": "7b6f2623122d867ee8ce2b28f65c385991222b78dbcf71c3304ac8ca6ab36b19"
+  },
+  "stderr": {
+    "path": "results/stderr.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

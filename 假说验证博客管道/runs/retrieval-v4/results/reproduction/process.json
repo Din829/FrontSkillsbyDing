@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python",
+    "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\experiments\\retrieval\\run_experiment.py",
+    "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\audit\\retrieval_reproduction\\final\\experiment",
+    "--queries",
+    "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\experiments\\retrieval\\queries.json",
+    "--corpus",
+    "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\runs\\retrieval-v4\\results\\experiment\\corpus.json"
+  ],
+  "cwd": "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\audit\\retrieval_reproduction\\final",
+  "finished_at": "2026-09-25T13:28:36.225750+00:00",
+  "exit_code": 0
+}

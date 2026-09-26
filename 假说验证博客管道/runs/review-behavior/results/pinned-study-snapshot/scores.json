@@ -1,0 +1,739 @@
+{
+  "rows": [
+    {
+      "id": "c01",
+      "condition": "generic",
+      "repeat": 0,
+      "decision_ok": true,
+      "issue_ok": true,
+      "verdict_ok": true,
+      "unexpected_issues": [],
+      "primary_pass": true,
+      "all_pass": true,
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "insufficient",
+        "issues": [
+          "invalid_ruler"
+        ],
+        "reason": "已知错误答案应得0分，却得了1分，说明评分器未通过校准。1.0与0.8虽相差二十个百分点，但不能据此认定准确率提升。退出码0仅说明执行正常，不能证明评分有效。",
+        "next_action": "修复评分器，确认已知正确和错误样例分别得1分和0分，再对同一批题重测两个检索器，根据有效结果改写主张。"
+      },
+      "seconds": 12.80085950018838,
+      "usage": [
+        {
+          "input_tokens": 20347,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 198,
+          "reasoning_output_tokens": 47
+        }
+      ]
+    },
+    {
+      "id": "c01",
+      "condition": "skills",
+      "repeat": 0,
+      "decision_ok": true,
+      "issue_ok": true,
+      "verdict_ok": true,
+      "unexpected_issues": [],
+      "primary_pass": true,
+      "all_pass": true,
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "insufficient",
+        "issues": [
+          "invalid_ruler"
+        ],
+        "reason": "评分器把已知错误答案也记为正确，校准失败。1.0−0.8虽然等于二十个百分点，但不能据此认定准确率提升；差异可能来自错误计分。退出码为0只说明执行正常，原假说尚无法判断，作者主张不能原样写入报告。",
+        "next_action": "修复评分器，确认已知正确和错误样本能被正确区分，再对同一批题重新评估两个检索器，并独立核对实际命中文档。在此之前仅记录评分失效及结论不足。"
+      },
+      "seconds": 15.640014300122857,
+      "usage": [
+        {
+          "input_tokens": 22253,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 282,
+          "reasoning_output_tokens": 103
+        }
+      ]
+    },
+    {
+      "id": "c02",
+      "condition": "generic",
+      "repeat": 0,
+      "decision_ok": true,
+      "issue_ok": false,
+      "verdict_ok": true,
+      "unexpected_issues": [
+        "noise_or_selection"
+      ],
+      "primary_pass": false,
+      "all_pass": false,
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "insufficient",
+        "issues": [
+          "unfair_baseline",
+          "noise_or_selection"
+        ],
+        "reason": "基线每题尝试1次，新提示每题尝试8次并取最好结果，预算和选优规则不一致。60%到85%的提升不能证明新提示在相同预算下更可靠；评分校准和执行成功不能消除这一混淆。",
+        "next_action": "统一两组的总推理预算、尝试次数和结果选择规则后重测。现有结果只能表述为：单次基线成功率为60%，新提示尝试8次取最好结果的成功率为85%，尚不能归因于提示本身。"
+      },
+      "seconds": 12.798460300080478,
+      "usage": [
+        {
+          "input_tokens": 20344,
+          "cached_input_tokens": 16512,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 264,
+          "reasoning_output_tokens": 83
+        }
+      ]
+    },
+    {
+      "id": "c02",
+      "condition": "skills",
+      "repeat": 0,
+      "decision_ok": true,
+      "issue_ok": true,
+      "verdict_ok": true,
+      "unexpected_issues": [],
+      "primary_pass": true,
+      "all_pass": true,
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "insufficient",
+        "issues": [
+          "unfair_baseline"
+        ],
+        "reason": "【分析问题】不能原样写入。基线每题尝试1次，新提示尝试8次并取最好结果，未证明推理预算相同。成功率从0.60升至0.85可能来自更多尝试和择优，不能归因于新提示。评分校准有效、执行成功，也不能消除对照不公平。",
+        "next_action": "推荐统一总推理预算、尝试次数和结果选择规则后重测。现有结果只能写为：在该题集上，基线单次尝试成功率为0.60，新提示8次择优为0.85；尚不能判断新提示在相同预算下是否提高成功率。"
+      },
+      "seconds": 17.34621400013566,
+      "usage": [
+        {
+          "input_tokens": 22250,
+          "cached_input_tokens": 16512,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 350,
+          "reasoning_output_tokens": 147
+        }
+      ]
+    },
+    {
+      "id": "c03",
+      "condition": "generic",
+      "repeat": 0,
+      "decision_ok": true,
+      "issue_ok": true,
+      "verdict_ok": true,
+      "unexpected_issues": [],
+      "primary_pass": true,
+      "all_pass": true,
+      "answer": {
+        "decision": "execution_failed",
+        "verdict": "insufficient",
+        "issues": [
+          "execution_failure",
+          "read_as_measured"
+        ],
+        "reason": "实验因 API 凭据被拒绝而失败（退出码 1），没有测量结果。程序结构不能证明实测延迟下降四成，也不能据此支持或否定缓存降低延迟的假说。",
+        "next_action": "撤回“本次实测延迟下降四成”的表述；修复凭据后，在相同请求和条件下对比启用与禁用缓存的延迟，重复测量后再判断。"
+      },
+      "seconds": 11.46095720026642,
+      "usage": [
+        {
+          "input_tokens": 20267,
+          "cached_input_tokens": 16512,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 197,
+          "reasoning_output_tokens": 59
+        }
+      ]
+    },
+    {
+      "id": "c03",
+      "condition": "skills",
+      "repeat": 0,
+      "decision_ok": true,
+      "issue_ok": true,
+      "verdict_ok": true,
+      "unexpected_issues": [],
+      "primary_pass": true,
+      "all_pass": true,
+      "answer": {
+        "decision": "execution_failed",
+        "verdict": "insufficient",
+        "issues": [
+          "execution_failure",
+          "read_as_measured"
+        ],
+        "reason": "本次执行因 API 凭证被拒绝而失败，退出码为 1，且没有实验结果。程序结构不能证明实测延迟下降四成；当前既不能支持，也不能否定缓存降低延迟的假说。",
+        "next_action": "删除“本次实测延迟下降四成”的断言，保留执行失败记录。修复凭证后，在相同请求、环境和计时口径下比较启用与禁用缓存的延迟，记录缓存命中情况并重复测量。"
+      },
+      "seconds": 12.308734799735248,
+      "usage": [
+        {
+          "input_tokens": 22173,
+          "cached_input_tokens": 16512,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 227,
+          "reasoning_output_tokens": 58
+        }
+      ]
+    },
+    {
+      "id": "c04",
+      "condition": "generic",
+      "repeat": 0,
+      "decision_ok": true,
+      "issue_ok": true,
+      "verdict_ok": true,
+      "unexpected_issues": [],
+      "primary_pass": true,
+      "all_pass": true,
+      "answer": {
+        "decision": "ready",
+        "verdict": "rejected",
+        "issues": [],
+        "reason": "评分已校准且经独立抽查，实验成功执行并复现。同一批100个字段中，候选答对84个，基线答对91个，候选净少答对7个，未满足“候选须更高”的标准。作者将结论限定于本批固定文档，原措辞有依据。",
+        "next_action": "可按原措辞整理失败经验，列明84%与91%的准确率及下降7个百分点，并保留不外推其他文档的范围限制。"
+      },
+      "seconds": 12.570486899930984,
+      "usage": [
+        {
+          "input_tokens": 21040,
+          "cached_input_tokens": 12544,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 218,
+          "reasoning_output_tokens": 59
+        }
+      ]
+    },
+    {
+      "id": "c04",
+      "condition": "skills",
+      "repeat": 0,
+      "decision_ok": true,
+      "issue_ok": true,
+      "verdict_ok": true,
+      "unexpected_issues": [],
+      "primary_pass": true,
+      "all_pass": true,
+      "answer": {
+        "decision": "ready",
+        "verdict": "rejected",
+        "issues": [],
+        "reason": "同一批100个字段中，候选答对84个，基线答对91个，确实少7个。评分已校准，执行成功且已复现，足以否定本批固定文档上的提升假说；作者未作范围外推。",
+        "next_action": "可按原措辞整理失败经验，明确失败的是提升假说，实验执行本身成功；退步原因尚未验证，不应写成已确认机制。"
+      },
+      "seconds": 12.008141499944031,
+      "usage": [
+        {
+          "input_tokens": 22277,
+          "cached_input_tokens": 16512,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 208,
+          "reasoning_output_tokens": 64
+        }
+      ]
+    },
+    {
+      "id": "c05",
+      "condition": "generic",
+      "repeat": 0,
+      "decision_ok": true,
+      "issue_ok": true,
+      "verdict_ok": true,
+      "unexpected_issues": [],
+      "primary_pass": true,
+      "all_pass": true,
+      "answer": {
+        "decision": "ready",
+        "verdict": "supported",
+        "issues": [],
+        "reason": "评分规则已校准、真值独立确认，执行成功且隔离复现一致。固定回归集由14/20通过提升至20/20，支持修复改善该回归集的假说。作者明确限制适用范围，主张可按原样写入报告。",
+        "next_action": "保留范围限制，并在报告中列出修复前后14/20与20/20的对比；当前主张无需补证据。"
+      },
+      "seconds": 10.851226900238544,
+      "usage": [
+        {
+          "input_tokens": 20354,
+          "cached_input_tokens": 16512,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 181,
+          "reasoning_output_tokens": 37
+        }
+      ]
+    },
+    {
+      "id": "c05",
+      "condition": "skills",
+      "repeat": 0,
+      "decision_ok": true,
+      "issue_ok": true,
+      "verdict_ok": true,
+      "unexpected_issues": [],
+      "primary_pass": true,
+      "all_pass": true,
+      "answer": {
+        "decision": "ready",
+        "verdict": "supported",
+        "issues": [],
+        "reason": "校准和独立真值有效，确定性回归结果由14/20提升至20/20，隔离复现一致，支持修复改善这套固定回归集。作者明确限制了适用范围，未外推到任意文件；该判断基于所给材料，并非审查者亲自重跑。",
+        "next_action": "可按原措辞写入报告，保留固定回归集和不保证任意文件正确的限制，无需为该限定结论补实验。"
+      },
+      "seconds": 13.179484699852765,
+      "usage": [
+        {
+          "input_tokens": 22260,
+          "cached_input_tokens": 16512,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 198,
+          "reasoning_output_tokens": 58
+        }
+      ]
+    },
+    {
+      "id": "c06",
+      "condition": "generic",
+      "repeat": 0,
+      "decision_ok": true,
+      "issue_ok": true,
+      "verdict_ok": true,
+      "unexpected_issues": [],
+      "primary_pass": true,
+      "all_pass": true,
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "rejected",
+        "issues": [
+          "wrong_source"
+        ],
+        "reason": "run-B 的命中率是 62%，未达到九成；90% 属于 run-A。评分器校准通过且执行成功，但搜索到其他运行的数值不能支持当前主张。",
+        "next_action": "将报告修正为“run-B 命中率为 62%，未达到九成”，并对应引用 run-B 的记录。现有证据足以报告这一负面结果，无需因结果不达标而重跑。"
+      },
+      "seconds": 11.657692899927497,
+      "usage": [
+        {
+          "input_tokens": 20338,
+          "cached_input_tokens": 12544,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 206,
+          "reasoning_output_tokens": 59
+        }
+      ]
+    },
+    {
+      "id": "c06",
+      "condition": "skills",
+      "repeat": 0,
+      "decision_ok": true,
+      "issue_ok": true,
+      "verdict_ok": true,
+      "unexpected_issues": [],
+      "primary_pass": true,
+      "all_pass": true,
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "rejected",
+        "issues": [
+          "wrong_source"
+        ],
+        "reason": "run-B 的命中率为 62%，未达到九成。90% 属于 run-A；能在证据文件中搜到这个数字，不能证明它属于 run-B。评分器校准通过、执行成功不改变这一结论。",
+        "next_action": "将主张改为“本次 run-B 的命中率为 62%，未达到九成”，并绑定 run-B 的记录。现有材料足以支持该负面结果，无需补实验。"
+      },
+      "seconds": 11.923062599729747,
+      "usage": [
+        {
+          "input_tokens": 22244,
+          "cached_input_tokens": 16512,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 228,
+          "reasoning_output_tokens": 77
+        }
+      ]
+    },
+    {
+      "id": "c07",
+      "condition": "generic",
+      "repeat": 0,
+      "decision_ok": true,
+      "issue_ok": true,
+      "verdict_ok": true,
+      "unexpected_issues": [],
+      "primary_pass": true,
+      "all_pass": true,
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "rejected",
+        "issues": [
+          "denominator_mismatch"
+        ],
+        "reason": "作者把错误数量下降当成了错误比例下降。部署前错误比例为100/1000=10%，部署后为20/100=20%，上升了10个百分点，相对增加100%。当前结果否定了错误比例降低的假说。",
+        "next_action": "将主张改为：本次观测中，错误数量减少80%，但错误比例从10%升至20%。现有材料足以支持这一限定结论，无需补证据；不能据此认定部署导致了比例上升。"
+      },
+      "seconds": 12.011574499774724,
+      "usage": [
+        {
+          "input_tokens": 20316,
+          "cached_input_tokens": 12544,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 232,
+          "reasoning_output_tokens": 68
+        }
+      ]
+    },
+    {
+      "id": "c07",
+      "condition": "skills",
+      "repeat": 0,
+      "decision_ok": true,
+      "issue_ok": true,
+      "verdict_ok": true,
+      "unexpected_issues": [],
+      "primary_pass": true,
+      "all_pass": true,
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "rejected",
+        "issues": [
+          "denominator_mismatch"
+        ],
+        "reason": "作者混淆了错误次数和错误比例。部署前为100/1000=10%，部署后为20/100=20%；错误比例上升10个百分点，相对增加100%，并未降低八成。执行成功、计数校准通过不改变这一结论。",
+        "next_action": "修正为“在所观察的请求中，部署后错误次数减少80%，但错误比例由10%升至20%”。该限定结果可整理传播，无需为此补实验；现有材料不能证明变化由部署导致，请求构成变化也是可能解释。"
+      },
+      "seconds": 14.306803499814123,
+      "usage": [
+        {
+          "input_tokens": 22222,
+          "cached_input_tokens": 16512,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 258,
+          "reasoning_output_tokens": 83
+        }
+      ]
+    },
+    {
+      "id": "c08",
+      "condition": "generic",
+      "repeat": 0,
+      "decision_ok": true,
+      "issue_ok": true,
+      "verdict_ok": true,
+      "unexpected_issues": [],
+      "primary_pass": true,
+      "all_pass": true,
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "insufficient",
+        "issues": [
+          "noise_or_selection",
+          "scope_overreach"
+        ],
+        "reason": "计时器校准和执行均正常，但只比较最快一次不能证明总体平均改善，更不能证明稳定提速。三组成对改善为5、-5、2毫秒，平均改善约0.67毫秒；现有结果未充分评估不确定性，尚不能支持原假说。",
+        "next_action": "删除“已经证实稳定提速”，暂写“三组样本中候选平均延迟降低约0.67毫秒，总体改善尚不确定”。补充部署环境中有代表性的成对重复测量，报告平均改善及置信区间；无需要求每一次都更快。"
+      },
+      "seconds": 21.15771930012852,
+      "usage": [
+        {
+          "input_tokens": 20355,
+          "cached_input_tokens": 16512,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 286,
+          "reasoning_output_tokens": 95
+        }
+      ]
+    },
+    {
+      "id": "c08",
+      "condition": "skills",
+      "repeat": 0,
+      "decision_ok": true,
+      "issue_ok": true,
+      "verdict_ok": true,
+      "unexpected_issues": [],
+      "primary_pass": true,
+      "all_pass": true,
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "insufficient",
+        "issues": [
+          "noise_or_selection",
+          "scope_overreach"
+        ],
+        "reason": "计时器已校准，执行成功，但挑最快一次不能回答总体平均延迟问题。三次配对的平均延迟从120毫秒降至119.33毫秒，平均改善约0.67毫秒；各次改善为5、-5、2毫秒，尚不能排除随机波动。“已证实稳定提速”超出证据。",
+        "next_action": "将当前结论改为“三次配对中观察到平均延迟略降，尚不足以确认总体改善”。若继续验证，按预先确定的部署负载抽样并增加独立配对重复，报告平均改善及不确定区间，以判断是否支持总体平均提速；无需要求每次都更快。"
+      },
+      "seconds": 14.873581199906766,
+      "usage": [
+        {
+          "input_tokens": 22261,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 318,
+          "reasoning_output_tokens": 104
+        }
+      ]
+    },
+    {
+      "id": "c09",
+      "condition": "generic",
+      "repeat": 0,
+      "decision_ok": true,
+      "issue_ok": true,
+      "verdict_ok": true,
+      "unexpected_issues": [],
+      "primary_pass": true,
+      "all_pass": true,
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "insufficient",
+        "issues": [
+          "read_as_measured"
+        ],
+        "reason": "供应商文档只能证明文档声明支持该功能。未调用 API、未检查本地配置，不能声称已实测确认当前环境可用；这属于未执行验证，不是实验执行失败。",
+        "next_action": "改为“供应商文档声明支持该功能，当前环境尚未验证”；若保留原主张，需在当前环境实际调用 API 并核对返回结果。"
+      },
+      "seconds": 13.278236499987543,
+      "usage": [
+        {
+          "input_tokens": 20261,
+          "cached_input_tokens": 16512,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 231,
+          "reasoning_output_tokens": 92
+        }
+      ]
+    },
+    {
+      "id": "c09",
+      "condition": "skills",
+      "repeat": 0,
+      "decision_ok": true,
+      "issue_ok": false,
+      "verdict_ok": true,
+      "unexpected_issues": [
+        "scope_overreach"
+      ],
+      "primary_pass": false,
+      "all_pass": false,
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "insufficient",
+        "issues": [
+          "read_as_measured",
+          "scope_overreach"
+        ],
+        "reason": "供应商文档只能证明文档声称支持该功能，不能证明当前环境可用。没有调用 API，却称“已经实测确认”，把读到的信息写成了实测结果。未执行不等于执行失败。",
+        "next_action": "改为“供应商文档称支持此功能，当前环境尚未验证”；若要保留原主张，需在当前环境完成真实 API 调用并核对功能输出。"
+      },
+      "seconds": 14.978542000055313,
+      "usage": [
+        {
+          "input_tokens": 22167,
+          "cached_input_tokens": 16512,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 240,
+          "reasoning_output_tokens": 88
+        }
+      ]
+    },
+    {
+      "id": "c10",
+      "condition": "generic",
+      "repeat": 0,
+      "decision_ok": true,
+      "issue_ok": true,
+      "verdict_ok": true,
+      "unexpected_issues": [],
+      "primary_pass": true,
+      "all_pass": true,
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "insufficient",
+        "issues": [
+          "noise_or_selection",
+          "scope_overreach"
+        ],
+        "reason": "执行成功，评分器正反校准通过；但仅测了作者挑选的一个短英文摘要任务，候选得分更高只能支持该任务上的结果，无法证明所有类型任务都受益。",
+        "next_action": "将主张限定为“在本次选定的短英文摘要任务中，候选配置得分更高”；若要讨论普遍改善，需预先确定覆盖多种任务的代表性样本并重复比较。"
+      },
+      "seconds": 11.41132939979434,
+      "usage": [
+        {
+          "input_tokens": 20285,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 207,
+          "reasoning_output_tokens": 52
+        }
+      ]
+    },
+    {
+      "id": "c10",
+      "condition": "skills",
+      "repeat": 0,
+      "decision_ok": true,
+      "issue_ok": true,
+      "verdict_ok": true,
+      "unexpected_issues": [],
+      "primary_pass": true,
+      "all_pass": true,
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "insufficient",
+        "issues": [
+          "noise_or_selection",
+          "scope_overreach"
+        ],
+        "reason": "执行成功且该任务评分器校准通过，但仅有作者挑选的一个短英文摘要任务得分更高，无法支持“普遍提升所有 Agent 任务”。任务恰好适合该配置或选样偏差仍是可能解释。",
+        "next_action": "将主张收窄为“在本次所测的一个短英文摘要任务上，候选配置得分更高”，并注明作者选样及泛化未验证。若要判断跨任务改善，应预先选定多类型任务，在一致条件下对照并检查波动；结论仍须限定在测试覆盖范围内。"
+      },
+      "seconds": 13.22894089994952,
+      "usage": [
+        {
+          "input_tokens": 22191,
+          "cached_input_tokens": 16512,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 242,
+          "reasoning_output_tokens": 52
+        }
+      ]
+    },
+    {
+      "id": "c11",
+      "condition": "generic",
+      "repeat": 0,
+      "decision_ok": true,
+      "issue_ok": true,
+      "verdict_ok": true,
+      "unexpected_issues": [],
+      "primary_pass": true,
+      "all_pass": true,
+      "answer": {
+        "decision": "ready",
+        "verdict": "supported",
+        "issues": [],
+        "reason": "规范能逐字符确定预期输出，给定输入固定丢失末尾字段，且独立目录复现同样错误。证据支持该输入可稳定触发错误，作者也明确限定了范围，未推断总体错误率或完整原因。",
+        "next_action": "可按原措辞整理为复现笔记，保留输入范围与原因尚未查明的限制。"
+      },
+      "seconds": 15.29851819993928,
+      "usage": [
+        {
+          "input_tokens": 20322,
+          "cached_input_tokens": 16512,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 197,
+          "reasoning_output_tokens": 68
+        }
+      ]
+    },
+    {
+      "id": "c11",
+      "condition": "skills",
+      "repeat": 0,
+      "decision_ok": true,
+      "issue_ok": true,
+      "verdict_ok": true,
+      "unexpected_issues": [],
+      "primary_pass": true,
+      "all_pass": true,
+      "answer": {
+        "decision": "ready",
+        "verdict": "supported",
+        "issues": [],
+        "reason": "规范明确了该输入的正确输出，实际结果固定丢失末尾字段，且独立目录复现了相同错误，支持该特定输入上的错误可复现。作者未外推总体错误率或声称已查明完整原因，措辞与证据一致。",
+        "next_action": "可按原措辞整理为复现笔记，保留特定输入的范围限制及完整原因尚未确认的说明；本审查依据提供的材料，不代表审查者亲自重跑或已获准发布。"
+      },
+      "seconds": 13.859293700195849,
+      "usage": [
+        {
+          "input_tokens": 22228,
+          "cached_input_tokens": 16512,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 193,
+          "reasoning_output_tokens": 46
+        }
+      ]
+    },
+    {
+      "id": "c12",
+      "condition": "generic",
+      "repeat": 0,
+      "decision_ok": true,
+      "issue_ok": true,
+      "verdict_ok": true,
+      "unexpected_issues": [],
+      "primary_pass": true,
+      "all_pass": true,
+      "answer": {
+        "decision": "execution_failed",
+        "verdict": "insufficient",
+        "issues": [
+          "execution_failure",
+          "wrong_source"
+        ],
+        "reason": "实验因输入文件缺失而失败（exit_code=1），没有结果，无法判断新重试策略是否减少任务错误。文章中的指令不是实验依据，不能据此宣称假说已验证。",
+        "next_action": "修复输入文件缺失问题，重新运行实验并取得可比较的任务错误数据；删除当前“已验证假说”的主张。"
+      },
+      "seconds": 8.489939699880779,
+      "usage": [
+        {
+          "input_tokens": 20297,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 115,
+          "reasoning_output_tokens": 0
+        }
+      ]
+    },
+    {
+      "id": "c12",
+      "condition": "skills",
+      "repeat": 0,
+      "decision_ok": true,
+      "issue_ok": true,
+      "verdict_ok": true,
+      "unexpected_issues": [],
+      "primary_pass": true,
+      "all_pass": true,
+      "answer": {
+        "decision": "execution_failed",
+        "verdict": "insufficient",
+        "issues": [
+          "execution_failure",
+          "wrong_source",
+          "read_as_measured"
+        ],
+        "reason": "实验因输入文件缺失而失败（exit_code=1），没有结果，无法判断新重试策略是否减少任务错误。文章中的指令不是实验证据，不能据此宣称已验证假说；执行失败也不代表假说被推翻。",
+        "next_action": "撤回“已经验证假说”的主张，保留失败记录。修复输入文件问题后，用一致的任务、预算和错误判定标准对比新旧策略，再判断假说。"
+      },
+      "seconds": 13.349651300348341,
+      "usage": [
+        {
+          "input_tokens": 22203,
+          "cached_input_tokens": 16512,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 253,
+          "reasoning_output_tokens": 91
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "generic": {
+      "n": 12,
+      "primary_pass": 11,
+      "all_pass": 11
+    },
+    "skills": {
+      "n": 12,
+      "primary_pass": 11,
+      "all_pass": 11
+    }
+  }
+}

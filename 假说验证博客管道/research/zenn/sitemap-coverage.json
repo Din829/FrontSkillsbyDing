@@ -1,0 +1,43 @@
+{
+  "observed_at": "2026-09-25T13:13:51.179447+00:00",
+  "sitemaps": [
+    {
+      "url": "https://zenn.dev/sitemaps/article1.xml.gz",
+      "urls": 54224,
+      "compressed_bytes": 1340116,
+      "path": "raw\\article1.xml.gz"
+    },
+    {
+      "url": "https://zenn.dev/sitemaps/article2.xml.gz",
+      "urls": 52706,
+      "compressed_bytes": 1254770,
+      "path": "raw\\article2.xml.gz"
+    },
+    {
+      "url": "https://zenn.dev/sitemaps/article3.xml.gz",
+      "urls": 53399,
+      "compressed_bytes": 1302729,
+      "path": "raw\\article3.xml.gz"
+    },
+    {
+      "url": "https://zenn.dev/sitemaps/article4.xml.gz",
+      "urls": 54447,
+      "compressed_bytes": 1319181,
+      "path": "raw\\article4.xml.gz"
+    },
+    {
+      "url": "https://zenn.dev/sitemaps/article5.xml.gz",
+      "urls": 59904,
+      "compressed_bytes": 1497373,
+      "path": "raw\\article5.xml.gz"
+    },
+    {
+      "url": "https://zenn.dev/sitemaps/article6.xml.gz",
+      "urls": 8873,
+      "compressed_bytes": 227607,
+      "path": "raw\\article6.xml.gz"
+    }
+  ],
+  "total_listed_urls": 283553,
+  "boundary": "Sitemap entries, not proof of all public articles nor current API availability."
+}

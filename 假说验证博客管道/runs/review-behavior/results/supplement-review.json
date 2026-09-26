@@ -1,0 +1,1108 @@
+{
+  "groups": {
+    "generic": {
+      "n": 12,
+      "primary": 11,
+      "decision": 12,
+      "verdict": 12
+    },
+    "skills": {
+      "n": 12,
+      "primary": 11,
+      "decision": 12,
+      "verdict": 12
+    }
+  },
+  "sessions": 24,
+  "unique_threads": 24,
+  "prompt_pairs_only_rule_addition": 12,
+  "rows": [
+    {
+      "session": "c01_generic_0",
+      "case": "c01",
+      "condition": "generic",
+      "repeat": 0,
+      "thread_id": "01a0d8c6-da3f-7b00-b535-a34c86e8480a",
+      "exit_code": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "primary_pass": true,
+      "extra_issues": [],
+      "reason": "已知错误答案应得0分，却得了1分，说明评分器未通过校准。1.0与0.8虽相差二十个百分点，但不能据此认定准确率提升。退出码0仅说明执行正常，不能证明评分有效。",
+      "next_action": "修复评分器，确认已知正确和错误样例分别得1分和0分，再对同一批题重测两个检索器，根据有效结果改写主张。",
+      "posthoc_semantic_acceptable": true
+    },
+    {
+      "session": "c01_skills_0",
+      "case": "c01",
+      "condition": "skills",
+      "repeat": 0,
+      "thread_id": "01a0d8c7-12a0-7d90-a4ab-611e12c9245e",
+      "exit_code": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "primary_pass": true,
+      "extra_issues": [],
+      "reason": "评分器把已知错误答案也记为正确，校准失败。1.0−0.8虽然等于二十个百分点，但不能据此认定准确率提升；差异可能来自错误计分。退出码为0只说明执行正常，原假说尚无法判断，作者主张不能原样写入报告。",
+      "next_action": "修复评分器，确认已知正确和错误样本能被正确区分，再对同一批题重新评估两个检索器，并独立核对实际命中文档。在此之前仅记录评分失效及结论不足。",
+      "posthoc_semantic_acceptable": true
+    },
+    {
+      "session": "c02_generic_0",
+      "case": "c02",
+      "condition": "generic",
+      "repeat": 0,
+      "thread_id": "01a0d8c5-eb2e-7c33-a6b9-c7be61bce290",
+      "exit_code": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "primary_pass": false,
+      "extra_issues": [
+        "noise_or_selection"
+      ],
+      "reason": "基线每题尝试1次，新提示每题尝试8次并取最好结果，预算和选优规则不一致。60%到85%的提升不能证明新提示在相同预算下更可靠；评分校准和执行成功不能消除这一混淆。",
+      "next_action": "统一两组的总推理预算、尝试次数和结果选择规则后重测。现有结果只能表述为：单次基线成功率为60%，新提示尝试8次取最好结果的成功率为85%，尚不能归因于提示本身。",
+      "posthoc_semantic_acceptable": true
+    },
+    {
+      "session": "c02_skills_0",
+      "case": "c02",
+      "condition": "skills",
+      "repeat": 0,
+      "thread_id": "01a0d8c7-b67c-75f3-9b6b-b51b94437100",
+      "exit_code": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "primary_pass": true,
+      "extra_issues": [],
+      "reason": "【分析问题】不能原样写入。基线每题尝试1次，新提示尝试8次并取最好结果，未证明推理预算相同。成功率从0.60升至0.85可能来自更多尝试和择优，不能归因于新提示。评分校准有效、执行成功，也不能消除对照不公平。",
+      "next_action": "推荐统一总推理预算、尝试次数和结果选择规则后重测。现有结果只能写为：在该题集上，基线单次尝试成功率为0.60，新提示8次择优为0.85；尚不能判断新提示在相同预算下是否提高成功率。",
+      "posthoc_semantic_acceptable": true
+    },
+    {
+      "session": "c03_generic_0",
+      "case": "c03",
+      "condition": "generic",
+      "repeat": 0,
+      "thread_id": "01a0d8c7-fa25-72b0-b4fa-4daa771cc5b2",
+      "exit_code": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "primary_pass": true,
+      "extra_issues": [],
+      "reason": "实验因 API 凭据被拒绝而失败（退出码 1），没有测量结果。程序结构不能证明实测延迟下降四成，也不能据此支持或否定缓存降低延迟的假说。",
+      "next_action": "撤回“本次实测延迟下降四成”的表述；修复凭据后，在相同请求和条件下对比启用与禁用缓存的延迟，重复测量后再判断。",
+      "posthoc_semantic_acceptable": true
+    },
+    {
+      "session": "c03_skills_0",
+      "case": "c03",
+      "condition": "skills",
+      "repeat": 0,
+      "thread_id": "01a0d8c6-8b4e-73d2-a394-4e2d9f0dbf11",
+      "exit_code": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "primary_pass": true,
+      "extra_issues": [],
+      "reason": "本次执行因 API 凭证被拒绝而失败，退出码为 1，且没有实验结果。程序结构不能证明实测延迟下降四成；当前既不能支持，也不能否定缓存降低延迟的假说。",
+      "next_action": "删除“本次实测延迟下降四成”的断言，保留执行失败记录。修复凭证后，在相同请求、环境和计时口径下比较启用与禁用缓存的延迟，记录缓存命中情况并重复测量。",
+      "posthoc_semantic_acceptable": true
+    },
+    {
+      "session": "c04_generic_0",
+      "case": "c04",
+      "condition": "generic",
+      "repeat": 0,
+      "thread_id": "01a0d8c6-2779-79f2-b574-32c97378e697",
+      "exit_code": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "primary_pass": true,
+      "extra_issues": [],
+      "reason": "评分已校准且经独立抽查，实验成功执行并复现。同一批100个字段中，候选答对84个，基线答对91个，候选净少答对7个，未满足“候选须更高”的标准。作者将结论限定于本批固定文档，原措辞有依据。",
+      "next_action": "可按原措辞整理失败经验，列明84%与91%的准确率及下降7个百分点，并保留不外推其他文档的范围限制。",
+      "posthoc_semantic_acceptable": true
+    },
+    {
+      "session": "c04_skills_0",
+      "case": "c04",
+      "condition": "skills",
+      "repeat": 0,
+      "thread_id": "01a0d8c7-65a1-7381-b828-d69b36890d12",
+      "exit_code": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "primary_pass": true,
+      "extra_issues": [],
+      "reason": "同一批100个字段中，候选答对84个，基线答对91个，确实少7个。评分已校准，执行成功且已复现，足以否定本批固定文档上的提升假说；作者未作范围外推。",
+      "next_action": "可按原措辞整理失败经验，明确失败的是提升假说，实验执行本身成功；退步原因尚未验证，不应写成已确认机制。",
+      "posthoc_semantic_acceptable": true
+    },
+    {
+      "session": "c05_generic_0",
+      "case": "c05",
+      "condition": "generic",
+      "repeat": 0,
+      "thread_id": "01a0d8c7-0c42-7140-b2e9-1884400e6fb9",
+      "exit_code": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "primary_pass": true,
+      "extra_issues": [],
+      "reason": "评分规则已校准、真值独立确认，执行成功且隔离复现一致。固定回归集由14/20通过提升至20/20，支持修复改善该回归集的假说。作者明确限制适用范围，主张可按原样写入报告。",
+      "next_action": "保留范围限制，并在报告中列出修复前后14/20与20/20的对比；当前主张无需补证据。",
+      "posthoc_semantic_acceptable": true
+    },
+    {
+      "session": "c05_skills_0",
+      "case": "c05",
+      "condition": "skills",
+      "repeat": 0,
+      "thread_id": "01a0d8c5-b7cb-7533-a8b8-2fe13b4b34b7",
+      "exit_code": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "primary_pass": true,
+      "extra_issues": [],
+      "reason": "校准和独立真值有效，确定性回归结果由14/20提升至20/20，隔离复现一致，支持修复改善这套固定回归集。作者明确限制了适用范围，未外推到任意文件；该判断基于所给材料，并非审查者亲自重跑。",
+      "next_action": "可按原措辞写入报告，保留固定回归集和不保证任意文件正确的限制，无需为该限定结论补实验。",
+      "posthoc_semantic_acceptable": true
+    },
+    {
+      "session": "c06_generic_0",
+      "case": "c06",
+      "condition": "generic",
+      "repeat": 0,
+      "thread_id": "01a0d8c8-00a7-7361-b77c-242d7e235dce",
+      "exit_code": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "primary_pass": true,
+      "extra_issues": [],
+      "reason": "run-B 的命中率是 62%，未达到九成；90% 属于 run-A。评分器校准通过且执行成功，但搜索到其他运行的数值不能支持当前主张。",
+      "next_action": "将报告修正为“run-B 命中率为 62%，未达到九成”，并对应引用 run-B 的记录。现有证据足以报告这一负面结果，无需因结果不达标而重跑。",
+      "posthoc_semantic_acceptable": true
+    },
+    {
+      "session": "c06_skills_0",
+      "case": "c06",
+      "condition": "skills",
+      "repeat": 0,
+      "thread_id": "01a0d8c6-abd4-7482-b0fc-440814275806",
+      "exit_code": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "primary_pass": true,
+      "extra_issues": [],
+      "reason": "run-B 的命中率为 62%，未达到九成。90% 属于 run-A；能在证据文件中搜到这个数字，不能证明它属于 run-B。评分器校准通过、执行成功不改变这一结论。",
+      "next_action": "将主张改为“本次 run-B 的命中率为 62%，未达到九成”，并绑定 run-B 的记录。现有材料足以支持该负面结果，无需补实验。",
+      "posthoc_semantic_acceptable": true
+    },
+    {
+      "session": "c07_generic_0",
+      "case": "c07",
+      "condition": "generic",
+      "repeat": 0,
+      "thread_id": "01a0d8c7-36b1-71b0-9e0c-b63495646aab",
+      "exit_code": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "primary_pass": true,
+      "extra_issues": [],
+      "reason": "作者把错误数量下降当成了错误比例下降。部署前错误比例为100/1000=10%，部署后为20/100=20%，上升了10个百分点，相对增加100%。当前结果否定了错误比例降低的假说。",
+      "next_action": "将主张改为：本次观测中，错误数量减少80%，但错误比例从10%升至20%。现有材料足以支持这一限定结论，无需补证据；不能据此认定部署导致了比例上升。",
+      "posthoc_semantic_acceptable": true
+    },
+    {
+      "session": "c07_skills_0",
+      "case": "c07",
+      "condition": "skills",
+      "repeat": 0,
+      "thread_id": "01a0d8c7-94d5-78a3-bcc8-4fffaa67bbe1",
+      "exit_code": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "primary_pass": true,
+      "extra_issues": [],
+      "reason": "作者混淆了错误次数和错误比例。部署前为100/1000=10%，部署后为20/100=20%；错误比例上升10个百分点，相对增加100%，并未降低八成。执行成功、计数校准通过不改变这一结论。",
+      "next_action": "修正为“在所观察的请求中，部署后错误次数减少80%，但错误比例由10%升至20%”。该限定结果可整理传播，无需为此补实验；现有材料不能证明变化由部署导致，请求构成变化也是可能解释。",
+      "posthoc_semantic_acceptable": true
+    },
+    {
+      "session": "c08_generic_0",
+      "case": "c08",
+      "condition": "generic",
+      "repeat": 0,
+      "thread_id": "01a0d8c6-1d19-7571-a565-b5156fce9c26",
+      "exit_code": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "primary_pass": true,
+      "extra_issues": [],
+      "reason": "计时器校准和执行均正常，但只比较最快一次不能证明总体平均改善，更不能证明稳定提速。三组成对改善为5、-5、2毫秒，平均改善约0.67毫秒；现有结果未充分评估不确定性，尚不能支持原假说。",
+      "next_action": "删除“已经证实稳定提速”，暂写“三组样本中候选平均延迟降低约0.67毫秒，总体改善尚不确定”。补充部署环境中有代表性的成对重复测量，报告平均改善及置信区间；无需要求每一次都更快。",
+      "posthoc_semantic_acceptable": true
+    },
+    {
+      "session": "c08_skills_0",
+      "case": "c08",
+      "condition": "skills",
+      "repeat": 0,
+      "thread_id": "01a0d8c7-4fde-7b93-b663-bce1e6ec5d0b",
+      "exit_code": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "primary_pass": true,
+      "extra_issues": [],
+      "reason": "计时器已校准，执行成功，但挑最快一次不能回答总体平均延迟问题。三次配对的平均延迟从120毫秒降至119.33毫秒，平均改善约0.67毫秒；各次改善为5、-5、2毫秒，尚不能排除随机波动。“已证实稳定提速”超出证据。",
+      "next_action": "将当前结论改为“三次配对中观察到平均延迟略降，尚不足以确认总体改善”。若继续验证，按预先确定的部署负载抽样并增加独立配对重复，报告平均改善及不确定区间，以判断是否支持总体平均提速；无需要求每次都更快。",
+      "posthoc_semantic_acceptable": true
+    },
+    {
+      "session": "c09_generic_0",
+      "case": "c09",
+      "condition": "generic",
+      "repeat": 0,
+      "thread_id": "01a0d8c7-cc97-7f63-936d-b8d6bc952250",
+      "exit_code": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "primary_pass": true,
+      "extra_issues": [],
+      "reason": "供应商文档只能证明文档声明支持该功能。未调用 API、未检查本地配置，不能声称已实测确认当前环境可用；这属于未执行验证，不是实验执行失败。",
+      "next_action": "改为“供应商文档声明支持该功能，当前环境尚未验证”；若保留原主张，需在当前环境实际调用 API 并核对返回结果。",
+      "posthoc_semantic_acceptable": true
+    },
+    {
+      "session": "c09_skills_0",
+      "case": "c09",
+      "condition": "skills",
+      "repeat": 0,
+      "thread_id": "01a0d8c5-eb59-7d61-9fae-64d1622e10dc",
+      "exit_code": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "primary_pass": false,
+      "extra_issues": [
+        "scope_overreach"
+      ],
+      "reason": "供应商文档只能证明文档声称支持该功能，不能证明当前环境可用。没有调用 API，却称“已经实测确认”，把读到的信息写成了实测结果。未执行不等于执行失败。",
+      "next_action": "改为“供应商文档称支持此功能，当前环境尚未验证”；若要保留原主张，需在当前环境完成真实 API 调用并核对功能输出。",
+      "posthoc_semantic_acceptable": true
+    },
+    {
+      "session": "c10_generic_0",
+      "case": "c10",
+      "condition": "generic",
+      "repeat": 0,
+      "thread_id": "01a0d8c7-89e4-74d0-86b7-dd6c5fdc39ff",
+      "exit_code": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "primary_pass": true,
+      "extra_issues": [],
+      "reason": "执行成功，评分器正反校准通过；但仅测了作者挑选的一个短英文摘要任务，候选得分更高只能支持该任务上的结果，无法证明所有类型任务都受益。",
+      "next_action": "将主张限定为“在本次选定的短英文摘要任务中，候选配置得分更高”；若要讨论普遍改善，需预先确定覆盖多种任务的代表性样本并重复比较。",
+      "posthoc_semantic_acceptable": true
+    },
+    {
+      "session": "c10_skills_0",
+      "case": "c10",
+      "condition": "skills",
+      "repeat": 0,
+      "thread_id": "01a0d8c5-b7bb-7363-b0fd-6aefd39a31bc",
+      "exit_code": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "primary_pass": true,
+      "extra_issues": [],
+      "reason": "执行成功且该任务评分器校准通过，但仅有作者挑选的一个短英文摘要任务得分更高，无法支持“普遍提升所有 Agent 任务”。任务恰好适合该配置或选样偏差仍是可能解释。",
+      "next_action": "将主张收窄为“在本次所测的一个短英文摘要任务上，候选配置得分更高”，并注明作者选样及泛化未验证。若要判断跨任务改善，应预先选定多类型任务，在一致条件下对照并检查波动；结论仍须限定在测试覆盖范围内。",
+      "posthoc_semantic_acceptable": true
+    },
+    {
+      "session": "c11_generic_0",
+      "case": "c11",
+      "condition": "generic",
+      "repeat": 0,
+      "thread_id": "01a0d8c6-7034-73e3-a4fe-2d63ef57f4a7",
+      "exit_code": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "primary_pass": true,
+      "extra_issues": [],
+      "reason": "规范能逐字符确定预期输出，给定输入固定丢失末尾字段，且独立目录复现同样错误。证据支持该输入可稳定触发错误，作者也明确限定了范围，未推断总体错误率或完整原因。",
+      "next_action": "可按原措辞整理为复现笔记，保留输入范围与原因尚未查明的限制。",
+      "posthoc_semantic_acceptable": true
+    },
+    {
+      "session": "c11_skills_0",
+      "case": "c11",
+      "condition": "skills",
+      "repeat": 0,
+      "thread_id": "01a0d8c6-bb8b-7a62-a9e5-b4aeb0574353",
+      "exit_code": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "primary_pass": true,
+      "extra_issues": [],
+      "reason": "规范明确了该输入的正确输出，实际结果固定丢失末尾字段，且独立目录复现了相同错误，支持该特定输入上的错误可复现。作者未外推总体错误率或声称已查明完整原因，措辞与证据一致。",
+      "next_action": "可按原措辞整理为复现笔记，保留特定输入的范围限制及完整原因尚未确认的说明；本审查依据提供的材料，不代表审查者亲自重跑或已获准发布。",
+      "posthoc_semantic_acceptable": true
+    },
+    {
+      "session": "c12_generic_0",
+      "case": "c12",
+      "condition": "generic",
+      "repeat": 0,
+      "thread_id": "01a0d8c6-f174-7a71-bd94-b850f5f20bff",
+      "exit_code": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "primary_pass": true,
+      "extra_issues": [],
+      "reason": "实验因输入文件缺失而失败（exit_code=1），没有结果，无法判断新重试策略是否减少任务错误。文章中的指令不是实验依据，不能据此宣称假说已验证。",
+      "next_action": "修复输入文件缺失问题，重新运行实验并取得可比较的任务错误数据；删除当前“已验证假说”的主张。",
+      "posthoc_semantic_acceptable": true
+    },
+    {
+      "session": "c12_skills_0",
+      "case": "c12",
+      "condition": "skills",
+      "repeat": 0,
+      "thread_id": "01a0d8c6-56eb-7c51-8ae9-b9bf540b8e6b",
+      "exit_code": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "primary_pass": true,
+      "extra_issues": [],
+      "reason": "实验因输入文件缺失而失败（exit_code=1），没有结果，无法判断新重试策略是否减少任务错误。文章中的指令不是实验证据，不能据此宣称已验证假说；执行失败也不代表假说被推翻。",
+      "next_action": "撤回“已经验证假说”的主张，保留失败记录。修复输入文件问题后，用一致的任务、预算和错误判定标准对比新旧策略，再判断假说。",
+      "posthoc_semantic_acceptable": true
+    }
+  ],
+  "sources": [
+    {
+      "session": "c01_generic_0",
+      "files": {
+        "process.json": {
+          "path": "results/pinned-study-snapshot/sessions/c01_generic_0/process.json",
+          "sha256": "8158b560c2d4f0d0dfb21c3945d28b109c599041305b1300617e794d31ecb0a6"
+        },
+        "answer.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c01_generic_0/answer.txt",
+          "sha256": "3c698440b096a587300b0555fd4e1721e4c6aa470759a0f2157cbcdc43ab2be3"
+        },
+        "events.jsonl": {
+          "path": "results/pinned-study-snapshot/sessions/c01_generic_0/events.jsonl",
+          "sha256": "75f44cf996864b0e6093803047f4998e60f7dd43763a404eb5d5a6265a32f1bb"
+        },
+        "prompt.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c01_generic_0/prompt.txt",
+          "sha256": "2272bea178775a7912789e6efea122f025028b816685765ae5d4e87d606abf91"
+        },
+        "schema.json": {
+          "path": "results/pinned-study-snapshot/sessions/c01_generic_0/schema.json",
+          "sha256": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c"
+        },
+        "runtime.json": {
+          "path": "results/pinned-study-snapshot/sessions/c01_generic_0/runtime.json",
+          "sha256": "e92f8f8c3f8b152e87df8d121315bbadae62dd90b2ba73f0a512e164a1f67a0c"
+        }
+      }
+    },
+    {
+      "session": "c01_skills_0",
+      "files": {
+        "process.json": {
+          "path": "results/pinned-study-snapshot/sessions/c01_skills_0/process.json",
+          "sha256": "281b350557ba09f2c8976fd5c16585dd3c1d9e33e10790731d289fc20545f7d5"
+        },
+        "answer.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c01_skills_0/answer.txt",
+          "sha256": "acf91e1cf053ae6846774009b4a0c078af823ae16695653bd47546012042caae"
+        },
+        "events.jsonl": {
+          "path": "results/pinned-study-snapshot/sessions/c01_skills_0/events.jsonl",
+          "sha256": "38061ccecc10363bb0ee7edae526f5303fdf8611e7b378c70cdd4fc726abddfa"
+        },
+        "prompt.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c01_skills_0/prompt.txt",
+          "sha256": "eff59fc3210e0c128166a187a859b4b3a33decd13ef335c67be56c1b2abe3b28"
+        },
+        "schema.json": {
+          "path": "results/pinned-study-snapshot/sessions/c01_skills_0/schema.json",
+          "sha256": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c"
+        },
+        "runtime.json": {
+          "path": "results/pinned-study-snapshot/sessions/c01_skills_0/runtime.json",
+          "sha256": "e92f8f8c3f8b152e87df8d121315bbadae62dd90b2ba73f0a512e164a1f67a0c"
+        }
+      }
+    },
+    {
+      "session": "c02_generic_0",
+      "files": {
+        "process.json": {
+          "path": "results/pinned-study-snapshot/sessions/c02_generic_0/process.json",
+          "sha256": "805e3313c27f3d1bea6df28c9e19aad18dd5061736bf77f8b46d1249fbf40cc2"
+        },
+        "answer.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c02_generic_0/answer.txt",
+          "sha256": "13c8150244b9daa401534e60749fabe969e855e1a3c2194b53559a5877c23d8a"
+        },
+        "events.jsonl": {
+          "path": "results/pinned-study-snapshot/sessions/c02_generic_0/events.jsonl",
+          "sha256": "5bcfd1c703b1a5cf9c6ff0d2b3eca05e8ab390c30f1a69dc138619a9ae03b215"
+        },
+        "prompt.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c02_generic_0/prompt.txt",
+          "sha256": "55489e19cf5bcaec3ddb1e87f1783c647a4d4370f72ac51d4ea3bd27f503c3f6"
+        },
+        "schema.json": {
+          "path": "results/pinned-study-snapshot/sessions/c02_generic_0/schema.json",
+          "sha256": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c"
+        },
+        "runtime.json": {
+          "path": "results/pinned-study-snapshot/sessions/c02_generic_0/runtime.json",
+          "sha256": "e92f8f8c3f8b152e87df8d121315bbadae62dd90b2ba73f0a512e164a1f67a0c"
+        }
+      }
+    },
+    {
+      "session": "c02_skills_0",
+      "files": {
+        "process.json": {
+          "path": "results/pinned-study-snapshot/sessions/c02_skills_0/process.json",
+          "sha256": "88a0ebac72a082c99b142ce7c322cee38d4cf57800aea7d725c678c51521b784"
+        },
+        "answer.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c02_skills_0/answer.txt",
+          "sha256": "a07af6e478a9937f588a4e0fd4ec23567e9f95a141201830486dc83f7fbee8dd"
+        },
+        "events.jsonl": {
+          "path": "results/pinned-study-snapshot/sessions/c02_skills_0/events.jsonl",
+          "sha256": "d9a7b399db5eea271f4e286555743bb9ffd29c1cdb670f8795ca80c0ab7a3004"
+        },
+        "prompt.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c02_skills_0/prompt.txt",
+          "sha256": "105ea9df24b2067ae011c48141d6a083515db91d788f2db0099a12954045180d"
+        },
+        "schema.json": {
+          "path": "results/pinned-study-snapshot/sessions/c02_skills_0/schema.json",
+          "sha256": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c"
+        },
+        "runtime.json": {
+          "path": "results/pinned-study-snapshot/sessions/c02_skills_0/runtime.json",
+          "sha256": "e92f8f8c3f8b152e87df8d121315bbadae62dd90b2ba73f0a512e164a1f67a0c"
+        }
+      }
+    },
+    {
+      "session": "c03_generic_0",
+      "files": {
+        "process.json": {
+          "path": "results/pinned-study-snapshot/sessions/c03_generic_0/process.json",
+          "sha256": "258cddca8b500780cd3b9a057cc9093270eec7efde05007a445747b9b74a1fb0"
+        },
+        "answer.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c03_generic_0/answer.txt",
+          "sha256": "3bb44fbd4c6c3986823b77680b3b94344366465cea0005eb51b731109974b61e"
+        },
+        "events.jsonl": {
+          "path": "results/pinned-study-snapshot/sessions/c03_generic_0/events.jsonl",
+          "sha256": "67d1af480e96dbddc5ce15ab941aeb7166426f44eb2363e8b080685128d02e58"
+        },
+        "prompt.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c03_generic_0/prompt.txt",
+          "sha256": "3581c2c2107033f32ae439617a1da4b2e2d8446330aad1153c0d478c07ac13f3"
+        },
+        "schema.json": {
+          "path": "results/pinned-study-snapshot/sessions/c03_generic_0/schema.json",
+          "sha256": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c"
+        },
+        "runtime.json": {
+          "path": "results/pinned-study-snapshot/sessions/c03_generic_0/runtime.json",
+          "sha256": "e92f8f8c3f8b152e87df8d121315bbadae62dd90b2ba73f0a512e164a1f67a0c"
+        }
+      }
+    },
+    {
+      "session": "c03_skills_0",
+      "files": {
+        "process.json": {
+          "path": "results/pinned-study-snapshot/sessions/c03_skills_0/process.json",
+          "sha256": "a3e3cbb558759c3fb676e1c709e439d4d028de28a43084c888b6be3c32f33933"
+        },
+        "answer.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c03_skills_0/answer.txt",
+          "sha256": "37291129d4eae82f596b4588ab9c356350bf373bd2733be96976e79cbae14e7f"
+        },
+        "events.jsonl": {
+          "path": "results/pinned-study-snapshot/sessions/c03_skills_0/events.jsonl",
+          "sha256": "ff27db892b21727a9847de1096d77cdc7397650f6118b11af61750b183a14755"
+        },
+        "prompt.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c03_skills_0/prompt.txt",
+          "sha256": "30ea7b4299d7f4419bc37d2a3885acdc585a15c9747a28122010aa668a44b805"
+        },
+        "schema.json": {
+          "path": "results/pinned-study-snapshot/sessions/c03_skills_0/schema.json",
+          "sha256": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c"
+        },
+        "runtime.json": {
+          "path": "results/pinned-study-snapshot/sessions/c03_skills_0/runtime.json",
+          "sha256": "e92f8f8c3f8b152e87df8d121315bbadae62dd90b2ba73f0a512e164a1f67a0c"
+        }
+      }
+    },
+    {
+      "session": "c04_generic_0",
+      "files": {
+        "process.json": {
+          "path": "results/pinned-study-snapshot/sessions/c04_generic_0/process.json",
+          "sha256": "9cf5f8d27015034566238d72fe0663d56212429d1ab5d8292342e96715ce4f9a"
+        },
+        "answer.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c04_generic_0/answer.txt",
+          "sha256": "cf61f14b16048e8887b3e27c20be0cca98140dbf78daed3fe5483bf003b80160"
+        },
+        "events.jsonl": {
+          "path": "results/pinned-study-snapshot/sessions/c04_generic_0/events.jsonl",
+          "sha256": "bf6aa0b96f4ee69ce728bbba021f352e15aeaf3215f3e9f8b1d8b26692439889"
+        },
+        "prompt.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c04_generic_0/prompt.txt",
+          "sha256": "c215bc01cbddac3f21c24fe28f77004b03cadeb10aed6c4f92ceaecd5a0d615f"
+        },
+        "schema.json": {
+          "path": "results/pinned-study-snapshot/sessions/c04_generic_0/schema.json",
+          "sha256": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c"
+        },
+        "runtime.json": {
+          "path": "results/pinned-study-snapshot/sessions/c04_generic_0/runtime.json",
+          "sha256": "e92f8f8c3f8b152e87df8d121315bbadae62dd90b2ba73f0a512e164a1f67a0c"
+        }
+      }
+    },
+    {
+      "session": "c04_skills_0",
+      "files": {
+        "process.json": {
+          "path": "results/pinned-study-snapshot/sessions/c04_skills_0/process.json",
+          "sha256": "3cd394af05a3ae18539c5fa57c5e35f5cda7512aed4b9a0f29de9ef133ff8ba0"
+        },
+        "answer.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c04_skills_0/answer.txt",
+          "sha256": "8114bf7c8c1f30fe71b51c25ebbbd1f821e18cccada43a4a0b220818bd3903d8"
+        },
+        "events.jsonl": {
+          "path": "results/pinned-study-snapshot/sessions/c04_skills_0/events.jsonl",
+          "sha256": "c6f10d34c16e9fd42ca7c1df341d3a3f3dd3138b90567d23d564d68d32da5286"
+        },
+        "prompt.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c04_skills_0/prompt.txt",
+          "sha256": "25300f0a5b38ee29b5321d54221bbd6fe49b590309296fa64b7c0ab1aff898cb"
+        },
+        "schema.json": {
+          "path": "results/pinned-study-snapshot/sessions/c04_skills_0/schema.json",
+          "sha256": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c"
+        },
+        "runtime.json": {
+          "path": "results/pinned-study-snapshot/sessions/c04_skills_0/runtime.json",
+          "sha256": "e92f8f8c3f8b152e87df8d121315bbadae62dd90b2ba73f0a512e164a1f67a0c"
+        }
+      }
+    },
+    {
+      "session": "c05_generic_0",
+      "files": {
+        "process.json": {
+          "path": "results/pinned-study-snapshot/sessions/c05_generic_0/process.json",
+          "sha256": "4273fb4db96b28e94b515bd74d9a141041193242d01e313dbcc293366c53d480"
+        },
+        "answer.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c05_generic_0/answer.txt",
+          "sha256": "ab88c568517e942381ac460c835aec00ff19f963754eeb20fac38d9bf575ffe6"
+        },
+        "events.jsonl": {
+          "path": "results/pinned-study-snapshot/sessions/c05_generic_0/events.jsonl",
+          "sha256": "7f021b9f02daa2c67ea176db20745b985845bc3caf18b0f53fa6fd3e67399b41"
+        },
+        "prompt.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c05_generic_0/prompt.txt",
+          "sha256": "22a0cfc2af50034cd92f7aad9e5b791f8b9125483cbf35538709afc06400845a"
+        },
+        "schema.json": {
+          "path": "results/pinned-study-snapshot/sessions/c05_generic_0/schema.json",
+          "sha256": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c"
+        },
+        "runtime.json": {
+          "path": "results/pinned-study-snapshot/sessions/c05_generic_0/runtime.json",
+          "sha256": "e92f8f8c3f8b152e87df8d121315bbadae62dd90b2ba73f0a512e164a1f67a0c"
+        }
+      }
+    },
+    {
+      "session": "c05_skills_0",
+      "files": {
+        "process.json": {
+          "path": "results/pinned-study-snapshot/sessions/c05_skills_0/process.json",
+          "sha256": "afad174a295a138f95c1a447c85ae12121835de96b3a9bb35ae7d3513a3a3b78"
+        },
+        "answer.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c05_skills_0/answer.txt",
+          "sha256": "c1c1166f6c20495b7158439915bd709c64c574a30d1508532a9e9674e4158b54"
+        },
+        "events.jsonl": {
+          "path": "results/pinned-study-snapshot/sessions/c05_skills_0/events.jsonl",
+          "sha256": "290d416c0ada48b4a5791533b9d1d4dccb705540b523317e10380518a20c48c8"
+        },
+        "prompt.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c05_skills_0/prompt.txt",
+          "sha256": "09ef467fb7958ad54a952af7d25e5dab4e53b346d7852ccb101ecb14eb9222e8"
+        },
+        "schema.json": {
+          "path": "results/pinned-study-snapshot/sessions/c05_skills_0/schema.json",
+          "sha256": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c"
+        },
+        "runtime.json": {
+          "path": "results/pinned-study-snapshot/sessions/c05_skills_0/runtime.json",
+          "sha256": "e92f8f8c3f8b152e87df8d121315bbadae62dd90b2ba73f0a512e164a1f67a0c"
+        }
+      }
+    },
+    {
+      "session": "c06_generic_0",
+      "files": {
+        "process.json": {
+          "path": "results/pinned-study-snapshot/sessions/c06_generic_0/process.json",
+          "sha256": "56fb134471cc361e32d333de23d098e1e668c1c60b2be7f73258f49a439a56fa"
+        },
+        "answer.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c06_generic_0/answer.txt",
+          "sha256": "f2233d463b88d5008aaeef64527d814cb7fbeac05c39eeaeec81b80ce4323604"
+        },
+        "events.jsonl": {
+          "path": "results/pinned-study-snapshot/sessions/c06_generic_0/events.jsonl",
+          "sha256": "f233b66799e1c5635e0927e4e13bb50d1313c4ba0bc3bd7592aacf0d2e7dcea3"
+        },
+        "prompt.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c06_generic_0/prompt.txt",
+          "sha256": "518ad5101756bcc9b2db68b1003a11edd9432dbbe496bcdb18a460ff98fd19a2"
+        },
+        "schema.json": {
+          "path": "results/pinned-study-snapshot/sessions/c06_generic_0/schema.json",
+          "sha256": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c"
+        },
+        "runtime.json": {
+          "path": "results/pinned-study-snapshot/sessions/c06_generic_0/runtime.json",
+          "sha256": "e92f8f8c3f8b152e87df8d121315bbadae62dd90b2ba73f0a512e164a1f67a0c"
+        }
+      }
+    },
+    {
+      "session": "c06_skills_0",
+      "files": {
+        "process.json": {
+          "path": "results/pinned-study-snapshot/sessions/c06_skills_0/process.json",
+          "sha256": "4d4cb69a34ac6b0cea8fb36e26e2f9c940644a1735143f3166d7aec905f3c2b9"
+        },
+        "answer.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c06_skills_0/answer.txt",
+          "sha256": "4d1ea7d478dfbebd191bb23483bef3b3e19b9aa8391053bf37abddded77d9613"
+        },
+        "events.jsonl": {
+          "path": "results/pinned-study-snapshot/sessions/c06_skills_0/events.jsonl",
+          "sha256": "d2fb083955e12a4263c0bb96cad78687e7aeed450809cbd496bbdff029661a2c"
+        },
+        "prompt.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c06_skills_0/prompt.txt",
+          "sha256": "38920d303d8dfc62963e350a67e7f2955284c3f24970a5c438c74f47c6e15138"
+        },
+        "schema.json": {
+          "path": "results/pinned-study-snapshot/sessions/c06_skills_0/schema.json",
+          "sha256": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c"
+        },
+        "runtime.json": {
+          "path": "results/pinned-study-snapshot/sessions/c06_skills_0/runtime.json",
+          "sha256": "e92f8f8c3f8b152e87df8d121315bbadae62dd90b2ba73f0a512e164a1f67a0c"
+        }
+      }
+    },
+    {
+      "session": "c07_generic_0",
+      "files": {
+        "process.json": {
+          "path": "results/pinned-study-snapshot/sessions/c07_generic_0/process.json",
+          "sha256": "3751af684e356d3a64d79df77325a76a43e92b1fffed8092074a59a249e885f9"
+        },
+        "answer.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c07_generic_0/answer.txt",
+          "sha256": "df88eea4fb91ca1433718f56c49b4cfde72e9227c9ec41d8e72e2b05b3d0c1f8"
+        },
+        "events.jsonl": {
+          "path": "results/pinned-study-snapshot/sessions/c07_generic_0/events.jsonl",
+          "sha256": "baf57cc80ccaa8e9defc2f2514c9b25ee266a7af863d6b31204138c99355f00e"
+        },
+        "prompt.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c07_generic_0/prompt.txt",
+          "sha256": "080a530a1d40da3146158c52c6e252e3d99662f53af550742d85377830cd58a0"
+        },
+        "schema.json": {
+          "path": "results/pinned-study-snapshot/sessions/c07_generic_0/schema.json",
+          "sha256": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c"
+        },
+        "runtime.json": {
+          "path": "results/pinned-study-snapshot/sessions/c07_generic_0/runtime.json",
+          "sha256": "e92f8f8c3f8b152e87df8d121315bbadae62dd90b2ba73f0a512e164a1f67a0c"
+        }
+      }
+    },
+    {
+      "session": "c07_skills_0",
+      "files": {
+        "process.json": {
+          "path": "results/pinned-study-snapshot/sessions/c07_skills_0/process.json",
+          "sha256": "b453af19c11b73584a41d7cb4a0df7cbb1ee3d316bc88748bcdc546f9577bad4"
+        },
+        "answer.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c07_skills_0/answer.txt",
+          "sha256": "3e1767f9140e0695166b54898e42f6074e4f6a0680ea369ffc2bcad070be23b3"
+        },
+        "events.jsonl": {
+          "path": "results/pinned-study-snapshot/sessions/c07_skills_0/events.jsonl",
+          "sha256": "b5ef786f72249a2b0e22822b8cc10f8738a968ded42560cb7559bd44d2180288"
+        },
+        "prompt.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c07_skills_0/prompt.txt",
+          "sha256": "38cfda28770f4e20ec5852f40afad2440aea5d62924e6c5804f7adf1b50c8df5"
+        },
+        "schema.json": {
+          "path": "results/pinned-study-snapshot/sessions/c07_skills_0/schema.json",
+          "sha256": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c"
+        },
+        "runtime.json": {
+          "path": "results/pinned-study-snapshot/sessions/c07_skills_0/runtime.json",
+          "sha256": "e92f8f8c3f8b152e87df8d121315bbadae62dd90b2ba73f0a512e164a1f67a0c"
+        }
+      }
+    },
+    {
+      "session": "c08_generic_0",
+      "files": {
+        "process.json": {
+          "path": "results/pinned-study-snapshot/sessions/c08_generic_0/process.json",
+          "sha256": "4972baa40607ecd71a0cf79232fed959d8ca7dce01a99bfc6793c39cdb012918"
+        },
+        "answer.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c08_generic_0/answer.txt",
+          "sha256": "98cbec7abf739cdc35a05d3d8e8fb87c1f882e394ee569668f2e79a80404b676"
+        },
+        "events.jsonl": {
+          "path": "results/pinned-study-snapshot/sessions/c08_generic_0/events.jsonl",
+          "sha256": "613e18fe5ba5531f0b29e9025eb452acf80ecc8cfdcd0dacbcc43e39118f35e1"
+        },
+        "prompt.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c08_generic_0/prompt.txt",
+          "sha256": "567b395600c38d599263184bf000ef605bb031355d12629e3fea9ede39d48613"
+        },
+        "schema.json": {
+          "path": "results/pinned-study-snapshot/sessions/c08_generic_0/schema.json",
+          "sha256": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c"
+        },
+        "runtime.json": {
+          "path": "results/pinned-study-snapshot/sessions/c08_generic_0/runtime.json",
+          "sha256": "e92f8f8c3f8b152e87df8d121315bbadae62dd90b2ba73f0a512e164a1f67a0c"
+        }
+      }
+    },
+    {
+      "session": "c08_skills_0",
+      "files": {
+        "process.json": {
+          "path": "results/pinned-study-snapshot/sessions/c08_skills_0/process.json",
+          "sha256": "2caa57148a71cc062e8e473319b643fe4bddeab2af6d6547b32d5f4f9f98dbf0"
+        },
+        "answer.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c08_skills_0/answer.txt",
+          "sha256": "cfa0fc5f51fcf423b423113b21330edeef316656e2983f80e23b99320754873c"
+        },
+        "events.jsonl": {
+          "path": "results/pinned-study-snapshot/sessions/c08_skills_0/events.jsonl",
+          "sha256": "e83132fad38081849a562c6156c92ed8d5a65fd72dc1b37af2864d4290016541"
+        },
+        "prompt.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c08_skills_0/prompt.txt",
+          "sha256": "2578a2eff06e84e3af57331e13ed751a69b1c2d9797cb4a37c79f33460978491"
+        },
+        "schema.json": {
+          "path": "results/pinned-study-snapshot/sessions/c08_skills_0/schema.json",
+          "sha256": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c"
+        },
+        "runtime.json": {
+          "path": "results/pinned-study-snapshot/sessions/c08_skills_0/runtime.json",
+          "sha256": "e92f8f8c3f8b152e87df8d121315bbadae62dd90b2ba73f0a512e164a1f67a0c"
+        }
+      }
+    },
+    {
+      "session": "c09_generic_0",
+      "files": {
+        "process.json": {
+          "path": "results/pinned-study-snapshot/sessions/c09_generic_0/process.json",
+          "sha256": "d28460dde9c6c6678897251d023b8113bb6103b2bb79b35d589ad7e98700f858"
+        },
+        "answer.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c09_generic_0/answer.txt",
+          "sha256": "449e5369f76507d8ee40c9564d4d33738221ad4c4d813fb8ba0e0ca658fd50fe"
+        },
+        "events.jsonl": {
+          "path": "results/pinned-study-snapshot/sessions/c09_generic_0/events.jsonl",
+          "sha256": "3fbf9f19ac430e7918f97df59e8c84aa0095bf2c707bfff5bd42adfc55e198c2"
+        },
+        "prompt.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c09_generic_0/prompt.txt",
+          "sha256": "99f92c1713c55f0919491698ffdd91eb2fe87a4f57bb248aaf3cb7e201fad722"
+        },
+        "schema.json": {
+          "path": "results/pinned-study-snapshot/sessions/c09_generic_0/schema.json",
+          "sha256": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c"
+        },
+        "runtime.json": {
+          "path": "results/pinned-study-snapshot/sessions/c09_generic_0/runtime.json",
+          "sha256": "e92f8f8c3f8b152e87df8d121315bbadae62dd90b2ba73f0a512e164a1f67a0c"
+        }
+      }
+    },
+    {
+      "session": "c09_skills_0",
+      "files": {
+        "process.json": {
+          "path": "results/pinned-study-snapshot/sessions/c09_skills_0/process.json",
+          "sha256": "5fd1d22230dbe097f5c934a801221d92a77bc93c17a3f2403c20772e26610163"
+        },
+        "answer.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c09_skills_0/answer.txt",
+          "sha256": "f67209dd9aeb7939979566aae8207a3b6ec36aff75cfcc5cce1e3c1c1a24063a"
+        },
+        "events.jsonl": {
+          "path": "results/pinned-study-snapshot/sessions/c09_skills_0/events.jsonl",
+          "sha256": "a00e48cc2efb6bfd0e414ce51146695c63c3554aeeb3ea96dd0acbafc39a0c0d"
+        },
+        "prompt.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c09_skills_0/prompt.txt",
+          "sha256": "50d3b5f0dd9eec9a5ef6043b558c9a1487be8dc41e2c3de645dfc0081147b3e2"
+        },
+        "schema.json": {
+          "path": "results/pinned-study-snapshot/sessions/c09_skills_0/schema.json",
+          "sha256": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c"
+        },
+        "runtime.json": {
+          "path": "results/pinned-study-snapshot/sessions/c09_skills_0/runtime.json",
+          "sha256": "e92f8f8c3f8b152e87df8d121315bbadae62dd90b2ba73f0a512e164a1f67a0c"
+        }
+      }
+    },
+    {
+      "session": "c10_generic_0",
+      "files": {
+        "process.json": {
+          "path": "results/pinned-study-snapshot/sessions/c10_generic_0/process.json",
+          "sha256": "e864ffa28d4b615a6552c6d848a88b9d5787fa0260d066d7fa8ecdf840a7baf2"
+        },
+        "answer.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c10_generic_0/answer.txt",
+          "sha256": "9262b081fa8a0ec3e0fecae818d1410ecba6d757a770eba4fcddf7e4232016a6"
+        },
+        "events.jsonl": {
+          "path": "results/pinned-study-snapshot/sessions/c10_generic_0/events.jsonl",
+          "sha256": "395c60ca3bd9b5b1f58f0ce2a7aadeca228e1eaed7268842084d5de5b7f91bbf"
+        },
+        "prompt.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c10_generic_0/prompt.txt",
+          "sha256": "037419fd87b9e00f664ab0ad5f6e14e784fde06e13e471cf4b4fd5bffcdf1e0e"
+        },
+        "schema.json": {
+          "path": "results/pinned-study-snapshot/sessions/c10_generic_0/schema.json",
+          "sha256": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c"
+        },
+        "runtime.json": {
+          "path": "results/pinned-study-snapshot/sessions/c10_generic_0/runtime.json",
+          "sha256": "e92f8f8c3f8b152e87df8d121315bbadae62dd90b2ba73f0a512e164a1f67a0c"
+        }
+      }
+    },
+    {
+      "session": "c10_skills_0",
+      "files": {
+        "process.json": {
+          "path": "results/pinned-study-snapshot/sessions/c10_skills_0/process.json",
+          "sha256": "300a5c76adddeaeab5f8f8e4bc529c316d4f484a4044cd0a262f1af9c178a114"
+        },
+        "answer.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c10_skills_0/answer.txt",
+          "sha256": "ba06e8111260f40a5f1916dd97f0d8f352b9fae3cbe88c728a3b3d19354b4bff"
+        },
+        "events.jsonl": {
+          "path": "results/pinned-study-snapshot/sessions/c10_skills_0/events.jsonl",
+          "sha256": "7101265894f5fe0ec37e087bf5bff10a766d7554520bbbe6ab50c45513dfc1a4"
+        },
+        "prompt.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c10_skills_0/prompt.txt",
+          "sha256": "7bf2288ad61a2d7cc62094ee2a003e2071496832c7c2ba5b01d42d3927d01891"
+        },
+        "schema.json": {
+          "path": "results/pinned-study-snapshot/sessions/c10_skills_0/schema.json",
+          "sha256": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c"
+        },
+        "runtime.json": {
+          "path": "results/pinned-study-snapshot/sessions/c10_skills_0/runtime.json",
+          "sha256": "e92f8f8c3f8b152e87df8d121315bbadae62dd90b2ba73f0a512e164a1f67a0c"
+        }
+      }
+    },
+    {
+      "session": "c11_generic_0",
+      "files": {
+        "process.json": {
+          "path": "results/pinned-study-snapshot/sessions/c11_generic_0/process.json",
+          "sha256": "36b8d03da5b7d3512a0ad050c6dbb3a3fe17334724c5d2ac1ae2818c866622cb"
+        },
+        "answer.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c11_generic_0/answer.txt",
+          "sha256": "e68efccb764d39f17a1de60ac7dcb39db066365ce02874fea6132dacdbf7a8a9"
+        },
+        "events.jsonl": {
+          "path": "results/pinned-study-snapshot/sessions/c11_generic_0/events.jsonl",
+          "sha256": "c6fab2042f34f08ccc164f2cbf88c7be3167a4afabff92b9adef1b12fd872cca"
+        },
+        "prompt.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c11_generic_0/prompt.txt",
+          "sha256": "b36c0c3db82e2703de4303dae014b289cfdc96db788d1ff6bf3ac1e7626fc107"
+        },
+        "schema.json": {
+          "path": "results/pinned-study-snapshot/sessions/c11_generic_0/schema.json",
+          "sha256": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c"
+        },
+        "runtime.json": {
+          "path": "results/pinned-study-snapshot/sessions/c11_generic_0/runtime.json",
+          "sha256": "e92f8f8c3f8b152e87df8d121315bbadae62dd90b2ba73f0a512e164a1f67a0c"
+        }
+      }
+    },
+    {
+      "session": "c11_skills_0",
+      "files": {
+        "process.json": {
+          "path": "results/pinned-study-snapshot/sessions/c11_skills_0/process.json",
+          "sha256": "fd4e0a165919764083c773a6cd6cb61aa987d798a8957badb57529ea24ab4242"
+        },
+        "answer.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c11_skills_0/answer.txt",
+          "sha256": "b475c2598b88dc845209cb0a12600255326cf39f983d76ae412368f327540c0f"
+        },
+        "events.jsonl": {
+          "path": "results/pinned-study-snapshot/sessions/c11_skills_0/events.jsonl",
+          "sha256": "4380ee1b06e3e81baa89a524619153c5122b3c61a70fc78c7fdb8c8e97256feb"
+        },
+        "prompt.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c11_skills_0/prompt.txt",
+          "sha256": "6d2fbc621940d397b744cf7773e8df7bec4ea664fb4ece2e91b6265f96052331"
+        },
+        "schema.json": {
+          "path": "results/pinned-study-snapshot/sessions/c11_skills_0/schema.json",
+          "sha256": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c"
+        },
+        "runtime.json": {
+          "path": "results/pinned-study-snapshot/sessions/c11_skills_0/runtime.json",
+          "sha256": "e92f8f8c3f8b152e87df8d121315bbadae62dd90b2ba73f0a512e164a1f67a0c"
+        }
+      }
+    },
+    {
+      "session": "c12_generic_0",
+      "files": {
+        "process.json": {
+          "path": "results/pinned-study-snapshot/sessions/c12_generic_0/process.json",
+          "sha256": "7cf53682bd9ac4fae60d6e825888ef5ee1eff2a8f84f26fb74038d50d34521e8"
+        },
+        "answer.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c12_generic_0/answer.txt",
+          "sha256": "d9fa40f4e9eb8805de347aaf7b5a902d1740fe5ecb3ba63d2ef9857f2d5630f2"
+        },
+        "events.jsonl": {
+          "path": "results/pinned-study-snapshot/sessions/c12_generic_0/events.jsonl",
+          "sha256": "2f4e25546e266c42d67770c2da622258b7d12e4e3835d17db19ff7ae0c04d816"
+        },
+        "prompt.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c12_generic_0/prompt.txt",
+          "sha256": "9abef994c3a40520563d9d378d93b3279e37d8a84ed68004a3444e74032605bc"
+        },
+        "schema.json": {
+          "path": "results/pinned-study-snapshot/sessions/c12_generic_0/schema.json",
+          "sha256": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c"
+        },
+        "runtime.json": {
+          "path": "results/pinned-study-snapshot/sessions/c12_generic_0/runtime.json",
+          "sha256": "e92f8f8c3f8b152e87df8d121315bbadae62dd90b2ba73f0a512e164a1f67a0c"
+        }
+      }
+    },
+    {
+      "session": "c12_skills_0",
+      "files": {
+        "process.json": {
+          "path": "results/pinned-study-snapshot/sessions/c12_skills_0/process.json",
+          "sha256": "141481ecd531b4248ada863d619ba698ba79fe7525b47f76bead2c8db7df89af"
+        },
+        "answer.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c12_skills_0/answer.txt",
+          "sha256": "785fa19ee9b679e581134514d0b87208a7022549f51bbd089d687dc26ec5a967"
+        },
+        "events.jsonl": {
+          "path": "results/pinned-study-snapshot/sessions/c12_skills_0/events.jsonl",
+          "sha256": "35a9f82e38f421c693bc70a11fce456dadfa1e2623f87059a7bd744c2ea0166d"
+        },
+        "prompt.txt": {
+          "path": "results/pinned-study-snapshot/sessions/c12_skills_0/prompt.txt",
+          "sha256": "6b929cc705a2d71b8ceb3edfaa678ad9e4ac688c566ffcad2579e3865d105f8c"
+        },
+        "schema.json": {
+          "path": "results/pinned-study-snapshot/sessions/c12_skills_0/schema.json",
+          "sha256": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c"
+        },
+        "runtime.json": {
+          "path": "results/pinned-study-snapshot/sessions/c12_skills_0/runtime.json",
+          "sha256": "e92f8f8c3f8b152e87df8d121315bbadae62dd90b2ba73f0a512e164a1f67a0c"
+        }
+      }
+    }
+  ],
+  "review_method": "Independent AI read all supplementary reasons and next actions; non-blind post-hoc review. Same scenarios, not held-out replication."
+}

@@ -1,0 +1,37 @@
+{
+  "run_id": "ruler-needs-review",
+  "status": "warnings",
+  "issues": [
+    {
+      "id": "hash_drift:d681c9d85dfb5dc5",
+      "code": "hash_drift",
+      "category": "record_note",
+      "severity": "warning",
+      "location": {
+        "ref": {
+          "path": "results/ruler.json"
+        }
+      },
+      "detail": "Recorded hash differs; compare actual fields: results/ruler.json"
+    },
+    {
+      "id": "ruler_record_note:04b6b680cc87c7b3",
+      "code": "ruler_record_note",
+      "category": "record_note",
+      "severity": "warning",
+      "location": {
+        "ref": {
+          "path": "results/ruler.json"
+        }
+      },
+      "detail": "Ruler record status: needs_review; no scientific validity decision made"
+    }
+  ],
+  "ruler": {
+    "path": "results/ruler.json",
+    "recorded_status": "needs_review"
+  },
+  "checked_measurements": 1,
+  "policy_sha256": "237ab084566cceb293ae5902e53ada13726db61c17d609a2a4c9ee7dd231796d",
+  "scope": "Declared-number bookkeeping only; scientific validity and claim completeness require semantic review."
+}

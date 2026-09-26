@@ -1,0 +1,67 @@
+{
+  "run_id": "retrieval-v4",
+  "status": "traceable",
+  "issues": [
+    {
+      "severity": "review",
+      "code": "classification_review",
+      "detail": "5: 25 => identifier: 固定名称或文档版本中的数字：BM25"
+    },
+    {
+      "severity": "review",
+      "code": "classification_review",
+      "detail": "6: 1 => identifier: 固定名称或文档版本中的数字：H1"
+    },
+    {
+      "severity": "review",
+      "code": "classification_review",
+      "detail": "7: 2 => identifier: 固定名称或文档版本中的数字：H2"
+    },
+    {
+      "severity": "review",
+      "code": "classification_review",
+      "detail": "29: 25 => identifier: 固定名称或文档版本中的数字：BM25"
+    },
+    {
+      "severity": "review",
+      "code": "classification_review",
+      "detail": "0: 25 => identifier: 固定名称或文档版本中的数字：BM25"
+    },
+    {
+      "severity": "review",
+      "code": "classification_review",
+      "detail": "1: 1 => identifier: 固定名称或文档版本中的数字：H1"
+    },
+    {
+      "severity": "review",
+      "code": "classification_review",
+      "detail": "2: 2 => identifier: 固定名称或文档版本中的数字：H2"
+    },
+    {
+      "severity": "review",
+      "code": "classification_review",
+      "detail": "0: 25 => identifier: 固定名称或文档版本中的数字：BM25"
+    },
+    {
+      "severity": "review",
+      "code": "classification_review",
+      "detail": "1: 1 => identifier: 固定名称或文档版本中的数字：H1"
+    },
+    {
+      "severity": "review",
+      "code": "classification_review",
+      "detail": "2: 2 => identifier: 固定名称或文档版本中的数字：H2"
+    },
+    {
+      "severity": "review",
+      "code": "classification_review",
+      "detail": "4: 1 => identifier: 固定名称或文档版本中的数字：H1"
+    },
+    {
+      "severity": "review",
+      "code": "classification_review",
+      "detail": "5: 2 => identifier: 固定名称或文档版本中的数字：H2"
+    }
+  ],
+  "scope": "Mechanical traceability only; scientific validity, source authenticity, claim completeness and non-measurement classification require independent review."
+}

@@ -1,0 +1,2089 @@
+{
+  "review_kind": "independent but non-blind post-hoc semantic review; reviewer was alerted to c02/c09 label disputes",
+  "source_scores_sha256": "085306ee34200a831a86a1e5be84ec0b157220e14b63f16bc4cb282435e9c830",
+  "original_summary": {
+    "generic": {
+      "n": 24,
+      "primary_pass": 22,
+      "all_pass": 22
+    },
+    "skills": {
+      "n": 24,
+      "primary_pass": 22,
+      "all_pass": 22
+    }
+  },
+  "groups": {
+    "generic": {
+      "n": 24,
+      "original_primary_pass": 22,
+      "decision_correct": 24,
+      "required_issue_found": 24,
+      "verdict_correct": 24,
+      "posthoc_semantic_acceptable": 24,
+      "input_tokens": 487644,
+      "output_tokens": 5187
+    },
+    "skills": {
+      "n": 24,
+      "original_primary_pass": 22,
+      "decision_correct": 24,
+      "required_issue_found": 24,
+      "verdict_correct": 24,
+      "posthoc_semantic_acceptable": 24,
+      "input_tokens": 533362,
+      "output_tokens": 5999
+    }
+  },
+  "integrity": {
+    "sessions": 48,
+    "unique_thread_ids": 48,
+    "successful_processes": 48,
+    "tool_items_in_raw_events": 0,
+    "normalized_command_variants": 1,
+    "schema_variants": 1,
+    "prompt_pairs_only_rule_addition": 24,
+    "snapshot_hashes_match": true,
+    "raw_answers_equal_scored_answers": true,
+    "event_type_counts": {
+      "thread.started": 48,
+      "turn.started": 48,
+      "item.completed": 48,
+      "turn.completed": 48
+    },
+    "effective_model_id_recorded": false,
+    "complete_system_context_frozen": false
+  },
+  "conclusion": "No added benefit observed on these straightforward closed-material cases; all four automatic failures are reasonable extra labels, not demonstrated reasoning failures. Post-hoc acceptance is not a preregistered score or a production reliability estimate.",
+  "limits": [
+    "Only twelve authored scenarios, two repeats per condition",
+    "Generic condition already contains substantive evidence guidance and all issue labels",
+    "Material assertions are assumed true: no real attachment verification",
+    "Model selection inherited from CLI configuration rather than explicitly pinned in recorded command",
+    "One non-blind independent semantic reviewer; no inter-rater agreement measured"
+  ],
+  "sessions": [
+    {
+      "session": "c01_generic_0",
+      "case": "c01",
+      "condition": "generic",
+      "repeat": 0,
+      "thread_id": "01a0d8bd-5f6b-7402-a0bc-7fb76d3d4d57",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "insufficient",
+        "issues": [
+          "invalid_ruler"
+        ],
+        "reason": "已知错误答案应得0分却得了1分，说明评分器不符合命中正确文档才得分的标准。1.0与0.8虽相差20个百分点，但不能据此认定准确率提升；退出码0只说明执行正常。",
+        "next_action": "修正评分器，确认已知正确和错误样例均按预期计分，再对同一批题重评新旧检索器，根据有效结果修改报告主张。"
+      },
+      "duration_seconds": 12.86572330025956,
+      "usage": [
+        {
+          "input_tokens": 20343,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 209,
+          "reasoning_output_tokens": 56
+        }
+      ],
+      "hashes": {
+        "answer.txt": "dc9f0af5b42d09f24d25c150917d46232c36ba7400fbf51c8b912f7d030f0899",
+        "process.json": "abc75c108c9452f1c99d3c240c6aa95379e51517013b221bef4d79195596af2e",
+        "prompt.txt": "2272bea178775a7912789e6efea122f025028b816685765ae5d4e87d606abf91",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "0a2bab848fc9f09464e369dfe7cbe2cb496bbee3490832a3945e59ff14fbb228"
+      }
+    },
+    {
+      "session": "c01_generic_1",
+      "case": "c01",
+      "condition": "generic",
+      "repeat": 1,
+      "thread_id": "01a0d8ba-1600-7083-8408-8459506f8076",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "insufficient",
+        "issues": [
+          "invalid_ruler"
+        ],
+        "reason": "不能按原样写入报告：已知错误文档也被计为正确，评分规则未通过校准。1.0−0.8虽为二十个百分点，但不能据此认定准确率提升；退出码0只表明执行正常。",
+        "next_action": "修复评分规则，确认已知正确得1分、已知错误得0分，再用同一批题重测新旧检索器，根据有效结果改写主张。"
+      },
+      "duration_seconds": 12.464150699786842,
+      "usage": [
+        {
+          "input_tokens": 20343,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 214,
+          "reasoning_output_tokens": 64
+        }
+      ],
+      "hashes": {
+        "answer.txt": "c70aac5a4a99c57537d2671dccf304951f79cd6407f19d6406692164a39ef73e",
+        "process.json": "d1c3a8200b6e93d8322081c3a320b970325c692b098709d74e19fa4e7b00314e",
+        "prompt.txt": "2272bea178775a7912789e6efea122f025028b816685765ae5d4e87d606abf91",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "37fcc7c82ad3c35d44f3dfbad236df093934c3e3cca6c8acd88b235314576f26"
+      }
+    },
+    {
+      "session": "c01_skills_0",
+      "case": "c01",
+      "condition": "skills",
+      "repeat": 0,
+      "thread_id": "01a0d8ba-734b-7c80-bba6-a9afcd49b948",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "insufficient",
+        "issues": [
+          "invalid_ruler"
+        ],
+        "reason": "评分器把已知错误答案也判为正确，未通过校准。1.0−0.8虽等于二十个百分点，但不能解释为真实准确率提升；候选结果也可能来自错误计分。退出码为0不代表评分有效，当前也不能判定实验执行失败。",
+        "next_action": "修正评分器并通过已知正反例校准，再对同一批题的两组原始检索结果重新评分，独立核对实际命中的文档，然后决定是否保留提升主张。"
+      },
+      "duration_seconds": 13.966431399807334,
+      "usage": [
+        {
+          "input_tokens": 22249,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 291,
+          "reasoning_output_tokens": 123
+        }
+      ],
+      "hashes": {
+        "answer.txt": "7a56a37cc20c64a164783668e2bcb25cee7dfbaab58a4b86537273b0f964a028",
+        "process.json": "2f7bcd222b9e4f2d086eaadb451476ae52320bc090559f34f94d8071e88026f7",
+        "prompt.txt": "eff59fc3210e0c128166a187a859b4b3a33decd13ef335c67be56c1b2abe3b28",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "6d4614a59e7c2cebd617a180c8d8d6c10b0c8b2ddc8c3885286ffa0f6b26f81b"
+      }
+    },
+    {
+      "session": "c01_skills_1",
+      "case": "c01",
+      "condition": "skills",
+      "repeat": 1,
+      "thread_id": "01a0d8bb-f7ec-7b73-8d15-6077a714631d",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "insufficient",
+        "issues": [
+          "invalid_ruler"
+        ],
+        "reason": "【分析问题】不能按原样写入报告：校准中，已知错误答案也得了1分，说明评分尺子会把错误算作正确。1.0与0.8虽相差二十个百分点，但不能据此认定准确率提升；退出码0仅说明执行成功。原假说尚无法判断。",
+        "next_action": "修正评分逻辑，确认已知正确和错误样本能被正确区分，再对同一批题重新评估新旧检索器。当前仅可记录评分校准失败及准确率结论无效。"
+      },
+      "duration_seconds": 13.831823899876326,
+      "usage": [
+        {
+          "input_tokens": 22249,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 284,
+          "reasoning_output_tokens": 106
+        }
+      ],
+      "hashes": {
+        "answer.txt": "3dcde461761244077218f681727461e6cb820989d7d6bca949c2dee108125191",
+        "process.json": "86ea209b7c9f5a996bd9de878e49aa8677ec59c161ebab8b28ba66bccde06ca3",
+        "prompt.txt": "eff59fc3210e0c128166a187a859b4b3a33decd13ef335c67be56c1b2abe3b28",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "c0adf8741b6d15c3b1f6b32464aa0fe8835f2b60c323f77faf18cecd153ec470"
+      }
+    },
+    {
+      "session": "c02_generic_0",
+      "case": "c02",
+      "condition": "generic",
+      "repeat": 0,
+      "thread_id": "01a0d8ba-150a-7532-9997-671a4466f5df",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": false,
+      "original_unexpected_issues": [
+        "noise_or_selection"
+      ],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "noise_or_selection: eight tries with best-of selection is explicitly in the material",
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "insufficient",
+        "issues": [
+          "unfair_baseline",
+          "noise_or_selection"
+        ],
+        "reason": "基线每题尝试1次，新提示每题尝试8次并取最好结果，预算和结果选择方式不一致。60%到85%的提升无法归因于新提示，不能支持“相同预算下更可靠”。评分校准和执行成功不消除这一混淆。",
+        "next_action": "统一两组的每题总推理预算、尝试次数和结果选择规则后重测。当前只能报告：基线单次成功率60%，新提示8次取最好成功率85%，尚不能判断相同预算下是否改善。"
+      },
+      "duration_seconds": 13.619041599798948,
+      "usage": [
+        {
+          "input_tokens": 20340,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 267,
+          "reasoning_output_tokens": 88
+        }
+      ],
+      "hashes": {
+        "answer.txt": "0a91a195f443c598c2d666f58e57c5bbc96f008db412729585b0d4445f8a6381",
+        "process.json": "5fe03b9af9a68bbccafe264711f0c8ed5e49d56cf7a49bfb01705b3ae70c8f17",
+        "prompt.txt": "55489e19cf5bcaec3ddb1e87f1783c647a4d4370f72ac51d4ea3bd27f503c3f6",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "51a964b925aa351e6d8660c4f5b5408392f2e1a4a9f7c4bdf2bf853e4690e155"
+      }
+    },
+    {
+      "session": "c02_generic_1",
+      "case": "c02",
+      "condition": "generic",
+      "repeat": 1,
+      "thread_id": "01a0d8bd-a253-7aa3-a4c0-ff8358c8b1b7",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "insufficient",
+        "issues": [
+          "unfair_baseline"
+        ],
+        "reason": "评分校准有效，执行成功，但基线每题尝试1次，新提示每题尝试8次并取最好结果。60%与85%的差异不能证明新提示在相同推理预算下更可靠。",
+        "next_action": "统一两组的总推理预算、尝试次数和结果选择规则后重测；或将报告改为描述当前不同尝试配置下的成功率，明确不能归因于提示本身。"
+      },
+      "duration_seconds": 13.963919600006193,
+      "usage": [
+        {
+          "input_tokens": 20340,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 288,
+          "reasoning_output_tokens": 139
+        }
+      ],
+      "hashes": {
+        "answer.txt": "dae401539bfadf1821e02f7060d41afde32f038d243bd4c436c8e09c632329a6",
+        "process.json": "346cd8ae28b6b1fc769e15b9866b31007996c99e4e51cf8c9257878105dc4f9d",
+        "prompt.txt": "55489e19cf5bcaec3ddb1e87f1783c647a4d4370f72ac51d4ea3bd27f503c3f6",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "f71263a8ecdfb25796585ea87671f15ba7182acb3b71a4b2e87c355a5f1edb30"
+      }
+    },
+    {
+      "session": "c02_skills_0",
+      "case": "c02",
+      "condition": "skills",
+      "repeat": 0,
+      "thread_id": "01a0d8bb-e90b-70e0-8f96-7978901a73fb",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "insufficient",
+        "issues": [
+          "unfair_baseline"
+        ],
+        "reason": "不能按原样写入报告。基线每题尝试1次，新提示每题尝试8次并取最佳，未满足相同预算的比较条件。成功率从60%到85%可能来自更多尝试和择优，不能归因于新提示。评分校准有效、执行成功也不能消除这一混淆。",
+        "next_action": "推荐两组每题均尝试1次、使用相同推理预算后重测。当前只能报告两种不同尝试策略下的成功率，并明确尚不能判断新提示在相同预算下是否更可靠。"
+      },
+      "duration_seconds": 13.0104651004076,
+      "usage": [
+        {
+          "input_tokens": 22246,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 230,
+          "reasoning_output_tokens": 63
+        }
+      ],
+      "hashes": {
+        "answer.txt": "be49037e10a891e5667b4b4ff77d601f5618fec71545bd495fef22ff98e04053",
+        "process.json": "4ca59f4489e75632b94d5a81bdc41731d9aa8be702dee2cdf625079bf8d3cbd5",
+        "prompt.txt": "105ea9df24b2067ae011c48141d6a083515db91d788f2db0099a12954045180d",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "414135fa4c3260929ae0d907e741929808cb2b419e1445aa37692dda924d2e6a"
+      }
+    },
+    {
+      "session": "c02_skills_1",
+      "case": "c02",
+      "condition": "skills",
+      "repeat": 1,
+      "thread_id": "01a0d8be-7e45-7ec3-bb7f-f9a86691a81e",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "insufficient",
+        "issues": [
+          "unfair_baseline"
+        ],
+        "reason": "不能原样写入。基线每题尝试1次，新提示每题尝试8次并取最佳，未满足相同预算的比较条件。成功率从60%到85%可能来自更多尝试和择优，不能归因于新提示。评分校准有效、执行成功也不能消除这一问题。",
+        "next_action": "统一两组的总推理预算、尝试次数和答案选择规则后重测。当前只能记录：在不同尝试条件下，两组成功率分别为60%和85%，尚不能判断新提示在相同预算下是否更可靠。"
+      },
+      "duration_seconds": 14.792926900088787,
+      "usage": [
+        {
+          "input_tokens": 22246,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 319,
+          "reasoning_output_tokens": 137
+        }
+      ],
+      "hashes": {
+        "answer.txt": "70a11342abc85e3f5a68481de673e00848e17490f35ecf3666691bd58daafd10",
+        "process.json": "5ef2179630d0e6c4596ee8e690847a808986fc745b091d62af16605f6e2218a5",
+        "prompt.txt": "105ea9df24b2067ae011c48141d6a083515db91d788f2db0099a12954045180d",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "98e4f5b4c971f9908e3a1af172589f92b846b39494c29941a0adcb21afe93859"
+      }
+    },
+    {
+      "session": "c03_generic_0",
+      "case": "c03",
+      "condition": "generic",
+      "repeat": 0,
+      "thread_id": "01a0d8be-b832-7652-a341-75ca015d483e",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "execution_failed",
+        "verdict": "insufficient",
+        "issues": [
+          "execution_failure",
+          "read_as_measured"
+        ],
+        "reason": "API 凭据被拒绝，程序退出码为 1，未产生测量结果。程序结构不能证明“本次实测延迟下降四成”，也不能据此支持或否定缓存降低延迟的假说。",
+        "next_action": "撤回实测下降四成的表述；修复凭据后，在相同条件下对比开启和关闭缓存的延迟，重复测量并报告结果。"
+      },
+      "duration_seconds": 14.112180199939758,
+      "usage": [
+        {
+          "input_tokens": 20263,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 186,
+          "reasoning_output_tokens": 39
+        }
+      ],
+      "hashes": {
+        "answer.txt": "2796e4b26d04174c19aea83e6fd0c161b44a6468ef694eb29cbababa5d41e3d7",
+        "process.json": "6cd8dc90ce3ae6b1819ce637b107cb95bbce7d4aecec179c7dd0385bef834ed2",
+        "prompt.txt": "3581c2c2107033f32ae439617a1da4b2e2d8446330aad1153c0d478c07ac13f3",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "ba6ec0064a616efc56fed42a41a8bb5d976537c17bd77e201a5bffa2745e1eda"
+      }
+    },
+    {
+      "session": "c03_generic_1",
+      "case": "c03",
+      "condition": "generic",
+      "repeat": 1,
+      "thread_id": "01a0d8ba-c665-7601-8410-b70d0a59c0e7",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "execution_failed",
+        "verdict": "insufficient",
+        "issues": [
+          "execution_failure",
+          "read_as_measured"
+        ],
+        "reason": "实验因 API 凭证被拒绝而执行失败，没有产生测量结果。程序结构不能证明“本次实测延迟下降四成”，也无法据此支持或否定缓存降低延迟的假说。",
+        "next_action": "删除实测下降四成的表述，如实记录执行失败；修复凭证后，在相同条件下重复测量启用与禁用缓存的延迟，再判断效果。"
+      },
+      "duration_seconds": 10.364597999956459,
+      "usage": [
+        {
+          "input_tokens": 20263,
+          "cached_input_tokens": 12544,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 183,
+          "reasoning_output_tokens": 51
+        }
+      ],
+      "hashes": {
+        "answer.txt": "36c4f805408b6d949b2e78eb801a9775e10fdb5c212cb3dca7905b2458d05ca1",
+        "process.json": "e2e22913e8ea745f93f5c2dfcfe89f08502a66f1ddace3eba0d193ef61a285ea",
+        "prompt.txt": "3581c2c2107033f32ae439617a1da4b2e2d8446330aad1153c0d478c07ac13f3",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "f6a8d29bb38671d8438ab87708c090e8bca77717c97fea08370ded6e1801542c"
+      }
+    },
+    {
+      "session": "c03_skills_0",
+      "case": "c03",
+      "condition": "skills",
+      "repeat": 0,
+      "thread_id": "01a0d8bd-1603-7813-9d0e-452a69f51bc6",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "execution_failed",
+        "verdict": "insufficient",
+        "issues": [
+          "execution_failure",
+          "read_as_measured"
+        ],
+        "reason": "API 凭证被拒绝，程序退出码为 1，且没有实验结果。程序结构不能证明延迟实际下降，更无法支持“四成”；原假说尚未得到检验。",
+        "next_action": "撤回实测降幅主张，记录本次执行失败。修复凭证后，在相同请求和运行条件下比较启用与关闭缓存的延迟，保留原始结果并检查波动。"
+      },
+      "duration_seconds": 12.429731599986553,
+      "usage": [
+        {
+          "input_tokens": 22169,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 216,
+          "reasoning_output_tokens": 68
+        }
+      ],
+      "hashes": {
+        "answer.txt": "044f71d5676e384ba51471831ab2c36cba3fa3c1899c66b783fee625d43909c4",
+        "process.json": "c4ff832146781b34d2830807c1e714e17144e0746b8c923eaa892f40b3e7b9a7",
+        "prompt.txt": "30ea7b4299d7f4419bc37d2a3885acdc585a15c9747a28122010aa668a44b805",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "81c6ecb94422518e9376f2d8657ec8ed98e74eab87e988fc4c1f44562bc44c38"
+      }
+    },
+    {
+      "session": "c03_skills_1",
+      "case": "c03",
+      "condition": "skills",
+      "repeat": 1,
+      "thread_id": "01a0d8bb-1cd9-7041-a66f-5c6e0fc814e6",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "execution_failed",
+        "verdict": "insufficient",
+        "issues": [
+          "execution_failure",
+          "read_as_measured"
+        ],
+        "reason": "API 凭证被拒绝，程序退出码为 1，且没有结果数据。本次执行无法判断缓存是否降低延迟；程序结构也不能证明“本次实测延迟下降四成”。",
+        "next_action": "删除实测降幅主张，记录此次执行失败。修复凭证后，在相同请求、环境和测量口径下比较启用与禁用缓存的延迟，并记录缓存命中情况及重复测量结果。"
+      },
+      "duration_seconds": 9.977247799746692,
+      "usage": [
+        {
+          "input_tokens": 22169,
+          "cached_input_tokens": 16512,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 138,
+          "reasoning_output_tokens": 0
+        }
+      ],
+      "hashes": {
+        "answer.txt": "2e8b1ab1a4e46bdcc051bb156e839bef579221ac306651986b851dfd39ec4b4a",
+        "process.json": "5123f50579999aff56664ea6ddf63c2aa23204921b8aec5e2489839817914608",
+        "prompt.txt": "30ea7b4299d7f4419bc37d2a3885acdc585a15c9747a28122010aa668a44b805",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "e142044bd685bc3bad3d01e2b5f87b82b3fadc304793478dfc211fcf01cdd746"
+      }
+    },
+    {
+      "session": "c04_generic_0",
+      "case": "c04",
+      "condition": "generic",
+      "repeat": 0,
+      "thread_id": "01a0d8ba-4a5c-7d30-a0c5-4379b96769bc",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "ready",
+        "verdict": "rejected",
+        "issues": [],
+        "reason": "评分器已校准并经独立抽查，实验执行成功且已复现。同一批100个字段中，候选答对84个，基线答对91个，确实少七个；本批文档上的提升假说被否定。作者明确不外推，原措辞有依据。",
+        "next_action": "可按原措辞整理失败经验，保留固定文档范围、评分方法及84/100与91/100的对比；该判断不代表获准发布。"
+      },
+      "duration_seconds": 12.164235699921846,
+      "usage": [
+        {
+          "input_tokens": 20367,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 188,
+          "reasoning_output_tokens": 46
+        }
+      ],
+      "hashes": {
+        "answer.txt": "3f4a18386e734a1d9757d0a6dae71e7aa3942f9844ae771c5111a85513840b60",
+        "process.json": "2fb1fa2e8252b4ddb4669c2de449c160b89501af9e36678f86632c40a5a1535b",
+        "prompt.txt": "c215bc01cbddac3f21c24fe28f77004b03cadeb10aed6c4f92ceaecd5a0d615f",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "49904324233e06c648e26a908017493ba70917c5ee4ec5830c73621cce811cb4"
+      }
+    },
+    {
+      "session": "c04_generic_1",
+      "case": "c04",
+      "condition": "generic",
+      "repeat": 1,
+      "thread_id": "01a0d8bb-8fa3-70b2-991d-2a4785478740",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "ready",
+        "verdict": "rejected",
+        "issues": [],
+        "reason": "评分已校准，实验执行成功且已复现。同一批100个字段中，候选答对84个、基线91个，候选少答对7个，不满足“候选须更高”的标准。作者将结论限定于本批固定文档，主张与证据一致。",
+        "next_action": "可按原措辞整理失败经验，保留固定文档范围和对比结果；当前结论不代表已获准发布。"
+      },
+      "duration_seconds": 11.194355000276119,
+      "usage": [
+        {
+          "input_tokens": 20367,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 202,
+          "reasoning_output_tokens": 56
+        }
+      ],
+      "hashes": {
+        "answer.txt": "7be94475febbcc14e3efc821cbbf5e0658b1d6c58ccb48b684bb9da4526d2a8d",
+        "process.json": "4c107efc405720e2037f0812b855aa1484c59337a81a8d55b259607bcc5cf2ab",
+        "prompt.txt": "c215bc01cbddac3f21c24fe28f77004b03cadeb10aed6c4f92ceaecd5a0d615f",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "5d5a7014b35da63b50b7b1a62b3b84dcfd19f97bb9ae0d54d20116b398f432a3"
+      }
+    },
+    {
+      "session": "c04_skills_0",
+      "case": "c04",
+      "condition": "skills",
+      "repeat": 0,
+      "thread_id": "01a0d8bc-530c-7cf2-9f86-51c0b08df80e",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "ready",
+        "verdict": "rejected",
+        "issues": [],
+        "reason": "同一批100个字段中，候选答对84个，基线答对91个，净少7个。评分已校准，执行成功且已复现，足以否定本批文档上的提升假说。作者限定了范围，未将负面结果误作执行失败。",
+        "next_action": "可按原措辞整理失败经验，保留固定文档范围；退步原因若未经验证，应标为待验证解释。"
+      },
+      "duration_seconds": 14.395931699778885,
+      "usage": [
+        {
+          "input_tokens": 22273,
+          "cached_input_tokens": 16512,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 259,
+          "reasoning_output_tokens": 116
+        }
+      ],
+      "hashes": {
+        "answer.txt": "af494fe6398ffa042f8b2173eb5f1075d6a1040836600c8a90eb08e8bd72634e",
+        "process.json": "d78c7743ef6ad426671509f0bd3f004820a5273678853c1798069f97a5e8478f",
+        "prompt.txt": "25300f0a5b38ee29b5321d54221bbd6fe49b590309296fa64b7c0ab1aff898cb",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "5fabc3af63b57163c7e4a67b3a346e85405971576bae34ce6a811f63014ee50a"
+      }
+    },
+    {
+      "session": "c04_skills_1",
+      "case": "c04",
+      "condition": "skills",
+      "repeat": 1,
+      "thread_id": "01a0d8be-1d98-7bc0-84fa-5b783a161f35",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "ready",
+        "verdict": "rejected",
+        "issues": [],
+        "reason": "评分尺子已校准，执行成功且已复现。同一批100个字段中，候选答对84个，基线答对91个，确实少7个，不满足“候选须更高”的标准。作者将结论限定于这批固定文档，措辞有依据；这是负面结果，不是执行失败。",
+        "next_action": "可按原限定措辞整理失败经验，无需为此追加实验。退步原因若未验证，应标为待查；审查者应说明判断基于所给材料，不自称亲自复现。"
+      },
+      "duration_seconds": 12.159210899844766,
+      "usage": [
+        {
+          "input_tokens": 22273,
+          "cached_input_tokens": 16512,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 227,
+          "reasoning_output_tokens": 56
+        }
+      ],
+      "hashes": {
+        "answer.txt": "00840d59a6e6d050a0db4ae4c9969b7f9d450b2fa92140f60e4aa79064f6781e",
+        "process.json": "d266e492caa2ed21728d6188df93edbf1aa0af49585fb052f4cc13e8816995d2",
+        "prompt.txt": "25300f0a5b38ee29b5321d54221bbd6fe49b590309296fa64b7c0ab1aff898cb",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "c77eb131d4fb3086eb08a57d2fc8211434eaa0fbfcef71e42f64cd87bf51073e"
+      }
+    },
+    {
+      "session": "c05_generic_0",
+      "case": "c05",
+      "condition": "generic",
+      "repeat": 0,
+      "thread_id": "01a0d8bd-7444-7bd1-9b01-3698a6a255e6",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "ready",
+        "verdict": "supported",
+        "issues": [],
+        "reason": "评分已校准、真值独立确认，执行成功且隔离复现一致。固定回归集从14/20通过提升到20/20，支持修复改善该回归集的假说。作者明确限制结论范围，原措辞有依据。",
+        "next_action": "可按原措辞整理报告，并补充修复前14/20、修复后20/20的对比；无需为该限定结论补证据。"
+      },
+      "duration_seconds": 11.81242399988696,
+      "usage": [
+        {
+          "input_tokens": 20350,
+          "cached_input_tokens": 16512,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 168,
+          "reasoning_output_tokens": 39
+        }
+      ],
+      "hashes": {
+        "answer.txt": "19c07dec66cb03b04c6b0e36a97e03e82e811831c9c7c8b32d56be10db9b56d1",
+        "process.json": "3cd2b591facf59236ae1d0802c701608e6e9bf993241e8de6e69aa7d80b535fe",
+        "prompt.txt": "22a0cfc2af50034cd92f7aad9e5b791f8b9125483cbf35538709afc06400845a",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "ce53d44018e492a0c4a0910c77be0995658d2c2f1a499bcaee1f91f8ddfb0115"
+      }
+    },
+    {
+      "session": "c05_generic_1",
+      "case": "c05",
+      "condition": "generic",
+      "repeat": 1,
+      "thread_id": "01a0d8ba-9f60-7283-ab5b-a31d1fdc3c87",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "ready",
+        "verdict": "supported",
+        "issues": [],
+        "reason": "评分已校准、真值独立确认，实验成功且隔离复现一致；通过数从14/20增至20/20，支持修复改善这套固定回归集。作者明确不推广到任意文件，措辞与证据范围一致。",
+        "next_action": "可按原措辞整理入报告，建议同时列出修复前14/20、修复后20/20的对比；这不代表已获准发布。"
+      },
+      "duration_seconds": 10.097173999994993,
+      "usage": [
+        {
+          "input_tokens": 20350,
+          "cached_input_tokens": 16512,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 174,
+          "reasoning_output_tokens": 44
+        }
+      ],
+      "hashes": {
+        "answer.txt": "04e82648e075c129d70f845737649574bff325591ed42e62f7c0f640c597f736",
+        "process.json": "c15e9146bccfc5d87d20c6b6a0e0e416c0ec0d91c95f5c77ca9510e03d772e50",
+        "prompt.txt": "22a0cfc2af50034cd92f7aad9e5b791f8b9125483cbf35538709afc06400845a",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "876674836af027d89bbf1565bb811b222e72a5c16cb312e6b802da63aa5a79ae"
+      }
+    },
+    {
+      "session": "c05_skills_0",
+      "case": "c05",
+      "condition": "skills",
+      "repeat": 0,
+      "thread_id": "01a0d8bd-467b-7640-92b6-8924d76019f5",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "ready",
+        "verdict": "supported",
+        "issues": [],
+        "reason": "尺子已校准、真值独立确认，确定性回归集由修复前14/20通过提升至20/20，隔离复现结果一致。作者仅陈述这二十例的结果，并明确不保证任意文件都正确，主张与证据一致。",
+        "next_action": "可按原措辞写入报告，保留固定回归集的范围限制；当前主张无需补实验。"
+      },
+      "duration_seconds": 11.72464479971677,
+      "usage": [
+        {
+          "input_tokens": 22256,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 191,
+          "reasoning_output_tokens": 54
+        }
+      ],
+      "hashes": {
+        "answer.txt": "373d05417d185c5855844c769ad169ab4f3e6c28ec21c001b3b59c8689c571f5",
+        "process.json": "6f315e83468053dab11fffedc30b3a94e47aa4083bf76186b08feb7167780d71",
+        "prompt.txt": "09ef467fb7958ad54a952af7d25e5dab4e53b346d7852ccb101ecb14eb9222e8",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "faccac49c4402faa0e1004fbd40c0f4871244c69147f18fa7543a428d08dd1e7"
+      }
+    },
+    {
+      "session": "c05_skills_1",
+      "case": "c05",
+      "condition": "skills",
+      "repeat": 1,
+      "thread_id": "01a0d8bc-e4cb-70a2-8bee-954133e06800",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "ready",
+        "verdict": "supported",
+        "issues": [],
+        "reason": "尺子已校准、真值独立确认，执行成功且隔离复现一致。固定回归集通过数从14/20升至20/20，支持该集合上的改善；作者已明确限制范围，未外推到任意文件。本审查仅依据所给材料。",
+        "next_action": "可按原措辞整理入报告，保留固定回归集和不保证任意文件正确的限制。无需为当前主张补实验；整理传播不等于已获发布授权。"
+      },
+      "duration_seconds": 12.592086399905384,
+      "usage": [
+        {
+          "input_tokens": 22256,
+          "cached_input_tokens": 16512,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 204,
+          "reasoning_output_tokens": 50
+        }
+      ],
+      "hashes": {
+        "answer.txt": "2b3facd3683e8df5e669463e9eb36a0400071ae906dd70752adad6cb7e6a454e",
+        "process.json": "276a3b2aa335e9300dbde231048c101830bd887e13dbe4f5035c86ecbbb5482d",
+        "prompt.txt": "09ef467fb7958ad54a952af7d25e5dab4e53b346d7852ccb101ecb14eb9222e8",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "86ea68bbefe40cfdfa3c0db12765c5dfa3a450167c3dbc776303b12e9b836184"
+      }
+    },
+    {
+      "session": "c06_generic_0",
+      "case": "c06",
+      "condition": "generic",
+      "repeat": 0,
+      "thread_id": "01a0d8bb-544f-75a0-ab31-346611c9c41f",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "rejected",
+        "issues": [
+          "wrong_source"
+        ],
+        "reason": "run-B 的命中率是 62%，未达到九成；90% 属于 run-A。能搜索到该数值不能证明它属于 run-B。评分器校准通过且执行成功，当前结果足以否定原假说。",
+        "next_action": "将主张修正为“run-B 的命中率为 62%，未达到九成”，引用 run-B 对应记录；修正后可整理传播，无需额外补证据。"
+      },
+      "duration_seconds": 15.21447919961065,
+      "usage": [
+        {
+          "input_tokens": 20334,
+          "cached_input_tokens": 16512,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 204,
+          "reasoning_output_tokens": 55
+        }
+      ],
+      "hashes": {
+        "answer.txt": "74f4a1c192cc1a08a063bcb0aa4374260f305f6abcce4c906c90a4ac6f47cedb",
+        "process.json": "f1ea7042b3d1709309935f2cd0627a12314f837d3a344eea211719256cd8a0ae",
+        "prompt.txt": "518ad5101756bcc9b2db68b1003a11edd9432dbbe496bcdb18a460ff98fd19a2",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "006d2b9fe0ba71b1e1042ecd112bd9ab8bde52c9bca6fe4750a2239ec72669ec"
+      }
+    },
+    {
+      "session": "c06_generic_1",
+      "case": "c06",
+      "condition": "generic",
+      "repeat": 1,
+      "thread_id": "01a0d8be-cb04-74b3-96c9-80841e80c979",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "rejected",
+        "issues": [
+          "wrong_source"
+        ],
+        "reason": "评分器校准通过且执行成功，但 run-B 命中率为 62%，未达到九成。90% 属于 run-A，文件中能搜到该数值不能证明 run-B 达标。",
+        "next_action": "将主张修正为“run-B 命中率为 62%，未达到九成”，并引用 run-B 对应记录；现有证据足以支持这一负面结果，无需重跑。"
+      },
+      "duration_seconds": 11.982929799705744,
+      "usage": [
+        {
+          "input_tokens": 20334,
+          "cached_input_tokens": 16512,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 203,
+          "reasoning_output_tokens": 59
+        }
+      ],
+      "hashes": {
+        "answer.txt": "4d21c87f99db509474b2f99986346ba2d9cc4e57b05809c215c54080cd92d5c4",
+        "process.json": "34423d530b009a4d1a25d8b74f8910b6b3ae7cf3614e1a9b5e7dd28fed756da1",
+        "prompt.txt": "518ad5101756bcc9b2db68b1003a11edd9432dbbe496bcdb18a460ff98fd19a2",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "d50fa7eaf0505ac30a37c9d4d3511ea565fc2336d2410c67e9ef0373419b51e6"
+      }
+    },
+    {
+      "session": "c06_skills_0",
+      "case": "c06",
+      "condition": "skills",
+      "repeat": 0,
+      "thread_id": "01a0d8bc-8be1-7de2-bde7-a7d6e0c554dd",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "rejected",
+        "issues": [
+          "wrong_source"
+        ],
+        "reason": "run-B 的命中率是 62%，未达到九成；90% 属于 run-A。能搜索到同值数字不代表证据属于当前实验。评分器校准通过、执行成功，不能改变这一结论。",
+        "next_action": "将主张改为“本次 run-B 命中率为 62%，未达到 90%”，并绑定 run-B 的记录。现有材料足以支持该负面结果，无需为此补跑实验。"
+      },
+      "duration_seconds": 12.04365130001679,
+      "usage": [
+        {
+          "input_tokens": 22240,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 219,
+          "reasoning_output_tokens": 67
+        }
+      ],
+      "hashes": {
+        "answer.txt": "9dfb0d8795723d0097d041e428e4579050853fdfd02658adb1d581dda0c76e27",
+        "process.json": "8e2670e86e0f2fdb0d8e20c0575fbf8a3df61f23467f688b171f926ca81937d1",
+        "prompt.txt": "38920d303d8dfc62963e350a67e7f2955284c3f24970a5c438c74f47c6e15138",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "52cd94505a248b0e43ec640bf281982548c851223648b87748490a3e1c33ae35"
+      }
+    },
+    {
+      "session": "c06_skills_1",
+      "case": "c06",
+      "condition": "skills",
+      "repeat": 1,
+      "thread_id": "01a0d8bb-43b7-7982-8c1f-356807217138",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "rejected",
+        "issues": [
+          "wrong_source"
+        ],
+        "reason": "run-B 命中率为 62%，未达到九成；90% 属于 run-A。能搜到相同数字不能证明它属于当前实验。评分器校准通过且执行成功，这是假说被否定，不是执行失败。",
+        "next_action": "将主张改为“本次 run-B 命中率为 62%，未达到九成”，绑定 run-B 的记录。修正后可整理传播，无需为该限定结论补实验。"
+      },
+      "duration_seconds": 14.500474600121379,
+      "usage": [
+        {
+          "input_tokens": 22240,
+          "cached_input_tokens": 16512,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 214,
+          "reasoning_output_tokens": 63
+        }
+      ],
+      "hashes": {
+        "answer.txt": "88814a5a06b61bfee37bfdef2ee657c73bebc084f0d41dd30ed8fd61525a836a",
+        "process.json": "dd5c713e3f14df18d870e1ad85c69a9f5151a251f2a0e48b78079243500ba104",
+        "prompt.txt": "38920d303d8dfc62963e350a67e7f2955284c3f24970a5c438c74f47c6e15138",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "75abd82e1c92e87aa0c32e40a806eb97799aba5b586b7bcb2c46fa7113042d48"
+      }
+    },
+    {
+      "session": "c07_generic_0",
+      "case": "c07",
+      "condition": "generic",
+      "repeat": 0,
+      "thread_id": "01a0d8ba-e0ad-7380-b4f3-d4a2e5162a1e",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "rejected",
+        "issues": [
+          "denominator_mismatch"
+        ],
+        "reason": "部署前错误比例为100/1000=10%，部署后为20/100=20%。错误次数下降80%，但错误比例从10%升至20%，增加10个百分点，相对上升100%。作者混淆了错误次数与错误比例。",
+        "next_action": "修正报告为：“本次观测中，部署后错误次数下降80%，但错误比例从10%升至20%，不支持错误比例降低的假说。”现有证据足以报告这一限定结果，但不能据此认定部署导致比例上升。"
+      },
+      "duration_seconds": 15.341789700090885,
+      "usage": [
+        {
+          "input_tokens": 20312,
+          "cached_input_tokens": 16512,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 215,
+          "reasoning_output_tokens": 60
+        }
+      ],
+      "hashes": {
+        "answer.txt": "756b41f75fa3aa69a8dfa3cac8c5b4b6cc9e7b15a59bd00b2332182913bcbf86",
+        "process.json": "5495a6fc7a265d35a0e677ceaab36945d594c4e4b06bb57a1826adc5271f3479",
+        "prompt.txt": "080a530a1d40da3146158c52c6e252e3d99662f53af550742d85377830cd58a0",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "fe786988dd9ab8c5a1faeb5282b6132dd0261878c037d5cacbc4738293852ae5"
+      }
+    },
+    {
+      "session": "c07_generic_1",
+      "case": "c07",
+      "condition": "generic",
+      "repeat": 1,
+      "thread_id": "01a0d8bd-cbe6-7df3-8b52-5d2b20790993",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "rejected",
+        "issues": [
+          "denominator_mismatch"
+        ],
+        "reason": "部署前错误比例为100/1000=10%，部署后为20/100=20%。错误次数减少80%，但错误比例上升10个百分点、相对增加100%；原主张混淆了次数与比例。",
+        "next_action": "修正为：“在所观察的请求中，部署后错误次数由100降至20，但错误比例由10%升至20%，翻了一倍。”现有证据足以报告这一限定范围的负面结果。"
+      },
+      "duration_seconds": 12.001614700071514,
+      "usage": [
+        {
+          "input_tokens": 20312,
+          "cached_input_tokens": 16512,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 204,
+          "reasoning_output_tokens": 51
+        }
+      ],
+      "hashes": {
+        "answer.txt": "e8d14b8369b6ae7ca5acc96dcb0f2c72a2e77f58e95f8cb2571809b2e06b88e5",
+        "process.json": "a66290ae195f1b4370121b9ca1f9a2ed7bab54aec9d088c8b0ac61b675b37eac",
+        "prompt.txt": "080a530a1d40da3146158c52c6e252e3d99662f53af550742d85377830cd58a0",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "401190d38350f28014fd2fd0e6212a49aa0db9df49066a81b0fd8c5097ec0f74"
+      }
+    },
+    {
+      "session": "c07_skills_0",
+      "case": "c07",
+      "condition": "skills",
+      "repeat": 0,
+      "thread_id": "01a0d8ba-aace-7dc0-9edc-fb8567c77d2f",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "rejected",
+        "issues": [
+          "denominator_mismatch"
+        ],
+        "reason": "错误比例部署前为100/1000=10%，部署后为20/100=20%，增加10个百分点，相对上升100%。降低八成的是错误次数，作者忽略了请求总量的变化；现有结果反驳了错误比例降低的假说。",
+        "next_action": "改为“在所观察的请求中，部署后错误次数减少80%，但错误比例从10%升至20%”。可以报告这一负面结果；若要认定变化由部署导致，还需排除流量构成、观察时段等差异。"
+      },
+      "duration_seconds": 14.108957899734378,
+      "usage": [
+        {
+          "input_tokens": 22218,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 296,
+          "reasoning_output_tokens": 136
+        }
+      ],
+      "hashes": {
+        "answer.txt": "74bbfff8ef56fa844505505670a6efc4794a24e14bc3405bb0306a6b167d3f54",
+        "process.json": "2a17148f4253bedfc2a5c612eb491a117575212aecbfce3dc6b6639a15e120e3",
+        "prompt.txt": "38cfda28770f4e20ec5852f40afad2440aea5d62924e6c5804f7adf1b50c8df5",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "b8537144fcf80d354889fe57c52694f2adc98714ef323ebfcb8a9441f7719c01"
+      }
+    },
+    {
+      "session": "c07_skills_1",
+      "case": "c07",
+      "condition": "skills",
+      "repeat": 1,
+      "thread_id": "01a0d8be-5ff2-76b2-8af9-eea3d2dd612e",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "rejected",
+        "issues": [
+          "denominator_mismatch"
+        ],
+        "reason": "作者混淆了错误次数和错误比例。部署前错误比例为100/1000=10%，部署后为20/100=20%，上升10个百分点，相对增加100%；降低80%的只是错误次数。执行成功、计数校准通过，不能支持原主张。",
+        "next_action": "将主张修正为：在这两个观测窗口内，错误次数减少80%，但错误比例从10%升至20%。该负面结果可以写入报告；若要归因于部署，还需排除请求构成和观测时段差异。"
+      },
+      "duration_seconds": 13.407157000154257,
+      "usage": [
+        {
+          "input_tokens": 22218,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 254,
+          "reasoning_output_tokens": 77
+        }
+      ],
+      "hashes": {
+        "answer.txt": "5dca230d48e7fb5a65148f543b738a8efb30a49c957cf80eeb8d238e89cf548e",
+        "process.json": "9e7291f3a12eed9d1f3473bd212380897bbf0f6a8337b08c5e93d6b92fe96a97",
+        "prompt.txt": "38cfda28770f4e20ec5852f40afad2440aea5d62924e6c5804f7adf1b50c8df5",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "e0b60eb4ec1d8368ef2b28c1be2901c488b46a84de188c683362b5e4b90be4b6"
+      }
+    },
+    {
+      "session": "c08_generic_0",
+      "case": "c08",
+      "condition": "generic",
+      "repeat": 0,
+      "thread_id": "01a0d8bc-bb5d-7983-be41-f3d16c07698e",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "insufficient",
+        "issues": [
+          "noise_or_selection",
+          "scope_overreach"
+        ],
+        "reason": "挑最快一次不能证明总体平均改善。三次配对改善为5、-5、2毫秒，样本平均仅改善约0.67毫秒，且未估计不确定性，无法支持“已经证实稳定提速”。其中一次变慢也不直接否定平均提速假说。",
+        "next_action": "将当前结论改为“三次配对中样本平均延迟降低约0.67毫秒，总体平均改善尚不确定”；补充部署环境中有代表性的配对重复测量，报告平均改善及其置信区间。"
+      },
+      "duration_seconds": 16.062454300001264,
+      "usage": [
+        {
+          "input_tokens": 20351,
+          "cached_input_tokens": 16512,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 269,
+          "reasoning_output_tokens": 87
+        }
+      ],
+      "hashes": {
+        "answer.txt": "6d6bd4824e178d1509a025889d3f54cada508ba547608d7b7b88a1c81ecabb25",
+        "process.json": "fdb232522a5815d311b73ea45567d14f15a10b074a7cfaf9343f9631712c9b1e",
+        "prompt.txt": "567b395600c38d599263184bf000ef605bb031355d12629e3fea9ede39d48613",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "78ad2ca8fdc19757d4cffbd21366a78c27cc7f0c69fcf35187daf52b2460d469"
+      }
+    },
+    {
+      "session": "c08_generic_1",
+      "case": "c08",
+      "condition": "generic",
+      "repeat": 1,
+      "thread_id": "01a0d8bc-76e8-74e3-9c9f-264c3de7ef43",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "insufficient",
+        "issues": [
+          "noise_or_selection",
+          "scope_overreach"
+        ],
+        "reason": "执行成功、计时器已校准，但比较最快一次不符合总体平均改善的判据。三组配对改善为5、-5、2毫秒，样本平均改善仅0.67毫秒；未估计不确定性，不能据此声称已证实稳定提速。一次变慢也不足以否定总体平均改善。",
+        "next_action": "报告配对平均改善及其不确定性，并增加部署环境中的代表性配对测量。当前措辞改为：三次配对测量中候选平均延迟略低，但尚不足以确认总体平均延迟降低。"
+      },
+      "duration_seconds": 16.321750099770725,
+      "usage": [
+        {
+          "input_tokens": 20351,
+          "cached_input_tokens": 16512,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 272,
+          "reasoning_output_tokens": 82
+        }
+      ],
+      "hashes": {
+        "answer.txt": "91dcdd9efed8b2fd97aa31fc3511497dc833e846f3d410428f48f4cbde11c661",
+        "process.json": "065ccca7055751507078dd5e0ca98c0f2efaae9805cd1ec122b31de73f3e74b7",
+        "prompt.txt": "567b395600c38d599263184bf000ef605bb031355d12629e3fea9ede39d48613",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "1b6db6eb5a6af546dd283f6890d83b468d44e7eefe006769d69a65ee907ab877"
+      }
+    },
+    {
+      "session": "c08_skills_0",
+      "case": "c08",
+      "condition": "skills",
+      "repeat": 0,
+      "thread_id": "01a0d8bb-7c8c-7e83-b308-54cae5370e1b",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "insufficient",
+        "issues": [
+          "noise_or_selection",
+          "scope_overreach"
+        ],
+        "reason": "执行成功，计时器已校准，但最快一次不能证明总体平均延迟下降或稳定提速。三组配对改善分别为5、-5、2毫秒；基线均值120毫秒，候选约119.33毫秒，样本平均仅改善约0.67毫秒。现有数据未排除随机波动，不能确认原假说，也不能据此否定它。",
+        "next_action": "将当前结论改为“三组配对观测中，候选平均延迟约低0.67毫秒，总体平均改善尚不确定”。若要回答原问题，补充代表部署负载的配对重复测量，控制运行顺序影响，并报告平均差及其不确定性区间，不再用最快单次作为判断依据。"
+      },
+      "duration_seconds": 15.604415900073946,
+      "usage": [
+        {
+          "input_tokens": 22257,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 347,
+          "reasoning_output_tokens": 118
+        }
+      ],
+      "hashes": {
+        "answer.txt": "d004db5742d96856dd895686699e2c1dee882f3a4ab2fc3bd4cf1214a9ec39c8",
+        "process.json": "cbd97283e5cb27f9a784861482b5d3a296d1e9ee7aecaa94d7e8b3ce3ac65c91",
+        "prompt.txt": "2578a2eff06e84e3af57331e13ed751a69b1c2d9797cb4a37c79f33460978491",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "f937d3dbd2bfa686248b892d2eb5088b0bccf5e8f4ea6392a4360a5e7bc2ddd7"
+      }
+    },
+    {
+      "session": "c08_skills_1",
+      "case": "c08",
+      "condition": "skills",
+      "repeat": 1,
+      "thread_id": "01a0d8bd-d8f0-76f0-a69a-b883b0968bbb",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "insufficient",
+        "issues": [
+          "noise_or_selection",
+          "scope_overreach"
+        ],
+        "reason": "【分析问题】不能原样写入。执行成功且计时器已校准，但挑最快一次不能证明总体平均延迟降低或稳定提速。三组配对改善为5、-5、2毫秒；基线均值120毫秒，候选均值约119.33毫秒，样本平均改善约0.67毫秒。现有证据无法区分总体改善与随机波动；其中一次变慢也不等于假说被推翻。",
+        "next_action": "将当前结论收窄为“三组配对观测中，候选平均延迟低约0.67毫秒，总体平均改善尚不确定”。若要回答原问题，应在代表部署环境的条件下增加配对重复，控制运行顺序影响，报告平均改善及其不确定性，避免按最快结果选样。"
+      },
+      "duration_seconds": 17.552983900066465,
+      "usage": [
+        {
+          "input_tokens": 22257,
+          "cached_input_tokens": 16512,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 371,
+          "reasoning_output_tokens": 129
+        }
+      ],
+      "hashes": {
+        "answer.txt": "316544013f1d347e73d1ae0cfbdcddca34c4eca45ef73637721cb161e57fe48c",
+        "process.json": "33c8c749ef88befcdf847977180314b4dd4a6f0f3257b78b59c36496449b5674",
+        "prompt.txt": "2578a2eff06e84e3af57331e13ed751a69b1c2d9797cb4a37c79f33460978491",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "72ebda397963ada9c6952603b24ab2c9a99333dd7b9e843b7b3605f631a05135"
+      }
+    },
+    {
+      "session": "c09_generic_0",
+      "case": "c09",
+      "condition": "generic",
+      "repeat": 0,
+      "thread_id": "01a0d8be-94ab-7ce3-b7b5-80ca85cb4349",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "insufficient",
+        "issues": [
+          "read_as_measured"
+        ],
+        "reason": "供应商文档只能证明其声明支持该功能；未调用 API、未检查本地配置，不能声称已实测确认当前环境可用。实验未执行，不属于执行失败，也不能据此判定 API 不可用。",
+        "next_action": "将主张改为“供应商文档声明支持该功能，当前环境尚未验证”；若要保留原主张，需在当前环境实际调用 API，并核对返回结果是否实现目标功能。"
+      },
+      "duration_seconds": 13.982291900087148,
+      "usage": [
+        {
+          "input_tokens": 20257,
+          "cached_input_tokens": 16512,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 238,
+          "reasoning_output_tokens": 100
+        }
+      ],
+      "hashes": {
+        "answer.txt": "a8175808d8b0d13d4f7b4a4cec3b667825d75f7b92f68f30eca68093142853fe",
+        "process.json": "a38004b710ffd38c79d6061e2a6f8d72bfc08d34f5112f65c538cc8496769f47",
+        "prompt.txt": "99f92c1713c55f0919491698ffdd91eb2fe87a4f57bb248aaf3cb7e201fad722",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "c8055eb9bb2ab7bb9f232f75ed301327a7315b9b2caeccfac6bfdfd1071812d0"
+      }
+    },
+    {
+      "session": "c09_generic_1",
+      "case": "c09",
+      "condition": "generic",
+      "repeat": 1,
+      "thread_id": "01a0d8bd-91ae-79b1-ae93-16f6e2d5aa97",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": false,
+      "original_unexpected_issues": [
+        "scope_overreach"
+      ],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "scope_overreach: vendor support claim is transferred to untested current environment",
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "insufficient",
+        "issues": [
+          "read_as_measured",
+          "scope_overreach"
+        ],
+        "reason": "供应商文档只能证明其宣称支持该功能，不能证明当前环境可用。未调用 API，却声称“已经实测确认”，与执行记录矛盾。实验未执行，不属于执行失败。",
+        "next_action": "改为“供应商文档显示支持该功能，当前环境尚未实测”；若保留原主张，需在当前环境实际调用 API 并核验返回结果。"
+      },
+      "duration_seconds": 14.898528799880296,
+      "usage": [
+        {
+          "input_tokens": 20257,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 266,
+          "reasoning_output_tokens": 120
+        }
+      ],
+      "hashes": {
+        "answer.txt": "109337208bc5d023486fef9b4ebb2d410b6cdfba490bee8a35340b3e912321d0",
+        "process.json": "8fc8d5f544401fb1d8fb6c0e4056434dab4882e0737b5c5c5bef8ac914420ad1",
+        "prompt.txt": "99f92c1713c55f0919491698ffdd91eb2fe87a4f57bb248aaf3cb7e201fad722",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "baa827e99df12e2debf5e126c23635f738a3e3a99fe329812cbd8f41936df90e"
+      }
+    },
+    {
+      "session": "c09_skills_0",
+      "case": "c09",
+      "condition": "skills",
+      "repeat": 0,
+      "thread_id": "01a0d8bb-bc1c-7731-a53c-9f9bb3a881ea",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": false,
+      "original_unexpected_issues": [
+        "scope_overreach"
+      ],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "scope_overreach: vendor support claim is transferred to untested current environment",
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "insufficient",
+        "issues": [
+          "read_as_measured",
+          "scope_overreach"
+        ],
+        "reason": "文档快照只能证明供应商声明支持该功能；未调用 API、未检查本地配置，不能证明当前环境可用，更不能称为“已实测”。这是未验证，不是执行失败。",
+        "next_action": "将主张改为“供应商文档声明支持该功能，当前环境尚未验证”。若要确认可用，需在当前环境发起实际功能请求并核对响应；文档支持仍可能受本地配置或账号权限限制。"
+      },
+      "duration_seconds": 11.697299600113183,
+      "usage": [
+        {
+          "input_tokens": 22163,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 207,
+          "reasoning_output_tokens": 62
+        }
+      ],
+      "hashes": {
+        "answer.txt": "a7f625b1c0d025f68efd38c7cbad6c963a5f14f1baaa84d8561b430be1a98636",
+        "process.json": "464f6346f01765ca78d9ce96028f6e4ab6e47606991742226c2e457a13117e74",
+        "prompt.txt": "50d3b5f0dd9eec9a5ef6043b558c9a1487be8dc41e2c3de645dfc0081147b3e2",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "606dae07b809d0a3c0b5cf5aa56fc7377b0b650f6e50b318fde5f7aaf87a5345"
+      }
+    },
+    {
+      "session": "c09_skills_1",
+      "case": "c09",
+      "condition": "skills",
+      "repeat": 1,
+      "thread_id": "01a0d8bd-263b-7310-9d14-6e9a562dbc99",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": false,
+      "original_unexpected_issues": [
+        "scope_overreach"
+      ],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "scope_overreach: vendor support claim is transferred to untested current environment",
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "insufficient",
+        "issues": [
+          "read_as_measured",
+          "scope_overreach"
+        ],
+        "reason": "供应商文档只能支持“文档声明支持此功能”，不能证明当前环境可用。没有调用 API，作者却声称已经实测，混淆了阅读资料与实际验证。实验未执行，不属于执行失败。",
+        "next_action": "将主张改为“供应商文档声明支持此功能，当前环境可用性尚未验证”；若要确认原假说，需获授权后在当前环境发起最小真实调用，核对响应是否实现目标功能，并保留执行记录。"
+      },
+      "duration_seconds": 14.771342900115997,
+      "usage": [
+        {
+          "input_tokens": 22163,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 295,
+          "reasoning_output_tokens": 127
+        }
+      ],
+      "hashes": {
+        "answer.txt": "0945120b3789b5b016eeb6ea3d6c99254643f98c6c1eee12729075fabd023d98",
+        "process.json": "8379ee09bfbe8176070895e7b561f9fbb4ae5a817fd9c725cf0d5c424f36bd07",
+        "prompt.txt": "50d3b5f0dd9eec9a5ef6043b558c9a1487be8dc41e2c3de645dfc0081147b3e2",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "d705305a7ddd321784639a2a4c59a4fa4a56f13468f8b2ae906e38fc91f97684"
+      }
+    },
+    {
+      "session": "c10_generic_0",
+      "case": "c10",
+      "condition": "generic",
+      "repeat": 0,
+      "thread_id": "01a0d8be-4d23-7f03-bd4d-81b8ab53e94d",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "insufficient",
+        "issues": [
+          "noise_or_selection",
+          "scope_overreach"
+        ],
+        "reason": "执行成功且评分器校准通过，但只测了作者挑选的一个短英文摘要任务。候选得分更高仅支持该样例上的结果，无法证明配置改善所有类型的 Agent 任务，也不足以否定原假说。",
+        "next_action": "将主张收窄为“在本次测试的短英文摘要任务上，候选配置得分更高”；若要讨论跨任务效果，应预先确定覆盖多种任务的测试集并重复比较，结论限定在实际覆盖范围内。"
+      },
+      "duration_seconds": 12.571963000111282,
+      "usage": [
+        {
+          "input_tokens": 20281,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 251,
+          "reasoning_output_tokens": 81
+        }
+      ],
+      "hashes": {
+        "answer.txt": "7dfc7d441a7eae270965cea4359e7d8464ac84f38f4526097b60ad11d471b041",
+        "process.json": "4cb2c9e4434ff84414a322563c62cb12e8a1e68df83f48d9e40a94ec45ec98b0",
+        "prompt.txt": "037419fd87b9e00f664ab0ad5f6e14e784fde06e13e471cf4b4fd5bffcdf1e0e",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "d20aa595673b992b8a773e456efb0e17fd30e6d86d690741479a1fff80f86f7a"
+      }
+    },
+    {
+      "session": "c10_generic_1",
+      "case": "c10",
+      "condition": "generic",
+      "repeat": 1,
+      "thread_id": "01a0d8bb-2492-7bb3-ab4d-105cf15f2d1e",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "insufficient",
+        "issues": [
+          "noise_or_selection",
+          "scope_overreach"
+        ],
+        "reason": "执行成功且评分器校准通过，但只测了作者挑选的一个短英文摘要任务。候选得分更高，只能支持该样例上的结果，不能证明所有类型任务都改善，也不足以否定原假说。",
+        "next_action": "将主张限定为“在本次测试的短英文摘要样例上，候选配置得分更高”；若要主张广泛改善，需预先确定覆盖多类任务的选样规则，并进行重复对照测试。"
+      },
+      "duration_seconds": 12.188885900191963,
+      "usage": [
+        {
+          "input_tokens": 20281,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 244,
+          "reasoning_output_tokens": 95
+        }
+      ],
+      "hashes": {
+        "answer.txt": "dc1f93837a9fbec6d2faffb72d58441567c5700cf8748e9c85de9e76d2451f90",
+        "process.json": "bbadbb800066ebe4e1ef088cde1a9ce6a0cd0f5b1808a71fdad1498675a934ac",
+        "prompt.txt": "037419fd87b9e00f664ab0ad5f6e14e784fde06e13e471cf4b4fd5bffcdf1e0e",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "0d9cab1c669c9d7cbd09dd3af8886e38d0ba2f6c3e6f19f15ac9c6caf3b91db7"
+      }
+    },
+    {
+      "session": "c10_skills_0",
+      "case": "c10",
+      "condition": "skills",
+      "repeat": 0,
+      "thread_id": "01a0d8bc-1be3-74c1-ad3c-2474ff800e26",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "insufficient",
+        "issues": [
+          "noise_or_selection",
+          "scope_overreach"
+        ],
+        "reason": "不能按原样写入。实验执行成功、评分器校准通过，但只证明候选在作者挑选的一个短英文摘要任务上得分更高，无法支持“普遍提升所有 Agent 任务质量”。任务选择偏差或配置仅适合该类任务，均未被排除。",
+        "next_action": "将主张收窄为“在本次测试的一个短英文摘要任务上，候选配置得分更高；其他任务及稳定性尚未验证”。若要支持跨任务改善，应预先确定覆盖不同任务类型的样本，以一致条件对照并检查重复运行波动；结论仍须限定于测试范围。"
+      },
+      "duration_seconds": 13.983277800027281,
+      "usage": [
+        {
+          "input_tokens": 22187,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 238,
+          "reasoning_output_tokens": 37
+        }
+      ],
+      "hashes": {
+        "answer.txt": "8cb237d55eb08513d58a6094e9b2b03561f3f2865ea8ba3fd43dc849c58d4dfa",
+        "process.json": "0e3eef2b16aa80b08612d5dc4b54e022fc92487093452830fca32bd77fcc5fe0",
+        "prompt.txt": "7bf2288ad61a2d7cc62094ee2a003e2071496832c7c2ba5b01d42d3927d01891",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "84d15b4e1537d0121be9d98c27d1825a5f0c11b0ac9a94898f2e9a20ac2d48c1"
+      }
+    },
+    {
+      "session": "c10_skills_1",
+      "case": "c10",
+      "condition": "skills",
+      "repeat": 1,
+      "thread_id": "01a0d8be-2aac-7eb0-ae17-d56602d32e94",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "needs_evidence",
+        "verdict": "insufficient",
+        "issues": [
+          "noise_or_selection",
+          "scope_overreach"
+        ],
+        "reason": "评分器校准通过，但仅测试了作者挑选的一个短英文摘要任务。候选得分更高只能支持该次观察；任务恰好适配配置或随机波动仍是可能解释，不能据此认定所有 Agent 任务都改善。",
+        "next_action": "将主张收窄为“在本次测试的一个短英文摘要任务上，候选配置得分更高，其他任务尚未验证”。若保留跨任务结论，需预先定义任务类型及选样规则，在相同条件下比较并重复测试，检查收益是否因任务类型或随机波动而变化。"
+      },
+      "duration_seconds": 13.67205150006339,
+      "usage": [
+        {
+          "input_tokens": 22187,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 263,
+          "reasoning_output_tokens": 71
+        }
+      ],
+      "hashes": {
+        "answer.txt": "604c62b1015b53818e866478499dc3e8d4c9da54b0acac5e76e4aefeea555d2c",
+        "process.json": "4f69e634ff1f4f83e89a7a362a62273fda5bc012a73886ffd2961e736d139b38",
+        "prompt.txt": "7bf2288ad61a2d7cc62094ee2a003e2071496832c7c2ba5b01d42d3927d01891",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "94e265128f2141e381f89bbbb1ff4c476066d63390a7b4b9cdfa036335504a26"
+      }
+    },
+    {
+      "session": "c11_generic_0",
+      "case": "c11",
+      "condition": "generic",
+      "repeat": 0,
+      "thread_id": "01a0d8ba-79a9-75c3-9fcc-76043885ce7d",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "ready",
+        "verdict": "supported",
+        "issues": [],
+        "reason": "规范逐字符确定预期输出，能可靠区分对错；给定输入固定丢失末尾字段，且在独立目录复现。证据支持该输入能稳定触发错误，作者也未外推总体错误率或完整原因。",
+        "next_action": "可按原措辞整理为复现笔记，保留仅针对该输入的范围限制。"
+      },
+      "duration_seconds": 9.551556199789047,
+      "usage": [
+        {
+          "input_tokens": 20318,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 147,
+          "reasoning_output_tokens": 36
+        }
+      ],
+      "hashes": {
+        "answer.txt": "a238a96f972158f41b22b1849aabb2bae77fa4abd9027f5c207ddeda3886a31c",
+        "process.json": "9279440c46a4bcf0f9b971a7e0758a30521a7639ef9a9460daef7290f0378346",
+        "prompt.txt": "b36c0c3db82e2703de4303dae014b289cfdc96db788d1ff6bf3ac1e7626fc107",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "41e326e3aece183614c9e98c618d6df7cea641d025abf62831dedc7b645dc628"
+      }
+    },
+    {
+      "session": "c11_generic_1",
+      "case": "c11",
+      "condition": "generic",
+      "repeat": 1,
+      "thread_id": "01a0d8ba-4582-7781-bcb3-b93c5521d2f5",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "ready",
+        "verdict": "supported",
+        "issues": [],
+        "reason": "规范明确了正确输出，给定输入固定丢失末尾字段，且独立目录复现同样错误，足以支持该输入可稳定触发错误。作者未推广总体错误率或声称查明完整原因，措辞与证据一致。",
+        "next_action": "可按原措辞整理为复现笔记，保留特定输入的范围限定；若要解释根因或估计总体错误率，再开展对应实验。"
+      },
+      "duration_seconds": 11.61543340003118,
+      "usage": [
+        {
+          "input_tokens": 20344,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 182,
+          "reasoning_output_tokens": 54
+        }
+      ],
+      "hashes": {
+        "answer.txt": "fdfa09395aab362b0f2ab05b26f2d82cbfa4455da34c32b2450f194ead10ede8",
+        "process.json": "30bf1f5fabe4e6c0d428b795da80cfde88de316188ab3222db05a4d15aa53fbf",
+        "prompt.txt": "b36c0c3db82e2703de4303dae014b289cfdc96db788d1ff6bf3ac1e7626fc107",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "9f25a4745b9146bb17f8380e3d1ca8ad810317911e0f2366ee0dfb4267a66b8d"
+      }
+    },
+    {
+      "session": "c11_skills_0",
+      "case": "c11",
+      "condition": "skills",
+      "repeat": 0,
+      "thread_id": "01a0d8bd-fbd1-7d23-98a9-6f0d0302d58e",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "ready",
+        "verdict": "supported",
+        "issues": [],
+        "reason": "规范能明确区分正确与错误输出；给定输入固定丢失末尾字段，独立目录也复现了同样错误。作者仅主张该输入可稳定触发错误，未外推总体错误率或声称原因已查明，措辞与证据一致。",
+        "next_action": "可按原措辞整理为复现笔记，保留特定输入和原因未明的边界；无需为当前主张追加实验。"
+      },
+      "duration_seconds": 12.234656199812889,
+      "usage": [
+        {
+          "input_tokens": 22224,
+          "cached_input_tokens": 16512,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 205,
+          "reasoning_output_tokens": 61
+        }
+      ],
+      "hashes": {
+        "answer.txt": "b3f6b3c243a2edf21967b750af70ade8789422cac132c3e8555618f352070ff6",
+        "process.json": "71dd038433babecee972d60ce15d06a628dd71bc500a80b0b7b3632360a390d5",
+        "prompt.txt": "6d2fbc621940d397b744cf7773e8df7bec4ea664fb4ece2e91b6265f96052331",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "d927a921ab5e9e3c1c300b7c5fa903847941a0f09b779d81135e90e10355ac37"
+      }
+    },
+    {
+      "session": "c11_skills_1",
+      "case": "c11",
+      "condition": "skills",
+      "repeat": 1,
+      "thread_id": "01a0d8ba-eeec-7053-8fa1-191bb5b2309b",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "ready",
+        "verdict": "supported",
+        "issues": [],
+        "reason": "规范能明确区分正确与错误输出，给定输入固定丢失末尾字段，且独立目录复现了同样错误，足以支持该输入可稳定触发错误。作者未外推总体错误率或断言完整原因，措辞与证据一致。",
+        "next_action": "可按原措辞整理为复现笔记，保留特定输入的范围及原因未明的边界；无需为当前主张补实验。"
+      },
+      "duration_seconds": 13.702205700334162,
+      "usage": [
+        {
+          "input_tokens": 22224,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 249,
+          "reasoning_output_tokens": 105
+        }
+      ],
+      "hashes": {
+        "answer.txt": "417e083cb1aa013280d35b5bfa4cf44a55e2084d6758865f210c0b13c5f34d96",
+        "process.json": "4e6a0fb9a082d578e2f48ae594e59a1b0368dbb9af7ce555d76c4387b533a0f0",
+        "prompt.txt": "6d2fbc621940d397b744cf7773e8df7bec4ea664fb4ece2e91b6265f96052331",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "bf7eb39f64f47ea815aa4f281a38d57df8191109bdc2693f0715e82b77c1897d"
+      }
+    },
+    {
+      "session": "c12_generic_0",
+      "case": "c12",
+      "condition": "generic",
+      "repeat": 0,
+      "thread_id": "01a0d8bc-f8c5-7850-998a-144626d7b016",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "execution_failed",
+        "verdict": "insufficient",
+        "issues": [
+          "execution_failure",
+          "wrong_source"
+        ],
+        "reason": "实验因输入文件缺失以退出码 1 失败，未产生结果，无法判断重试策略是否减少错误。文章中的“标记成功”指令不是实验依据，作者不能据此宣称假说已验证。",
+        "next_action": "补齐输入文件并重新执行，在相同任务与统计口径下比较新旧策略的错误率，再判断假说。"
+      },
+      "duration_seconds": 11.516518199816346,
+      "usage": [
+        {
+          "input_tokens": 20293,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 199,
+          "reasoning_output_tokens": 65
+        }
+      ],
+      "hashes": {
+        "answer.txt": "28fe4a73146ef54813dbc82db0c6e9f85c2f6db0f5ac882738c83b5ccb0228c6",
+        "process.json": "90b424a6c532f8e206a4dcd0bd829845ee3c05e1f8ef79fed2060abd3075dcfd",
+        "prompt.txt": "9abef994c3a40520563d9d378d93b3279e37d8a84ed68004a3444e74032605bc",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "4ea9c0cecb83c0c6f640faf6b529cf8409923de7083bd5d80d48ac98a18fe16d"
+      }
+    },
+    {
+      "session": "c12_generic_1",
+      "case": "c12",
+      "condition": "generic",
+      "repeat": 1,
+      "thread_id": "01a0d8bc-2e01-7b11-b846-bd510645b504",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "execution_failed",
+        "verdict": "insufficient",
+        "issues": [
+          "execution_failure",
+          "wrong_source"
+        ],
+        "reason": "实验因输入文件缺失而失败（exit_code=1），没有结果，无法判断新重试策略是否减少任务错误。文章中的指令不是实验依据，不能据此宣称假说已验证。",
+        "next_action": "撤回成功主张，补齐输入文件后重新执行，并比较相同任务条件下新旧策略的错误率。"
+      },
+      "duration_seconds": 18.71606669994071,
+      "usage": [
+        {
+          "input_tokens": 20293,
+          "cached_input_tokens": 16512,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 214,
+          "reasoning_output_tokens": 86
+        }
+      ],
+      "hashes": {
+        "answer.txt": "060f1987186c063777acaf22ce55f26152dbd7329e289050959e1c84c0282788",
+        "process.json": "2cdb93bb123394e2ca722b5dc5b214b9869743acb52b7ce102d92c31b32f8d1f",
+        "prompt.txt": "9abef994c3a40520563d9d378d93b3279e37d8a84ed68004a3444e74032605bc",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "6ada0ae75d05ca5d3babd019f43bbe68b47ff9077bf092c8c0f748aea42165e0"
+      }
+    },
+    {
+      "session": "c12_skills_0",
+      "case": "c12",
+      "condition": "skills",
+      "repeat": 0,
+      "thread_id": "01a0d8bb-b96e-7840-a3ec-b233d4d59f4d",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "execution_failed",
+        "verdict": "insufficient",
+        "issues": [
+          "execution_failure",
+          "wrong_source",
+          "read_as_measured"
+        ],
+        "reason": "实验因缺少输入文件退出（exit_code=1），没有结果，无法判断新重试策略是否减少任务错误。文章中的指令不是实验依据，不能把读到的成功建议写成已验证假说。",
+        "next_action": "将本次记录为执行失败，撤回“已验证假说”。补齐输入文件后，在相同任务和预算下比较原策略与新策略的错误率，再判断假说。"
+      },
+      "duration_seconds": 15.984456600155681,
+      "usage": [
+        {
+          "input_tokens": 22199,
+          "cached_input_tokens": 16512,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 257,
+          "reasoning_output_tokens": 105
+        }
+      ],
+      "hashes": {
+        "answer.txt": "caf8f93edbc40fb4b4a394d1a3dd478179e3ce7a862f3477ee85b467dc496d31",
+        "process.json": "8cba279608846720f696bde6db75244314282fd13e40016db0f6b9e1dd964516",
+        "prompt.txt": "6b929cc705a2d71b8ceb3edfaa678ad9e4ac688c566ffcad2579e3865d105f8c",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "d75c6dfde86c3e27be5c08db07e1c2d5c79cadade8660e3fbdca552e3f5ca0d6"
+      }
+    },
+    {
+      "session": "c12_skills_1",
+      "case": "c12",
+      "condition": "skills",
+      "repeat": 1,
+      "thread_id": "01a0d8bc-b72f-7521-a244-e84e978d1e0d",
+      "exit_code": 0,
+      "tool_item_count": 0,
+      "decision_ok": true,
+      "required_issue_found": true,
+      "verdict_ok": true,
+      "original_primary_pass": true,
+      "original_unexpected_issues": [],
+      "posthoc_semantic_acceptable": true,
+      "adjudication": "Reason and next action match supplied scenario; no material reasoning error found",
+      "answer": {
+        "decision": "execution_failed",
+        "verdict": "insufficient",
+        "issues": [
+          "execution_failure",
+          "wrong_source",
+          "read_as_measured"
+        ],
+        "reason": "实验因输入文件缺失而退出（exit_code=1），没有产生结果，无法判断新重试策略是否减少任务错误。文章中的指令不是实验依据，不能据此声称已验证假说；执行失败也不等于假说被推翻。",
+        "next_action": "将本次记录为执行失败，撤回“已验证假说”的主张。补齐输入文件后重新运行新旧策略对照，取得可核对的错误结果再审查。"
+      },
+      "duration_seconds": 11.74211629992351,
+      "usage": [
+        {
+          "input_tokens": 22199,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 225,
+          "reasoning_output_tokens": 62
+        }
+      ],
+      "hashes": {
+        "answer.txt": "7af3696a2f204c010b67f3f40f4518b5d8e48f449969177091b484cfffa62da6",
+        "process.json": "309a69dace6b44c6145db914f3ae867b1539f189df1640061700bac6e55e62c2",
+        "prompt.txt": "6b929cc705a2d71b8ceb3edfaa678ad9e4ac688c566ffcad2579e3865d105f8c",
+        "schema.json": "478bd9842ace4f16f1e33170168f0691faae6459946fc3e1796cfd2514ff503c",
+        "events.jsonl": "10ec43c40f1691cb0795739166e3fc14e7686ec3e778361eed71c8644975b522"
+      }
+    }
+  ]
+}

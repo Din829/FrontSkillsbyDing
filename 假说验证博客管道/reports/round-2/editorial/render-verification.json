@@ -1,0 +1,100 @@
+{
+  "started_at": "2026-09-25T21:25:42.502176+00:00",
+  "sources": [
+    {
+      "path": "runs/retrieval-v4/results/experiment/result.json",
+      "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b"
+    },
+    {
+      "path": "runs/retrieval-v4/results/metrics.json",
+      "sha256": "3a20c907c96a3cd73ac0c80f6101282310a833fa894ad5912da6899d5d097ac3"
+    },
+    {
+      "path": "runs/review-behavior/results/metrics.json",
+      "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+    },
+    {
+      "path": "runs/review-behavior/results/original-accounting.json",
+      "sha256": "cffc119d57c891ab475eea689c565ee42d57e42d3b190e7780e470706ad25f65"
+    },
+    {
+      "path": "runs/review-behavior/results/snapshots/semantic-review.json",
+      "sha256": "a766b9e311cfc564f474b37829cc777112557a81a0fc8262c1c218de3dd0881a"
+    },
+    {
+      "path": "runs/review-behavior/results/snapshots/reference_answers.json",
+      "sha256": "139596de93fcd6c27286f9bb66439521677ba78247b9995ceb4a17fd4622df67"
+    },
+    {
+      "path": "runs/review-behavior/results/study/sessions/c02_generic_0/answer.txt",
+      "sha256": "0a91a195f443c598c2d666f58e57c5bbc96f008db412729585b0d4445f8a6381"
+    }
+  ],
+  "article_code": [
+    {
+      "run": "retrieval-v4",
+      "article": {
+        "path": "runs/retrieval-v4/article-round2.md",
+        "sha256": "b1284f93010b6633092ac8b83e715646a2699d286753fb975f6b6cfa44cb76c6"
+      },
+      "code": {
+        "path": "reports/round-2/editorial/retrieval-v4-snippet-0.py",
+        "sha256": "c677b4bd6457e14b09013204af8c77e259f4ebaf4a16ef9fdef44266a7fd4611"
+      },
+      "stdout": {
+        "path": "reports/round-2/editorial/retrieval-v4-snippet-0.stdout.txt",
+        "sha256": "dc004c1c71de443557ff1807b0a0b080530330c3e2b5413ba23ed100bcbdde9a"
+      },
+      "stderr": {
+        "path": "reports/round-2/editorial/retrieval-v4-snippet-0.stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "exit_code": 0
+    },
+    {
+      "run": "review-behavior",
+      "article": {
+        "path": "runs/review-behavior/article-round2.md",
+        "sha256": "90cac9d8386d9d75583c76d161472339c98f2bac8ee19fc2d36976043e430bdd"
+      },
+      "code": {
+        "path": "reports/round-2/editorial/review-behavior-snippet-0.py",
+        "sha256": "721adf1fa46eefcfb4fad9ce052fbf8d7ed6f6bb3d687bfe30239fab50a7b453"
+      },
+      "stdout": {
+        "path": "reports/round-2/editorial/review-behavior-snippet-0.stdout.txt",
+        "sha256": "174d79f90fc940814f11cb093621143912a1f09080759b233d3ca45ca261d499"
+      },
+      "stderr": {
+        "path": "reports/round-2/editorial/review-behavior-snippet-0.stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "exit_code": 0
+    }
+  ],
+  "checks": [
+    {
+      "name": "ranking_recomputed_independently",
+      "question_rows": 28,
+      "modes": [
+        "body",
+        "body_metadata"
+      ],
+      "passed": true
+    },
+    {
+      "name": "review_score_matches_original_accounting",
+      "passed": true
+    },
+    {
+      "name": "original_sources_unchanged",
+      "passed": true
+    }
+  ],
+  "renderer": {
+    "path": "reports/round-2/editorial/render_and_verify.py",
+    "sha256": "b79f01c09a930583f2989ec05beebee38c23a9facbeae762492cc5bf9450d010"
+  },
+  "font": "C:\\Windows\\Fonts\\YuGothR.ttc",
+  "finished_at": "2026-09-25T21:25:42.942214+00:00"
+}

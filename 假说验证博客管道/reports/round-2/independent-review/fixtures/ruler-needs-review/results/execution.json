@@ -1,0 +1,19 @@
+{
+  "run_id": "ruler-needs-review",
+  "command": [
+    "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-c",
+    "import json;from pathlib import Path;Path('results/metrics.json').write_text(json.dumps({'run_id':'ruler-needs-review', 'metrics': {'correct': {'value':len(['a','b','c','d','e','f']),'unit':'cases'}}}));print('Synthetic local fixture computation');raise SystemExit(0)"
+  ],
+  "started_at": "2026-09-25T21:16:54.962941+00:00",
+  "exit_code": 0,
+  "finished_at": "2026-09-25T21:16:55.019003+00:00",
+  "stdout": {
+    "path": "results/stdout.log",
+    "sha256": "8bb81d9d2063b07d981528c1f175852eac04f064c9ae5a44667383afdfdbe9be"
+  },
+  "stderr": {
+    "path": "results/stderr.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

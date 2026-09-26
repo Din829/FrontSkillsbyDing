@@ -1,0 +1,28 @@
+{
+  "observed_at": "2026-09-25T13:16:48.592214+00:00",
+  "incremental": false,
+  "coverage": [
+    {
+      "query": {
+        "topicname": "ai",
+        "order": "latest",
+        "count": 100,
+        "sample_target": 600
+      },
+      "unique_seen_this_run": 600,
+      "stored_articles": 600,
+      "pages": 6,
+      "sources": [
+        "raw\\5672ff917e76790c595cd723.json",
+        "raw\\198e2f750a427368458458a6.json",
+        "raw\\7e7288e3f8ccb70ec830ee51.json",
+        "raw\\4ab995eaf91a1136d330d258.json",
+        "raw\\3db2d4d80249381ef1c7e093.json",
+        "raw\\6438b8dc810576639acca1aa.json"
+      ],
+      "terminal": "declared_sample_target_reached",
+      "next_page": 7,
+      "index": "indexes\\bda0cf26205d0ccd.json"
+    }
+  ]
+}

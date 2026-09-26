@@ -1,0 +1,23 @@
+{
+  "run_id": "retrieval-v4",
+  "status": "warnings",
+  "issues": [
+    {
+      "id": "unclassified_numbers:e3b86e786a097cd2",
+      "code": "unclassified_numbers",
+      "category": "record_note",
+      "severity": "warning",
+      "location": {
+        "document": "article-round2.md"
+      },
+      "detail": "Semantic review candidates: 4:3, 15:3"
+    }
+  ],
+  "ruler": {
+    "path": "results/ruler_check.json",
+    "recorded_status": "passed"
+  },
+  "checked_measurements": 79,
+  "policy_sha256": "237ab084566cceb293ae5902e53ada13726db61c17d609a2a4c9ee7dd231796d",
+  "scope": "Declared-number bookkeeping only; scientific validity and claim completeness require semantic review."
+}

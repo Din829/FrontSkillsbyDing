@@ -1,0 +1,31 @@
+{
+  "run_id": "retrieval-v4",
+  "budget": {
+    "status": "within",
+    "scope": "Authorized finite local experiment and independent reproduction; AI authoring billing not separately known"
+  },
+  "hypothesis": {
+    "claim": "Adding fixed heading/path weighting increases hit@3 on the frozen article questions",
+    "falsification": "Candidate hit@3 <= body hit@3 does not support the improvement hypothesis"
+  },
+  "outcome": "refuted",
+  "outcome_scope": "Preselected hit@3 improvement on this fixed sample only; secondary rank improvement remains valid",
+  "ruler_id": "frozen-document-ranking-v1",
+  "ruler": {
+    "path": "results/ruler_check.json",
+    "sha256": "ef003a1713f97d6fe8b52c175dd358e1dd2e71343df3a2b721fe51b21537be27"
+  },
+  "execution": {
+    "path": "results/execution.json",
+    "sha256": "4a618a975a0cb387c71ecb936dd9479a1940924bf67b522a2553d39f973e076c"
+  },
+  "documents": [
+    {
+      "draft": {
+        "path": "article-round2.md",
+        "sha256": "b1284f93010b6633092ac8b83e715646a2699d286753fb975f6b6cfa44cb76c6"
+      },
+      "claims": "round2-claims.json"
+    }
+  ]
+}

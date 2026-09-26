@@ -1,0 +1,10 @@
+{
+  "case_sha256": "54b831539583a70d0f031593e2869c60063a36c2c95c4daff298efe3710c3935",
+  "reference_sha256": "139596de93fcd6c27286f9bb66439521677ba78247b9995ceb4a17fd4622df67",
+  "rule_sha256": "3b0ebbf0ab7be539fa516ff6964ee5e7f6e09eb2ce155e1246c5c03027dd7722",
+  "repeats": 1,
+  "workers": 2,
+  "random_seed": 20260925,
+  "primary_metric": "decision and required issue match",
+  "secondary_metric": "verdict match"
+}

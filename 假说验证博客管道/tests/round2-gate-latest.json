@@ -1,0 +1,763 @@
+{
+  "gate_sha256": "4253f4dacbd56cd73adfd760fdec510a945528976e78c13593adb07f8043806f",
+  "policy_sha256": "237ab084566cceb293ae5902e53ada13726db61c17d609a2a4c9ee7dd231796d",
+  "created_at": "20260926T085549002063Z",
+  "artifact_dir": "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\tests\\round2-gate-artifacts\\20260926T085549002063Z",
+  "passed": 31,
+  "total": 31,
+  "cases": [
+    {
+      "case": "baseline",
+      "expected_status": "traceable",
+      "status": "traceable",
+      "exit_code": 0,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "case": "source_reformatted",
+      "expected_status": "warnings",
+      "status": "warnings",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [
+        {
+          "id": "hash_drift:41c282f856923fb2",
+          "code": "hash_drift",
+          "category": "record_note",
+          "severity": "warning",
+          "location": {
+            "document": "article.md",
+            "claim_id": "observed",
+            "ref": {
+              "path": "results/metrics.json",
+              "pointer": "/metrics/correct"
+            }
+          },
+          "detail": "Recorded hash differs; compare actual fields: results/metrics.json"
+        },
+        {
+          "id": "hash_drift:001b7dcb69281e09",
+          "code": "hash_drift",
+          "category": "record_note",
+          "severity": "warning",
+          "location": {
+            "document": "article.md",
+            "claim_id": "observed",
+            "ref": {
+              "path": "results/metrics.json",
+              "pointer": "/metrics/total"
+            }
+          },
+          "detail": "Recorded hash differs; compare actual fields: results/metrics.json"
+        }
+      ]
+    },
+    {
+      "case": "other_run_same_number",
+      "expected_status": "blocked",
+      "status": "blocked",
+      "exit_code": 2,
+      "passed": true,
+      "issues": [
+        {
+          "id": "hash_drift:41c282f856923fb2",
+          "code": "hash_drift",
+          "category": "record_note",
+          "severity": "warning",
+          "location": {
+            "document": "article.md",
+            "claim_id": "observed",
+            "ref": {
+              "path": "results/metrics.json",
+              "pointer": "/metrics/correct"
+            }
+          },
+          "detail": "Recorded hash differs; compare actual fields: results/metrics.json"
+        },
+        {
+          "id": "source_run_mismatch:54f16e240b74d1b1",
+          "code": "source_run_mismatch",
+          "category": "numeric_mismatch",
+          "severity": "fatal",
+          "location": {
+            "document": "article.md",
+            "claim_id": "observed",
+            "ref": {
+              "path": "results/metrics.json",
+              "pointer": "/metrics/correct"
+            }
+          },
+          "detail": "Metric belongs to a different run"
+        }
+      ]
+    },
+    {
+      "case": "changed_source_value",
+      "expected_status": "blocked",
+      "status": "blocked",
+      "exit_code": 2,
+      "passed": true,
+      "issues": [
+        {
+          "id": "hash_drift:41c282f856923fb2",
+          "code": "hash_drift",
+          "category": "record_note",
+          "severity": "warning",
+          "location": {
+            "document": "article.md",
+            "claim_id": "observed",
+            "ref": {
+              "path": "results/metrics.json",
+              "pointer": "/metrics/correct"
+            }
+          },
+          "detail": "Recorded hash differs; compare actual fields: results/metrics.json"
+        },
+        {
+          "id": "value_mismatch:7a7b1636f2e7aa2a",
+          "code": "value_mismatch",
+          "category": "numeric_mismatch",
+          "severity": "fatal",
+          "location": {
+            "document": "article.md",
+            "claim_id": "observed",
+            "ref": {
+              "path": "results/metrics.json",
+              "pointer": "/metrics/correct"
+            }
+          },
+          "detail": "Source value 3 differs from stated value 2"
+        },
+        {
+          "id": "hash_drift:001b7dcb69281e09",
+          "code": "hash_drift",
+          "category": "record_note",
+          "severity": "warning",
+          "location": {
+            "document": "article.md",
+            "claim_id": "observed",
+            "ref": {
+              "path": "results/metrics.json",
+              "pointer": "/metrics/total"
+            }
+          },
+          "detail": "Recorded hash differs; compare actual fields: results/metrics.json"
+        },
+        {
+          "id": "value_mismatch:6fd5d587c39a5011",
+          "code": "value_mismatch",
+          "category": "numeric_mismatch",
+          "severity": "fatal",
+          "location": {
+            "document": "article.md",
+            "claim_id": "observed",
+            "ref": {
+              "path": "results/metrics.json",
+              "pointer": "/metrics/total"
+            }
+          },
+          "detail": "Source value 75.00 differs from stated value 50"
+        }
+      ]
+    },
+    {
+      "case": "changed_source_value_again",
+      "expected_status": "blocked",
+      "status": "blocked",
+      "exit_code": 2,
+      "passed": true,
+      "issues": [
+        {
+          "id": "hash_drift:41c282f856923fb2",
+          "code": "hash_drift",
+          "category": "record_note",
+          "severity": "warning",
+          "location": {
+            "document": "article.md",
+            "claim_id": "observed",
+            "ref": {
+              "path": "results/metrics.json",
+              "pointer": "/metrics/correct"
+            }
+          },
+          "detail": "Recorded hash differs; compare actual fields: results/metrics.json"
+        },
+        {
+          "id": "value_mismatch:7a7b1636f2e7aa2a",
+          "code": "value_mismatch",
+          "category": "numeric_mismatch",
+          "severity": "fatal",
+          "location": {
+            "document": "article.md",
+            "claim_id": "observed",
+            "ref": {
+              "path": "results/metrics.json",
+              "pointer": "/metrics/correct"
+            }
+          },
+          "detail": "Source value 4 differs from stated value 2"
+        },
+        {
+          "id": "hash_drift:001b7dcb69281e09",
+          "code": "hash_drift",
+          "category": "record_note",
+          "severity": "warning",
+          "location": {
+            "document": "article.md",
+            "claim_id": "observed",
+            "ref": {
+              "path": "results/metrics.json",
+              "pointer": "/metrics/total"
+            }
+          },
+          "detail": "Recorded hash differs; compare actual fields: results/metrics.json"
+        },
+        {
+          "id": "value_mismatch:6fd5d587c39a5011",
+          "code": "value_mismatch",
+          "category": "numeric_mismatch",
+          "severity": "fatal",
+          "location": {
+            "document": "article.md",
+            "claim_id": "observed",
+            "ref": {
+              "path": "results/metrics.json",
+              "pointer": "/metrics/total"
+            }
+          },
+          "detail": "Source value 100 differs from stated value 50"
+        }
+      ]
+    },
+    {
+      "case": "source_unit_conflict",
+      "expected_status": "blocked",
+      "status": "blocked",
+      "exit_code": 2,
+      "passed": true,
+      "issues": [
+        {
+          "id": "hash_drift:41c282f856923fb2",
+          "code": "hash_drift",
+          "category": "record_note",
+          "severity": "warning",
+          "location": {
+            "document": "article.md",
+            "claim_id": "observed",
+            "ref": {
+              "path": "results/metrics.json",
+              "pointer": "/metrics/correct"
+            }
+          },
+          "detail": "Recorded hash differs; compare actual fields: results/metrics.json"
+        },
+        {
+          "id": "source_unit_mismatch:192945f74a165195",
+          "code": "source_unit_mismatch",
+          "category": "numeric_mismatch",
+          "severity": "fatal",
+          "location": {
+            "document": "article.md",
+            "claim_id": "observed",
+            "ref": {
+              "path": "results/metrics.json",
+              "pointer": "/metrics/correct"
+            }
+          },
+          "detail": "Metric unit differs from referenced unit"
+        }
+      ]
+    },
+    {
+      "case": "wrong_existing_pointer",
+      "expected_status": "blocked",
+      "status": "blocked",
+      "exit_code": 2,
+      "passed": true,
+      "issues": [
+        {
+          "id": "value_mismatch:6fd5d587c39a5011",
+          "code": "value_mismatch",
+          "category": "numeric_mismatch",
+          "severity": "fatal",
+          "location": {
+            "document": "article.md",
+            "claim_id": "observed",
+            "ref": {
+              "path": "results/metrics.json",
+              "pointer": "/metrics/total"
+            }
+          },
+          "detail": "Source value 4 differs from stated value 2"
+        }
+      ]
+    },
+    {
+      "case": "missing_pointer",
+      "expected_status": "incomplete",
+      "status": "incomplete",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [
+        {
+          "id": "measurement_unverifiable:f996888a4cec5a1f",
+          "code": "measurement_unverifiable",
+          "category": "evidence_gap",
+          "severity": "warning",
+          "location": {
+            "document": "article.md",
+            "claim_id": "observed",
+            "ref": {
+              "path": "results/metrics.json",
+              "pointer": "/metrics/absent"
+            }
+          },
+          "detail": "'absent'"
+        }
+      ]
+    },
+    {
+      "case": "wrong_calculation",
+      "expected_status": "blocked",
+      "status": "blocked",
+      "exit_code": 2,
+      "passed": true,
+      "issues": [
+        {
+          "id": "display_unit_mismatch:04a8f0aa33722dd7",
+          "code": "display_unit_mismatch",
+          "category": "numeric_mismatch",
+          "severity": "fatal",
+          "location": {
+            "document": "article.md",
+            "claim_id": "observed",
+            "ref": {
+              "path": "results/metrics.json",
+              "pointer": "/metrics/total"
+            }
+          },
+          "detail": "Displayed unit differs from source/calculation unit"
+        }
+      ]
+    },
+    {
+      "case": "missing_source",
+      "expected_status": "incomplete",
+      "status": "incomplete",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [
+        {
+          "id": "measurement_unverifiable:45dbef2a7b4613fa",
+          "code": "measurement_unverifiable",
+          "category": "evidence_gap",
+          "severity": "warning",
+          "location": {
+            "document": "article.md",
+            "claim_id": "observed",
+            "ref": {
+              "path": "results/metrics.json",
+              "pointer": "/metrics/correct"
+            }
+          },
+          "detail": "[Errno 2] No such file or directory: 'C:\\\\Users\\\\q9951\\\\Desktop\\\\Blog\\\\_pipeline\\\\tests\\\\round2-gate-artifacts\\\\20260926T085549002063Z\\\\missing_source\\\\results\\\\metrics.json'"
+        }
+      ]
+    },
+    {
+      "case": "ruler_failed",
+      "expected_status": "warnings",
+      "status": "warnings",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [
+        {
+          "id": "hash_drift:d681c9d85dfb5dc5",
+          "code": "hash_drift",
+          "category": "record_note",
+          "severity": "warning",
+          "location": {
+            "ref": {
+              "path": "results/ruler.json"
+            }
+          },
+          "detail": "Recorded hash differs; compare actual fields: results/ruler.json"
+        },
+        {
+          "id": "ruler_record_note:04b6b680cc87c7b3",
+          "code": "ruler_record_note",
+          "category": "record_note",
+          "severity": "warning",
+          "location": {
+            "ref": {
+              "path": "results/ruler.json"
+            }
+          },
+          "detail": "Ruler record status: failed; no scientific validity decision made"
+        }
+      ]
+    },
+    {
+      "case": "ruler_bad_cases",
+      "expected_status": "traceable",
+      "status": "traceable",
+      "exit_code": 0,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "case": "ruler_missing",
+      "expected_status": "warnings",
+      "status": "warnings",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [
+        {
+          "id": "ruler_not_recorded:13da1713444ab927",
+          "code": "ruler_not_recorded",
+          "category": "record_note",
+          "severity": "warning",
+          "location": {},
+          "detail": "No ruler record supplied; reviewer judges the measurement method"
+        }
+      ]
+    },
+    {
+      "case": "unregistered_number",
+      "expected_status": "warnings",
+      "status": "warnings",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [
+        {
+          "id": "unclassified_numbers:beac5a95a9c1f9dd",
+          "code": "unclassified_numbers",
+          "category": "record_note",
+          "severity": "warning",
+          "location": {
+            "document": "article.md"
+          },
+          "detail": "Semantic review candidates: 9:50"
+        }
+      ]
+    },
+    {
+      "case": "legacy_classification_no_reason",
+      "expected_status": "traceable",
+      "status": "traceable",
+      "exit_code": 0,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "case": "manual_identifier_hides_measurement",
+      "expected_status": "warnings",
+      "status": "warnings",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [
+        {
+          "id": "unclassified_numbers:beac5a95a9c1f9dd",
+          "code": "unclassified_numbers",
+          "category": "record_note",
+          "severity": "warning",
+          "location": {
+            "document": "article.md"
+          },
+          "detail": "Semantic review candidates: 1:99"
+        }
+      ]
+    },
+    {
+      "case": "missing_claims",
+      "expected_status": "incomplete",
+      "status": "incomplete",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [
+        {
+          "id": "document_unavailable:6b004588a240ac5f",
+          "code": "document_unavailable",
+          "category": "evidence_gap",
+          "severity": "warning",
+          "location": {
+            "document": "article.md"
+          },
+          "detail": "[Errno 2] No such file or directory: 'C:\\\\Users\\\\q9951\\\\Desktop\\\\Blog\\\\_pipeline\\\\tests\\\\round2-gate-artifacts\\\\20260926T085549002063Z\\\\missing_claims\\\\claims.json'"
+        }
+      ]
+    },
+    {
+      "case": "missing_execution",
+      "expected_status": "incomplete",
+      "status": "incomplete",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [
+        {
+          "id": "execution_unavailable:f21854ea1c275f40",
+          "code": "execution_unavailable",
+          "category": "evidence_gap",
+          "severity": "warning",
+          "location": {},
+          "detail": "'execution'"
+        }
+      ]
+    },
+    {
+      "case": "empty_documents",
+      "expected_status": "incomplete",
+      "status": "incomplete",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [
+        {
+          "id": "documents_missing:d407f99077eb5864",
+          "code": "documents_missing",
+          "category": "evidence_gap",
+          "severity": "warning",
+          "location": {},
+          "detail": "No documents supplied for checking"
+        }
+      ]
+    },
+    {
+      "case": "empty_manifest",
+      "expected_status": "incomplete",
+      "status": "incomplete",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [
+        {
+          "id": "run_id_missing:ea8f8ad564610b9c",
+          "code": "run_id_missing",
+          "category": "evidence_gap",
+          "severity": "warning",
+          "location": {},
+          "detail": "'run_id'"
+        },
+        {
+          "id": "documents_missing:d407f99077eb5864",
+          "code": "documents_missing",
+          "category": "evidence_gap",
+          "severity": "warning",
+          "location": {},
+          "detail": "No documents supplied for checking"
+        },
+        {
+          "id": "execution_unavailable:f21854ea1c275f40",
+          "code": "execution_unavailable",
+          "category": "evidence_gap",
+          "severity": "warning",
+          "location": {},
+          "detail": "'execution'"
+        },
+        {
+          "id": "ruler_not_recorded:13da1713444ab927",
+          "code": "ruler_not_recorded",
+          "category": "record_note",
+          "severity": "warning",
+          "location": {},
+          "detail": "No ruler record supplied; reviewer judges the measurement method"
+        }
+      ]
+    },
+    {
+      "case": "null_manifest",
+      "expected_status": "incomplete",
+      "status": "incomplete",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [
+        {
+          "id": "manifest_unavailable:ea505cc3d60eaf2f",
+          "code": "manifest_unavailable",
+          "category": "evidence_gap",
+          "severity": "warning",
+          "location": {},
+          "detail": "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\tests\\round2-gate-artifacts\\20260926T085549002063Z\\null_manifest\\run.json must be dict"
+        },
+        {
+          "id": "run_id_missing:ea8f8ad564610b9c",
+          "code": "run_id_missing",
+          "category": "evidence_gap",
+          "severity": "warning",
+          "location": {},
+          "detail": "'run_id'"
+        },
+        {
+          "id": "documents_missing:d407f99077eb5864",
+          "code": "documents_missing",
+          "category": "evidence_gap",
+          "severity": "warning",
+          "location": {},
+          "detail": "No documents supplied for checking"
+        },
+        {
+          "id": "execution_unavailable:f21854ea1c275f40",
+          "code": "execution_unavailable",
+          "category": "evidence_gap",
+          "severity": "warning",
+          "location": {},
+          "detail": "'execution'"
+        },
+        {
+          "id": "ruler_not_recorded:13da1713444ab927",
+          "code": "ruler_not_recorded",
+          "category": "record_note",
+          "severity": "warning",
+          "location": {},
+          "detail": "No ruler record supplied; reviewer judges the measurement method"
+        }
+      ]
+    },
+    {
+      "case": "array_manifest",
+      "expected_status": "incomplete",
+      "status": "incomplete",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [
+        {
+          "id": "manifest_unavailable:ea505cc3d60eaf2f",
+          "code": "manifest_unavailable",
+          "category": "evidence_gap",
+          "severity": "warning",
+          "location": {},
+          "detail": "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\tests\\round2-gate-artifacts\\20260926T085549002063Z\\array_manifest\\run.json must be dict"
+        },
+        {
+          "id": "run_id_missing:ea8f8ad564610b9c",
+          "code": "run_id_missing",
+          "category": "evidence_gap",
+          "severity": "warning",
+          "location": {},
+          "detail": "'run_id'"
+        },
+        {
+          "id": "documents_missing:d407f99077eb5864",
+          "code": "documents_missing",
+          "category": "evidence_gap",
+          "severity": "warning",
+          "location": {},
+          "detail": "No documents supplied for checking"
+        },
+        {
+          "id": "execution_unavailable:f21854ea1c275f40",
+          "code": "execution_unavailable",
+          "category": "evidence_gap",
+          "severity": "warning",
+          "location": {},
+          "detail": "'execution'"
+        },
+        {
+          "id": "ruler_not_recorded:13da1713444ab927",
+          "code": "ruler_not_recorded",
+          "category": "record_note",
+          "severity": "warning",
+          "location": {},
+          "detail": "No ruler record supplied; reviewer judges the measurement method"
+        }
+      ]
+    },
+    {
+      "case": "path_escape",
+      "expected_status": "blocked",
+      "status": "blocked",
+      "exit_code": 2,
+      "passed": true,
+      "issues": [
+        {
+          "id": "path_outside_scope:0406d01758868a3e",
+          "code": "path_outside_scope",
+          "category": "authorization",
+          "severity": "fatal",
+          "location": {
+            "document": "article.md",
+            "claim_id": "observed",
+            "ref": {
+              "path": "../outside.json",
+              "pointer": "/metrics/correct"
+            }
+          },
+          "detail": "Path escapes its allowed directory: ../outside.json"
+        }
+      ]
+    },
+    {
+      "case": "report_after_budget",
+      "expected_status": "traceable",
+      "status": "traceable",
+      "exit_code": 0,
+      "passed": true,
+      "issues": []
+    },
+    {
+      "case": "false_success",
+      "expected_status": "blocked",
+      "status": "blocked",
+      "exit_code": 2,
+      "passed": true,
+      "issues": [
+        {
+          "id": "false_success:6cc6be8b5eb8e028",
+          "code": "false_success",
+          "category": "false_success",
+          "severity": "fatal",
+          "location": {
+            "ref": {
+              "path": "results/execution.json"
+            }
+          },
+          "detail": "Recorded execution failed while the report claims measured success"
+        }
+      ]
+    },
+    {
+      "case": "honest_failure",
+      "expected_status": "warnings",
+      "status": "warnings",
+      "exit_code": 0,
+      "passed": true,
+      "issues": [
+        {
+          "id": "execution_failed_recorded:847529b74c847073",
+          "code": "execution_failed_recorded",
+          "category": "record_note",
+          "severity": "warning",
+          "location": {
+            "ref": {
+              "path": "results/execution.json"
+            }
+          },
+          "detail": "Execution failure recorded; failure report can continue"
+        }
+      ]
+    },
+    {
+      "case": "stable_issue_id_across_changed_numeric_values",
+      "passed": true
+    },
+    {
+      "case": "automatic_metadata_skips_preserve_indices",
+      "passed": true
+    },
+    {
+      "case": "capture_budget_blocks_actual_side_effect",
+      "passed": true
+    },
+    {
+      "case": "historical_claims_review-behavior",
+      "passed": true,
+      "status": "traceable",
+      "checked_measurements": 73
+    },
+    {
+      "case": "historical_claims_retrieval-v4",
+      "passed": true,
+      "status": "warnings",
+      "checked_measurements": 79
+    }
+  ]
+}

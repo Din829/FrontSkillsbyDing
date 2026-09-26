@@ -1,0 +1,122 @@
+{
+  "run_id": "zenn-research-20260925",
+  "status": "traceable",
+  "issues": [
+    {
+      "severity": "review",
+      "code": "classification_review",
+      "detail": "0: 2026 => date: Snapshot observation date, not a performance metric."
+    },
+    {
+      "severity": "review",
+      "code": "classification_review",
+      "detail": "1: -09 => date: Snapshot observation date, not a performance metric."
+    },
+    {
+      "severity": "review",
+      "code": "classification_review",
+      "detail": "2: -25 => date: Snapshot observation date, not a performance metric."
+    },
+    {
+      "severity": "review",
+      "code": "classification_review",
+      "detail": "48: 1 => code: Mathematical constant in log(1+likes), not an observed count."
+    },
+    {
+      "severity": "review",
+      "code": "classification_review",
+      "detail": "66: 30 => identifier: Digits inside cited source URL/slug; not a quantitative claim."
+    },
+    {
+      "severity": "review",
+      "code": "classification_review",
+      "detail": "67: 953334 => identifier: Digits inside cited source URL/slug; not a quantitative claim."
+    },
+    {
+      "severity": "review",
+      "code": "classification_review",
+      "detail": "68: 11 => identifier: Digits inside cited source URL/slug; not a quantitative claim."
+    },
+    {
+      "severity": "review",
+      "code": "classification_review",
+      "detail": "69: 507 => identifier: Digits inside cited source URL/slug; not a quantitative claim."
+    },
+    {
+      "severity": "review",
+      "code": "classification_review",
+      "detail": "70: 824026 => identifier: Digits inside cited source URL/slug; not a quantitative claim."
+    },
+    {
+      "severity": "review",
+      "code": "classification_review",
+      "detail": "71: 76116e0 => identifier: Digits inside cited source URL/slug; not a quantitative claim."
+    },
+    {
+      "severity": "review",
+      "code": "classification_review",
+      "detail": "72: 7 => identifier: Digits inside cited source URL/slug; not a quantitative claim."
+    },
+    {
+      "severity": "review",
+      "code": "classification_review",
+      "detail": "73: 8 => identifier: Digits inside cited source URL/slug; not a quantitative claim."
+    },
+    {
+      "severity": "review",
+      "code": "classification_review",
+      "detail": "74: 14 => identifier: Digits inside cited source URL/slug; not a quantitative claim."
+    },
+    {
+      "severity": "review",
+      "code": "classification_review",
+      "detail": "75: 20e8 => identifier: Digits inside cited source URL/slug; not a quantitative claim."
+    },
+    {
+      "severity": "review",
+      "code": "classification_review",
+      "detail": "76: 67 => identifier: Digits inside cited source URL/slug; not a quantitative claim."
+    },
+    {
+      "severity": "review",
+      "code": "classification_review",
+      "detail": "77: 2 => identifier: Digits inside cited source URL/slug; not a quantitative claim."
+    },
+    {
+      "severity": "review",
+      "code": "classification_review",
+      "detail": "78: 9 => identifier: Digits inside cited source URL/slug; not a quantitative claim."
+    },
+    {
+      "severity": "review",
+      "code": "classification_review",
+      "detail": "79: 067 => identifier: Digits inside cited source URL/slug; not a quantitative claim."
+    },
+    {
+      "severity": "review",
+      "code": "classification_review",
+      "detail": "80: 3333 => identifier: Digits inside cited source URL/slug; not a quantitative claim."
+    },
+    {
+      "severity": "review",
+      "code": "classification_review",
+      "detail": "81: 1 => identifier: Digits inside cited source URL/slug; not a quantitative claim."
+    },
+    {
+      "severity": "review",
+      "code": "classification_review",
+      "detail": "82: 3e5 => identifier: Digits inside cited source URL/slug; not a quantitative claim."
+    },
+    {
+      "severity": "review",
+      "code": "classification_review",
+      "detail": "83: 726498 => identifier: Digits inside cited source URL/slug; not a quantitative claim."
+    },
+    {
+      "severity": "review",
+      "code": "classification_review",
+      "detail": "84: 8 => identifier: Digits inside cited source URL/slug; not a quantitative claim."
+    }
+  ],
+  "scope": "Mechanical traceability only; scientific validity, source authenticity, claim completeness and non-measurement classification require independent review."
+}

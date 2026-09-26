@@ -1,0 +1,21 @@
+{
+  "counting_source": "Retrospective reconstruction of implementation/editorial correction batches, kept separate from automatically counted workflow repairs",
+  "implementation_and_editorial_batches": [
+    {"id": "archive-summary", "rounds": 1, "reason": "PowerShell OrderedDictionary summary failed after the verified cleanup; repaired only the summary without repeating deletion", "evidence": "reports/round-2/archive.json"},
+    {"id": "calibration-module-path", "rounds": 1, "reason": "The source module moved during archiving; switched once to the byte-identical frozen script", "evidence": "reports/round-2/calibration/attempt-1-execution.json"},
+    {"id": "controller-self-review", "rounds": 1, "reason": "Initial code review corrected incomplete completion, changed topic handling, duplicate issue reservation, and execution-claim update after repair", "evidence_kind": "Main-agent patch history and tests/test_pipeline_round2.py"},
+    {"id": "controller-independent-review", "rounds": 1, "reason": "Independent review found pending review status and loss of the first author's thread on interruption; corrected together", "evidence": "reports/round-2/independent-review/REVIEW.md"},
+    {"id": "controller-existing-thread", "rounds": 1, "reason": "Static review found the interruption handler could replace an existing author thread; limited recovery assignment to an empty initial thread", "evidence": "reports/round-2/independent-review/retest/thread-static-review.json"},
+    {"id": "gate-manual-identifier", "rounds": 1, "reason": "A manually misclassified numeric candidate disappeared without a warning; one correction followed by one replay", "evidence": "tests/round2-gate-repair/rework.jsonl"},
+    {"id": "editorial-self-review", "rounds": 1, "reason": "One self-review batch improved a Japanese term and marked a post-hoc semantic judgment as read rather than measured", "evidence": "reports/round-2/editorial/rework.json"}
+  ],
+  "implementation_and_editorial_total": 7,
+  "other_recorded_events": [
+    {"kind": "log_clarification", "count": 1, "reason": "An English clarification was appended after Chinese repair-reason text lost encoding; original entry preserved"},
+    {"kind": "tool_request_error", "count": 1, "reason": "A patch request attempted two operations on one path and was rejected before modification; resubmitted as an update"},
+    {"kind": "automatic_approval_rejection", "count": 1, "reason": "Duplicate-copy deletion was rejected without a specific reason; completed cleanup by moving the files instead"}
+  ],
+  "compact_tool_fixture": {"automatic_repair_rounds": 0, "evidence": "reports/round-2/compact-smoke-result.json", "scope": "Tool fixture only; warnings retained"},
+  "real_work_trial": {"status": "awaiting_user_problem", "repair_rounds": null},
+  "interpretation": "These are transparent development records, not a measured before/after reduction in real-work rework. Deliberately reserved repair-counter test fixtures are not counted as actual model repair requests."
+}

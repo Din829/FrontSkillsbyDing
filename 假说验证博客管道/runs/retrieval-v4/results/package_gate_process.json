@@ -1,0 +1,12 @@
+{
+  "command": [
+    "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\skills\\evidence-check\\scripts\\gate.py",
+    "check",
+    "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\runs\\retrieval-v4",
+    "--strict",
+    "--output",
+    "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\runs\\retrieval-v4\\gate.json"
+  ],
+  "exit_code": 0
+}

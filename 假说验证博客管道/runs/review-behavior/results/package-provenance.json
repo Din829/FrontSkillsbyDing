@@ -1,0 +1,14 @@
+{
+  "packaged_at": "2026-09-25T13:44:13.480084+00:00",
+  "script_sha256": "83ba4d252e1c7e5c19f2d1463df64eafcf4f9984d40d8f476dd050ca9730e8a1",
+  "original_scores": {
+    "path": "results/study/scores.json",
+    "sha256": "085306ee34200a831a86a1e5be84ec0b157220e14b63f16bc4cb282435e9c830"
+  },
+  "pinned_scores": {
+    "path": "results/pinned-study-snapshot/scores.json",
+    "sha256": "9b646fcf6a3d582bf44d70581e020dae0a7593408ae0daa329396f5d225dac8a"
+  },
+  "original_execution_preserved": true,
+  "gate_execution_scope": "independent review replay only"
+}

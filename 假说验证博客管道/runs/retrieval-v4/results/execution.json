@@ -1,0 +1,19 @@
+{
+  "run_id": "retrieval-v4",
+  "command": [
+    "python",
+    "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\experiments\\retrieval\\run_experiment.py",
+    "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\runs\\retrieval-v4\\results\\experiment"
+  ],
+  "started_at": "2026-09-25T13:27:56.496201+00:00",
+  "exit_code": 0,
+  "finished_at": "2026-09-25T13:27:56.865311+00:00",
+  "stdout": {
+    "path": "results/stdout.log",
+    "sha256": "8767b3e2b06cdce2b7da6572496df5b8f63802131c69311eab3f8e4e92b32574"
+  },
+  "stderr": {
+    "path": "results/stderr.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

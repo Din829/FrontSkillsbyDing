@@ -1,0 +1,121 @@
+{
+  "metric_checks": [
+    {
+      "metric": "body_hit1",
+      "derived": 17,
+      "independent": 17,
+      "equal": true
+    },
+    {
+      "metric": "body_hit3",
+      "derived": 23,
+      "independent": 23,
+      "equal": true
+    },
+    {
+      "metric": "body_topic_hit1",
+      "derived": 10,
+      "independent": 10,
+      "equal": true
+    },
+    {
+      "metric": "body_topic_hit3",
+      "derived": 13,
+      "independent": 13,
+      "equal": true
+    },
+    {
+      "metric": "body_detail_hit1",
+      "derived": 7,
+      "independent": 7,
+      "equal": true
+    },
+    {
+      "metric": "body_detail_hit3",
+      "derived": 10,
+      "independent": 10,
+      "equal": true
+    },
+    {
+      "metric": "body_metadata_hit1",
+      "derived": 22,
+      "independent": 22,
+      "equal": true
+    },
+    {
+      "metric": "body_metadata_hit3",
+      "derived": 23,
+      "independent": 23,
+      "equal": true
+    },
+    {
+      "metric": "body_metadata_topic_hit1",
+      "derived": 13,
+      "independent": 13,
+      "equal": true
+    },
+    {
+      "metric": "body_metadata_topic_hit3",
+      "derived": 13,
+      "independent": 13,
+      "equal": true
+    },
+    {
+      "metric": "body_metadata_detail_hit1",
+      "derived": 9,
+      "independent": 9,
+      "equal": true
+    },
+    {
+      "metric": "body_metadata_detail_hit3",
+      "derived": 10,
+      "independent": 10,
+      "equal": true
+    }
+  ],
+  "documents": [
+    {
+      "path": "article.md",
+      "claims": 26,
+      "numbers": 30,
+      "measurements": 26
+    },
+    {
+      "path": "REPORT.md",
+      "claims": 10,
+      "numbers": 24,
+      "measurements": 21
+    },
+    {
+      "path": "hypothesis.md",
+      "claims": 6,
+      "numbers": 3,
+      "measurements": 0
+    },
+    {
+      "path": "experiment-plan.md",
+      "claims": 7,
+      "numbers": 6,
+      "measurements": 4
+    },
+    {
+      "path": "execution.md",
+      "claims": 6,
+      "numbers": 1,
+      "measurements": 1
+    },
+    {
+      "path": "review.md",
+      "claims": 5,
+      "numbers": 6,
+      "measurements": 6
+    },
+    {
+      "path": "editorial.md",
+      "claims": 8,
+      "numbers": 0,
+      "measurements": 0
+    }
+  ],
+  "method": "Compared packaged numeric metrics against independent raw-ranking recomputation, not package self-assertion."
+}

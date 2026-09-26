@@ -1,0 +1,324 @@
+{
+  "run_id": "retrieval-v4",
+  "metrics": {
+    "documents": {
+      "value": 24,
+      "unit": "documents",
+      "provenance": {
+        "path": "results/experiment/result.json",
+        "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b",
+        "locator": "/documents",
+        "derivation": "frozen corpus document count"
+      }
+    },
+    "questions": {
+      "value": 28,
+      "unit": "questions",
+      "provenance": {
+        "path": "results/experiment/result.json",
+        "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b",
+        "locator": "/rows",
+        "derivation": "length of all question rows"
+      }
+    },
+    "weight": {
+      "value": 2,
+      "unit": "weight",
+      "provenance": {
+        "path": "results/experiment/result.json",
+        "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b",
+        "locator": "/metadata_weight",
+        "derivation": "preselected field score multiplier"
+      }
+    },
+    "body_hit1": {
+      "value": 17,
+      "unit": "questions",
+      "provenance": {
+        "path": "results/experiment/result.json",
+        "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b",
+        "locator": "/rows",
+        "derivation": "sum body.hit1; kind=all; include every row"
+      }
+    },
+    "body_hit3": {
+      "value": 23,
+      "unit": "questions",
+      "provenance": {
+        "path": "results/experiment/result.json",
+        "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b",
+        "locator": "/rows",
+        "derivation": "sum body.hit3; kind=all; include every row"
+      }
+    },
+    "body_mrr": {
+      "value": 0.716598313966735,
+      "unit": "ratio",
+      "provenance": {
+        "path": "results/experiment/result.json",
+        "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b",
+        "locator": "/rows",
+        "derivation": "mean body.mrr across all questions"
+      }
+    },
+    "body_topic_hit1": {
+      "value": 10,
+      "unit": "questions",
+      "provenance": {
+        "path": "results/experiment/result.json",
+        "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b",
+        "locator": "/rows",
+        "derivation": "sum body.hit1; kind=topic; include every row"
+      }
+    },
+    "body_topic_hit3": {
+      "value": 13,
+      "unit": "questions",
+      "provenance": {
+        "path": "results/experiment/result.json",
+        "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b",
+        "locator": "/rows",
+        "derivation": "sum body.hit3; kind=topic; include every row"
+      }
+    },
+    "topic_questions": {
+      "value": 14,
+      "unit": "questions",
+      "provenance": {
+        "path": "results/experiment/result.json",
+        "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b",
+        "locator": "/rows",
+        "derivation": "count kind prefix topic"
+      }
+    },
+    "body_detail_hit1": {
+      "value": 7,
+      "unit": "questions",
+      "provenance": {
+        "path": "results/experiment/result.json",
+        "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b",
+        "locator": "/rows",
+        "derivation": "sum body.hit1; kind=detail; include every row"
+      }
+    },
+    "body_detail_hit3": {
+      "value": 10,
+      "unit": "questions",
+      "provenance": {
+        "path": "results/experiment/result.json",
+        "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b",
+        "locator": "/rows",
+        "derivation": "sum body.hit3; kind=detail; include every row"
+      }
+    },
+    "detail_questions": {
+      "value": 14,
+      "unit": "questions",
+      "provenance": {
+        "path": "results/experiment/result.json",
+        "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b",
+        "locator": "/rows",
+        "derivation": "count kind prefix detail"
+      }
+    },
+    "body_metadata_hit1": {
+      "value": 22,
+      "unit": "questions",
+      "provenance": {
+        "path": "results/experiment/result.json",
+        "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b",
+        "locator": "/rows",
+        "derivation": "sum body_metadata.hit1; kind=all; include every row"
+      }
+    },
+    "body_metadata_hit3": {
+      "value": 23,
+      "unit": "questions",
+      "provenance": {
+        "path": "results/experiment/result.json",
+        "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b",
+        "locator": "/rows",
+        "derivation": "sum body_metadata.hit3; kind=all; include every row"
+      }
+    },
+    "body_metadata_mrr": {
+      "value": 0.8290983139667351,
+      "unit": "ratio",
+      "provenance": {
+        "path": "results/experiment/result.json",
+        "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b",
+        "locator": "/rows",
+        "derivation": "mean body_metadata.mrr across all questions"
+      }
+    },
+    "body_metadata_topic_hit1": {
+      "value": 13,
+      "unit": "questions",
+      "provenance": {
+        "path": "results/experiment/result.json",
+        "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b",
+        "locator": "/rows",
+        "derivation": "sum body_metadata.hit1; kind=topic; include every row"
+      }
+    },
+    "body_metadata_topic_hit3": {
+      "value": 13,
+      "unit": "questions",
+      "provenance": {
+        "path": "results/experiment/result.json",
+        "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b",
+        "locator": "/rows",
+        "derivation": "sum body_metadata.hit3; kind=topic; include every row"
+      }
+    },
+    "body_metadata_detail_hit1": {
+      "value": 9,
+      "unit": "questions",
+      "provenance": {
+        "path": "results/experiment/result.json",
+        "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b",
+        "locator": "/rows",
+        "derivation": "sum body_metadata.hit1; kind=detail; include every row"
+      }
+    },
+    "body_metadata_detail_hit3": {
+      "value": 10,
+      "unit": "questions",
+      "provenance": {
+        "path": "results/experiment/result.json",
+        "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b",
+        "locator": "/rows",
+        "derivation": "sum body_metadata.hit3; kind=detail; include every row"
+      }
+    },
+    "q26_body_rank": {
+      "value": 3,
+      "unit": "rank",
+      "provenance": {
+        "path": "results/experiment/result.json",
+        "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b",
+        "locator": "/rows",
+        "derivation": "row id=q26; body.first_relevant_rank"
+      }
+    },
+    "q26_body_metadata_rank": {
+      "value": 1,
+      "unit": "rank",
+      "provenance": {
+        "path": "results/experiment/result.json",
+        "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b",
+        "locator": "/rows",
+        "derivation": "row id=q26; body_metadata.first_relevant_rank"
+      }
+    },
+    "q12_body_rank": {
+      "value": 15,
+      "unit": "rank",
+      "provenance": {
+        "path": "results/experiment/result.json",
+        "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b",
+        "locator": "/rows",
+        "derivation": "row id=q12; body.first_relevant_rank"
+      }
+    },
+    "q12_body_metadata_rank": {
+      "value": 6,
+      "unit": "rank",
+      "provenance": {
+        "path": "results/experiment/result.json",
+        "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b",
+        "locator": "/rows",
+        "derivation": "row id=q12; body_metadata.first_relevant_rank"
+      }
+    },
+    "q08_body_rank": {
+      "value": 19,
+      "unit": "rank",
+      "provenance": {
+        "path": "results/experiment/result.json",
+        "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b",
+        "locator": "/rows",
+        "derivation": "row id=q08; body.first_relevant_rank"
+      }
+    },
+    "q08_body_metadata_rank": {
+      "value": 19,
+      "unit": "rank",
+      "provenance": {
+        "path": "results/experiment/result.json",
+        "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b",
+        "locator": "/rows",
+        "derivation": "row id=q08; body_metadata.first_relevant_rank"
+      }
+    },
+    "q24_body_rank": {
+      "value": 22,
+      "unit": "rank",
+      "provenance": {
+        "path": "results/experiment/result.json",
+        "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b",
+        "locator": "/rows",
+        "derivation": "row id=q24; body.first_relevant_rank"
+      }
+    },
+    "q24_body_metadata_rank": {
+      "value": 22,
+      "unit": "rank",
+      "provenance": {
+        "path": "results/experiment/result.json",
+        "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b",
+        "locator": "/rows",
+        "derivation": "row id=q24; body_metadata.first_relevant_rank"
+      }
+    },
+    "initial_body_hit3": {
+      "value": 22,
+      "unit": "questions",
+      "provenance": {
+        "path": "results/history/initial_result.json",
+        "sha256": "824c1d8b26904e7d4aec6e4e026ad904940b1db5f23657d61b5a78a07de4d48b",
+        "locator": "/rows",
+        "derivation": "historical run retrieval, sum body.hit3; not the final corpus"
+      }
+    },
+    "initial_body_metadata_hit3": {
+      "value": 23,
+      "unit": "questions",
+      "provenance": {
+        "path": "results/history/initial_result.json",
+        "sha256": "824c1d8b26904e7d4aec6e4e026ad904940b1db5f23657d61b5a78a07de4d48b",
+        "locator": "/rows",
+        "derivation": "historical run retrieval, sum body_metadata.hit3; not the final corpus"
+      }
+    },
+    "exit_code": {
+      "value": 0,
+      "unit": "exit_code",
+      "provenance": {
+        "path": "results/execution.json",
+        "sha256": "4a618a975a0cb387c71ecb936dd9479a1940924bf67b522a2553d39f973e076c",
+        "locator": "/exit_code",
+        "derivation": "captured process result"
+      }
+    },
+    "equal_artifacts": {
+      "value": 4,
+      "unit": "files",
+      "provenance": {
+        "path": "results/reproduction/verification.json",
+        "sha256": "94e6ee4470c57b35ed6b412b43fcc71b9ef3448c33d3f16f548be9696dacdbd5",
+        "locator": "/artifact_comparison",
+        "derivation": "count byte_equal true across independently rerun artifacts"
+      }
+    }
+  },
+  "source": {
+    "path": "results/experiment/result.json",
+    "sha256": "e0b24547a638fe6c1ec9ba1271caa4da715d185d93fc6e81dca8f9c971fca40b"
+  },
+  "generator": {
+    "path": "results/package_result.py",
+    "sha256": "8ec94070af9f247642db9c0dec9db53518cdeb2f24ba24acbc77042c751cd263"
+  },
+  "scope": "Named final-study and explicitly historical metrics; no same-value lookup"
+}

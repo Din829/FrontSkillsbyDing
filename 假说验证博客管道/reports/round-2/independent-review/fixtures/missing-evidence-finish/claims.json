@@ -1,0 +1,28 @@
+{
+  "run_id": "missing-evidence-finish",
+  "draft_sha256": "7c6f6edd281c1b1a6cb0735a75a8fbc675b060a4f838ef3ea7930323a9b9cbf5",
+  "claims": [
+    {
+      "id": "count-result",
+      "text": "BM25 / H1 / v1.2: measured 6 cases.",
+      "level": "measured",
+      "scope": "synthetic local fixture"
+    }
+  ],
+  "numbers": [
+    {
+      "index": 3,
+      "token": "6",
+      "kind": "measurement",
+      "claim_id": "count-result",
+      "unit": "cases",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "2c9c3e8256a3a399346635280bd2f846bd3280ddf0a288629b15732310c2624d",
+        "run_id": "missing-evidence-finish",
+        "pointer": "/metrics/correct",
+        "unit": "cases"
+      }
+    }
+  ]
+}

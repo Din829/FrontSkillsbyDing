@@ -1,0 +1,21 @@
+{
+  "run_id": "ruler-needs-review",
+  "execution_claim": "succeeded",
+  "execution": {
+    "path": "results/execution.json",
+    "sha256": "358e211f6a5131e5f71d51fcfd00c84c1a38f99b4ab4344aa9e6db56abd884cd"
+  },
+  "ruler": {
+    "path": "results/ruler.json",
+    "sha256": "844a33e4b039f927e4b98343c15398dad3987850a88241d617e442806b7a2484"
+  },
+  "documents": [
+    {
+      "draft": {
+        "path": "article.md",
+        "sha256": "7c6f6edd281c1b1a6cb0735a75a8fbc675b060a4f838ef3ea7930323a9b9cbf5"
+      },
+      "claims": "claims.json"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "handling": "Recorded nonfatal observations; no additional repair cycle requested",
+  "notes": [
+    {
+      "id": "retrieval-cutoff-constants",
+      "scope": "runs/retrieval-v4/article-round2.md",
+      "detail": "Gate leaves two instances of the top-three cutoff as semantic-review candidates. They are protocol settings, not newly measured performance values.",
+      "action": "Keep warning and continue; do not force manual metadata bookkeeping"
+    },
+    {
+      "id": "review-tag-explanation-wording",
+      "scope": "runs/review-behavior/article-round2.md",
+      "detail": "The Japanese paragraph about the second scenario can be clearer that read_as_measured was expected, while the additional scope_overreach tag was outside the old whitelist. Raw scores and sources are correct.",
+      "action": "Editorial note for a future human publication review, not an automatic repair request"
+    },
+    {
+      "id": "intermediate-state-label",
+      "scope": "scripts/pipeline.py",
+      "detail": "While the reviewer runs, the intermediate state can retain the author's completed label. The attempts list and final draft_complete/report status distinguish whole-run completion.",
+      "action": "Record this nonfatal display caveat; do not add a new gate or rerun"
+    }
+  ]
+}

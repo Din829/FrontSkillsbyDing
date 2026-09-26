@@ -1,0 +1,1122 @@
+[
+  {
+    "id": 640053,
+    "slug": "953334f11df507",
+    "topic": "agent",
+    "group": "higher",
+    "pair": "agent-01"
+  },
+  {
+    "id": 636118,
+    "slug": "11a4966adfa97f",
+    "topic": "agent",
+    "group": "lower",
+    "pair": "agent-01"
+  },
+  {
+    "id": 609554,
+    "slug": "9f25ec86a31730",
+    "topic": "agent",
+    "group": "higher",
+    "pair": "agent-02"
+  },
+  {
+    "id": 610348,
+    "slug": "20260704-coding-agent-harness",
+    "topic": "agent",
+    "group": "lower",
+    "pair": "agent-02"
+  },
+  {
+    "id": 608014,
+    "slug": "0c63b5b08bbdb9",
+    "topic": "agent",
+    "group": "higher",
+    "pair": "agent-03"
+  },
+  {
+    "id": 614307,
+    "slug": "lab-040-skill-mdstub",
+    "topic": "agent",
+    "group": "lower",
+    "pair": "agent-03"
+  },
+  {
+    "id": 627928,
+    "slug": "agent-framework-ultra-soul",
+    "topic": "agent",
+    "group": "higher",
+    "pair": "agent-04"
+  },
+  {
+    "id": 632168,
+    "slug": "agent-completion-claim-audit",
+    "topic": "agent",
+    "group": "lower",
+    "pair": "agent-04"
+  },
+  {
+    "id": 617777,
+    "slug": "dfe38e73e1ef8a",
+    "topic": "agent",
+    "group": "higher",
+    "pair": "agent-05"
+  },
+  {
+    "id": 612237,
+    "slug": "b039fd54c413e4",
+    "topic": "agent",
+    "group": "lower",
+    "pair": "agent-05"
+  },
+  {
+    "id": 631258,
+    "slug": "976a5f8fb0f876",
+    "topic": "agent",
+    "group": "higher",
+    "pair": "agent-06"
+  },
+  {
+    "id": 637741,
+    "slug": "transcript-not-ledger",
+    "topic": "agent",
+    "group": "lower",
+    "pair": "agent-06"
+  },
+  {
+    "id": 623986,
+    "slug": "mcp-stateless-spec-2026",
+    "topic": "agent",
+    "group": "higher",
+    "pair": "agent-07"
+  },
+  {
+    "id": 623996,
+    "slug": "3bde137a657f3d",
+    "topic": "agent",
+    "group": "lower",
+    "pair": "agent-07"
+  },
+  {
+    "id": 604116,
+    "slug": "6c7de76320b6d2",
+    "topic": "agent",
+    "group": "higher",
+    "pair": "agent-08"
+  },
+  {
+    "id": 615580,
+    "slug": "lab-095-skill-selfimprove",
+    "topic": "agent",
+    "group": "lower",
+    "pair": "agent-08"
+  },
+  {
+    "id": 639182,
+    "slug": "0cb441713c9fee",
+    "topic": "agent",
+    "group": "higher",
+    "pair": "agent-09"
+  },
+  {
+    "id": 640976,
+    "slug": "judge-degrades-into-reviewer",
+    "topic": "agent",
+    "group": "lower",
+    "pair": "agent-09"
+  },
+  {
+    "id": 623260,
+    "slug": "b9993fe1d72b17",
+    "topic": "agent",
+    "group": "higher",
+    "pair": "agent-10"
+  },
+  {
+    "id": 642343,
+    "slug": "pdlc-run-in-your-project",
+    "topic": "agent",
+    "group": "lower",
+    "pair": "agent-10"
+  },
+  {
+    "id": 647330,
+    "slug": "689d035440c0ae",
+    "topic": "agent",
+    "group": "higher",
+    "pair": "agent-11"
+  },
+  {
+    "id": 646953,
+    "slug": "2026-08-12-tech-daily",
+    "topic": "agent",
+    "group": "lower",
+    "pair": "agent-11"
+  },
+  {
+    "id": 650161,
+    "slug": "9adf1e9b17ffd6",
+    "topic": "agent",
+    "group": "higher",
+    "pair": "agent-12"
+  },
+  {
+    "id": 648148,
+    "slug": "deletable-quality",
+    "topic": "agent",
+    "group": "lower",
+    "pair": "agent-12"
+  },
+  {
+    "id": 653758,
+    "slug": "7ac8cea14c20e8",
+    "topic": "ai",
+    "group": "higher",
+    "pair": "ai-01"
+  },
+  {
+    "id": 653836,
+    "slug": "670a348b07e244",
+    "topic": "ai",
+    "group": "lower",
+    "pair": "ai-01"
+  },
+  {
+    "id": 653834,
+    "slug": "85cbdf3b1c5c83",
+    "topic": "ai",
+    "group": "higher",
+    "pair": "ai-02"
+  },
+  {
+    "id": 645792,
+    "slug": "shared-files-kill-parallelism",
+    "topic": "ai",
+    "group": "lower",
+    "pair": "ai-02"
+  },
+  {
+    "id": 653493,
+    "slug": "9fe9ff291029c8",
+    "topic": "ai",
+    "group": "higher",
+    "pair": "ai-03"
+  },
+  {
+    "id": 644403,
+    "slug": "1769779c2f1b4b",
+    "topic": "ai",
+    "group": "lower",
+    "pair": "ai-03"
+  },
+  {
+    "id": 653848,
+    "slug": "jev-lolipop-ai-gateway",
+    "topic": "ai",
+    "group": "higher",
+    "pair": "ai-04"
+  },
+  {
+    "id": 653784,
+    "slug": "bigquery-ai-generate-complete-guide",
+    "topic": "ai",
+    "group": "lower",
+    "pair": "ai-04"
+  },
+  {
+    "id": 653790,
+    "slug": "a85fb9fb73c0eb",
+    "topic": "ai",
+    "group": "higher",
+    "pair": "ai-05"
+  },
+  {
+    "id": 653358,
+    "slug": "build-cli-with-gpt-6-astra",
+    "topic": "ai",
+    "group": "lower",
+    "pair": "ai-05"
+  },
+  {
+    "id": 648190,
+    "slug": "claude-code-desktop-app",
+    "topic": "claudecode",
+    "group": "higher",
+    "pair": "claudecode-01"
+  },
+  {
+    "id": 649199,
+    "slug": "note-01-claudecode-start",
+    "topic": "claudecode",
+    "group": "lower",
+    "pair": "claudecode-01"
+  },
+  {
+    "id": 652006,
+    "slug": "9f8921926bb003",
+    "topic": "claudecode",
+    "group": "higher",
+    "pair": "claudecode-02"
+  },
+  {
+    "id": 634389,
+    "slug": "label-source-and-confidence",
+    "topic": "claudecode",
+    "group": "lower",
+    "pair": "claudecode-02"
+  },
+  {
+    "id": 652170,
+    "slug": "a9051de6bf2b84",
+    "topic": "claudecode",
+    "group": "higher",
+    "pair": "claudecode-03"
+  },
+  {
+    "id": 649907,
+    "slug": "20260912-tech-watch",
+    "topic": "claudecode",
+    "group": "lower",
+    "pair": "claudecode-03"
+  },
+  {
+    "id": 652965,
+    "slug": "db685b8fd6bffe",
+    "topic": "claudecode",
+    "group": "higher",
+    "pair": "claudecode-04"
+  },
+  {
+    "id": 648922,
+    "slug": "e44be3ea311c34",
+    "topic": "claudecode",
+    "group": "lower",
+    "pair": "claudecode-04"
+  },
+  {
+    "id": 651992,
+    "slug": "c602a080fc4a91",
+    "topic": "claudecode",
+    "group": "higher",
+    "pair": "claudecode-05"
+  },
+  {
+    "id": 653368,
+    "slug": "4915abbe0d8ed8",
+    "topic": "claudecode",
+    "group": "lower",
+    "pair": "claudecode-05"
+  },
+  {
+    "id": 639693,
+    "slug": "7d0d7d70678546",
+    "topic": "claudecode",
+    "group": "higher",
+    "pair": "claudecode-06"
+  },
+  {
+    "id": 652839,
+    "slug": "claude-code-skills-operations-guide",
+    "topic": "claudecode",
+    "group": "lower",
+    "pair": "claudecode-06"
+  },
+  {
+    "id": 652786,
+    "slug": "claude_code_curated_skills",
+    "topic": "claudecode",
+    "group": "higher",
+    "pair": "claudecode-07"
+  },
+  {
+    "id": 648834,
+    "slug": "agent-adoption-forecast-empty-backlog",
+    "topic": "claudecode",
+    "group": "lower",
+    "pair": "claudecode-07"
+  },
+  {
+    "id": 646324,
+    "slug": "57a9c2d0d281b5",
+    "topic": "claudecode",
+    "group": "higher",
+    "pair": "claudecode-08"
+  },
+  {
+    "id": 651265,
+    "slug": "44468d97c13288",
+    "topic": "claudecode",
+    "group": "lower",
+    "pair": "claudecode-08"
+  },
+  {
+    "id": 653112,
+    "slug": "claude-code-rules-to-agents-md",
+    "topic": "claudecode",
+    "group": "higher",
+    "pair": "claudecode-09"
+  },
+  {
+    "id": 652976,
+    "slug": "1111-claude-code-plugin-eval-output-style-guide",
+    "topic": "claudecode",
+    "group": "lower",
+    "pair": "claudecode-09"
+  },
+  {
+    "id": 639264,
+    "slug": "pdm-evals-claude-code-skills",
+    "topic": "claudecode",
+    "group": "higher",
+    "pair": "claudecode-10"
+  },
+  {
+    "id": 631096,
+    "slug": "claude-subagent-registration-dispatch-handson",
+    "topic": "claudecode",
+    "group": "lower",
+    "pair": "claudecode-10"
+  },
+  {
+    "id": 651423,
+    "slug": "f859802b98b60f",
+    "topic": "claudecode",
+    "group": "higher",
+    "pair": "claudecode-11"
+  },
+  {
+    "id": 646762,
+    "slug": "a810171f001b4e",
+    "topic": "claudecode",
+    "group": "lower",
+    "pair": "claudecode-11"
+  },
+  {
+    "id": 648438,
+    "slug": "7a9178c94cc27b",
+    "topic": "claudecode",
+    "group": "higher",
+    "pair": "claudecode-12"
+  },
+  {
+    "id": 648740,
+    "slug": "setting-that-does-nothing",
+    "topic": "claudecode",
+    "group": "lower",
+    "pair": "claudecode-12"
+  },
+  {
+    "id": 652790,
+    "slug": "824026c76116e0",
+    "topic": "llm",
+    "group": "higher",
+    "pair": "llm-01"
+  },
+  {
+    "id": 650285,
+    "slug": "c67ef2c9dd067e",
+    "topic": "llm",
+    "group": "lower",
+    "pair": "llm-01"
+  },
+  {
+    "id": 647578,
+    "slug": "e5cc1047cba176",
+    "topic": "llm",
+    "group": "higher",
+    "pair": "llm-02"
+  },
+  {
+    "id": 648126,
+    "slug": "0141e6ae24e88a",
+    "topic": "llm",
+    "group": "lower",
+    "pair": "llm-02"
+  },
+  {
+    "id": 653445,
+    "slug": "7e74fef42580a1",
+    "topic": "llm",
+    "group": "higher",
+    "pair": "llm-03"
+  },
+  {
+    "id": 652910,
+    "slug": "rag-hybrid-search",
+    "topic": "llm",
+    "group": "lower",
+    "pair": "llm-03"
+  },
+  {
+    "id": 653431,
+    "slug": "jev-impressions",
+    "topic": "llm",
+    "group": "higher",
+    "pair": "llm-04"
+  },
+  {
+    "id": 650892,
+    "slug": "78e170874dda22",
+    "topic": "llm",
+    "group": "lower",
+    "pair": "llm-04"
+  },
+  {
+    "id": 652268,
+    "slug": "5aa26aebd7ae78",
+    "topic": "llm",
+    "group": "higher",
+    "pair": "llm-05"
+  },
+  {
+    "id": 649356,
+    "slug": "2a1168b7b3bdda",
+    "topic": "llm",
+    "group": "lower",
+    "pair": "llm-05"
+  },
+  {
+    "id": 652933,
+    "slug": "typesafe-jev-system-one-model",
+    "topic": "llm",
+    "group": "higher",
+    "pair": "llm-06"
+  },
+  {
+    "id": 648954,
+    "slug": "ba767e99ecbd6c",
+    "topic": "llm",
+    "group": "lower",
+    "pair": "llm-06"
+  },
+  {
+    "id": 651243,
+    "slug": "ef60bbbc0ad7ec",
+    "topic": "llm",
+    "group": "higher",
+    "pair": "llm-07"
+  },
+  {
+    "id": 647690,
+    "slug": "20260908-tech-watch",
+    "topic": "llm",
+    "group": "lower",
+    "pair": "llm-07"
+  },
+  {
+    "id": 653170,
+    "slug": "jev-auto-approval-poc",
+    "topic": "llm",
+    "group": "higher",
+    "pair": "llm-08"
+  },
+  {
+    "id": 647977,
+    "slug": "9d410eed4e5f81",
+    "topic": "llm",
+    "group": "lower",
+    "pair": "llm-08"
+  },
+  {
+    "id": 645227,
+    "slug": "fad8adf0586665",
+    "topic": "llm",
+    "group": "higher",
+    "pair": "llm-09"
+  },
+  {
+    "id": 648123,
+    "slug": "002cc0e9c403cc",
+    "topic": "llm",
+    "group": "lower",
+    "pair": "llm-09"
+  },
+  {
+    "id": 645393,
+    "slug": "ebb0ff2760185f",
+    "topic": "llm",
+    "group": "higher",
+    "pair": "llm-10"
+  },
+  {
+    "id": 652745,
+    "slug": "2026-08-29-tech-daily",
+    "topic": "llm",
+    "group": "lower",
+    "pair": "llm-10"
+  },
+  {
+    "id": 649185,
+    "slug": "a780f6be371f0d",
+    "topic": "llm",
+    "group": "higher",
+    "pair": "llm-11"
+  },
+  {
+    "id": 649845,
+    "slug": "2026-08-26-tech-daily",
+    "topic": "llm",
+    "group": "lower",
+    "pair": "llm-11"
+  },
+  {
+    "id": 651211,
+    "slug": "ai-stack-layers-2026",
+    "topic": "llm",
+    "group": "higher",
+    "pair": "llm-12"
+  },
+  {
+    "id": 650556,
+    "slug": "wsl-containers-for-docker-desktop-users",
+    "topic": "llm",
+    "group": "lower",
+    "pair": "llm-12"
+  },
+  {
+    "id": 642878,
+    "slug": "bcaea69f58eae5",
+    "topic": "mcp",
+    "group": "higher",
+    "pair": "mcp-01"
+  },
+  {
+    "id": 648204,
+    "slug": "rpr-responsibility-routing-010a6",
+    "topic": "mcp",
+    "group": "lower",
+    "pair": "mcp-01"
+  },
+  {
+    "id": 630854,
+    "slug": "a51bbfcc068c1f",
+    "topic": "mcp",
+    "group": "higher",
+    "pair": "mcp-02"
+  },
+  {
+    "id": 625296,
+    "slug": "a4fe4024882114",
+    "topic": "mcp",
+    "group": "lower",
+    "pair": "mcp-02"
+  },
+  {
+    "id": 633170,
+    "slug": "39972d023f0440",
+    "topic": "mcp",
+    "group": "higher",
+    "pair": "mcp-03"
+  },
+  {
+    "id": 627580,
+    "slug": "lab-159-deja-vu",
+    "topic": "mcp",
+    "group": "lower",
+    "pair": "mcp-03"
+  },
+  {
+    "id": 644802,
+    "slug": "fd7a61e75f3dcc",
+    "topic": "mcp",
+    "group": "higher",
+    "pair": "mcp-04"
+  },
+  {
+    "id": 643954,
+    "slug": "ai-delegation-scope-20260901",
+    "topic": "mcp",
+    "group": "lower",
+    "pair": "mcp-04"
+  },
+  {
+    "id": 653096,
+    "slug": "5a1dc6470019d6",
+    "topic": "mcp",
+    "group": "higher",
+    "pair": "mcp-05"
+  },
+  {
+    "id": 648049,
+    "slug": "f2ead956ee00c4",
+    "topic": "mcp",
+    "group": "lower",
+    "pair": "mcp-05"
+  },
+  {
+    "id": 627154,
+    "slug": "19f0d415af42be",
+    "topic": "mcp",
+    "group": "higher",
+    "pair": "mcp-06"
+  },
+  {
+    "id": 631767,
+    "slug": "claude-plugin-manifest-validate-handson",
+    "topic": "mcp",
+    "group": "lower",
+    "pair": "mcp-06"
+  },
+  {
+    "id": 623758,
+    "slug": "gpt-5-6-blender-mcp-modeling",
+    "topic": "mcp",
+    "group": "higher",
+    "pair": "mcp-07"
+  },
+  {
+    "id": 618762,
+    "slug": "azure-retail-prices-mcp",
+    "topic": "mcp",
+    "group": "lower",
+    "pair": "mcp-07"
+  },
+  {
+    "id": 630649,
+    "slug": "agent-plugins-1-0-deep-dive",
+    "topic": "mcp",
+    "group": "higher",
+    "pair": "mcp-08"
+  },
+  {
+    "id": 632875,
+    "slug": "note-mcp-digest",
+    "topic": "mcp",
+    "group": "lower",
+    "pair": "mcp-08"
+  },
+  {
+    "id": 620030,
+    "slug": "lab-198-gura105-operational-ontology-o",
+    "topic": "mcp",
+    "group": "higher",
+    "pair": "mcp-09"
+  },
+  {
+    "id": 618813,
+    "slug": "1129d7be04b39d",
+    "topic": "mcp",
+    "group": "lower",
+    "pair": "mcp-09"
+  },
+  {
+    "id": 620782,
+    "slug": "80b99faba75704",
+    "topic": "mcp",
+    "group": "higher",
+    "pair": "mcp-10"
+  },
+  {
+    "id": 634367,
+    "slug": "372e734864ade5",
+    "topic": "mcp",
+    "group": "lower",
+    "pair": "mcp-10"
+  },
+  {
+    "id": 627200,
+    "slug": "201f6f9155f3db",
+    "topic": "mcp",
+    "group": "higher",
+    "pair": "mcp-11"
+  },
+  {
+    "id": 631828,
+    "slug": "20260812-foundryiq-memo",
+    "topic": "mcp",
+    "group": "lower",
+    "pair": "mcp-11"
+  },
+  {
+    "id": 630566,
+    "slug": "726a88eed83d49",
+    "topic": "mcp",
+    "group": "higher",
+    "pair": "mcp-12"
+  },
+  {
+    "id": 636268,
+    "slug": "159829a3e618d8",
+    "topic": "mcp",
+    "group": "lower",
+    "pair": "mcp-12"
+  },
+  {
+    "id": 601461,
+    "slug": "14a874a9f423bb",
+    "topic": "rag",
+    "group": "higher",
+    "pair": "rag-01"
+  },
+  {
+    "id": 603752,
+    "slug": "1a3e5b726498d8",
+    "topic": "rag",
+    "group": "lower",
+    "pair": "rag-01"
+  },
+  {
+    "id": 625607,
+    "slug": "7c1a8f7720b119",
+    "topic": "rag",
+    "group": "higher",
+    "pair": "rag-02"
+  },
+  {
+    "id": 626505,
+    "slug": "llm-as-judge-rag",
+    "topic": "rag",
+    "group": "lower",
+    "pair": "rag-02"
+  },
+  {
+    "id": 593423,
+    "slug": "7ce72924c0050f",
+    "topic": "rag",
+    "group": "higher",
+    "pair": "rag-03"
+  },
+  {
+    "id": 601596,
+    "slug": "tidb-groq-growing-rag-chat",
+    "topic": "rag",
+    "group": "lower",
+    "pair": "rag-03"
+  },
+  {
+    "id": 642091,
+    "slug": "ad123283bdea26",
+    "topic": "rag",
+    "group": "higher",
+    "pair": "rag-04"
+  },
+  {
+    "id": 647368,
+    "slug": "zenn-rag-vector-db",
+    "topic": "rag",
+    "group": "lower",
+    "pair": "rag-04"
+  },
+  {
+    "id": 615882,
+    "slug": "2ea88e4b1c2e5b",
+    "topic": "rag",
+    "group": "higher",
+    "pair": "rag-05"
+  },
+  {
+    "id": 635467,
+    "slug": "pdf-table-to-json-for-rag",
+    "topic": "rag",
+    "group": "lower",
+    "pair": "rag-05"
+  },
+  {
+    "id": 630664,
+    "slug": "9e55a3bb67729c",
+    "topic": "rag",
+    "group": "higher",
+    "pair": "rag-06"
+  },
+  {
+    "id": 635506,
+    "slug": "bff22120fb166b",
+    "topic": "rag",
+    "group": "lower",
+    "pair": "rag-06"
+  },
+  {
+    "id": 585429,
+    "slug": "llm-knowledge-base-karpathy-wiki",
+    "topic": "rag",
+    "group": "higher",
+    "pair": "rag-07"
+  },
+  {
+    "id": 586908,
+    "slug": "gbrain_20260527",
+    "topic": "rag",
+    "group": "lower",
+    "pair": "rag-07"
+  },
+  {
+    "id": 596823,
+    "slug": "agentcore-strands-self-improving-rag",
+    "topic": "rag",
+    "group": "higher",
+    "pair": "rag-08"
+  },
+  {
+    "id": 599481,
+    "slug": "0a3af1960fba0d",
+    "topic": "rag",
+    "group": "lower",
+    "pair": "rag-08"
+  },
+  {
+    "id": 617662,
+    "slug": "fd754b2a08c3ac",
+    "topic": "rag",
+    "group": "higher",
+    "pair": "rag-09"
+  },
+  {
+    "id": 627692,
+    "slug": "retrieve-vectors-5x-faster-with-docvalue_fields",
+    "topic": "rag",
+    "group": "lower",
+    "pair": "rag-09"
+  },
+  {
+    "id": 576779,
+    "slug": "67370650799bc6",
+    "topic": "rag",
+    "group": "higher",
+    "pair": "rag-10"
+  },
+  {
+    "id": 586510,
+    "slug": "pageindex-vectorless-rag",
+    "topic": "rag",
+    "group": "lower",
+    "pair": "rag-10"
+  },
+  {
+    "id": 610530,
+    "slug": "okf-open-knowledge-format-corporate-os",
+    "topic": "rag",
+    "group": "higher",
+    "pair": "rag-11"
+  },
+  {
+    "id": 614734,
+    "slug": "0f6c4cb0c3fc42",
+    "topic": "rag",
+    "group": "lower",
+    "pair": "rag-11"
+  },
+  {
+    "id": 578129,
+    "slug": "ontology-for-ai-engineering",
+    "topic": "rag",
+    "group": "higher",
+    "pair": "rag-12"
+  },
+  {
+    "id": 564532,
+    "slug": "mm-doc-r1-spo",
+    "topic": "rag",
+    "group": "lower",
+    "pair": "rag-12"
+  },
+  {
+    "id": 216441,
+    "slug": "547cbf57e5ad28",
+    "topic": "history",
+    "group": "historical_example",
+    "pair": null
+  },
+  {
+    "id": 375893,
+    "slug": "all-in-on-cline",
+    "topic": "history",
+    "group": "historical_example",
+    "pair": null
+  },
+  {
+    "id": 59314,
+    "slug": "bulletproof-react-is-best-architecture",
+    "topic": "history",
+    "group": "historical_example",
+    "pair": null
+  },
+  {
+    "id": 257179,
+    "slug": "c2402f13a870a1",
+    "topic": "history",
+    "group": "historical_example",
+    "pair": null
+  },
+  {
+    "id": 451596,
+    "slug": "reasons-for-continuing-to-learn",
+    "topic": "history",
+    "group": "historical_example",
+    "pair": null
+  },
+  {
+    "id": 220311,
+    "slug": "f8a90a1616dfb3",
+    "topic": "history",
+    "group": "historical_example",
+    "pair": null
+  },
+  {
+    "id": 268900,
+    "slug": "bc9bba54babaf5",
+    "topic": "history",
+    "group": "historical_example",
+    "pair": null
+  },
+  {
+    "id": 516793,
+    "slug": "5fee11d03a11a1",
+    "topic": "history",
+    "group": "historical_example",
+    "pair": null
+  },
+  {
+    "id": 326943,
+    "slug": "013f114c7a1b44",
+    "topic": "history",
+    "group": "historical_example",
+    "pair": null
+  },
+  {
+    "id": 471348,
+    "slug": "nani-translate",
+    "topic": "history",
+    "group": "historical_example",
+    "pair": null
+  },
+  {
+    "id": 32,
+    "slug": "zenn-dev-stack",
+    "topic": "history",
+    "group": "historical_example",
+    "pair": null
+  },
+  {
+    "id": 390140,
+    "slug": "f927aaff02d618",
+    "topic": "history",
+    "group": "historical_example",
+    "pair": null
+  },
+  {
+    "id": 159615,
+    "slug": "f36e251a0cd24e",
+    "topic": "history",
+    "group": "historical_example",
+    "pair": null
+  },
+  {
+    "id": 168047,
+    "slug": "react-server-components-multi-stage",
+    "topic": "history",
+    "group": "historical_example",
+    "pair": null
+  },
+  {
+    "id": 32108,
+    "slug": "c28fa3a9ba7edb",
+    "topic": "history",
+    "group": "historical_example",
+    "pair": null
+  },
+  {
+    "id": 14517,
+    "slug": "6c6f69481c2d17",
+    "topic": "history",
+    "group": "historical_example",
+    "pair": null
+  },
+  {
+    "id": 167254,
+    "slug": "useeffect-taught-by-extremist",
+    "topic": "history",
+    "group": "historical_example",
+    "pair": null
+  },
+  {
+    "id": 15415,
+    "slug": "ce7d09eb6d8117",
+    "topic": "history",
+    "group": "historical_example",
+    "pair": null
+  },
+  {
+    "id": 31007,
+    "slug": "61d25099295372",
+    "topic": "history",
+    "group": "historical_example",
+    "pair": null
+  },
+  {
+    "id": 421648,
+    "slug": "86d1edb33da61a",
+    "topic": "history",
+    "group": "historical_example",
+    "pair": null
+  },
+  {
+    "id": 57620,
+    "slug": "99f8047555f700",
+    "topic": "history",
+    "group": "historical_example",
+    "pair": null
+  },
+  {
+    "id": 395121,
+    "slug": "my-vibe-coding",
+    "topic": "history",
+    "group": "historical_example",
+    "pair": null
+  },
+  {
+    "id": 425344,
+    "slug": "0420ecec9526dc",
+    "topic": "history",
+    "group": "historical_example",
+    "pair": null
+  },
+  {
+    "id": 148439,
+    "slug": "2023-01-shimizu",
+    "topic": "history",
+    "group": "historical_example",
+    "pair": null
+  },
+  {
+    "id": 19840,
+    "slug": "b3bcbedbc1fd00",
+    "topic": "history",
+    "group": "historical_example",
+    "pair": null
+  },
+  {
+    "id": 108766,
+    "slug": "c0da74ae28bdcd",
+    "topic": "history",
+    "group": "historical_example",
+    "pair": null
+  },
+  {
+    "id": 54050,
+    "slug": "607ec0c9b0408d",
+    "topic": "history",
+    "group": "historical_example",
+    "pair": null
+  },
+  {
+    "id": 65676,
+    "slug": "85c9640b7dcc66",
+    "topic": "history",
+    "group": "historical_example",
+    "pair": null
+  },
+  {
+    "id": 201495,
+    "slug": "6cb4f586de0183",
+    "topic": "history",
+    "group": "historical_example",
+    "pair": null
+  },
+  {
+    "id": 206959,
+    "slug": "7928ef7545b393",
+    "topic": "history",
+    "group": "historical_example",
+    "pair": null
+  }
+]

@@ -1,0 +1,226 @@
+{
+  "network_requests": 41,
+  "cache_hits": 3,
+  "events": [
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=latest&page=1&topicname=ai",
+      "cache": true,
+      "path": "raw\\5672ff917e76790c595cd723.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=latest&page=2&topicname=ai",
+      "cache": true,
+      "path": "raw\\198e2f750a427368458458a6.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=latest&page=3&topicname=ai",
+      "cache": false,
+      "path": "raw\\7e7288e3f8ccb70ec830ee51.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=latest&page=4&topicname=ai",
+      "cache": false,
+      "path": "raw\\4ab995eaf91a1136d330d258.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=latest&page=5&topicname=ai",
+      "cache": false,
+      "path": "raw\\3db2d4d80249381ef1c7e093.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=latest&page=6&topicname=ai",
+      "cache": false,
+      "path": "raw\\6438b8dc810576639acca1aa.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=alltime&page=1&topicname=ai",
+      "cache": true,
+      "path": "raw\\d345692b5b435b347a90df43.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=latest&page=1&topicname=llm",
+      "cache": false,
+      "path": "raw\\dc90d8abb624089fd00dbc1a.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=latest&page=2&topicname=llm",
+      "cache": false,
+      "path": "raw\\21935f6d1c90ecead5424795.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=latest&page=3&topicname=llm",
+      "cache": false,
+      "path": "raw\\7287a3f09f2f2aae34788444.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=latest&page=4&topicname=llm",
+      "cache": false,
+      "path": "raw\\9a1ff2390017860a154c2d44.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=latest&page=5&topicname=llm",
+      "cache": false,
+      "path": "raw\\1d03825d61a17367062dc9d7.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=latest&page=6&topicname=llm",
+      "cache": false,
+      "path": "raw\\618b757cff25f172a7ba6606.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=alltime&page=1&topicname=llm",
+      "cache": false,
+      "path": "raw\\e902954695355fc618085b21.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=latest&page=1&topicname=claudecode",
+      "cache": false,
+      "path": "raw\\3241fce98431f17c0d1f15f5.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=latest&page=2&topicname=claudecode",
+      "cache": false,
+      "path": "raw\\bdc7337c7ad92919f2622188.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=latest&page=3&topicname=claudecode",
+      "cache": false,
+      "path": "raw\\5fe6f7691be28b4293973b53.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=latest&page=4&topicname=claudecode",
+      "cache": false,
+      "path": "raw\\c6267b7031d51e0bbfab007e.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=latest&page=5&topicname=claudecode",
+      "cache": false,
+      "path": "raw\\e69ec4438f8688650e6ef14c.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=latest&page=6&topicname=claudecode",
+      "cache": false,
+      "path": "raw\\b12482140e3dc1d4343ddf9e.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=alltime&page=1&topicname=claudecode",
+      "cache": false,
+      "path": "raw\\437ad3fc016bcc91dada72da.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=latest&page=1&topicname=agent",
+      "cache": false,
+      "path": "raw\\7bd93a0ac15983fc373289f1.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=latest&page=2&topicname=agent",
+      "cache": false,
+      "path": "raw\\c8aac0a31bd769c30c6f329d.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=latest&page=3&topicname=agent",
+      "cache": false,
+      "path": "raw\\b98f96ba3f64114bc768adf6.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=latest&page=4&topicname=agent",
+      "cache": false,
+      "path": "raw\\fbe795e59d3f8bc655af32d0.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=latest&page=5&topicname=agent",
+      "cache": false,
+      "path": "raw\\45fd79edff76cc72cc184ec1.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=latest&page=6&topicname=agent",
+      "cache": false,
+      "path": "raw\\fe8d628b024bf97e6057339a.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=alltime&page=1&topicname=agent",
+      "cache": false,
+      "path": "raw\\5a0b876abfcfa2362ca2c96a.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=latest&page=1&topicname=rag",
+      "cache": false,
+      "path": "raw\\e1d4aaf8bd7bafd2eba68be6.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=latest&page=2&topicname=rag",
+      "cache": false,
+      "path": "raw\\7545d1f28a372dcd833487c8.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=latest&page=3&topicname=rag",
+      "cache": false,
+      "path": "raw\\45d8ebe52f2fc1237a71de91.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=latest&page=4&topicname=rag",
+      "cache": false,
+      "path": "raw\\fc5a69da7ad47297126b7f56.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=latest&page=5&topicname=rag",
+      "cache": false,
+      "path": "raw\\2dfef82378a2d30d11dbf827.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=latest&page=6&topicname=rag",
+      "cache": false,
+      "path": "raw\\57aa941bdc77c625b41fdfa3.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=alltime&page=1&topicname=rag",
+      "cache": false,
+      "path": "raw\\140b8bb04adbc9feb13b052d.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=latest&page=1&topicname=mcp",
+      "cache": false,
+      "path": "raw\\21b2b0e1fc06e662b93f5e43.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=latest&page=2&topicname=mcp",
+      "cache": false,
+      "path": "raw\\634f1a4195c82993eb6d2637.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=latest&page=3&topicname=mcp",
+      "cache": false,
+      "path": "raw\\19f6a1e8400df03546b76d7e.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=latest&page=4&topicname=mcp",
+      "cache": false,
+      "path": "raw\\93ecde6b4758d1cab776fbe9.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=latest&page=5&topicname=mcp",
+      "cache": false,
+      "path": "raw\\f55e1d5c7d29fa92c3ce461e.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=latest&page=6&topicname=mcp",
+      "cache": false,
+      "path": "raw\\e11d2e0edfa93cae0826015a.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=alltime&page=1&topicname=mcp",
+      "cache": false,
+      "path": "raw\\e493cdd7afbdfe453363ea9e.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=alltime&page=1",
+      "cache": false,
+      "path": "raw\\1c9bb3b52c2bb4321d9b4ac8.json"
+    },
+    {
+      "url": "https://zenn.dev/api/articles?count=100&order=alltime&page=2",
+      "cache": false,
+      "path": "raw\\c1d8da01f5013a20e77b4f4f.json"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "run_id": "metadata-and-real-count",
+  "draft_sha256": "d31d06a7742119b65dd174e66f84bcc8e98ea989f7c0dd4a34dc1b483d5d3457",
+  "claims": [
+    {
+      "id": "count-result",
+      "text": "BM25 / H1 / v1.2: measured 8 cases.",
+      "level": "measured",
+      "scope": "synthetic local fixture"
+    }
+  ],
+  "numbers": [
+    {
+      "index": 3,
+      "token": "8",
+      "kind": "measurement",
+      "claim_id": "count-result",
+      "unit": "cases",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "3400be955041a89f59410432c2f5a8a6f6f694c6bfe5636244fc15476b85be41",
+        "run_id": "metadata-and-real-count",
+        "pointer": "/metrics/correct",
+        "unit": "cases"
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "run": "retrieval-v4",
+    "numeric_bindings": 21,
+    "protocol_constants": 2,
+    "auto_metadata_tokens": 11,
+    "draft_sha256": "b1284f93010b6633092ac8b83e715646a2699d286753fb975f6b6cfa44cb76c6",
+    "claims_sha256": "72007071aa36214b02f9a82e6cef8180e8bfca94f31525ac25acef43b0bcd37c"
+  },
+  {
+    "run": "review-behavior",
+    "numeric_bindings": 15,
+    "protocol_constants": 0,
+    "auto_metadata_tokens": 7,
+    "draft_sha256": "90cac9d8386d9d75583c76d161472339c98f2bac8ee19fc2d36976043e430bdd",
+    "claims_sha256": "9e0658b51088fbdc0cb42619adea3f52d6c8ae90e0f342dc1eb197ea99498a92"
+  }
+]

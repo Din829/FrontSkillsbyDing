@@ -1,0 +1,13 @@
+{
+  "method": "Static inspection of the exact runner snapshot taken before this replay; no simulated or real failed model resume",
+  "pipeline_sha256": "705a151f29a6a09fcf2e01bd0a5db91de3e0bb995edd4c5e2e4aa2bb103d353a",
+  "observed_exception_conditions": [
+    {
+      "line": 128,
+      "condition": "same_author and state['author_thread'] is None and process_file.exists()",
+      "body": "if same_author and state['author_thread'] is None and process_file.exists():\n    recorded_threads = read(process_file).get('thread_ids', [])\n    if recorded_threads:\n        state['author_thread'] = recorded_threads[0]"
+    }
+  ],
+  "existing_author_not_overwritten_by_this_branch": true,
+  "runtime_validation_boundary": "Actual CLI thread mismatch/interruption path not exercised; existing successful continuation evidence remains separate"
+}

@@ -1,0 +1,260 @@
+[
+  {
+    "id": "q01",
+    "query": "Anthropic の advanced tool use にある三つの機能をまとめて知りたい。",
+    "relevant_paths": [
+      "advancedtoolsuse/claude-advanced-tool-use.md"
+    ],
+    "evidence_quote": "Anthropic は 2025年11月、これらを解決する3つの beta 機能をリリースした。",
+    "kind": "topic_ja"
+  },
+  {
+    "id": "q02",
+    "query": "Which field supplies concrete tool-call examples beyond a JSON Schema?",
+    "relevant_paths": [
+      "advancedtoolsuse/claude-advanced-tool-use.md"
+    ],
+    "evidence_quote": "`input_examples` を使えば、実際の呼び出しパターンを Claude に見せることができる。",
+    "kind": "detail_en"
+  },
+  {
+    "id": "q03",
+    "query": "Claude Code 为什么尝试 RAG 后改用 Agentic Search？",
+    "relevant_paths": [
+      "agentic-search/article.md"
+    ],
+    "evidence_quote": "コードとの同期ずれ。",
+    "kind": "topic_zh"
+  },
+  {
+    "id": "q04",
+    "query": "Boris 氏が以前の開発環境で関数定義を探していた検索文字列は何ですか。",
+    "relevant_paths": [
+      "agentic-search/article.md"
+    ],
+    "evidence_quote": "関数 `foo` の定義を探すときに `foo(` でグローバル検索をかける",
+    "kind": "detail_ja"
+  },
+  {
+    "id": "q05",
+    "query": "How does the Handle design pattern keep large tool results out of an agent's context?",
+    "relevant_paths": [
+      "handletools/handle-system-design.md"
+    ],
+    "evidence_quote": "Handle は、大規模データへの**軽量な参照**です。",
+    "kind": "topic_en"
+  },
+  {
+    "id": "q06",
+    "query": "DataHandle 的有效期 scope 有哪几种取值？",
+    "relevant_paths": [
+      "handletools/handle-system-design.md"
+    ],
+    "evidence_quote": "scope: 'turn' | 'session' | 'persistent';",
+    "kind": "detail_zh"
+  },
+  {
+    "id": "q07",
+    "query": "LSP を使うとコーディング Agent のコード理解とトークン消費はどう変わりますか。",
+    "relevant_paths": [
+      "LSP/lsp_ai_agent_blog.md"
+    ],
+    "evidence_quote": "必要な情報だけをピンポイントで取得できるため、トークン消費も大幅に削減できます。",
+    "kind": "topic_ja"
+  },
+  {
+    "id": "q08",
+    "query": "语言服务器和编辑器之间使用什么消息协议？",
+    "relevant_paths": [
+      "LSP/lsp_ai_agent_blog.md"
+    ],
+    "evidence_quote": "JSON-RPC 2.0という軽量なプロトコルを使ってメッセージをやり取りします。",
+    "kind": "detail_zh"
+  },
+  {
+    "id": "q09",
+    "query": "如何把 Claude Skills 的设计理念接入已有 Agent 工具系统？",
+    "relevant_paths": [
+      "Skills/claude-skills-integration.md"
+    ],
+    "evidence_quote": "既存のツールシステムを完全に置き換えるのではなく、Skillsのコンセプトを追加の拡張機能として統合することにしました。",
+    "kind": "topic_zh"
+  },
+  {
+    "id": "q10",
+    "query": "What is the difference between model-invoked Skills and user-invoked slash commands?",
+    "relevant_paths": [
+      "Skills/claude-skills-integration.md"
+    ],
+    "evidence_quote": "Skillsは**model-invoked**（モデルが呼び出す）方式です。",
+    "kind": "detail_en"
+  },
+  {
+    "id": "q11",
+    "query": "Claude Code で用途別のカスタムサブエージェントを作って使う手順を探しています。",
+    "relevant_paths": [
+      "ClaudeCode-Subagent/article.md"
+    ],
+    "evidence_quote": "ユーザーが自分の用途に合わせてサブエージェントを自由にカスタマイズ・作成できるようになりました。",
+    "kind": "topic_ja"
+  },
+  {
+    "id": "q12",
+    "query": "Which command opens the interface for creating custom Claude Code subagents?",
+    "relevant_paths": [
+      "ClaudeCode-Subagent/article.md"
+    ],
+    "evidence_quote": "まず `/agents` コマンドを入力します：",
+    "kind": "detail_en"
+  },
+  {
+    "id": "q13",
+    "query": "传统固定 RAG 流程和 Agentic RAG 的根本差异是什么？",
+    "relevant_paths": [
+      "Agentic RAG/なぜRAGはエージェント化するのか_2025.md",
+      "agentic-search/article.md",
+      "Agent精度/AI_Agent_正確率向上技術_2025.md",
+      "Agent精度/AI_Agent设计阶段提升准确率技术指南.md"
+    ],
+    "evidence_quote": "Agentic RAGの本質は、RAGシステムに「自律的な判断能力」を持たせることです。",
+    "kind": "topic_zh"
+  },
+  {
+    "id": "q14",
+    "query": "Agentic RAG の三層構造では、PlanningAgent と検索コンポーネントはどの層に置きますか。",
+    "relevant_paths": [
+      "Agentic RAG/なぜRAGはエージェント化するのか_2025.md"
+    ],
+    "evidence_quote": "1. **エージェント層**：推論と計画を担当（PlanningAgent、RoutingAgent、ValidationAgent）",
+    "kind": "detail_ja"
+  },
+  {
+    "id": "q15",
+    "query": "How do Anthropic and OpenAI differ in their harness designs for long-running agents?",
+    "relevant_paths": [
+      "harness/harness-migration-ja.md"
+    ],
+    "evidence_quote": "Anthropicは**エージェントを三つに分けて互いに監視させる**方向に進み、OpenAIは**コードベースと環境そのものをharnessにする**方向に進んでいます。",
+    "kind": "topic_en"
+  },
+  {
+    "id": "q16",
+    "query": "长任务中的 compaction 和 context reset 对上下文连续性有什么区别？",
+    "relevant_paths": [
+      "harness/harness-migration-ja.md"
+    ],
+    "evidence_quote": "同じエージェントの履歴を要約・圧縮して、続きを走らせる",
+    "kind": "detail_zh"
+  },
+  {
+    "id": "q17",
+    "query": "Claude Code Channels と OpenClaw はどんな用途の違いがありますか。",
+    "relevant_paths": [
+      "channel/claude-code-channels-vs-openclaw.md"
+    ],
+    "evidence_quote": "**Claude Code Channels は「開発ツールへのイベント注入口」**、**OpenClaw は「チャットネイティブな AI アシスタント基盤」**です。",
+    "kind": "topic_ja"
+  },
+  {
+    "id": "q18",
+    "query": "What notification event delivers an incoming channel message into a Claude Code session?",
+    "relevant_paths": [
+      "channel/claude-code-channels-vs-openclaw.md"
+    ],
+    "evidence_quote": "`notifications/claude/channel` というイベントを発行することで、Claude Code のセッションにメッセージを届けます。",
+    "kind": "detail_en"
+  },
+  {
+    "id": "q19",
+    "query": "Clawdbot 的浏览器操作为什么采用 ARIA role 和 name 来定位元素？",
+    "relevant_paths": [
+      "clawdbotbro/blog-clawdbot-browser.md"
+    ],
+    "evidence_quote": "CSSクラス名が `btn-primary` から `submit-btn` に変わっても、「Sign Inというボタン」であることは変わりません。",
+    "kind": "topic_zh"
+  },
+  {
+    "id": "q20",
+    "query": "ブラウザ要素の Ref がスナップショットごとに変わらないよう、Clawdbot は何をキーにキャッシュしますか。",
+    "relevant_paths": [
+      "clawdbotbro/blog-clawdbot-browser.md"
+    ],
+    "evidence_quote": "Clawdbotでは、ページのtargetIdごとにRefをキャッシュする仕組みを持っています。",
+    "kind": "detail_ja"
+  },
+  {
+    "id": "q21",
+    "query": "FastMCP で日本の天気予報を返すローカル MCP サーバーを作りたい。",
+    "relevant_paths": [
+      "MCP/fastmcp_tutorial_jp_simplified.md"
+    ],
+    "evidence_quote": "次に、日本の天気予報を取得できるMCPサーバーを作ってみます。",
+    "kind": "topic_ja"
+  },
+  {
+    "id": "q22",
+    "query": "In the weather MCP tutorial, does the server communicate directly with the LLM?",
+    "relevant_paths": [
+      "MCP/fastmcp_tutorial_jp_simplified.md"
+    ],
+    "evidence_quote": "**MCPサーバーはLLMと直接やり取りすることがないという点です**。",
+    "kind": "detail_en"
+  },
+  {
+    "id": "q23",
+    "query": "AI Agent 评估中代码评分器、模型评分器各有什么优劣？",
+    "relevant_paths": [
+      "LLME/AI代理评估指南.md"
+    ],
+    "evidence_quote": "**劣势：** 非确定性（每次评分可能不同）、比代码评分贵、需要与人工校准",
+    "kind": "topic_zh"
+  },
+  {
+    "id": "q24",
+    "query": "Agent が「航空券を予約した」と発言した記録と、実際の予約完了はどう区別して評価しますか。",
+    "relevant_paths": [
+      "LLME/AI代理评估指南.md"
+    ],
+    "evidence_quote": "- Outcome是实际状态：数据库里是否真的有预订记录",
+    "kind": "detail_ja"
+  },
+  {
+    "id": "q25",
+    "query": "プロンプトインジェクションの代表的な攻撃手法と防御策を知りたい。",
+    "relevant_paths": [
+      "prompt注入，LLM安全/blog_article.md"
+    ],
+    "evidence_quote": "プロンプトインジェクション攻撃の手法と防御策について解説します。",
+    "kind": "topic_ja"
+  },
+  {
+    "id": "q26",
+    "query": "What is Split Injection, where apparently harmless parts are combined later?",
+    "relevant_paths": [
+      "prompt注入，LLM安全/blog_article.md"
+    ],
+    "evidence_quote": "攻撃を複数の無害に見える部分に分割し、後で結合させる手法です。",
+    "kind": "detail_en"
+  },
+  {
+    "id": "q27",
+    "query": "Gemini CLI 如何通过 Turn 架构把模型回答和工具执行串起来？",
+    "relevant_paths": [
+      "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+      "GeminiCLI-逻辑/GeminiCLI.md",
+      "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md"
+    ],
+    "evidence_quote": "Gemini CLIの「Turn」は、それをはるかに超えた複雑な概念として実装されています。",
+    "kind": "topic_zh"
+  },
+  {
+    "id": "q28",
+    "query": "Gemini CLI の Turn クラスで、実行待ちのツール呼び出しを保持するプロパティ名は何ですか。",
+    "relevant_paths": [
+      "GeminiCLI-逻辑/博客-GeminiCLI Agent框架解说-改善版.md",
+      "GeminiCLI-逻辑/Gemini-CLI详细架构说明.md"
+    ],
+    "evidence_quote": "readonly pendingToolCalls: ToolCallRequestInfo[];",
+    "kind": "detail_ja"
+  }
+]

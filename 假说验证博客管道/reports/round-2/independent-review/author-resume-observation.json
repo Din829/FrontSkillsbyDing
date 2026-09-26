@@ -1,0 +1,28 @@
+{
+  "source": "reports/round-2/author-resume",
+  "new_model_calls_in_this_audit": 0,
+  "same_thread_in_raw_events": true,
+  "raw_events": {
+    "first": {
+      "thread_ids": [
+        "01a0da61-cd42-7563-ba12-cec15505966e"
+      ],
+      "turn_completed_count": 1,
+      "tool_items_count": 0
+    },
+    "second": {
+      "thread_ids": [
+        "01a0da61-cd42-7563-ba12-cec15505966e"
+      ],
+      "turn_completed_count": 1,
+      "tool_items_count": 0
+    }
+  },
+  "resume_command_used": true,
+  "requested_resume_id": "01a0da61-cd42-7563-ba12-cec15505966e",
+  "requested_equals_actual": true,
+  "both_cli_exit_zero": true,
+  "marker_recalled": true,
+  "marker_not_resent": true,
+  "scope": "Existing real successful CLI continuation; not a new model run and not an interruption recovery test"
+}

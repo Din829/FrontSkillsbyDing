@@ -1,0 +1,1496 @@
+[
+  {
+    "name": "metadata-and-real-count_capture",
+    "command": [
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\skills\\evidence-check\\scripts\\gate.py",
+      "capture",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\metadata-and-real-count",
+      "--",
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "-c",
+      "import json;from pathlib import Path;Path('results/metrics.json').write_text(json.dumps({'run_id':'metadata-and-real-count', 'metrics': {'correct': {'value':len(['a','b','c','d','e','f']),'unit':'cases'}}}));print('Synthetic local fixture computation');raise SystemExit(0)"
+    ],
+    "expectation": "Actual local subprocess; exit 1 for intentionally failed process, otherwise 0",
+    "exit_code": 0,
+    "stdout": "{\n  \"run_id\": \"metadata-and-real-count\",\n  \"command\": [\n    \"C:\\\\Users\\\\q9951\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe\",\n    \"-c\",\n    \"import json;from pathlib import Path;Path('results/metrics.json').write_text(json.dumps({'run_id':'metadata-and-real-count', 'metrics': {'correct': {'value':len(['a','b','c','d','e','f']),'unit':'cases'}}}));print('Synthetic local fixture computation');raise SystemExit(0)\"\n  ],\n  \"started_at\": \"2026-09-25T21:22:11.814395+00:00\",\n  \"exit_code\": 0,\n  \"finished_at\": \"2026-09-25T21:22:11.871353+00:00\",\n  \"stdout\": {\n    \"path\": \"results/stdout.log\",\n    \"sha256\": \"8bb81d9d2063b07d981528c1f175852eac04f064c9ae5a44667383afdfdbe9be\"\n  },\n  \"stderr\": {\n    \"path\": \"results/stderr.log\",\n    \"sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\"\n  }\n}\n",
+    "stderr": "",
+    "answer": {
+      "run_id": "metadata-and-real-count",
+      "command": [
+        "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-c",
+        "import json;from pathlib import Path;Path('results/metrics.json').write_text(json.dumps({'run_id':'metadata-and-real-count', 'metrics': {'correct': {'value':len(['a','b','c','d','e','f']),'unit':'cases'}}}));print('Synthetic local fixture computation');raise SystemExit(0)"
+      ],
+      "started_at": "2026-09-25T21:22:11.814395+00:00",
+      "exit_code": 0,
+      "finished_at": "2026-09-25T21:22:11.871353+00:00",
+      "stdout": {
+        "path": "results/stdout.log",
+        "sha256": "8bb81d9d2063b07d981528c1f175852eac04f064c9ae5a44667383afdfdbe9be"
+      },
+      "stderr": {
+        "path": "results/stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "gate_sha256": "4253f4dacbd56cd73adfd760fdec510a945528976e78c13593adb07f8043806f"
+  },
+  {
+    "name": "metadata-and-real-count_scan",
+    "command": [
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\skills\\evidence-check\\scripts\\gate.py",
+      "scan",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\metadata-and-real-count\\article.md"
+    ],
+    "expectation": "Metadata numbers marked, true count remains candidate",
+    "exit_code": 0,
+    "stdout": "[\n  {\n    \"index\": 0,\n    \"token\": \"25\",\n    \"line\": 1,\n    \"start\": 2,\n    \"end\": 4,\n    \"ignore_reason\": \"identifier\"\n  },\n  {\n    \"index\": 1,\n    \"token\": \"1\",\n    \"line\": 1,\n    \"start\": 8,\n    \"end\": 9,\n    \"ignore_reason\": \"identifier\"\n  },\n  {\n    \"index\": 2,\n    \"token\": \"1.2\",\n    \"line\": 1,\n    \"start\": 13,\n    \"end\": 16,\n    \"ignore_reason\": \"version\"\n  },\n  {\n    \"index\": 3,\n    \"token\": \"6\",\n    \"line\": 1,\n    \"start\": 27,\n    \"end\": 28,\n    \"ignore_reason\": null\n  }\n]\n",
+    "stderr": "",
+    "answer": [
+      {
+        "index": 0,
+        "token": "25",
+        "line": 1,
+        "start": 2,
+        "end": 4,
+        "ignore_reason": "identifier"
+      },
+      {
+        "index": 1,
+        "token": "1",
+        "line": 1,
+        "start": 8,
+        "end": 9,
+        "ignore_reason": "identifier"
+      },
+      {
+        "index": 2,
+        "token": "1.2",
+        "line": 1,
+        "start": 13,
+        "end": 16,
+        "ignore_reason": "version"
+      },
+      {
+        "index": 3,
+        "token": "6",
+        "line": 1,
+        "start": 27,
+        "end": 28,
+        "ignore_reason": null
+      }
+    ],
+    "gate_sha256": "4253f4dacbd56cd73adfd760fdec510a945528976e78c13593adb07f8043806f"
+  },
+  {
+    "name": "metadata_valid_count",
+    "command": [
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\skills\\evidence-check\\scripts\\gate.py",
+      "check",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\metadata-and-real-count",
+      "--strict",
+      "--output",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\metadata-and-real-count\\gate.json"
+    ],
+    "expectation": "exit 0, traceable, checked_measurements=1; metadata doesn't force bookkeeping",
+    "exit_code": 0,
+    "stdout": "{\n  \"run_id\": \"metadata-and-real-count\",\n  \"status\": \"traceable\",\n  \"issues\": [],\n  \"ruler\": {\n    \"path\": \"results/ruler.json\",\n    \"recorded_status\": \"passed\"\n  },\n  \"checked_measurements\": 1,\n  \"policy_sha256\": \"237ab084566cceb293ae5902e53ada13726db61c17d609a2a4c9ee7dd231796d\",\n  \"scope\": \"Declared-number bookkeeping only; scientific validity and claim completeness require semantic review.\"\n}\n",
+    "stderr": "",
+    "answer": {
+      "run_id": "metadata-and-real-count",
+      "status": "traceable",
+      "issues": [],
+      "ruler": {
+        "path": "results/ruler.json",
+        "recorded_status": "passed"
+      },
+      "checked_measurements": 1,
+      "policy_sha256": "237ab084566cceb293ae5902e53ada13726db61c17d609a2a4c9ee7dd231796d",
+      "scope": "Declared-number bookkeeping only; scientific validity and claim completeness require semantic review."
+    },
+    "gate_sha256": "4253f4dacbd56cd73adfd760fdec510a945528976e78c13593adb07f8043806f"
+  },
+  {
+    "name": "metadata-and-real-count_scan",
+    "command": [
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\skills\\evidence-check\\scripts\\gate.py",
+      "scan",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\metadata-and-real-count\\article.md"
+    ],
+    "expectation": "Metadata numbers marked, true count remains candidate",
+    "exit_code": 0,
+    "stdout": "[\n  {\n    \"index\": 0,\n    \"token\": \"25\",\n    \"line\": 1,\n    \"start\": 2,\n    \"end\": 4,\n    \"ignore_reason\": \"identifier\"\n  },\n  {\n    \"index\": 1,\n    \"token\": \"1\",\n    \"line\": 1,\n    \"start\": 8,\n    \"end\": 9,\n    \"ignore_reason\": \"identifier\"\n  },\n  {\n    \"index\": 2,\n    \"token\": \"1.2\",\n    \"line\": 1,\n    \"start\": 13,\n    \"end\": 16,\n    \"ignore_reason\": \"version\"\n  },\n  {\n    \"index\": 3,\n    \"token\": \"9\",\n    \"line\": 1,\n    \"start\": 27,\n    \"end\": 28,\n    \"ignore_reason\": null\n  }\n]\n",
+    "stderr": "",
+    "answer": [
+      {
+        "index": 0,
+        "token": "25",
+        "line": 1,
+        "start": 2,
+        "end": 4,
+        "ignore_reason": "identifier"
+      },
+      {
+        "index": 1,
+        "token": "1",
+        "line": 1,
+        "start": 8,
+        "end": 9,
+        "ignore_reason": "identifier"
+      },
+      {
+        "index": 2,
+        "token": "1.2",
+        "line": 1,
+        "start": 13,
+        "end": 16,
+        "ignore_reason": "version"
+      },
+      {
+        "index": 3,
+        "token": "9",
+        "line": 1,
+        "start": 27,
+        "end": 28,
+        "ignore_reason": null
+      }
+    ],
+    "gate_sha256": "4253f4dacbd56cd73adfd760fdec510a945528976e78c13593adb07f8043806f"
+  },
+  {
+    "name": "metadata_beside_wrong_count",
+    "command": [
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\skills\\evidence-check\\scripts\\gate.py",
+      "check",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\metadata-and-real-count",
+      "--strict",
+      "--output",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\metadata-and-real-count\\gate.json"
+    ],
+    "expectation": "exit 2; actual count mismatch fatal despite identifier neighbors",
+    "exit_code": 2,
+    "stdout": "{\n  \"run_id\": \"metadata-and-real-count\",\n  \"status\": \"blocked\",\n  \"issues\": [\n    {\n      \"id\": \"value_mismatch:fd7000362fccbf3e\",\n      \"code\": \"value_mismatch\",\n      \"category\": \"numeric_mismatch\",\n      \"severity\": \"fatal\",\n      \"location\": {\n        \"document\": \"article.md\",\n        \"claim_id\": \"count-result\",\n        \"ref\": {\n          \"path\": \"results/metrics.json\",\n          \"pointer\": \"/metrics/correct\"\n        }\n      },\n      \"detail\": \"Source value 6 differs from stated value 9\"\n    }\n  ],\n  \"ruler\": {\n    \"path\": \"results/ruler.json\",\n    \"recorded_status\": \"passed\"\n  },\n  \"checked_measurements\": 0,\n  \"policy_sha256\": \"237ab084566cceb293ae5902e53ada13726db61c17d609a2a4c9ee7dd231796d\",\n  \"scope\": \"Declared-number bookkeeping only; scientific validity and claim completeness require semantic review.\"\n}\n",
+    "stderr": "",
+    "answer": {
+      "run_id": "metadata-and-real-count",
+      "status": "blocked",
+      "issues": [
+        {
+          "id": "value_mismatch:fd7000362fccbf3e",
+          "code": "value_mismatch",
+          "category": "numeric_mismatch",
+          "severity": "fatal",
+          "location": {
+            "document": "article.md",
+            "claim_id": "count-result",
+            "ref": {
+              "path": "results/metrics.json",
+              "pointer": "/metrics/correct"
+            }
+          },
+          "detail": "Source value 6 differs from stated value 9"
+        }
+      ],
+      "ruler": {
+        "path": "results/ruler.json",
+        "recorded_status": "passed"
+      },
+      "checked_measurements": 0,
+      "policy_sha256": "237ab084566cceb293ae5902e53ada13726db61c17d609a2a4c9ee7dd231796d",
+      "scope": "Declared-number bookkeeping only; scientific validity and claim completeness require semantic review."
+    },
+    "gate_sha256": "4253f4dacbd56cd73adfd760fdec510a945528976e78c13593adb07f8043806f"
+  },
+  {
+    "name": "metadata-and-real-count_scan",
+    "command": [
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\skills\\evidence-check\\scripts\\gate.py",
+      "scan",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\metadata-and-real-count\\article.md"
+    ],
+    "expectation": "Metadata numbers marked, true count remains candidate",
+    "exit_code": 0,
+    "stdout": "[\n  {\n    \"index\": 0,\n    \"token\": \"25\",\n    \"line\": 1,\n    \"start\": 2,\n    \"end\": 4,\n    \"ignore_reason\": \"identifier\"\n  },\n  {\n    \"index\": 1,\n    \"token\": \"1\",\n    \"line\": 1,\n    \"start\": 8,\n    \"end\": 9,\n    \"ignore_reason\": \"identifier\"\n  },\n  {\n    \"index\": 2,\n    \"token\": \"1.2\",\n    \"line\": 1,\n    \"start\": 13,\n    \"end\": 16,\n    \"ignore_reason\": \"version\"\n  },\n  {\n    \"index\": 3,\n    \"token\": \"8\",\n    \"line\": 1,\n    \"start\": 27,\n    \"end\": 28,\n    \"ignore_reason\": null\n  }\n]\n",
+    "stderr": "",
+    "answer": [
+      {
+        "index": 0,
+        "token": "25",
+        "line": 1,
+        "start": 2,
+        "end": 4,
+        "ignore_reason": "identifier"
+      },
+      {
+        "index": 1,
+        "token": "1",
+        "line": 1,
+        "start": 8,
+        "end": 9,
+        "ignore_reason": "identifier"
+      },
+      {
+        "index": 2,
+        "token": "1.2",
+        "line": 1,
+        "start": 13,
+        "end": 16,
+        "ignore_reason": "version"
+      },
+      {
+        "index": 3,
+        "token": "8",
+        "line": 1,
+        "start": 27,
+        "end": 28,
+        "ignore_reason": null
+      }
+    ],
+    "gate_sha256": "4253f4dacbd56cd73adfd760fdec510a945528976e78c13593adb07f8043806f"
+  },
+  {
+    "name": "changed_wrong_value_same_issue",
+    "command": [
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\skills\\evidence-check\\scripts\\gate.py",
+      "check",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\metadata-and-real-count",
+      "--strict",
+      "--output",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\metadata-and-real-count\\gate.json"
+    ],
+    "expectation": "exit 2; value_mismatch ID identical to preceding case",
+    "exit_code": 2,
+    "stdout": "{\n  \"run_id\": \"metadata-and-real-count\",\n  \"status\": \"blocked\",\n  \"issues\": [\n    {\n      \"id\": \"value_mismatch:fd7000362fccbf3e\",\n      \"code\": \"value_mismatch\",\n      \"category\": \"numeric_mismatch\",\n      \"severity\": \"fatal\",\n      \"location\": {\n        \"document\": \"article.md\",\n        \"claim_id\": \"count-result\",\n        \"ref\": {\n          \"path\": \"results/metrics.json\",\n          \"pointer\": \"/metrics/correct\"\n        }\n      },\n      \"detail\": \"Source value 6 differs from stated value 8\"\n    }\n  ],\n  \"ruler\": {\n    \"path\": \"results/ruler.json\",\n    \"recorded_status\": \"passed\"\n  },\n  \"checked_measurements\": 0,\n  \"policy_sha256\": \"237ab084566cceb293ae5902e53ada13726db61c17d609a2a4c9ee7dd231796d\",\n  \"scope\": \"Declared-number bookkeeping only; scientific validity and claim completeness require semantic review.\"\n}\n",
+    "stderr": "",
+    "answer": {
+      "run_id": "metadata-and-real-count",
+      "status": "blocked",
+      "issues": [
+        {
+          "id": "value_mismatch:fd7000362fccbf3e",
+          "code": "value_mismatch",
+          "category": "numeric_mismatch",
+          "severity": "fatal",
+          "location": {
+            "document": "article.md",
+            "claim_id": "count-result",
+            "ref": {
+              "path": "results/metrics.json",
+              "pointer": "/metrics/correct"
+            }
+          },
+          "detail": "Source value 6 differs from stated value 8"
+        }
+      ],
+      "ruler": {
+        "path": "results/ruler.json",
+        "recorded_status": "passed"
+      },
+      "checked_measurements": 0,
+      "policy_sha256": "237ab084566cceb293ae5902e53ada13726db61c17d609a2a4c9ee7dd231796d",
+      "scope": "Declared-number bookkeeping only; scientific validity and claim completeness require semantic review."
+    },
+    "gate_sha256": "4253f4dacbd56cd73adfd760fdec510a945528976e78c13593adb07f8043806f"
+  },
+  {
+    "name": "repair_first_and_second_same_process",
+    "command": [
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\component_worker.py",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\metadata-and-real-count",
+      "repair_twice"
+    ],
+    "expectation": "first eligible 1, second exhausted 1, total rounds 1",
+    "exit_code": 0,
+    "stdout": "{\"first_eligible\": 1, \"first_exhausted\": 0, \"second_eligible\": 0, \"second_exhausted\": 1, \"counts\": {\"repair_rounds\": 1, \"issue_attempts\": {\"value_mismatch:fd7000362fccbf3e\": 1}, \"reasons\": [{\"issue_ids\": [\"value_mismatch:fd7000362fccbf3e\"], \"reasons\": [\"Source value 6 differs from stated value 8\"]}]}}\n",
+    "stderr": "",
+    "answer": {
+      "first_eligible": 1,
+      "first_exhausted": 0,
+      "second_eligible": 0,
+      "second_exhausted": 1,
+      "counts": {
+        "repair_rounds": 1,
+        "issue_attempts": {
+          "value_mismatch:fd7000362fccbf3e": 1
+        },
+        "reasons": [
+          {
+            "issue_ids": [
+              "value_mismatch:fd7000362fccbf3e"
+            ],
+            "reasons": [
+              "Source value 6 differs from stated value 8"
+            ]
+          }
+        ]
+      }
+    },
+    "gate_sha256": "4253f4dacbd56cd73adfd760fdec510a945528976e78c13593adb07f8043806f"
+  },
+  {
+    "name": "repair_after_new_process",
+    "command": [
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\component_worker.py",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\metadata-and-real-count",
+      "repair_once"
+    ],
+    "expectation": "eligible 0, exhausted 1, total rounds still 1",
+    "exit_code": 0,
+    "stdout": "{\"first_eligible\": 0, \"first_exhausted\": 1, \"second_eligible\": null, \"second_exhausted\": null, \"counts\": {\"repair_rounds\": 1, \"issue_attempts\": {\"value_mismatch:fd7000362fccbf3e\": 1}, \"reasons\": [{\"issue_ids\": [\"value_mismatch:fd7000362fccbf3e\"], \"reasons\": [\"Source value 6 differs from stated value 8\"]}]}}\n",
+    "stderr": "",
+    "answer": {
+      "first_eligible": 0,
+      "first_exhausted": 1,
+      "second_eligible": null,
+      "second_exhausted": null,
+      "counts": {
+        "repair_rounds": 1,
+        "issue_attempts": {
+          "value_mismatch:fd7000362fccbf3e": 1
+        },
+        "reasons": [
+          {
+            "issue_ids": [
+              "value_mismatch:fd7000362fccbf3e"
+            ],
+            "reasons": [
+              "Source value 6 differs from stated value 8"
+            ]
+          }
+        ]
+      }
+    },
+    "gate_sha256": "4253f4dacbd56cd73adfd760fdec510a945528976e78c13593adb07f8043806f"
+  },
+  {
+    "name": "newline-only_capture",
+    "command": [
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\skills\\evidence-check\\scripts\\gate.py",
+      "capture",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\newline-only",
+      "--",
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "-c",
+      "import json;from pathlib import Path;Path('results/metrics.json').write_text(json.dumps({'run_id':'newline-only', 'metrics': {'correct': {'value':len(['a','b','c','d','e','f']),'unit':'cases'}}}));print('Synthetic local fixture computation');raise SystemExit(0)"
+    ],
+    "expectation": "Actual local subprocess; exit 1 for intentionally failed process, otherwise 0",
+    "exit_code": 0,
+    "stdout": "{\n  \"run_id\": \"newline-only\",\n  \"command\": [\n    \"C:\\\\Users\\\\q9951\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe\",\n    \"-c\",\n    \"import json;from pathlib import Path;Path('results/metrics.json').write_text(json.dumps({'run_id':'newline-only', 'metrics': {'correct': {'value':len(['a','b','c','d','e','f']),'unit':'cases'}}}));print('Synthetic local fixture computation');raise SystemExit(0)\"\n  ],\n  \"started_at\": \"2026-09-25T21:22:12.701760+00:00\",\n  \"exit_code\": 0,\n  \"finished_at\": \"2026-09-25T21:22:12.763988+00:00\",\n  \"stdout\": {\n    \"path\": \"results/stdout.log\",\n    \"sha256\": \"8bb81d9d2063b07d981528c1f175852eac04f064c9ae5a44667383afdfdbe9be\"\n  },\n  \"stderr\": {\n    \"path\": \"results/stderr.log\",\n    \"sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\"\n  }\n}\n",
+    "stderr": "",
+    "answer": {
+      "run_id": "newline-only",
+      "command": [
+        "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-c",
+        "import json;from pathlib import Path;Path('results/metrics.json').write_text(json.dumps({'run_id':'newline-only', 'metrics': {'correct': {'value':len(['a','b','c','d','e','f']),'unit':'cases'}}}));print('Synthetic local fixture computation');raise SystemExit(0)"
+      ],
+      "started_at": "2026-09-25T21:22:12.701760+00:00",
+      "exit_code": 0,
+      "finished_at": "2026-09-25T21:22:12.763988+00:00",
+      "stdout": {
+        "path": "results/stdout.log",
+        "sha256": "8bb81d9d2063b07d981528c1f175852eac04f064c9ae5a44667383afdfdbe9be"
+      },
+      "stderr": {
+        "path": "results/stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "gate_sha256": "4253f4dacbd56cd73adfd760fdec510a945528976e78c13593adb07f8043806f"
+  },
+  {
+    "name": "newline-only_scan",
+    "command": [
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\skills\\evidence-check\\scripts\\gate.py",
+      "scan",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\newline-only\\article.md"
+    ],
+    "expectation": "Metadata numbers marked, true count remains candidate",
+    "exit_code": 0,
+    "stdout": "[\n  {\n    \"index\": 0,\n    \"token\": \"25\",\n    \"line\": 1,\n    \"start\": 2,\n    \"end\": 4,\n    \"ignore_reason\": \"identifier\"\n  },\n  {\n    \"index\": 1,\n    \"token\": \"1\",\n    \"line\": 1,\n    \"start\": 8,\n    \"end\": 9,\n    \"ignore_reason\": \"identifier\"\n  },\n  {\n    \"index\": 2,\n    \"token\": \"1.2\",\n    \"line\": 1,\n    \"start\": 13,\n    \"end\": 16,\n    \"ignore_reason\": \"version\"\n  },\n  {\n    \"index\": 3,\n    \"token\": \"6\",\n    \"line\": 1,\n    \"start\": 27,\n    \"end\": 28,\n    \"ignore_reason\": null\n  }\n]\n",
+    "stderr": "",
+    "answer": [
+      {
+        "index": 0,
+        "token": "25",
+        "line": 1,
+        "start": 2,
+        "end": 4,
+        "ignore_reason": "identifier"
+      },
+      {
+        "index": 1,
+        "token": "1",
+        "line": 1,
+        "start": 8,
+        "end": 9,
+        "ignore_reason": "identifier"
+      },
+      {
+        "index": 2,
+        "token": "1.2",
+        "line": 1,
+        "start": 13,
+        "end": 16,
+        "ignore_reason": "version"
+      },
+      {
+        "index": 3,
+        "token": "6",
+        "line": 1,
+        "start": 27,
+        "end": 28,
+        "ignore_reason": null
+      }
+    ],
+    "gate_sha256": "4253f4dacbd56cd73adfd760fdec510a945528976e78c13593adb07f8043806f"
+  },
+  {
+    "name": "newline_hash_drift",
+    "command": [
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\skills\\evidence-check\\scripts\\gate.py",
+      "check",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\newline-only",
+      "--strict",
+      "--output",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\newline-only\\gate.json"
+    ],
+    "expectation": "exit 0, hash_drift warning, actual measurement still checked",
+    "exit_code": 0,
+    "stdout": "{\n  \"run_id\": \"newline-only\",\n  \"status\": \"warnings\",\n  \"issues\": [\n    {\n      \"id\": \"hash_drift:2af640789664a997\",\n      \"code\": \"hash_drift\",\n      \"category\": \"record_note\",\n      \"severity\": \"warning\",\n      \"location\": {\n        \"document\": \"article.md\",\n        \"claim_id\": \"count-result\",\n        \"ref\": {\n          \"path\": \"results/metrics.json\",\n          \"pointer\": \"/metrics/correct\"\n        }\n      },\n      \"detail\": \"Recorded hash differs; compare actual fields: results/metrics.json\"\n    }\n  ],\n  \"ruler\": {\n    \"path\": \"results/ruler.json\",\n    \"recorded_status\": \"passed\"\n  },\n  \"checked_measurements\": 1,\n  \"policy_sha256\": \"237ab084566cceb293ae5902e53ada13726db61c17d609a2a4c9ee7dd231796d\",\n  \"scope\": \"Declared-number bookkeeping only; scientific validity and claim completeness require semantic review.\"\n}\n",
+    "stderr": "",
+    "answer": {
+      "run_id": "newline-only",
+      "status": "warnings",
+      "issues": [
+        {
+          "id": "hash_drift:2af640789664a997",
+          "code": "hash_drift",
+          "category": "record_note",
+          "severity": "warning",
+          "location": {
+            "document": "article.md",
+            "claim_id": "count-result",
+            "ref": {
+              "path": "results/metrics.json",
+              "pointer": "/metrics/correct"
+            }
+          },
+          "detail": "Recorded hash differs; compare actual fields: results/metrics.json"
+        }
+      ],
+      "ruler": {
+        "path": "results/ruler.json",
+        "recorded_status": "passed"
+      },
+      "checked_measurements": 1,
+      "policy_sha256": "237ab084566cceb293ae5902e53ada13726db61c17d609a2a4c9ee7dd231796d",
+      "scope": "Declared-number bookkeeping only; scientific validity and claim completeness require semantic review."
+    },
+    "gate_sha256": "4253f4dacbd56cd73adfd760fdec510a945528976e78c13593adb07f8043806f"
+  },
+  {
+    "name": "same-number-other-run_capture",
+    "command": [
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\skills\\evidence-check\\scripts\\gate.py",
+      "capture",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\same-number-other-run",
+      "--",
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "-c",
+      "import json;from pathlib import Path;Path('results/metrics.json').write_text(json.dumps({'run_id':'same-number-other-run', 'metrics': {'correct': {'value':len(['a','b','c','d','e','f']),'unit':'cases'}}}));print('Synthetic local fixture computation');raise SystemExit(0)"
+    ],
+    "expectation": "Actual local subprocess; exit 1 for intentionally failed process, otherwise 0",
+    "exit_code": 0,
+    "stdout": "{\n  \"run_id\": \"same-number-other-run\",\n  \"command\": [\n    \"C:\\\\Users\\\\q9951\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe\",\n    \"-c\",\n    \"import json;from pathlib import Path;Path('results/metrics.json').write_text(json.dumps({'run_id':'same-number-other-run', 'metrics': {'correct': {'value':len(['a','b','c','d','e','f']),'unit':'cases'}}}));print('Synthetic local fixture computation');raise SystemExit(0)\"\n  ],\n  \"started_at\": \"2026-09-25T21:22:13.068524+00:00\",\n  \"exit_code\": 0,\n  \"finished_at\": \"2026-09-25T21:22:13.128158+00:00\",\n  \"stdout\": {\n    \"path\": \"results/stdout.log\",\n    \"sha256\": \"8bb81d9d2063b07d981528c1f175852eac04f064c9ae5a44667383afdfdbe9be\"\n  },\n  \"stderr\": {\n    \"path\": \"results/stderr.log\",\n    \"sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\"\n  }\n}\n",
+    "stderr": "",
+    "answer": {
+      "run_id": "same-number-other-run",
+      "command": [
+        "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-c",
+        "import json;from pathlib import Path;Path('results/metrics.json').write_text(json.dumps({'run_id':'same-number-other-run', 'metrics': {'correct': {'value':len(['a','b','c','d','e','f']),'unit':'cases'}}}));print('Synthetic local fixture computation');raise SystemExit(0)"
+      ],
+      "started_at": "2026-09-25T21:22:13.068524+00:00",
+      "exit_code": 0,
+      "finished_at": "2026-09-25T21:22:13.128158+00:00",
+      "stdout": {
+        "path": "results/stdout.log",
+        "sha256": "8bb81d9d2063b07d981528c1f175852eac04f064c9ae5a44667383afdfdbe9be"
+      },
+      "stderr": {
+        "path": "results/stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "gate_sha256": "4253f4dacbd56cd73adfd760fdec510a945528976e78c13593adb07f8043806f"
+  },
+  {
+    "name": "same-number-other-run_scan",
+    "command": [
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\skills\\evidence-check\\scripts\\gate.py",
+      "scan",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\same-number-other-run\\article.md"
+    ],
+    "expectation": "Metadata numbers marked, true count remains candidate",
+    "exit_code": 0,
+    "stdout": "[\n  {\n    \"index\": 0,\n    \"token\": \"25\",\n    \"line\": 1,\n    \"start\": 2,\n    \"end\": 4,\n    \"ignore_reason\": \"identifier\"\n  },\n  {\n    \"index\": 1,\n    \"token\": \"1\",\n    \"line\": 1,\n    \"start\": 8,\n    \"end\": 9,\n    \"ignore_reason\": \"identifier\"\n  },\n  {\n    \"index\": 2,\n    \"token\": \"1.2\",\n    \"line\": 1,\n    \"start\": 13,\n    \"end\": 16,\n    \"ignore_reason\": \"version\"\n  },\n  {\n    \"index\": 3,\n    \"token\": \"6\",\n    \"line\": 1,\n    \"start\": 27,\n    \"end\": 28,\n    \"ignore_reason\": null\n  }\n]\n",
+    "stderr": "",
+    "answer": [
+      {
+        "index": 0,
+        "token": "25",
+        "line": 1,
+        "start": 2,
+        "end": 4,
+        "ignore_reason": "identifier"
+      },
+      {
+        "index": 1,
+        "token": "1",
+        "line": 1,
+        "start": 8,
+        "end": 9,
+        "ignore_reason": "identifier"
+      },
+      {
+        "index": 2,
+        "token": "1.2",
+        "line": 1,
+        "start": 13,
+        "end": 16,
+        "ignore_reason": "version"
+      },
+      {
+        "index": 3,
+        "token": "6",
+        "line": 1,
+        "start": 27,
+        "end": 28,
+        "ignore_reason": null
+      }
+    ],
+    "gate_sha256": "4253f4dacbd56cd73adfd760fdec510a945528976e78c13593adb07f8043806f"
+  },
+  {
+    "name": "same-number-other-run_scan",
+    "command": [
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\skills\\evidence-check\\scripts\\gate.py",
+      "scan",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\same-number-other-run\\article.md"
+    ],
+    "expectation": "Metadata numbers marked, true count remains candidate",
+    "exit_code": 0,
+    "stdout": "[\n  {\n    \"index\": 0,\n    \"token\": \"25\",\n    \"line\": 1,\n    \"start\": 2,\n    \"end\": 4,\n    \"ignore_reason\": \"identifier\"\n  },\n  {\n    \"index\": 1,\n    \"token\": \"6\",\n    \"line\": 1,\n    \"start\": 14,\n    \"end\": 15,\n    \"ignore_reason\": null\n  }\n]\n",
+    "stderr": "",
+    "answer": [
+      {
+        "index": 0,
+        "token": "25",
+        "line": 1,
+        "start": 2,
+        "end": 4,
+        "ignore_reason": "identifier"
+      },
+      {
+        "index": 1,
+        "token": "6",
+        "line": 1,
+        "start": 14,
+        "end": 15,
+        "ignore_reason": null
+      }
+    ],
+    "gate_sha256": "4253f4dacbd56cd73adfd760fdec510a945528976e78c13593adb07f8043806f"
+  },
+  {
+    "name": "same_number_other_run",
+    "command": [
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\skills\\evidence-check\\scripts\\gate.py",
+      "check",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\same-number-other-run",
+      "--strict",
+      "--output",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\same-number-other-run\\gate.json"
+    ],
+    "expectation": "exit 2; source_run_mismatch despite same value and updated hash",
+    "exit_code": 2,
+    "stdout": "{\n  \"run_id\": \"same-number-other-run\",\n  \"status\": \"blocked\",\n  \"issues\": [\n    {\n      \"id\": \"source_run_mismatch:4f2c1ecb05994215\",\n      \"code\": \"source_run_mismatch\",\n      \"category\": \"numeric_mismatch\",\n      \"severity\": \"fatal\",\n      \"location\": {\n        \"document\": \"article.md\",\n        \"claim_id\": \"count-result\",\n        \"ref\": {\n          \"path\": \"results/metrics.json\",\n          \"pointer\": \"/metrics/correct\"\n        }\n      },\n      \"detail\": \"Metric belongs to a different run\"\n    }\n  ],\n  \"ruler\": {\n    \"path\": \"results/ruler.json\",\n    \"recorded_status\": \"passed\"\n  },\n  \"checked_measurements\": 0,\n  \"policy_sha256\": \"237ab084566cceb293ae5902e53ada13726db61c17d609a2a4c9ee7dd231796d\",\n  \"scope\": \"Declared-number bookkeeping only; scientific validity and claim completeness require semantic review.\"\n}\n",
+    "stderr": "",
+    "answer": {
+      "run_id": "same-number-other-run",
+      "status": "blocked",
+      "issues": [
+        {
+          "id": "source_run_mismatch:4f2c1ecb05994215",
+          "code": "source_run_mismatch",
+          "category": "numeric_mismatch",
+          "severity": "fatal",
+          "location": {
+            "document": "article.md",
+            "claim_id": "count-result",
+            "ref": {
+              "path": "results/metrics.json",
+              "pointer": "/metrics/correct"
+            }
+          },
+          "detail": "Metric belongs to a different run"
+        }
+      ],
+      "ruler": {
+        "path": "results/ruler.json",
+        "recorded_status": "passed"
+      },
+      "checked_measurements": 0,
+      "policy_sha256": "237ab084566cceb293ae5902e53ada13726db61c17d609a2a4c9ee7dd231796d",
+      "scope": "Declared-number bookkeeping only; scientific validity and claim completeness require semantic review."
+    },
+    "gate_sha256": "4253f4dacbd56cd73adfd760fdec510a945528976e78c13593adb07f8043806f"
+  },
+  {
+    "name": "ruler-needs-review_capture",
+    "command": [
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\skills\\evidence-check\\scripts\\gate.py",
+      "capture",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\ruler-needs-review",
+      "--",
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "-c",
+      "import json;from pathlib import Path;Path('results/metrics.json').write_text(json.dumps({'run_id':'ruler-needs-review', 'metrics': {'correct': {'value':len(['a','b','c','d','e','f']),'unit':'cases'}}}));print('Synthetic local fixture computation');raise SystemExit(0)"
+    ],
+    "expectation": "Actual local subprocess; exit 1 for intentionally failed process, otherwise 0",
+    "exit_code": 0,
+    "stdout": "{\n  \"run_id\": \"ruler-needs-review\",\n  \"command\": [\n    \"C:\\\\Users\\\\q9951\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe\",\n    \"-c\",\n    \"import json;from pathlib import Path;Path('results/metrics.json').write_text(json.dumps({'run_id':'ruler-needs-review', 'metrics': {'correct': {'value':len(['a','b','c','d','e','f']),'unit':'cases'}}}));print('Synthetic local fixture computation');raise SystemExit(0)\"\n  ],\n  \"started_at\": \"2026-09-25T21:22:13.534082+00:00\",\n  \"exit_code\": 0,\n  \"finished_at\": \"2026-09-25T21:22:13.599514+00:00\",\n  \"stdout\": {\n    \"path\": \"results/stdout.log\",\n    \"sha256\": \"8bb81d9d2063b07d981528c1f175852eac04f064c9ae5a44667383afdfdbe9be\"\n  },\n  \"stderr\": {\n    \"path\": \"results/stderr.log\",\n    \"sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\"\n  }\n}\n",
+    "stderr": "",
+    "answer": {
+      "run_id": "ruler-needs-review",
+      "command": [
+        "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-c",
+        "import json;from pathlib import Path;Path('results/metrics.json').write_text(json.dumps({'run_id':'ruler-needs-review', 'metrics': {'correct': {'value':len(['a','b','c','d','e','f']),'unit':'cases'}}}));print('Synthetic local fixture computation');raise SystemExit(0)"
+      ],
+      "started_at": "2026-09-25T21:22:13.534082+00:00",
+      "exit_code": 0,
+      "finished_at": "2026-09-25T21:22:13.599514+00:00",
+      "stdout": {
+        "path": "results/stdout.log",
+        "sha256": "8bb81d9d2063b07d981528c1f175852eac04f064c9ae5a44667383afdfdbe9be"
+      },
+      "stderr": {
+        "path": "results/stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "gate_sha256": "4253f4dacbd56cd73adfd760fdec510a945528976e78c13593adb07f8043806f"
+  },
+  {
+    "name": "ruler-needs-review_scan",
+    "command": [
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\skills\\evidence-check\\scripts\\gate.py",
+      "scan",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\ruler-needs-review\\article.md"
+    ],
+    "expectation": "Metadata numbers marked, true count remains candidate",
+    "exit_code": 0,
+    "stdout": "[\n  {\n    \"index\": 0,\n    \"token\": \"25\",\n    \"line\": 1,\n    \"start\": 2,\n    \"end\": 4,\n    \"ignore_reason\": \"identifier\"\n  },\n  {\n    \"index\": 1,\n    \"token\": \"1\",\n    \"line\": 1,\n    \"start\": 8,\n    \"end\": 9,\n    \"ignore_reason\": \"identifier\"\n  },\n  {\n    \"index\": 2,\n    \"token\": \"1.2\",\n    \"line\": 1,\n    \"start\": 13,\n    \"end\": 16,\n    \"ignore_reason\": \"version\"\n  },\n  {\n    \"index\": 3,\n    \"token\": \"6\",\n    \"line\": 1,\n    \"start\": 27,\n    \"end\": 28,\n    \"ignore_reason\": null\n  }\n]\n",
+    "stderr": "",
+    "answer": [
+      {
+        "index": 0,
+        "token": "25",
+        "line": 1,
+        "start": 2,
+        "end": 4,
+        "ignore_reason": "identifier"
+      },
+      {
+        "index": 1,
+        "token": "1",
+        "line": 1,
+        "start": 8,
+        "end": 9,
+        "ignore_reason": "identifier"
+      },
+      {
+        "index": 2,
+        "token": "1.2",
+        "line": 1,
+        "start": 13,
+        "end": 16,
+        "ignore_reason": "version"
+      },
+      {
+        "index": 3,
+        "token": "6",
+        "line": 1,
+        "start": 27,
+        "end": 28,
+        "ignore_reason": null
+      }
+    ],
+    "gate_sha256": "4253f4dacbd56cd73adfd760fdec510a945528976e78c13593adb07f8043806f"
+  },
+  {
+    "name": "ruler_warning_continues",
+    "command": [
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\skills\\evidence-check\\scripts\\gate.py",
+      "check",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\ruler-needs-review",
+      "--strict",
+      "--output",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\ruler-needs-review\\gate.json"
+    ],
+    "expectation": "exit 0, ruler status warning; no mechanical judgment of scientific validity",
+    "exit_code": 0,
+    "stdout": "{\n  \"run_id\": \"ruler-needs-review\",\n  \"status\": \"warnings\",\n  \"issues\": [\n    {\n      \"id\": \"hash_drift:d681c9d85dfb5dc5\",\n      \"code\": \"hash_drift\",\n      \"category\": \"record_note\",\n      \"severity\": \"warning\",\n      \"location\": {\n        \"ref\": {\n          \"path\": \"results/ruler.json\"\n        }\n      },\n      \"detail\": \"Recorded hash differs; compare actual fields: results/ruler.json\"\n    },\n    {\n      \"id\": \"ruler_record_note:04b6b680cc87c7b3\",\n      \"code\": \"ruler_record_note\",\n      \"category\": \"record_note\",\n      \"severity\": \"warning\",\n      \"location\": {\n        \"ref\": {\n          \"path\": \"results/ruler.json\"\n        }\n      },\n      \"detail\": \"Ruler record status: needs_review; no scientific validity decision made\"\n    }\n  ],\n  \"ruler\": {\n    \"path\": \"results/ruler.json\",\n    \"recorded_status\": \"needs_review\"\n  },\n  \"checked_measurements\": 1,\n  \"policy_sha256\": \"237ab084566cceb293ae5902e53ada13726db61c17d609a2a4c9ee7dd231796d\",\n  \"scope\": \"Declared-number bookkeeping only; scientific validity and claim completeness require semantic review.\"\n}\n",
+    "stderr": "",
+    "answer": {
+      "run_id": "ruler-needs-review",
+      "status": "warnings",
+      "issues": [
+        {
+          "id": "hash_drift:d681c9d85dfb5dc5",
+          "code": "hash_drift",
+          "category": "record_note",
+          "severity": "warning",
+          "location": {
+            "ref": {
+              "path": "results/ruler.json"
+            }
+          },
+          "detail": "Recorded hash differs; compare actual fields: results/ruler.json"
+        },
+        {
+          "id": "ruler_record_note:04b6b680cc87c7b3",
+          "code": "ruler_record_note",
+          "category": "record_note",
+          "severity": "warning",
+          "location": {
+            "ref": {
+              "path": "results/ruler.json"
+            }
+          },
+          "detail": "Ruler record status: needs_review; no scientific validity decision made"
+        }
+      ],
+      "ruler": {
+        "path": "results/ruler.json",
+        "recorded_status": "needs_review"
+      },
+      "checked_measurements": 1,
+      "policy_sha256": "237ab084566cceb293ae5902e53ada13726db61c17d609a2a4c9ee7dd231796d",
+      "scope": "Declared-number bookkeeping only; scientific validity and claim completeness require semantic review."
+    },
+    "gate_sha256": "4253f4dacbd56cd73adfd760fdec510a945528976e78c13593adb07f8043806f"
+  },
+  {
+    "name": "true-process-failure_capture",
+    "command": [
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\skills\\evidence-check\\scripts\\gate.py",
+      "capture",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\true-process-failure",
+      "--",
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "-c",
+      "import json;from pathlib import Path;Path('results/metrics.json').write_text(json.dumps({'run_id':'true-process-failure', 'metrics': {'correct': {'value':len(['a','b','c','d','e','f']),'unit':'cases'}}}));print('Synthetic local fixture computation');raise SystemExit(3)"
+    ],
+    "expectation": "Actual local subprocess; exit 1 for intentionally failed process, otherwise 0",
+    "exit_code": 1,
+    "stdout": "{\n  \"run_id\": \"true-process-failure\",\n  \"command\": [\n    \"C:\\\\Users\\\\q9951\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe\",\n    \"-c\",\n    \"import json;from pathlib import Path;Path('results/metrics.json').write_text(json.dumps({'run_id':'true-process-failure', 'metrics': {'correct': {'value':len(['a','b','c','d','e','f']),'unit':'cases'}}}));print('Synthetic local fixture computation');raise SystemExit(3)\"\n  ],\n  \"started_at\": \"2026-09-25T21:22:13.895031+00:00\",\n  \"exit_code\": 3,\n  \"finished_at\": \"2026-09-25T21:22:13.954522+00:00\",\n  \"stdout\": {\n    \"path\": \"results/stdout.log\",\n    \"sha256\": \"8bb81d9d2063b07d981528c1f175852eac04f064c9ae5a44667383afdfdbe9be\"\n  },\n  \"stderr\": {\n    \"path\": \"results/stderr.log\",\n    \"sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\"\n  }\n}\n",
+    "stderr": "",
+    "answer": {
+      "run_id": "true-process-failure",
+      "command": [
+        "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-c",
+        "import json;from pathlib import Path;Path('results/metrics.json').write_text(json.dumps({'run_id':'true-process-failure', 'metrics': {'correct': {'value':len(['a','b','c','d','e','f']),'unit':'cases'}}}));print('Synthetic local fixture computation');raise SystemExit(3)"
+      ],
+      "started_at": "2026-09-25T21:22:13.895031+00:00",
+      "exit_code": 3,
+      "finished_at": "2026-09-25T21:22:13.954522+00:00",
+      "stdout": {
+        "path": "results/stdout.log",
+        "sha256": "8bb81d9d2063b07d981528c1f175852eac04f064c9ae5a44667383afdfdbe9be"
+      },
+      "stderr": {
+        "path": "results/stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "gate_sha256": "4253f4dacbd56cd73adfd760fdec510a945528976e78c13593adb07f8043806f"
+  },
+  {
+    "name": "true-process-failure_scan",
+    "command": [
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\skills\\evidence-check\\scripts\\gate.py",
+      "scan",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\true-process-failure\\article.md"
+    ],
+    "expectation": "Metadata numbers marked, true count remains candidate",
+    "exit_code": 0,
+    "stdout": "[\n  {\n    \"index\": 0,\n    \"token\": \"25\",\n    \"line\": 1,\n    \"start\": 2,\n    \"end\": 4,\n    \"ignore_reason\": \"identifier\"\n  },\n  {\n    \"index\": 1,\n    \"token\": \"1\",\n    \"line\": 1,\n    \"start\": 8,\n    \"end\": 9,\n    \"ignore_reason\": \"identifier\"\n  },\n  {\n    \"index\": 2,\n    \"token\": \"1.2\",\n    \"line\": 1,\n    \"start\": 13,\n    \"end\": 16,\n    \"ignore_reason\": \"version\"\n  },\n  {\n    \"index\": 3,\n    \"token\": \"6\",\n    \"line\": 1,\n    \"start\": 27,\n    \"end\": 28,\n    \"ignore_reason\": null\n  }\n]\n",
+    "stderr": "",
+    "answer": [
+      {
+        "index": 0,
+        "token": "25",
+        "line": 1,
+        "start": 2,
+        "end": 4,
+        "ignore_reason": "identifier"
+      },
+      {
+        "index": 1,
+        "token": "1",
+        "line": 1,
+        "start": 8,
+        "end": 9,
+        "ignore_reason": "identifier"
+      },
+      {
+        "index": 2,
+        "token": "1.2",
+        "line": 1,
+        "start": 13,
+        "end": 16,
+        "ignore_reason": "version"
+      },
+      {
+        "index": 3,
+        "token": "6",
+        "line": 1,
+        "start": 27,
+        "end": 28,
+        "ignore_reason": null
+      }
+    ],
+    "gate_sha256": "4253f4dacbd56cd73adfd760fdec510a945528976e78c13593adb07f8043806f"
+  },
+  {
+    "name": "true-process-failure_scan",
+    "command": [
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\skills\\evidence-check\\scripts\\gate.py",
+      "scan",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\true-process-failure\\article.md"
+    ],
+    "expectation": "Metadata numbers marked, true count remains candidate",
+    "exit_code": 0,
+    "stdout": "[\n  {\n    \"index\": 0,\n    \"token\": \"6\",\n    \"line\": 1,\n    \"start\": 28,\n    \"end\": 29,\n    \"ignore_reason\": null\n  }\n]\n",
+    "stderr": "",
+    "answer": [
+      {
+        "index": 0,
+        "token": "6",
+        "line": 1,
+        "start": 28,
+        "end": 29,
+        "ignore_reason": null
+      }
+    ],
+    "gate_sha256": "4253f4dacbd56cd73adfd760fdec510a945528976e78c13593adb07f8043806f"
+  },
+  {
+    "name": "honest_failed_process_report",
+    "command": [
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\skills\\evidence-check\\scripts\\gate.py",
+      "check",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\true-process-failure",
+      "--strict",
+      "--output",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\true-process-failure\\gate.json"
+    ],
+    "expectation": "exit 0; execution failure is a visible warning, measured partial output allowed",
+    "exit_code": 0,
+    "stdout": "{\n  \"run_id\": \"true-process-failure\",\n  \"status\": \"warnings\",\n  \"issues\": [\n    {\n      \"id\": \"execution_failed_recorded:847529b74c847073\",\n      \"code\": \"execution_failed_recorded\",\n      \"category\": \"record_note\",\n      \"severity\": \"warning\",\n      \"location\": {\n        \"ref\": {\n          \"path\": \"results/execution.json\"\n        }\n      },\n      \"detail\": \"Execution failure recorded; failure report can continue\"\n    }\n  ],\n  \"ruler\": {\n    \"path\": \"results/ruler.json\",\n    \"recorded_status\": \"passed\"\n  },\n  \"checked_measurements\": 1,\n  \"policy_sha256\": \"237ab084566cceb293ae5902e53ada13726db61c17d609a2a4c9ee7dd231796d\",\n  \"scope\": \"Declared-number bookkeeping only; scientific validity and claim completeness require semantic review.\"\n}\n",
+    "stderr": "",
+    "answer": {
+      "run_id": "true-process-failure",
+      "status": "warnings",
+      "issues": [
+        {
+          "id": "execution_failed_recorded:847529b74c847073",
+          "code": "execution_failed_recorded",
+          "category": "record_note",
+          "severity": "warning",
+          "location": {
+            "ref": {
+              "path": "results/execution.json"
+            }
+          },
+          "detail": "Execution failure recorded; failure report can continue"
+        }
+      ],
+      "ruler": {
+        "path": "results/ruler.json",
+        "recorded_status": "passed"
+      },
+      "checked_measurements": 1,
+      "policy_sha256": "237ab084566cceb293ae5902e53ada13726db61c17d609a2a4c9ee7dd231796d",
+      "scope": "Declared-number bookkeeping only; scientific validity and claim completeness require semantic review."
+    },
+    "gate_sha256": "4253f4dacbd56cd73adfd760fdec510a945528976e78c13593adb07f8043806f"
+  },
+  {
+    "name": "false_success_from_failed_process",
+    "command": [
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\skills\\evidence-check\\scripts\\gate.py",
+      "check",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\true-process-failure",
+      "--strict",
+      "--output",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\true-process-failure\\gate.json"
+    ],
+    "expectation": "exit 2; false_success fatal based on actual capture exit_code=3",
+    "exit_code": 2,
+    "stdout": "{\n  \"run_id\": \"true-process-failure\",\n  \"status\": \"blocked\",\n  \"issues\": [\n    {\n      \"id\": \"false_success:6cc6be8b5eb8e028\",\n      \"code\": \"false_success\",\n      \"category\": \"false_success\",\n      \"severity\": \"fatal\",\n      \"location\": {\n        \"ref\": {\n          \"path\": \"results/execution.json\"\n        }\n      },\n      \"detail\": \"Recorded execution failed while the report claims measured success\"\n    }\n  ],\n  \"ruler\": {\n    \"path\": \"results/ruler.json\",\n    \"recorded_status\": \"passed\"\n  },\n  \"checked_measurements\": 1,\n  \"policy_sha256\": \"237ab084566cceb293ae5902e53ada13726db61c17d609a2a4c9ee7dd231796d\",\n  \"scope\": \"Declared-number bookkeeping only; scientific validity and claim completeness require semantic review.\"\n}\n",
+    "stderr": "",
+    "answer": {
+      "run_id": "true-process-failure",
+      "status": "blocked",
+      "issues": [
+        {
+          "id": "false_success:6cc6be8b5eb8e028",
+          "code": "false_success",
+          "category": "false_success",
+          "severity": "fatal",
+          "location": {
+            "ref": {
+              "path": "results/execution.json"
+            }
+          },
+          "detail": "Recorded execution failed while the report claims measured success"
+        }
+      ],
+      "ruler": {
+        "path": "results/ruler.json",
+        "recorded_status": "passed"
+      },
+      "checked_measurements": 1,
+      "policy_sha256": "237ab084566cceb293ae5902e53ada13726db61c17d609a2a4c9ee7dd231796d",
+      "scope": "Declared-number bookkeeping only; scientific validity and claim completeness require semantic review."
+    },
+    "gate_sha256": "4253f4dacbd56cd73adfd760fdec510a945528976e78c13593adb07f8043806f"
+  },
+  {
+    "name": "identifier-classification-bypass_capture",
+    "command": [
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\skills\\evidence-check\\scripts\\gate.py",
+      "capture",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\identifier-classification-bypass",
+      "--",
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "-c",
+      "import json;from pathlib import Path;Path('results/metrics.json').write_text(json.dumps({'run_id':'identifier-classification-bypass', 'metrics': {'correct': {'value':len(['a','b','c','d','e','f']),'unit':'cases'}}}));print('Synthetic local fixture computation');raise SystemExit(0)"
+    ],
+    "expectation": "Actual local subprocess; exit 1 for intentionally failed process, otherwise 0",
+    "exit_code": 0,
+    "stdout": "{\n  \"run_id\": \"identifier-classification-bypass\",\n  \"command\": [\n    \"C:\\\\Users\\\\q9951\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe\",\n    \"-c\",\n    \"import json;from pathlib import Path;Path('results/metrics.json').write_text(json.dumps({'run_id':'identifier-classification-bypass', 'metrics': {'correct': {'value':len(['a','b','c','d','e','f']),'unit':'cases'}}}));print('Synthetic local fixture computation');raise SystemExit(0)\"\n  ],\n  \"started_at\": \"2026-09-25T21:22:14.418653+00:00\",\n  \"exit_code\": 0,\n  \"finished_at\": \"2026-09-25T21:22:14.476103+00:00\",\n  \"stdout\": {\n    \"path\": \"results/stdout.log\",\n    \"sha256\": \"8bb81d9d2063b07d981528c1f175852eac04f064c9ae5a44667383afdfdbe9be\"\n  },\n  \"stderr\": {\n    \"path\": \"results/stderr.log\",\n    \"sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\"\n  }\n}\n",
+    "stderr": "",
+    "answer": {
+      "run_id": "identifier-classification-bypass",
+      "command": [
+        "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-c",
+        "import json;from pathlib import Path;Path('results/metrics.json').write_text(json.dumps({'run_id':'identifier-classification-bypass', 'metrics': {'correct': {'value':len(['a','b','c','d','e','f']),'unit':'cases'}}}));print('Synthetic local fixture computation');raise SystemExit(0)"
+      ],
+      "started_at": "2026-09-25T21:22:14.418653+00:00",
+      "exit_code": 0,
+      "finished_at": "2026-09-25T21:22:14.476103+00:00",
+      "stdout": {
+        "path": "results/stdout.log",
+        "sha256": "8bb81d9d2063b07d981528c1f175852eac04f064c9ae5a44667383afdfdbe9be"
+      },
+      "stderr": {
+        "path": "results/stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "gate_sha256": "4253f4dacbd56cd73adfd760fdec510a945528976e78c13593adb07f8043806f"
+  },
+  {
+    "name": "identifier-classification-bypass_scan",
+    "command": [
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\skills\\evidence-check\\scripts\\gate.py",
+      "scan",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\identifier-classification-bypass\\article.md"
+    ],
+    "expectation": "Metadata numbers marked, true count remains candidate",
+    "exit_code": 0,
+    "stdout": "[\n  {\n    \"index\": 0,\n    \"token\": \"25\",\n    \"line\": 1,\n    \"start\": 2,\n    \"end\": 4,\n    \"ignore_reason\": \"identifier\"\n  },\n  {\n    \"index\": 1,\n    \"token\": \"1\",\n    \"line\": 1,\n    \"start\": 8,\n    \"end\": 9,\n    \"ignore_reason\": \"identifier\"\n  },\n  {\n    \"index\": 2,\n    \"token\": \"1.2\",\n    \"line\": 1,\n    \"start\": 13,\n    \"end\": 16,\n    \"ignore_reason\": \"version\"\n  },\n  {\n    \"index\": 3,\n    \"token\": \"6\",\n    \"line\": 1,\n    \"start\": 27,\n    \"end\": 28,\n    \"ignore_reason\": null\n  }\n]\n",
+    "stderr": "",
+    "answer": [
+      {
+        "index": 0,
+        "token": "25",
+        "line": 1,
+        "start": 2,
+        "end": 4,
+        "ignore_reason": "identifier"
+      },
+      {
+        "index": 1,
+        "token": "1",
+        "line": 1,
+        "start": 8,
+        "end": 9,
+        "ignore_reason": "identifier"
+      },
+      {
+        "index": 2,
+        "token": "1.2",
+        "line": 1,
+        "start": 13,
+        "end": 16,
+        "ignore_reason": "version"
+      },
+      {
+        "index": 3,
+        "token": "6",
+        "line": 1,
+        "start": 27,
+        "end": 28,
+        "ignore_reason": null
+      }
+    ],
+    "gate_sha256": "4253f4dacbd56cd73adfd760fdec510a945528976e78c13593adb07f8043806f"
+  },
+  {
+    "name": "identifier-classification-bypass_scan",
+    "command": [
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\skills\\evidence-check\\scripts\\gate.py",
+      "scan",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\identifier-classification-bypass\\article.md"
+    ],
+    "expectation": "Metadata numbers marked, true count remains candidate",
+    "exit_code": 0,
+    "stdout": "[\n  {\n    \"index\": 0,\n    \"token\": \"25\",\n    \"line\": 1,\n    \"start\": 2,\n    \"end\": 4,\n    \"ignore_reason\": \"identifier\"\n  },\n  {\n    \"index\": 1,\n    \"token\": \"99\",\n    \"line\": 1,\n    \"start\": 14,\n    \"end\": 16,\n    \"ignore_reason\": null\n  }\n]\n",
+    "stderr": "",
+    "answer": [
+      {
+        "index": 0,
+        "token": "25",
+        "line": 1,
+        "start": 2,
+        "end": 4,
+        "ignore_reason": "identifier"
+      },
+      {
+        "index": 1,
+        "token": "99",
+        "line": 1,
+        "start": 14,
+        "end": 16,
+        "ignore_reason": null
+      }
+    ],
+    "gate_sha256": "4253f4dacbd56cd73adfd760fdec510a945528976e78c13593adb07f8043806f"
+  },
+  {
+    "name": "measurement_hidden_by_legacy_identifier",
+    "command": [
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\skills\\evidence-check\\scripts\\gate.py",
+      "check",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\identifier-classification-bypass",
+      "--strict",
+      "--output",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\identifier-classification-bypass\\gate.json"
+    ],
+    "expectation": "At least unclassified_numbers warning: 99 is not an automatically recognized identifier",
+    "exit_code": 0,
+    "stdout": "{\n  \"run_id\": \"identifier-classification-bypass\",\n  \"status\": \"warnings\",\n  \"issues\": [\n    {\n      \"id\": \"unclassified_numbers:beac5a95a9c1f9dd\",\n      \"code\": \"unclassified_numbers\",\n      \"category\": \"record_note\",\n      \"severity\": \"warning\",\n      \"location\": {\n        \"document\": \"article.md\"\n      },\n      \"detail\": \"Semantic review candidates: 1:99\"\n    }\n  ],\n  \"ruler\": {\n    \"path\": \"results/ruler.json\",\n    \"recorded_status\": \"passed\"\n  },\n  \"checked_measurements\": 0,\n  \"policy_sha256\": \"237ab084566cceb293ae5902e53ada13726db61c17d609a2a4c9ee7dd231796d\",\n  \"scope\": \"Declared-number bookkeeping only; scientific validity and claim completeness require semantic review.\"\n}\n",
+    "stderr": "",
+    "answer": {
+      "run_id": "identifier-classification-bypass",
+      "status": "warnings",
+      "issues": [
+        {
+          "id": "unclassified_numbers:beac5a95a9c1f9dd",
+          "code": "unclassified_numbers",
+          "category": "record_note",
+          "severity": "warning",
+          "location": {
+            "document": "article.md"
+          },
+          "detail": "Semantic review candidates: 1:99"
+        }
+      ],
+      "ruler": {
+        "path": "results/ruler.json",
+        "recorded_status": "passed"
+      },
+      "checked_measurements": 0,
+      "policy_sha256": "237ab084566cceb293ae5902e53ada13726db61c17d609a2a4c9ee7dd231796d",
+      "scope": "Declared-number bookkeeping only; scientific validity and claim completeness require semantic review."
+    },
+    "gate_sha256": "4253f4dacbd56cd73adfd760fdec510a945528976e78c13593adb07f8043806f"
+  },
+  {
+    "name": "missing-evidence-finish_capture",
+    "command": [
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\skills\\evidence-check\\scripts\\gate.py",
+      "capture",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\missing-evidence-finish",
+      "--",
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "-c",
+      "import json;from pathlib import Path;Path('results/metrics.json').write_text(json.dumps({'run_id':'missing-evidence-finish', 'metrics': {'correct': {'value':len(['a','b','c','d','e','f']),'unit':'cases'}}}));print('Synthetic local fixture computation');raise SystemExit(0)"
+    ],
+    "expectation": "Actual local subprocess; exit 1 for intentionally failed process, otherwise 0",
+    "exit_code": 0,
+    "stdout": "{\n  \"run_id\": \"missing-evidence-finish\",\n  \"command\": [\n    \"C:\\\\Users\\\\q9951\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe\",\n    \"-c\",\n    \"import json;from pathlib import Path;Path('results/metrics.json').write_text(json.dumps({'run_id':'missing-evidence-finish', 'metrics': {'correct': {'value':len(['a','b','c','d','e','f']),'unit':'cases'}}}));print('Synthetic local fixture computation');raise SystemExit(0)\"\n  ],\n  \"started_at\": \"2026-09-25T21:22:14.849171+00:00\",\n  \"exit_code\": 0,\n  \"finished_at\": \"2026-09-25T21:22:14.905253+00:00\",\n  \"stdout\": {\n    \"path\": \"results/stdout.log\",\n    \"sha256\": \"8bb81d9d2063b07d981528c1f175852eac04f064c9ae5a44667383afdfdbe9be\"\n  },\n  \"stderr\": {\n    \"path\": \"results/stderr.log\",\n    \"sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\"\n  }\n}\n",
+    "stderr": "",
+    "answer": {
+      "run_id": "missing-evidence-finish",
+      "command": [
+        "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-c",
+        "import json;from pathlib import Path;Path('results/metrics.json').write_text(json.dumps({'run_id':'missing-evidence-finish', 'metrics': {'correct': {'value':len(['a','b','c','d','e','f']),'unit':'cases'}}}));print('Synthetic local fixture computation');raise SystemExit(0)"
+      ],
+      "started_at": "2026-09-25T21:22:14.849171+00:00",
+      "exit_code": 0,
+      "finished_at": "2026-09-25T21:22:14.905253+00:00",
+      "stdout": {
+        "path": "results/stdout.log",
+        "sha256": "8bb81d9d2063b07d981528c1f175852eac04f064c9ae5a44667383afdfdbe9be"
+      },
+      "stderr": {
+        "path": "results/stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "gate_sha256": "4253f4dacbd56cd73adfd760fdec510a945528976e78c13593adb07f8043806f"
+  },
+  {
+    "name": "missing-evidence-finish_scan",
+    "command": [
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\skills\\evidence-check\\scripts\\gate.py",
+      "scan",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\missing-evidence-finish\\article.md"
+    ],
+    "expectation": "Metadata numbers marked, true count remains candidate",
+    "exit_code": 0,
+    "stdout": "[\n  {\n    \"index\": 0,\n    \"token\": \"25\",\n    \"line\": 1,\n    \"start\": 2,\n    \"end\": 4,\n    \"ignore_reason\": \"identifier\"\n  },\n  {\n    \"index\": 1,\n    \"token\": \"1\",\n    \"line\": 1,\n    \"start\": 8,\n    \"end\": 9,\n    \"ignore_reason\": \"identifier\"\n  },\n  {\n    \"index\": 2,\n    \"token\": \"1.2\",\n    \"line\": 1,\n    \"start\": 13,\n    \"end\": 16,\n    \"ignore_reason\": \"version\"\n  },\n  {\n    \"index\": 3,\n    \"token\": \"6\",\n    \"line\": 1,\n    \"start\": 27,\n    \"end\": 28,\n    \"ignore_reason\": null\n  }\n]\n",
+    "stderr": "",
+    "answer": [
+      {
+        "index": 0,
+        "token": "25",
+        "line": 1,
+        "start": 2,
+        "end": 4,
+        "ignore_reason": "identifier"
+      },
+      {
+        "index": 1,
+        "token": "1",
+        "line": 1,
+        "start": 8,
+        "end": 9,
+        "ignore_reason": "identifier"
+      },
+      {
+        "index": 2,
+        "token": "1.2",
+        "line": 1,
+        "start": 13,
+        "end": 16,
+        "ignore_reason": "version"
+      },
+      {
+        "index": 3,
+        "token": "6",
+        "line": 1,
+        "start": 27,
+        "end": 28,
+        "ignore_reason": null
+      }
+    ],
+    "gate_sha256": "4253f4dacbd56cd73adfd760fdec510a945528976e78c13593adb07f8043806f"
+  },
+  {
+    "name": "missing_document_registration",
+    "command": [
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\skills\\evidence-check\\scripts\\gate.py",
+      "check",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\missing-evidence-finish",
+      "--strict",
+      "--output",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\missing-evidence-finish\\gate.json"
+    ],
+    "expectation": "exit 0 / incomplete, missing material alone is not fatal",
+    "exit_code": 0,
+    "stdout": "{\n  \"run_id\": \"missing-evidence-finish\",\n  \"status\": \"incomplete\",\n  \"issues\": [\n    {\n      \"id\": \"documents_missing:d407f99077eb5864\",\n      \"code\": \"documents_missing\",\n      \"category\": \"evidence_gap\",\n      \"severity\": \"warning\",\n      \"location\": {},\n      \"detail\": \"No documents supplied for checking\"\n    }\n  ],\n  \"ruler\": {\n    \"path\": \"results/ruler.json\",\n    \"recorded_status\": \"passed\"\n  },\n  \"checked_measurements\": 0,\n  \"policy_sha256\": \"237ab084566cceb293ae5902e53ada13726db61c17d609a2a4c9ee7dd231796d\",\n  \"scope\": \"Declared-number bookkeeping only; scientific validity and claim completeness require semantic review.\"\n}\n",
+    "stderr": "",
+    "answer": {
+      "run_id": "missing-evidence-finish",
+      "status": "incomplete",
+      "issues": [
+        {
+          "id": "documents_missing:d407f99077eb5864",
+          "code": "documents_missing",
+          "category": "evidence_gap",
+          "severity": "warning",
+          "location": {},
+          "detail": "No documents supplied for checking"
+        }
+      ],
+      "ruler": {
+        "path": "results/ruler.json",
+        "recorded_status": "passed"
+      },
+      "checked_measurements": 0,
+      "policy_sha256": "237ab084566cceb293ae5902e53ada13726db61c17d609a2a4c9ee7dd231796d",
+      "scope": "Declared-number bookkeeping only; scientific validity and claim completeness require semantic review."
+    },
+    "gate_sha256": "4253f4dacbd56cd73adfd760fdec510a945528976e78c13593adb07f8043806f"
+  },
+  {
+    "name": "finish_with_incomplete_gate",
+    "command": [
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\component_worker.py",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\missing-evidence-finish",
+      "finish_incomplete"
+    ],
+    "expectation": "Do not label unchecked research draft_complete when gate status is incomplete",
+    "exit_code": 0,
+    "stdout": "{\"status\": \"incomplete\", \"gate_status\": \"incomplete\", \"issues\": [{\"id\": \"documents_missing:d407f99077eb5864\", \"code\": \"documents_missing\", \"category\": \"evidence_gap\", \"severity\": \"warning\", \"location\": {}, \"detail\": \"No documents supplied for checking\"}], \"rework\": {\"repair_rounds\": 0, \"issue_attempts\": {}, \"reasons\": []}, \"author_thread\": \"synthetic-component-fixture-not-a-real-model-thread\", \"note\": \"Warnings remain visible; no publication is performed\"}\n",
+    "stderr": "",
+    "answer": {
+      "status": "incomplete",
+      "gate_status": "incomplete",
+      "issues": [
+        {
+          "id": "documents_missing:d407f99077eb5864",
+          "code": "documents_missing",
+          "category": "evidence_gap",
+          "severity": "warning",
+          "location": {},
+          "detail": "No documents supplied for checking"
+        }
+      ],
+      "rework": {
+        "repair_rounds": 0,
+        "issue_attempts": {},
+        "reasons": []
+      },
+      "author_thread": "synthetic-component-fixture-not-a-real-model-thread",
+      "note": "Warnings remain visible; no publication is performed"
+    },
+    "gate_sha256": "4253f4dacbd56cd73adfd760fdec510a945528976e78c13593adb07f8043806f"
+  },
+  {
+    "name": "review-needs-input-finish_capture",
+    "command": [
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\skills\\evidence-check\\scripts\\gate.py",
+      "capture",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\review-needs-input-finish",
+      "--",
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "-c",
+      "import json;from pathlib import Path;Path('results/metrics.json').write_text(json.dumps({'run_id':'review-needs-input-finish', 'metrics': {'correct': {'value':len(['a','b','c','d','e','f']),'unit':'cases'}}}));print('Synthetic local fixture computation');raise SystemExit(0)"
+    ],
+    "expectation": "Actual local subprocess; exit 1 for intentionally failed process, otherwise 0",
+    "exit_code": 0,
+    "stdout": "{\n  \"run_id\": \"review-needs-input-finish\",\n  \"command\": [\n    \"C:\\\\Users\\\\q9951\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python313\\\\python.exe\",\n    \"-c\",\n    \"import json;from pathlib import Path;Path('results/metrics.json').write_text(json.dumps({'run_id':'review-needs-input-finish', 'metrics': {'correct': {'value':len(['a','b','c','d','e','f']),'unit':'cases'}}}));print('Synthetic local fixture computation');raise SystemExit(0)\"\n  ],\n  \"started_at\": \"2026-09-25T21:22:15.264439+00:00\",\n  \"exit_code\": 0,\n  \"finished_at\": \"2026-09-25T21:22:15.320708+00:00\",\n  \"stdout\": {\n    \"path\": \"results/stdout.log\",\n    \"sha256\": \"8bb81d9d2063b07d981528c1f175852eac04f064c9ae5a44667383afdfdbe9be\"\n  },\n  \"stderr\": {\n    \"path\": \"results/stderr.log\",\n    \"sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\"\n  }\n}\n",
+    "stderr": "",
+    "answer": {
+      "run_id": "review-needs-input-finish",
+      "command": [
+        "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-c",
+        "import json;from pathlib import Path;Path('results/metrics.json').write_text(json.dumps({'run_id':'review-needs-input-finish', 'metrics': {'correct': {'value':len(['a','b','c','d','e','f']),'unit':'cases'}}}));print('Synthetic local fixture computation');raise SystemExit(0)"
+      ],
+      "started_at": "2026-09-25T21:22:15.264439+00:00",
+      "exit_code": 0,
+      "finished_at": "2026-09-25T21:22:15.320708+00:00",
+      "stdout": {
+        "path": "results/stdout.log",
+        "sha256": "8bb81d9d2063b07d981528c1f175852eac04f064c9ae5a44667383afdfdbe9be"
+      },
+      "stderr": {
+        "path": "results/stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "gate_sha256": "4253f4dacbd56cd73adfd760fdec510a945528976e78c13593adb07f8043806f"
+  },
+  {
+    "name": "review-needs-input-finish_scan",
+    "command": [
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\skills\\evidence-check\\scripts\\gate.py",
+      "scan",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\review-needs-input-finish\\article.md"
+    ],
+    "expectation": "Metadata numbers marked, true count remains candidate",
+    "exit_code": 0,
+    "stdout": "[\n  {\n    \"index\": 0,\n    \"token\": \"25\",\n    \"line\": 1,\n    \"start\": 2,\n    \"end\": 4,\n    \"ignore_reason\": \"identifier\"\n  },\n  {\n    \"index\": 1,\n    \"token\": \"1\",\n    \"line\": 1,\n    \"start\": 8,\n    \"end\": 9,\n    \"ignore_reason\": \"identifier\"\n  },\n  {\n    \"index\": 2,\n    \"token\": \"1.2\",\n    \"line\": 1,\n    \"start\": 13,\n    \"end\": 16,\n    \"ignore_reason\": \"version\"\n  },\n  {\n    \"index\": 3,\n    \"token\": \"6\",\n    \"line\": 1,\n    \"start\": 27,\n    \"end\": 28,\n    \"ignore_reason\": null\n  }\n]\n",
+    "stderr": "",
+    "answer": [
+      {
+        "index": 0,
+        "token": "25",
+        "line": 1,
+        "start": 2,
+        "end": 4,
+        "ignore_reason": "identifier"
+      },
+      {
+        "index": 1,
+        "token": "1",
+        "line": 1,
+        "start": 8,
+        "end": 9,
+        "ignore_reason": "identifier"
+      },
+      {
+        "index": 2,
+        "token": "1.2",
+        "line": 1,
+        "start": 13,
+        "end": 16,
+        "ignore_reason": "version"
+      },
+      {
+        "index": 3,
+        "token": "6",
+        "line": 1,
+        "start": 27,
+        "end": 28,
+        "ignore_reason": null
+      }
+    ],
+    "gate_sha256": "4253f4dacbd56cd73adfd760fdec510a945528976e78c13593adb07f8043806f"
+  },
+  {
+    "name": "valid_gate_before_incomplete_review",
+    "command": [
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\skills\\evidence-check\\scripts\\gate.py",
+      "check",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\review-needs-input-finish",
+      "--strict",
+      "--output",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\review-needs-input-finish\\gate.json"
+    ],
+    "expectation": "exit 0 / traceable",
+    "exit_code": 0,
+    "stdout": "{\n  \"run_id\": \"review-needs-input-finish\",\n  \"status\": \"traceable\",\n  \"issues\": [],\n  \"ruler\": {\n    \"path\": \"results/ruler.json\",\n    \"recorded_status\": \"passed\"\n  },\n  \"checked_measurements\": 1,\n  \"policy_sha256\": \"237ab084566cceb293ae5902e53ada13726db61c17d609a2a4c9ee7dd231796d\",\n  \"scope\": \"Declared-number bookkeeping only; scientific validity and claim completeness require semantic review.\"\n}\n",
+    "stderr": "",
+    "answer": {
+      "run_id": "review-needs-input-finish",
+      "status": "traceable",
+      "issues": [],
+      "ruler": {
+        "path": "results/ruler.json",
+        "recorded_status": "passed"
+      },
+      "checked_measurements": 1,
+      "policy_sha256": "237ab084566cceb293ae5902e53ada13726db61c17d609a2a4c9ee7dd231796d",
+      "scope": "Declared-number bookkeeping only; scientific validity and claim completeness require semantic review."
+    },
+    "gate_sha256": "4253f4dacbd56cd73adfd760fdec510a945528976e78c13593adb07f8043806f"
+  },
+  {
+    "name": "finish_with_review_needs_input",
+    "command": [
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\component_worker.py",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\review-needs-input-finish",
+      "finish_review_needs_input"
+    ],
+    "expectation": "Retain review needs_input; don't label research draft_complete",
+    "exit_code": 0,
+    "stdout": "{\"status\": \"review_pending\", \"gate_status\": \"traceable\", \"issues\": [], \"rework\": {\"repair_rounds\": 0, \"issue_attempts\": {}, \"reasons\": []}, \"author_thread\": \"synthetic-component-fixture-not-a-real-model-thread\", \"note\": \"Warnings remain visible; no publication is performed\"}\n",
+    "stderr": "",
+    "answer": {
+      "status": "review_pending",
+      "gate_status": "traceable",
+      "issues": [],
+      "rework": {
+        "repair_rounds": 0,
+        "issue_attempts": {},
+        "reasons": []
+      },
+      "author_thread": "synthetic-component-fixture-not-a-real-model-thread",
+      "note": "Warnings remain visible; no publication is performed"
+    },
+    "gate_sha256": "4253f4dacbd56cd73adfd760fdec510a945528976e78c13593adb07f8043806f"
+  },
+  {
+    "name": "capture_missing_manifest_fields",
+    "command": [
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\skills\\evidence-check\\scripts\\gate.py",
+      "capture",
+      "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\independent-review\\retest\\fixtures\\empty-capture-manifest",
+      "--",
+      "C:\\Users\\q9951\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "-c",
+      "from pathlib import Path;Path('should-not-run').touch()"
+    ],
+    "expectation": "incomplete / no command side effect; CLI exit status documented separately",
+    "exit_code": 0,
+    "stdout": "{\n  \"run_id\": null,\n  \"status\": \"incomplete\",\n  \"issues\": [\n    {\n      \"id\": \"capture_run_id_missing:8b2eca4222c8407f\",\n      \"code\": \"capture_run_id_missing\",\n      \"category\": \"evidence_gap\",\n      \"severity\": \"warning\",\n      \"location\": {},\n      \"detail\": \"'run_id'\"\n    }\n  ],\n  \"ruler\": {\n    \"recorded_status\": null,\n    \"path\": null\n  },\n  \"checked_measurements\": 0,\n  \"policy_sha256\": \"237ab084566cceb293ae5902e53ada13726db61c17d609a2a4c9ee7dd231796d\",\n  \"scope\": \"Declared-number bookkeeping only; scientific validity and claim completeness require semantic review.\"\n}\n",
+    "stderr": "",
+    "answer": {
+      "run_id": null,
+      "status": "incomplete",
+      "issues": [
+        {
+          "id": "capture_run_id_missing:8b2eca4222c8407f",
+          "code": "capture_run_id_missing",
+          "category": "evidence_gap",
+          "severity": "warning",
+          "location": {},
+          "detail": "'run_id'"
+        }
+      ],
+      "ruler": {
+        "recorded_status": null,
+        "path": null
+      },
+      "checked_measurements": 0,
+      "policy_sha256": "237ab084566cceb293ae5902e53ada13726db61c17d609a2a4c9ee7dd231796d",
+      "scope": "Declared-number bookkeeping only; scientific validity and claim completeness require semantic review."
+    },
+    "gate_sha256": "4253f4dacbd56cd73adfd760fdec510a945528976e78c13593adb07f8043806f"
+  }
+]

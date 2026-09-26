@@ -1,0 +1,21 @@
+{
+  "status": "incomplete",
+  "gate_status": "incomplete",
+  "issues": [
+    {
+      "id": "documents_missing:d407f99077eb5864",
+      "code": "documents_missing",
+      "category": "evidence_gap",
+      "severity": "warning",
+      "location": {},
+      "detail": "No documents supplied for checking"
+    }
+  ],
+  "rework": {
+    "repair_rounds": 0,
+    "issue_attempts": {},
+    "reasons": []
+  },
+  "author_thread": "synthetic-component-fixture-not-a-real-model-thread",
+  "note": "Warnings remain visible; no publication is performed"
+}

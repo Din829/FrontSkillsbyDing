@@ -1,0 +1,50 @@
+{
+  "command": [
+    "C:\\Program Files\\nodejs\\npm.cmd",
+    "exec",
+    "--yes",
+    "--package=@openai/codex@0.157.0",
+    "--",
+    "codex",
+    "--ask-for-approval",
+    "never",
+    "-s",
+    "read-only",
+    "-C",
+    "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\author-resume\\first",
+    "exec",
+    "--skip-git-repo-check",
+    "--json",
+    "--model",
+    "gpt-6-astra",
+    "-o",
+    "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\author-resume\\first\\answer.txt",
+    "--output-schema",
+    "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\reports\\round-2\\author-resume\\first\\schema.json",
+    "-"
+  ],
+  "exit_code": 0,
+  "duration_seconds": 6.199985699728131,
+  "event_parse_status": "completed",
+  "cli_package": "@openai/codex@0.157.0",
+  "model_requested": "gpt-6-astra",
+  "runtime_sha256": "0863b4129872850ed695589d590bf6caffb17214be849a157886af3a527eb24b",
+  "turn_completed": true,
+  "thread_ids": [
+    "01a0da61-cd42-7563-ba12-cec15505966e"
+  ],
+  "resume_from": null,
+  "usage": [
+    {
+      "input_tokens": 19914,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 32,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "tool_items": [],
+  "prompt_sha256": "29625151235709c694e2434e8f4a612971aea566339f8b197113394a4d70df7c",
+  "monetary_cost": null,
+  "cost_note": "Existing account authentication; currency cost not reported by CLI"
+}

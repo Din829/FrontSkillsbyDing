@@ -1,0 +1,742 @@
+{
+  "checks": [
+    {
+      "name": "known_structural_positive_negative",
+      "passed": true,
+      "evidence": {
+        "positive": {
+          "code_blocks": 1,
+          "images": 1,
+          "tables": 1,
+          "paragraphs": 1,
+          "headings": 1,
+          "measurement_words": true,
+          "limitations_words": true,
+          "opening_problem_words": true,
+          "opening_result_words": true,
+          "text": "\n結果\n課題を検証した結果、改善した。\nx=1\n2",
+          "opening": "課題を検証した結果、改善した。"
+        },
+        "negative": {
+          "code_blocks": 0,
+          "images": 0,
+          "tables": 0,
+          "paragraphs": 2,
+          "headings": 0,
+          "measurement_words": false,
+          "limitations_words": false,
+          "opening_problem_words": false,
+          "opening_result_words": false,
+          "text": "\nこんにちは。\n設定を説明します。",
+          "opening": "こんにちは。\n設定を説明します。"
+        }
+      }
+    },
+    {
+      "name": "known_opening_problem_positive_negative",
+      "passed": true,
+      "evidence": {
+        "positive": "課題を検証した結果、改善した。",
+        "negative": "こんにちは。\n設定を説明します。"
+      }
+    },
+    {
+      "name": "title_trial_positive_negative",
+      "passed": true,
+      "evidence": {}
+    },
+    {
+      "name": "semantic_limit_detected",
+      "passed": true,
+      "evidence": {
+        "warning": "Keyword fires on negation. Therefore this feature MUST be labeled word presence, never evidence of a real experiment."
+      }
+    },
+    {
+      "name": "real_html_independent_parser",
+      "passed": true,
+      "evidence": [
+        {
+          "id": 640053,
+          "pass": true
+        },
+        {
+          "id": 636118,
+          "pass": true
+        },
+        {
+          "id": 609554,
+          "pass": true
+        },
+        {
+          "id": 610348,
+          "pass": true
+        },
+        {
+          "id": 608014,
+          "pass": true
+        },
+        {
+          "id": 614307,
+          "pass": true
+        },
+        {
+          "id": 627928,
+          "pass": true
+        },
+        {
+          "id": 632168,
+          "pass": true
+        },
+        {
+          "id": 617777,
+          "pass": true
+        },
+        {
+          "id": 612237,
+          "pass": true
+        },
+        {
+          "id": 631258,
+          "pass": true
+        },
+        {
+          "id": 637741,
+          "pass": true
+        },
+        {
+          "id": 623986,
+          "pass": true
+        },
+        {
+          "id": 623996,
+          "pass": true
+        },
+        {
+          "id": 604116,
+          "pass": true
+        },
+        {
+          "id": 615580,
+          "pass": true
+        },
+        {
+          "id": 639182,
+          "pass": true
+        },
+        {
+          "id": 640976,
+          "pass": true
+        },
+        {
+          "id": 623260,
+          "pass": true
+        },
+        {
+          "id": 642343,
+          "pass": true
+        },
+        {
+          "id": 647330,
+          "pass": true
+        },
+        {
+          "id": 646953,
+          "pass": true
+        },
+        {
+          "id": 650161,
+          "pass": true
+        },
+        {
+          "id": 648148,
+          "pass": true
+        },
+        {
+          "id": 653758,
+          "pass": true
+        },
+        {
+          "id": 653836,
+          "pass": true
+        },
+        {
+          "id": 653834,
+          "pass": true
+        },
+        {
+          "id": 645792,
+          "pass": true
+        },
+        {
+          "id": 653493,
+          "pass": true
+        },
+        {
+          "id": 644403,
+          "pass": true
+        },
+        {
+          "id": 653848,
+          "pass": true
+        },
+        {
+          "id": 653784,
+          "pass": true
+        },
+        {
+          "id": 653790,
+          "pass": true
+        },
+        {
+          "id": 653358,
+          "pass": true
+        },
+        {
+          "id": 648190,
+          "pass": true
+        },
+        {
+          "id": 649199,
+          "pass": true
+        },
+        {
+          "id": 652006,
+          "pass": true
+        },
+        {
+          "id": 634389,
+          "pass": true
+        },
+        {
+          "id": 652170,
+          "pass": true
+        },
+        {
+          "id": 649907,
+          "pass": true
+        },
+        {
+          "id": 652965,
+          "pass": true
+        },
+        {
+          "id": 648922,
+          "pass": true
+        },
+        {
+          "id": 651992,
+          "pass": true
+        },
+        {
+          "id": 653368,
+          "pass": true
+        },
+        {
+          "id": 639693,
+          "pass": true
+        },
+        {
+          "id": 652839,
+          "pass": true
+        },
+        {
+          "id": 652786,
+          "pass": true
+        },
+        {
+          "id": 648834,
+          "pass": true
+        },
+        {
+          "id": 646324,
+          "pass": true
+        },
+        {
+          "id": 651265,
+          "pass": true
+        },
+        {
+          "id": 653112,
+          "pass": true
+        },
+        {
+          "id": 652976,
+          "pass": true
+        },
+        {
+          "id": 639264,
+          "pass": true
+        },
+        {
+          "id": 631096,
+          "pass": true
+        },
+        {
+          "id": 651423,
+          "pass": true
+        },
+        {
+          "id": 646762,
+          "pass": true
+        },
+        {
+          "id": 648438,
+          "pass": true
+        },
+        {
+          "id": 648740,
+          "pass": true
+        },
+        {
+          "id": 652790,
+          "pass": true
+        },
+        {
+          "id": 650285,
+          "pass": true
+        },
+        {
+          "id": 647578,
+          "pass": true
+        },
+        {
+          "id": 648126,
+          "pass": true
+        },
+        {
+          "id": 653445,
+          "pass": true
+        },
+        {
+          "id": 652910,
+          "pass": true
+        },
+        {
+          "id": 653431,
+          "pass": true
+        },
+        {
+          "id": 650892,
+          "pass": true
+        },
+        {
+          "id": 652268,
+          "pass": true
+        },
+        {
+          "id": 649356,
+          "pass": true
+        },
+        {
+          "id": 652933,
+          "pass": true
+        },
+        {
+          "id": 648954,
+          "pass": true
+        },
+        {
+          "id": 651243,
+          "pass": true
+        },
+        {
+          "id": 647690,
+          "pass": true
+        },
+        {
+          "id": 653170,
+          "pass": true
+        },
+        {
+          "id": 647977,
+          "pass": true
+        },
+        {
+          "id": 645227,
+          "pass": true
+        },
+        {
+          "id": 648123,
+          "pass": true
+        },
+        {
+          "id": 645393,
+          "pass": true
+        },
+        {
+          "id": 652745,
+          "pass": true
+        },
+        {
+          "id": 649185,
+          "pass": true
+        },
+        {
+          "id": 649845,
+          "pass": true
+        },
+        {
+          "id": 651211,
+          "pass": true
+        },
+        {
+          "id": 650556,
+          "pass": true
+        },
+        {
+          "id": 642878,
+          "pass": true
+        },
+        {
+          "id": 648204,
+          "pass": true
+        },
+        {
+          "id": 630854,
+          "pass": true
+        },
+        {
+          "id": 625296,
+          "pass": true
+        },
+        {
+          "id": 633170,
+          "pass": true
+        },
+        {
+          "id": 627580,
+          "pass": true
+        },
+        {
+          "id": 644802,
+          "pass": true
+        },
+        {
+          "id": 643954,
+          "pass": true
+        },
+        {
+          "id": 653096,
+          "pass": true
+        },
+        {
+          "id": 648049,
+          "pass": true
+        },
+        {
+          "id": 627154,
+          "pass": true
+        },
+        {
+          "id": 631767,
+          "pass": true
+        },
+        {
+          "id": 623758,
+          "pass": true
+        },
+        {
+          "id": 618762,
+          "pass": true
+        },
+        {
+          "id": 630649,
+          "pass": true
+        },
+        {
+          "id": 632875,
+          "pass": true
+        },
+        {
+          "id": 620030,
+          "pass": true
+        },
+        {
+          "id": 618813,
+          "pass": true
+        },
+        {
+          "id": 620782,
+          "pass": true
+        },
+        {
+          "id": 634367,
+          "pass": true
+        },
+        {
+          "id": 627200,
+          "pass": true
+        },
+        {
+          "id": 631828,
+          "pass": true
+        },
+        {
+          "id": 630566,
+          "pass": true
+        },
+        {
+          "id": 636268,
+          "pass": true
+        },
+        {
+          "id": 601461,
+          "pass": true
+        },
+        {
+          "id": 603752,
+          "pass": true
+        },
+        {
+          "id": 625607,
+          "pass": true
+        },
+        {
+          "id": 626505,
+          "pass": true
+        },
+        {
+          "id": 593423,
+          "pass": true
+        },
+        {
+          "id": 601596,
+          "pass": true
+        },
+        {
+          "id": 642091,
+          "pass": true
+        },
+        {
+          "id": 647368,
+          "pass": true
+        },
+        {
+          "id": 615882,
+          "pass": true
+        },
+        {
+          "id": 635467,
+          "pass": true
+        },
+        {
+          "id": 630664,
+          "pass": true
+        },
+        {
+          "id": 635506,
+          "pass": true
+        },
+        {
+          "id": 585429,
+          "pass": true
+        },
+        {
+          "id": 586908,
+          "pass": true
+        },
+        {
+          "id": 596823,
+          "pass": true
+        },
+        {
+          "id": 599481,
+          "pass": true
+        },
+        {
+          "id": 617662,
+          "pass": true
+        },
+        {
+          "id": 627692,
+          "pass": true
+        },
+        {
+          "id": 576779,
+          "pass": true
+        },
+        {
+          "id": 586510,
+          "pass": true
+        },
+        {
+          "id": 610530,
+          "pass": true
+        },
+        {
+          "id": 614734,
+          "pass": true
+        },
+        {
+          "id": 578129,
+          "pass": true
+        },
+        {
+          "id": 564532,
+          "pass": true
+        },
+        {
+          "id": 216441,
+          "pass": true
+        },
+        {
+          "id": 375893,
+          "pass": true
+        },
+        {
+          "id": 59314,
+          "pass": true
+        },
+        {
+          "id": 257179,
+          "pass": true
+        },
+        {
+          "id": 451596,
+          "pass": true
+        },
+        {
+          "id": 220311,
+          "pass": true
+        },
+        {
+          "id": 268900,
+          "pass": true
+        },
+        {
+          "id": 516793,
+          "pass": true
+        },
+        {
+          "id": 326943,
+          "pass": true
+        },
+        {
+          "id": 471348,
+          "pass": true
+        },
+        {
+          "id": 32,
+          "pass": true
+        },
+        {
+          "id": 390140,
+          "pass": true
+        },
+        {
+          "id": 159615,
+          "pass": true
+        },
+        {
+          "id": 168047,
+          "pass": true
+        },
+        {
+          "id": 32108,
+          "pass": true
+        },
+        {
+          "id": 14517,
+          "pass": true
+        },
+        {
+          "id": 167254,
+          "pass": true
+        },
+        {
+          "id": 15415,
+          "pass": true
+        },
+        {
+          "id": 31007,
+          "pass": true
+        },
+        {
+          "id": 421648,
+          "pass": true
+        },
+        {
+          "id": 57620,
+          "pass": true
+        },
+        {
+          "id": 395121,
+          "pass": true
+        },
+        {
+          "id": 425344,
+          "pass": true
+        },
+        {
+          "id": 148439,
+          "pass": true
+        },
+        {
+          "id": 19840,
+          "pass": true
+        },
+        {
+          "id": 108766,
+          "pass": true
+        },
+        {
+          "id": 54050,
+          "pass": true
+        },
+        {
+          "id": 65676,
+          "pass": true
+        },
+        {
+          "id": 201495,
+          "pass": true
+        },
+        {
+          "id": 206959,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "real_cache_no_network",
+      "passed": true,
+      "evidence": {
+        "network": 0,
+        "hits": 6
+      }
+    },
+    {
+      "name": "real_incremental_refresh_then_overlap",
+      "passed": true,
+      "evidence": {
+        "network": 1,
+        "coverage": {
+          "observed_at": "2026-09-25T13:27:20.508499+00:00",
+          "incremental": true,
+          "coverage": [
+            {
+              "query": {
+                "topicname": "ai",
+                "order": "latest",
+                "count": 100,
+                "sample_target": 600
+              },
+              "unique_seen_this_run": 100,
+              "stored_articles": 600,
+              "pages": 1,
+              "sources": [
+                "raw\\5672ff917e76790c595cd723.json"
+              ],
+              "terminal": "known_page_overlap_incremental_new_content_only",
+              "next_page": 2,
+              "index": "indexes\\bda0cf26205d0ccd.json"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "all_passed": true,
+  "boundary": "Mechanical and lexical features calibrated; semantic usefulness requires qualitative review. Independent parser check requires beautifulsoup4."
+}

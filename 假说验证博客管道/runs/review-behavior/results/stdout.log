@@ -1,0 +1,44 @@
+{
+  "groups": {
+    "generic": {
+      "n": 24,
+      "original_primary_pass": 22,
+      "decision_correct": 24,
+      "required_issue_found": 24,
+      "verdict_correct": 24,
+      "posthoc_semantic_acceptable": 24,
+      "input_tokens": 487644,
+      "output_tokens": 5187
+    },
+    "skills": {
+      "n": 24,
+      "original_primary_pass": 22,
+      "decision_correct": 24,
+      "required_issue_found": 24,
+      "verdict_correct": 24,
+      "posthoc_semantic_acceptable": 24,
+      "input_tokens": 533362,
+      "output_tokens": 5999
+    }
+  },
+  "integrity": {
+    "sessions": 48,
+    "unique_thread_ids": 48,
+    "successful_processes": 48,
+    "tool_items_in_raw_events": 0,
+    "normalized_command_variants": 1,
+    "schema_variants": 1,
+    "prompt_pairs_only_rule_addition": 24,
+    "snapshot_hashes_match": true,
+    "raw_answers_equal_scored_answers": true,
+    "event_type_counts": {
+      "thread.started": 48,
+      "turn.started": 48,
+      "item.completed": 48,
+      "turn.completed": 48
+    },
+    "effective_model_id_recorded": false,
+    "complete_system_context_frozen": false
+  },
+  "output": "C:\\Users\\q9951\\Desktop\\Blog\\_pipeline\\audit\\review_behavior_review\\summary.json"
+}

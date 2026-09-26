@@ -1,0 +1,100 @@
+{
+  "c01": {
+    "decision": "needs_evidence",
+    "required_issue": "invalid_ruler",
+    "allowed_issues": [
+      "invalid_ruler"
+    ],
+    "verdict": "insufficient"
+  },
+  "c02": {
+    "decision": "needs_evidence",
+    "required_issue": "unfair_baseline",
+    "allowed_issues": [
+      "unfair_baseline"
+    ],
+    "verdict": "insufficient"
+  },
+  "c03": {
+    "decision": "execution_failed",
+    "required_issue": "execution_failure",
+    "allowed_issues": [
+      "execution_failure",
+      "read_as_measured",
+      "wrong_source"
+    ],
+    "verdict": "insufficient"
+  },
+  "c04": {
+    "decision": "ready",
+    "required_issue": "none",
+    "allowed_issues": [],
+    "verdict": "rejected"
+  },
+  "c05": {
+    "decision": "ready",
+    "required_issue": "none",
+    "allowed_issues": [],
+    "verdict": "supported"
+  },
+  "c06": {
+    "decision": "needs_evidence",
+    "required_issue": "wrong_source",
+    "allowed_issues": [
+      "wrong_source",
+      "scope_overreach"
+    ],
+    "verdict": "rejected"
+  },
+  "c07": {
+    "decision": "needs_evidence",
+    "required_issue": "denominator_mismatch",
+    "allowed_issues": [
+      "denominator_mismatch"
+    ],
+    "verdict": "rejected"
+  },
+  "c08": {
+    "decision": "needs_evidence",
+    "required_issue": "noise_or_selection",
+    "allowed_issues": [
+      "noise_or_selection",
+      "scope_overreach"
+    ],
+    "verdict": "insufficient"
+  },
+  "c09": {
+    "decision": "needs_evidence",
+    "required_issue": "read_as_measured",
+    "allowed_issues": [
+      "read_as_measured",
+      "wrong_source"
+    ],
+    "verdict": "insufficient"
+  },
+  "c10": {
+    "decision": "needs_evidence",
+    "required_issue": "scope_overreach",
+    "allowed_issues": [
+      "scope_overreach",
+      "noise_or_selection"
+    ],
+    "verdict": "insufficient"
+  },
+  "c11": {
+    "decision": "ready",
+    "required_issue": "none",
+    "allowed_issues": [],
+    "verdict": "supported"
+  },
+  "c12": {
+    "decision": "execution_failed",
+    "required_issue": "execution_failure",
+    "allowed_issues": [
+      "execution_failure",
+      "read_as_measured",
+      "wrong_source"
+    ],
+    "verdict": "insufficient"
+  }
+}

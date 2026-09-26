@@ -1,0 +1,9 @@
+{
+  "run_id": "different-study",
+  "metrics": {
+    "correct": {
+      "value": 6,
+      "unit": "cases"
+    }
+  }
+}

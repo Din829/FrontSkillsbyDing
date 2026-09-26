@@ -1,0 +1,182 @@
+{
+  "run_id": "review-behavior",
+  "draft_sha256": "643dc851197874fb0a028123431d406660a6864cfbbb773c261e78c0dc489222",
+  "claims": [
+    {
+      "id": "c1",
+      "text": "# 实验方案与实际协议\n\n此文件是交付索引，不冒充事前预注册；事前方案保存在 results/snapshots/DESIGN.md。",
+      "level": "read",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/snapshots/DESIGN.md",
+          "sha256": "0904531d26f5c230fceeda05b498870ab5053e1ef942cc20a461fe0e7c5fa104"
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "text": "原计划用 12 类人工编写的短情境，两条件各重复 2 次，总计 48 个独立会话。情境中的校准、执行和复现摘要被提示明确视为事实，模型不得调用工具。",
+      "level": "read",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/snapshots/DESIGN.md",
+          "sha256": "0904531d26f5c230fceeda05b498870ab5053e1ef942cc20a461fe0e7c5fa104"
+        },
+        {
+          "path": "results/snapshots/cases.json",
+          "sha256": "54b831539583a70d0f031593e2869c60063a36c2c95c4daff298efe3710c3935"
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "text": "通用组和规则组使用相同材料、输出 schema 与共同提示，规则组额外加入实验审查和证据对照技能正文。共同提示已要求正确对待负面结果，schema 已列出问题标签，所以通用组不是裸模型。",
+      "level": "inferred",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/snapshots/DESIGN.md",
+          "sha256": "0904531d26f5c230fceeda05b498870ab5053e1ef942cc20a461fe0e7c5fa104"
+        },
+        {
+          "path": "results/study/rule_snapshot.md",
+          "sha256": "2f684fac8d944c1d44bdd641515cb080525ee34f711581caa1f80c447a5e2eb7"
+        }
+      ]
+    },
+    {
+      "id": "c4",
+      "text": "原主指标要求 decision 正确、必需问题命中、没有白名单外问题；verdict 单独报告。评分器先通过了明显正反答案和全报标签的校准，但未覆盖合理附加标签，后续因此出现假红。",
+      "level": "read",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/study/ruler_unit_calibration.json",
+          "sha256": "c4961fcbcbb35c17d4ac5612be3c659768b85eab903581d2763e31eeb33ff32b"
+        },
+        {
+          "path": "results/snapshots/semantic-review.md",
+          "sha256": "dff8eda8fb88b3d6f990f437e663ae66847ea8b21c109c3f9a18be1c4f3084e0"
+        }
+      ]
+    },
+    {
+      "id": "c5",
+      "text": "补测明确请求 gpt-6-astra 并保存 runtime.json，同题每条件再做一次，共 24 个新会话。它用于修正模型选择记录的协议缺口，既不是新题测试，也不是独立确认性实验。",
+      "level": "measured",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/supplement-review.json",
+          "sha256": "a6afe0e82079124a961c51d991273019e734e98b4e1b2355f837cf36777320ca"
+        }
+      ]
+    },
+    {
+      "id": "c6",
+      "text": "原结果、补测、事后语义复核分别报告。完整系统上下文未冻结；模型请求名不等于冻结服务端所有实现细节。",
+      "level": "inferred",
+      "scope": "本次封闭情境研究及明确标为事后的复核；不推断生产可靠率、真实发布或互动收益",
+      "evidence": [
+        {
+          "path": "results/metrics.json",
+          "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c"
+        },
+        {
+          "path": "results/snapshots/semantic-review.md",
+          "sha256": "dff8eda8fb88b3d6f990f437e663ae66847ea8b21c109c3f9a18be1c4f3084e0"
+        },
+        {
+          "path": "results/supplement-review.json",
+          "sha256": "a6afe0e82079124a961c51d991273019e734e98b4e1b2355f837cf36777320ca"
+        }
+      ]
+    }
+  ],
+  "numbers": [
+    {
+      "index": 0,
+      "token": "12",
+      "kind": "measurement",
+      "claim_id": "c2",
+      "unit": "cases",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_cases",
+        "unit": "cases"
+      }
+    },
+    {
+      "index": 1,
+      "token": "2",
+      "kind": "measurement",
+      "claim_id": "c2",
+      "unit": "repeats",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_repeats",
+        "unit": "repeats"
+      }
+    },
+    {
+      "index": 2,
+      "token": "48",
+      "kind": "measurement",
+      "claim_id": "c2",
+      "unit": "sessions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/original_sessions",
+        "unit": "sessions"
+      }
+    },
+    {
+      "index": 3,
+      "token": "-6",
+      "kind": "version",
+      "reason": "请求模型名称中的代号"
+    },
+    {
+      "index": 4,
+      "token": "24",
+      "kind": "measurement",
+      "claim_id": "c5",
+      "unit": "sessions",
+      "ref": {
+        "path": "results/metrics.json",
+        "sha256": "d28d5d95b8373969ff7bd1af1912acf51c903452768c9a49e7376b01d731950c",
+        "run_id": "review-behavior",
+        "pointer": "/metrics/supplement_sessions",
+        "unit": "sessions"
+      }
+    }
+  ]
+}

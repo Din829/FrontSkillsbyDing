@@ -1,0 +1,25 @@
+{
+  "run_id": "true-process-failure",
+  "status": "blocked",
+  "issues": [
+    {
+      "id": "false_success:6cc6be8b5eb8e028",
+      "code": "false_success",
+      "category": "false_success",
+      "severity": "fatal",
+      "location": {
+        "ref": {
+          "path": "results/execution.json"
+        }
+      },
+      "detail": "Recorded execution failed while the report claims measured success"
+    }
+  ],
+  "ruler": {
+    "path": "results/ruler.json",
+    "recorded_status": "passed"
+  },
+  "checked_measurements": 1,
+  "policy_sha256": "237ab084566cceb293ae5902e53ada13726db61c17d609a2a4c9ee7dd231796d",
+  "scope": "Declared-number bookkeeping only; scientific validity and claim completeness require semantic review."
+}
